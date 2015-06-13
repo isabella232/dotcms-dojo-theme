@@ -1,3 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import "compass";
+@import "variables";
+@import "common";
+
 .dotcms {
-  // here goes the theme classes
+  // FORM
+  @import "form/button";
+  @import "form/button_rtl";
+  @import "form/checkbox";
+  @import "form/common";
+  @import "form/common_rtl";
+  @import "form/numberSpinner";
+  @import "form/radioButton";
+  @import "form/select";
+  @import "form/slider";
+  @import "form/slider_rtl";
 }

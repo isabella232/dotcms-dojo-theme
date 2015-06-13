@@ -1,0 +1,42 @@
+.dijitCheckBox, .dijitRadio, .dijitCheckBoxInput {
+  border: solid $check-border-width $gray-dark;
+}
+
+.dijitTextBox {
+  @include transition(all $field-animation-speed);
+  @include border-radius($field-radius);
+  border: solid 1px $gray-dark;
+  height: $field-height;
+  padding: 0 $field-padding;
+  width: 100%;
+}
+
+.dijitDisabled {
+  border: dotted 1px $gray-ligther;
+}
+
+.dijitTextBoxHover {
+  @include box-shadow(0 0 10px 0 $gray-ligther);
+}
+
+.dijitTextBoxFocused {
+  border-color: $blue;
+  background-color: rgba($blue, 0.1);
+}
+
+.dijitInputInner {
+  line-height: $field-height;
+}
+
+.dijitPlaceHolder {
+  color: $gray-ligth;
+  font-style: normal;
+  line-height: $field-height;
+}
+
+.dijitTextArea {
+  font-family: $body-text;
+  font-size: $body-size;
+  color: $text-color;
+  padding: $field-padding / 2 $field-padding;
+}

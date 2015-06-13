@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var compass = require('gulp-compass');
 var connect = require('gulp-connect');
 
 gulp.task('webserver', function() {
@@ -8,17 +8,24 @@ gulp.task('webserver', function() {
   });
 });
 
-gulp.task('scss', function() {
+gulp.task('compass', function() {
   gulp.src('scss/**/*.scss')
-    .pipe(sass({
-      errLogToConsole: true
+    .pipe(compass({
+      config_file: './config.rb',
+      css: 'css',
+      sass: 'scss'
     }))
-    .pipe(gulp.dest('./css/'))
+    .pipe(connect.reload());
+});
+
+gulp.task('reload', function() {
+  gulp.src('*.html')
     .pipe(connect.reload());
 });
 
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss',['scss']);
+  gulp.watch('scss/**/*.scss',['compass']);
+  gulp.watch('*.html',['reload']);
 });
 
-gulp.task('default', ['scss', 'webserver', 'watch']);
+gulp.task('default', ['compass', 'webserver', 'watch']);

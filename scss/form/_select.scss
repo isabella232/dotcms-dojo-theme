@@ -1,0 +1,19 @@
+.dijitComboBox {
+  padding-right: 0; // Reset from .dijitTextBox in common.scss
+}
+
+.dijitArrowButton {
+  background-image: url("/images/ico-combobox.svg");
+  background-position: 10px;
+  border: none;
+  height: $field-height - 2px; // Need to substract the border (top and bottom)
+  width: $field-height;
+}
+
+.dijitDisabled {
+  border: dotted 1px $gray-ligther;
+
+  .dijitArrowButton {
+    @include opacity(0.2)
+  }
+}

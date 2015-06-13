@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #45545B;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.dotcms .dijitCheckBox, .dotcms .dijitRadio, .dotcms .dijitCheckBoxInput {
+  border: solid 2px #45545B;
+}
+.dotcms .dijitTextBox {
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: solid 1px #45545B;
+  height: 36px;
+  padding: 0 10px;
+  width: 100%;
+}
+.dotcms .dijitDisabled {
+  border: dotted 1px #D1D8DD;
+}
+.dotcms .dijitTextBoxHover {
+  -moz-box-shadow: 0 0 10px 0 #D1D8DD;
+  -webkit-box-shadow: 0 0 10px 0 #D1D8DD;
+  box-shadow: 0 0 10px 0 #D1D8DD;
+}
+.dotcms .dijitTextBoxFocused {
+  border-color: #108AC8;
+  background-color: rgba(16, 138, 200, 0.1);
+}
+.dotcms .dijitInputInner {
+  line-height: 36px;
+}
+.dotcms .dijitPlaceHolder {
+  color: #8D9DA9;
+  font-style: normal;
+  line-height: 36px;
+}
+.dotcms .dijitTextArea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #45545B;
+  padding: 5px 10px;
+}
+.dotcms .dijitComboBox {
+  padding-right: 0;
+}
+.dotcms .dijitArrowButton {
+  background-image: url("/images/ico-combobox.svg");
+  background-position: 10px;
+  border: none;
+  height: 34px;
+  width: 36px;
+}
+.dotcms .dijitDisabled {
+  border: dotted 1px #D1D8DD;
+}
+.dotcms .dijitDisabled .dijitArrowButton {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
