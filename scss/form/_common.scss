@@ -1,22 +1,67 @@
-.dijitCheckBox, .dijitRadio, .dijitCheckBoxInput {
-  border: solid $check-border-width $gray-dark;
+fieldset {
+  border: none;
+  padding: 0;
 }
 
-.dijitTextBox {
-  @include transition(all $field-animation-speed);
+
+.dijitArrowButton,
+.dijitArrowButtonInner {
+  height: $field-height - 2px; // Need to substract the border (top and bottom)
+}
+
+.dijitArrowButton,
+.dijitArrowButtonInner {
+  background-image: url("/images/ico-combobox.svg");
+  background-position: 10px;
+  border: none;
+  padding: 0;
+}
+
+.dijitArrowButton,
+.dijitButton,
+.dijitComboButton,
+.dijitDropDownButton,
+.dijitTextBox,
+.dijitToggleButton {
+  @include transition(background-color $field-animation-speed);
+}
+
+
+.dijitButton,
+.dijitComboButton,
+.dijitDropDownButton,
+.dijitTextBox,
+.dijitToggleButton {
   @include border-radius($field-radius);
   border: solid 1px $gray-dark;
   height: $field-height;
+}
+
+.dijitDisabled {
+  border-style: dotted;
+  @include opacity(0.3);
+
+  &.dijitCheckBox,
+  &.dijitCheckBoxInput,
+  &.dijitRadio {
+    border-style: solid;
+  }
+}
+
+.dijitIcon {
+  width: 16px;
+  height: 16px;
+  border: solid 1px $gray-dark;
+  margin-right: 5px;
+}
+
+.dijitTextBox {
   padding: 0 $field-padding;
   width: 100%;
 }
 
-.dijitDisabled {
-  border: dotted 1px $gray-ligther;
-}
-
 .dijitTextBoxHover {
-  @include box-shadow(0 0 10px 0 $gray-ligther);
+  @include box-shadow(0 0 $textbox-hover-shadow-size 0 $gray-ligth);
 }
 
 .dijitTextBoxFocused {
@@ -25,11 +70,12 @@
 }
 
 .dijitInputInner {
+  color: $text-color;
   line-height: $field-height;
 }
 
 .dijitPlaceHolder {
-  color: $gray-ligth;
+  color: $field-placeholder-color;
   font-style: normal;
   line-height: $field-height;
 }

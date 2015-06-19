@@ -15,6 +15,7 @@ gulp.task('compass', function() {
       css: 'css',
       sass: 'scss'
     }))
+    .on('error', function(err) {})
     .pipe(connect.reload());
 });
 

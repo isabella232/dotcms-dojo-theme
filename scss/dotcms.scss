@@ -5,14 +5,16 @@
 
 .dotcms {
   // FORM
+  @import "form/common";
+  @import "form/common_rtl";
   @import "form/button";
   @import "form/button_rtl";
   @import "form/checkbox";
-  @import "form/common";
-  @import "form/common_rtl";
   @import "form/numberSpinner";
   @import "form/radioButton";
   @import "form/select";
   @import "form/slider";
   @import "form/slider_rtl";
 }
+
+// TODO: make sure remove the active outline

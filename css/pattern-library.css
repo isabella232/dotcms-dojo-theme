@@ -1,31 +1,32 @@
 html, body {
+  background-color: #fff;
+  margin: 0;
   height: 100%;
   width: 100%;
   padding: 0;
   border: 0;
 }
 
-#main {
-  height: 100%;
-  width: 100%;
-  border: 0;
+#bottomTabs {
+  height: 40%;
 }
 
 #header {
   margin: 0;
 }
 
-#leftAccordion {
-  width: 25%;
-}
-
-#bottomTabs {
-  height: 40%;
-}
-
 #hs-1width {
   width: 400px;
   height: 40px;
+}
+
+#indTestBar,
+#setTestBar {
+  width: 400px;
+}
+
+#leftAccordion {
+  width: 25%;
 }
 
 /* pre-loader specific stuff to prevent unsightly flash of unstyled content */
@@ -52,14 +53,49 @@ html, body {
   color: #fff;
 }
 
-#indTestBar,
-#setTestBar {
-  width: 400px;
+#main {
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
-hr.spacer {
-  border: 0;
-  background-color: #ededed;
-  width: 80%;
+#textboxTab label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 10px;
+  text-align: right;
+  width: 162px;
+}
+
+.dotcms .dijitTextBox {
+  margin-right: 20px;
+  width: 120px;
+}
+
+.section-buttons label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 80px;
+}
+.section-radio-check label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 145px;
+}
+
+.spacer {
+  background-color: rgba(69, 84, 91, 0.15);
+  border: none;
   height: 1px;
+  margin: 20px 0;
+  width: 100%;
 }

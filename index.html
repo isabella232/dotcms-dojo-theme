@@ -246,7 +246,8 @@
 
     <!-- contentMenu popup -->
     <!-- redundant display:none required here? -->
-    <div data-dojo-type="dijit/Menu" id="submenu1" data-dojo-props='contextMenuForWindow:true, style:"display:none"' style="display: none;">
+    <!--TODO: set to contextMenuForWindow:true-->
+    <div data-dojo-type="dijit/Menu" id="submenu1" data-dojo-props='contextMenuForWindow:false, style:"display:none"' style="display: none;">
         <div data-dojo-type="dijit/MenuItem" data-dojo-props="onClick:function() { alert('Hello world'); }">Enabled Item
         </div>
         <div data-dojo-type="dijit/MenuItem" data-dojo-props="disabled:true">Disabled Item</div>
@@ -312,7 +313,7 @@
     </div>
     <!-- end contextMenu -->
 
-    <div id="main" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="liveSplitters:false, design:'sidebar'">
+    <div id="main" class="" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="liveSplitters:false, design:'sidebar'">
 
         <div id="header" data-dojo-type="dijit/MenuBar" data-dojo-props="region:'top'">
             <div data-dojo-type="dijit/PopupMenuBarItem" id="file">
@@ -530,153 +531,161 @@
 
             <div id="basicFormTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Basic Form Widgets', style:'padding:10px;display:none;'">
 
-                <h2>Buttons</h2>
+                <div class="section-buttons">
+                    <h2>Buttons</h2>
 
-                <p>Buttons can do an action, display a menu, or both:</p>
+                    <p>Buttons can do an action, display a menu, or both:</p>
 
-                Enabled:
+                    <label for="">Enabled:</label>
 
-                <button data-dojo-type="dijit/form/Button"
-                        data-dojo-props="iconClass:'dijitIconTask', onClick:function() { console.debug('clicked simple') }">
-                    Simple
-                </button>
+                    <button data-dojo-type="dijit/form/Button"
+                            data-dojo-props="iconClass:'dijitIconTask', onClick:function() { console.debug('clicked simple') }">
+                        Simple
+                    </button>
 
-                <div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'dijitIconEdit'">
-                    <span>Drop Down</span>
+                    <div data-dojo-type="dijit/form/DropDownButton" data-dojo-props="iconClass:'dijitIconEdit'">
+                        <span>Drop Down</span>
 
-                    <div data-dojo-type="dijit/Menu" id="editMenu1" style="display: none;">
-                        <div data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconCut',
-                                        onClick:function() { console.debug('not actually cutting anything, just a test!') }
-                                    ">Cut
-                        </div>
+                        <div data-dojo-type="dijit/Menu" id="editMenu1" style="display: none;">
+                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconCut',
+                                            onClick:function() { console.debug('not actually cutting anything, just a test!') }
+                                        ">Cut
+                            </div>
 
-                        <div data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconCopy',
-                                        onClick:function() { console.debug('not actually copying anyything, just a test!'); }
-                                    ">Copy
-                        </div>
+                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconCopy',
+                                            onClick:function() { console.debug('not actually copying anyything, just a test!'); }
+                                        ">Copy
+                            </div>
 
-                        <div data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconPaste',
-                                        onClick:function() { console.debug('not actually pasting anyything, just a test!'); }
-                                    ">Paste
-                        </div>
-                    </div>
-                </div>
-
-                <div data-dojo-type="dijit/form/ComboButton"
-                     data-dojo-props='iconClass:"dijitIconSave", optionsTitle:"save options", onClick:function() { console.log("clicked combo save"); }'>
-                    <span>Combo</span>
-
-                    <div data-dojo-type="dijit/Menu" id="saveMenu1" style="display: none;">
-                        <div data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconSave',
-                                        onClick: function() { console.debug('not actually saving anything, just a test!') }
-                                    ">Save
-                        </div>
-                        <div data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        onClick: function() { console.debug('not actually saving anything, just a test!') }
-                                    ">Save As
+                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconPaste',
+                                            onClick:function() { console.debug('not actually pasting anyything, just a test!'); }
+                                        ">Paste
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div data-dojo-type="dijit/form/ToggleButton" data-dojo-props="
-                                checked:true,
-                                onChange: function(a) { console.log('toggle button checked=' + a); }, iconClass:'dijitCheckBoxIcon'
-                            "> Toggle
-                </div>
+                    <div data-dojo-type="dijit/form/ComboButton"
+                         data-dojo-props='iconClass:"dijitIconSave", optionsTitle:"save options", onClick:function() { console.log("clicked combo save"); }'>
+                        <span>Combo</span>
 
-                <hr class="spacer">
-
-                Disabled:
-
-                <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"dijitIconTask", disabled:true' disabled>
-                    Simple
-                </button>
-
-                <div data-dojo-type="dijit/form/DropDownButton" data-dojo-props='iconClass:"dijitIconEdit", disabled:true'>
-                    <span>Drop Down</span>
-                    <ul data-dojo-type="dijit/Menu" id="editMenu2" style="display: none;">
-                        <li data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconCut',
-                                        onClick: function() { console.debug('not actually cutting anything, just a test!') }
-                                    ">Cut
-                        </li>
-
-                        <li data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconCopy',
-                                        onClick: function() { console.debug('not actually copying anything, just a test!') }
-                                    ">Copy
-                        </li>
-
-                        <li data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconClass:'dijitIconPaste',
-                                        onClick: function() { console.debug('not actually pasting anything, just a test!') }
-                                    ">Paste
-                        </li>
-                    </ul>
-                </div>
-
-                <div data-dojo-type="dijit/form/ComboButton"
-                     data-dojo-props="iconClass:'dijitIconSave', optionsTitle:'save options', disabled:true">
-                    <span>Combo</span>
-
-                    <div data-dojo-type="dijit/Menu" id="saveMenu2" style="display: none;">
-                        <div data-dojo-type="dijit/MenuItem" data-dojo-props="
-                                        iconCLass:'dijitIconSave',
-                                        onClick:function() { console.log('not actually saving anything, just a test!' ); }
-                                    ">Save
-                        </div>
-                        <div data-dojo-type="dijit/MenuItem"
-                             onClick="console.debug('not actually saving anything, just a test!')">
-                            Save As
+                        <div data-dojo-type="dijit/Menu" id="saveMenu1" style="display: none;">
+                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconSave',
+                                            onClick: function() { console.debug('not actually saving anything, just a test!') }
+                                        ">Save
+                            </div>
+                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            onClick: function() { console.debug('not actually saving anything, just a test!') }
+                                        ">Save As
+                            </div>
                         </div>
                     </div>
+
+                    <div data-dojo-type="dijit/form/ToggleButton" data-dojo-props="
+                                    checked:true,
+                                    onChange: function(a) { console.log('toggle button checked=' + a); }, iconClass:'dijitCheckBoxIcon'
+                                "> Toggle
+                    </div>
+
+                    <br/><br/>
+
+                    <label for="">Disabled:</label>
+
+                    <button data-dojo-type="dijit/form/Button" data-dojo-props='iconClass:"dijitIconTask", disabled:true' disabled>
+                        Simple
+                    </button>
+
+                    <div data-dojo-type="dijit/form/DropDownButton" data-dojo-props='iconClass:"dijitIconEdit", disabled:true'>
+                        <span>Drop Down</span>
+                        <ul data-dojo-type="dijit/Menu" id="editMenu2" style="display: none;">
+                            <li data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconCut',
+                                            onClick: function() { console.debug('not actually cutting anything, just a test!') }
+                                        ">Cut
+                            </li>
+
+                            <li data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconCopy',
+                                            onClick: function() { console.debug('not actually copying anything, just a test!') }
+                                        ">Copy
+                            </li>
+
+                            <li data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconClass:'dijitIconPaste',
+                                            onClick: function() { console.debug('not actually pasting anything, just a test!') }
+                                        ">Paste
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div data-dojo-type="dijit/form/ComboButton"
+                         data-dojo-props="iconClass:'dijitIconSave', optionsTitle:'save options', disabled:true">
+                        <span>Combo</span>
+
+                        <div data-dojo-type="dijit/Menu" id="saveMenu2" style="display: none;">
+                            <div data-dojo-type="dijit/MenuItem" data-dojo-props="
+                                            iconCLass:'dijitIconSave',
+                                            onClick:function() { console.log('not actually saving anything, just a test!' ); }
+                                        ">Save
+                            </div>
+                            <div data-dojo-type="dijit/MenuItem"
+                                 onClick="console.debug('not actually saving anything, just a test!')">
+                                Save As
+                            </div>
+                        </div>
+                    </div>
+
+                    <button data-dojo-type="dijit/form/ToggleButton"
+                            data-dojo-props="checked:true, disabled:true, iconClass:'dijitCheckBoxIcon'">
+                        Toggle
+                    </button>
+
                 </div>
 
-                <button data-dojo-type="dijit/form/ToggleButton"
-                        data-dojo-props="checked:true, disabled:true, iconClass:'dijitCheckBoxIcon'">
-                    Toggle
-                </button>
+                <div class="section-radio-check">
 
-                <hr class="spacer">
+                    <hr class="spacer">
 
-                <h2>CheckBox</h2>
-                <fieldset>
-                    <input id="check1" type="checkBox" data-dojo-type="dijit/form/CheckBox">
-                    <label for="check1">unchecked</label>
+                    <h2>CheckBox</h2>
+                    <fieldset>
+                        <input id="check1" type="checkBox" data-dojo-type="dijit/form/CheckBox">
+                        <label for="check1">unchecked</label>
 
-                    <input id="check2" type="checkBox" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked:true"
-                           checked="checked">
-                    <label for="check2">checked</label>
+                        <input id="check2" type="checkBox" data-dojo-type="dijit/form/CheckBox" data-dojo-props="checked:true"
+                               checked="checked">
+                        <label for="check2">checked</label>
 
-                    <input id="check3" type="checkBox" data-dojo-type="dijit/form/CheckBox" data-dojo-props='disabled:true'
-                           disabled>
-                    <label for="check3">disabled</label>
+                        <input id="check3" type="checkBox" data-dojo-type="dijit/form/CheckBox" data-dojo-props='disabled:true'
+                               disabled>
+                        <label for="check3">disabled</label>
 
-                    <input id="check4" type="checkBox" data-dojo-type="dijit/form/CheckBox"
-                           data-dojo-props='disabled:true, checked:true' checked="checked" disabled>
-                    <label for="check4">disabled and checked</label>
-                </fieldset>
+                        <input id="check4" type="checkBox" data-dojo-type="dijit/form/CheckBox"
+                               data-dojo-props='disabled:true, checked:true' checked="checked" disabled>
+                        <label for="check4">disabled and checked</label>
+                    </fieldset>
 
-                <h2>Radio Buttons</h2>
-                <fieldset>
-                    <input type="radio" name="g1" id="g1rb1" value="news" data-dojo-type="dijit/form/RadioButton">
-                    <label for="g1rb1">news</label>
-                    <input type="radio" name="g1" id="g1rb2" value="talk" data-dojo-type="dijit/form/RadioButton"
-                           data-dojo-props='checked:true' checked>
-                    <label for="g1rb2">talk</label>
-                    <input type="radio" name="g1" id="g1rb3" value="weather" data-dojo-type="dijit/form/RadioButton"
-                           data-dojo-props='disabled:true' disabled>
-                    <label for="g1rb3">weather <span dir="ltr">(disabled)</span></label>
-                </fieldset>
+                    <hr class="spacer">
+
+                    <h2>Radio Buttons</h2>
+                    <fieldset>
+                        <input type="radio" name="g1" id="g1rb1" value="news" data-dojo-type="dijit/form/RadioButton">
+                        <label for="g1rb1">news</label>
+                        <input type="radio" name="g1" id="g1rb2" value="talk" data-dojo-type="dijit/form/RadioButton"
+                               data-dojo-props='checked:true' checked>
+                        <label for="g1rb2">talk</label>
+                        <input type="radio" name="g1" id="g1rb3" value="weather" data-dojo-type="dijit/form/RadioButton"
+                               data-dojo-props='disabled:true' disabled>
+                        <label for="g1rb3">weather <span dir="ltr">(disabled)</span></label>
+                    </fieldset>
+
+                </div>
             </div>
             <!-- end of basic form widgets -->
 
             <div id="textboxTab" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Text Input Widgets", style:"padding:10px;display:none;"'>
-
                 <h2>dijit/form/DateTextBox</h2>
                 <label for="date1">Enabled w/placeHolder:</label>
                 <input id="date1" name="date1" type="text" data-dojo-type="dijit/form/DateTextBox"
@@ -688,12 +697,16 @@
                 <input id="date3" name="date3" type="text" data-dojo-type="dijit/form/DateTextBox"
                        data-dojo-props='value:"2008-12-25", disabled:true'>
 
+                <hr class="spacer">
+
                 <h2>dijit/form/TimeTextBox</h2>
                 <label for="time1">Enabled:</label>
                 <input id="time1" name="time1" type="text" data-dojo-type="dijit/form/TimeTextBox" value="T17:45:00">
                 <label for="time2">Disabled:</label>
                 <input id="time2" name="time2" type="text" data-dojo-type="dijit/form/TimeTextBox" value="T17:45:00"
                        data-dojo-props='disabled:true' disabled>
+
+                <hr class="spacer">
 
                 <h2>dijit/form/CurrencyTextBox</h2>
                 <label for="currency1">Enabled:</label>

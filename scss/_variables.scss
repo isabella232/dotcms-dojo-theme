@@ -1,5 +1,8 @@
 // COLORS
 
+$black: #000;
+$white: #fff;
+
 $blue: #108AC8;
 $blue-light: #1FA1D8;
 $gray: #68757E;
@@ -17,12 +20,31 @@ $body-size: 14px;
 
 // FORMS
 
-// Text Fields
+// Common
+$field-border-color: $gray-dark;
+$field-disabled-border-color: rgba($gray-dark, .4);
+$field-disabled-text-color: rgba($gray-dark, .4);
+$field-border-width: 1px;
 $field-height: 36px;
 $field-radius: 2px;
 $field-padding: 10px;
 $field-animation-speed: .25s;
+$field-placeholder-color: rgba($gray-dark, .4);
 
-// Checkboxes
-$check-border-width: 2px;
-$check-radius: 2px;
+// Buttons
+$button-horizontal-padding: 10px;
+$button-hover-bgcolor: $blue;
+$button-hover-textcolor: $white;
+$button-active-bgcolor: $gray;
+$button-active-textcolor: $white;
+
+
+// Text Fields
+$textbox-focus-color: $blue;
+$textbox-hover-shadow-color: rgba($gray, 0.1);
+$textbox-hover-shadow-size: 10px;
+
+// Checkboxes & RadioButtons
+$check-radio-border-width: 2px;
+$check-radio-radius: 2px;
+$check-radio-size: 16px;

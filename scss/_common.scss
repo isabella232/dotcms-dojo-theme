@@ -8,5 +8,6 @@ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  outline: none; // not 100% sure about this, google it
+  box-sizing: border-box;
 }
