@@ -14,85 +14,6 @@ html {
   box-sizing: border-box;
 }
 
-.dotcms fieldset {
-  border: none;
-  padding: 0;
-}
-.dotcms .dijitArrowButton,
-.dotcms .dijitArrowButtonInner {
-  height: 34px;
-}
-.dotcms .dijitArrowButton,
-.dotcms .dijitArrowButtonInner {
-  background-image: url("/images/ico-combobox.svg");
-  background-position: 10px;
-  border: none;
-  padding: 0;
-}
-.dotcms .dijitArrowButton,
-.dotcms .dijitButton,
-.dotcms .dijitComboButton,
-.dotcms .dijitDropDownButton,
-.dotcms .dijitTextBox,
-.dotcms .dijitToggleButton {
-  -moz-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
-}
-.dotcms .dijitButton,
-.dotcms .dijitComboButton,
-.dotcms .dijitDropDownButton,
-.dotcms .dijitTextBox,
-.dotcms .dijitToggleButton {
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  border: solid 1px #45545B;
-  height: 36px;
-}
-.dotcms .dijitDisabled {
-  border-style: dotted;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3;
-}
-.dotcms .dijitDisabled.dijitCheckBox, .dotcms .dijitDisabled.dijitCheckBoxInput, .dotcms .dijitDisabled.dijitRadio {
-  border-style: solid;
-}
-.dotcms .dijitIcon {
-  width: 16px;
-  height: 16px;
-  border: solid 1px #45545B;
-  margin-right: 5px;
-}
-.dotcms .dijitTextBox {
-  padding: 0 10px;
-  width: 100%;
-}
-.dotcms .dijitTextBoxHover {
-  -moz-box-shadow: 0 0 10px 0 #8D9DA9;
-  -webkit-box-shadow: 0 0 10px 0 #8D9DA9;
-  box-shadow: 0 0 10px 0 #8D9DA9;
-}
-.dotcms .dijitTextBoxFocused {
-  border-color: #108AC8;
-  background-color: rgba(16, 138, 200, 0.1);
-}
-.dotcms .dijitInputInner {
-  color: #45545B;
-  line-height: 36px;
-}
-.dotcms .dijitPlaceHolder {
-  color: rgba(69, 84, 91, 0.4);
-  font-style: normal;
-  line-height: 36px;
-}
-.dotcms .dijitTextArea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #45545B;
-  padding: 5px 10px;
-}
 .dotcms .dijitButtonContents {
   height: 34px;
 }
@@ -144,14 +65,88 @@ html {
   border-color: #68757E;
   color: #fff;
 }
-.dotcms .dijitCheckBox,
-.dotcms .dijitRadio {
+.dotcms .dijitCheckBox, .dotcms .dijitRadio {
   border: solid 2px #45545B;
   width: 16px;
   height: 16px;
 }
 .dotcms .dijitCheckBoxChecked {
   background: url("/images/ico-checkbox.svg") 1px 2px no-repeat;
+}
+.dotcms .dijitArrowButton,
+.dotcms .dijitArrowButtonInner {
+  height: 34px;
+  border: none;
+  padding: 0;
+}
+.dotcms .dijitArrowButton,
+.dotcms .dijitButton,
+.dotcms .dijitComboButton,
+.dotcms .dijitDropDownButton,
+.dotcms .dijitTextBox,
+.dotcms .dijitToggleButton {
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+.dotcms .dijitButton,
+.dotcms .dijitComboButton,
+.dotcms .dijitDropDownButton,
+.dotcms .dijitTextBox,
+.dotcms .dijitToggleButton {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: solid 1px #45545B;
+  height: 36px;
+}
+.dotcms .dijitDisabled {
+  border-style: dotted;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+.dotcms .dijitDisabled.dijitCheckBox, .dotcms .dijitDisabled.dijitCheckBoxInput, .dotcms .dijitDisabled.dijitRadio {
+  border-style: solid;
+}
+.dotcms .dijitInputInner {
+  color: #45545B;
+  line-height: 36px;
+}
+.dotcms .dijitIcon {
+  width: 16px;
+  height: 16px;
+  border: solid 1px #45545B;
+  margin-right: 5px;
+}
+.dotcms .dijitTextBox {
+  padding: 0 10px;
+  width: 100%;
+}
+.dotcms .dijitTextBoxHover {
+  -moz-box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
+  -webkit-box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
+  box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
+}
+.dotcms .dijitTextBoxHoverFocused {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.dotcms .dijitTextBoxFocused {
+  border-color: #108AC8;
+  background-color: rgba(16, 138, 200, 0.1);
+}
+.dotcms .dijitPlaceHolder {
+  color: rgba(69, 84, 91, 0.4);
+  font-style: normal;
+  line-height: 36px;
+}
+.dotcms .dijitTextArea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #45545B;
+  padding: 5px 10px;
 }
 .dotcms .dijitRadio {
   -moz-border-radius: 8px;
@@ -179,5 +174,56 @@ html {
   padding-right: 0;
 }
 .dotcms .dijitComboBox .dijitArrowButton {
+  background-image: url("/images/ico-combobox.svg");
+  background-position: 10px;
   width: 36px;
+}
+.dotcms .dijitAccordionContainer {
+  border: none;
+}
+.dotcms .dijitAccordionInnerContainer {
+  border: solid 1px #D1D8DD;
+  margin-bottom: 5px;
+}
+.dotcms .dijitAccordionTitle {
+  padding: 5px;
+}
+.dotcms .dijitAccordionTitleSelected {
+  background-color: #D1D8DD;
+  font-weight: bold;
+}
+.dotcms .dijitMenuBar {
+  border: solid 1px #D1D8DD;
+}
+.dotcms .dijitMenuItem {
+  padding: 5px;
+}
+.dotcms .dijitTabContainerTop-tabs {
+  border-bottom: none;
+}
+.dotcms .dijitTabContainerBottom-tabs {
+  border-top: none;
+}
+.dotcms .dijitTabContainerBottom-container,
+.dotcms .dijitTabContainerTop-container,
+.dotcms .dijitTabContainerLeft-container,
+.dotcms .dijitTabContainerRight-container {
+  border: solid 1px #D1D8DD;
+}
+.dotcms .dijitTab {
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  border: solid 1px #D1D8DD;
+  border-bottom: none;
+  border-right: none;
+  height: 36px;
+  padding: 0 10px;
+}
+.dotcms .dijitTab .tabLabel {
+  line-height: 36px;
+}
+.dotcms .dijitTab.dijitTabChecked {
+  background-color: #D1D8DD;
 }

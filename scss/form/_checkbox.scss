@@ -1,32 +1,14 @@
-.dijitCheckBox,
-.dijitRadio {
+// TODO: use a mixin?
+%rc {
   border: solid $check-radio-border-width $field-border-color;
   width: $check-radio-size;
   height: $check-radio-size;
 }
 
+.dijitCheckBox {
+  @extend %rc
+}
+
 .dijitCheckBoxChecked {
   background: url("/images/ico-checkbox.svg") 1px 2px no-repeat;
-}
-
-.dijitRadio {
-  @include border-radius($check-radio-size / 2);
-}
-
-.dijitRadioChecked {
-  position: relative;
-
-  &:before {
-    $size: $check-radio-size - 8;
-    @include border-radius($size / 2);
-    background-color: $field-border-color;
-    position: absolute;
-    content: "";
-    width: $size;
-    height: $size;
-    top: 50%;
-    left: 50%;
-    margin-top: -($size / 2);
-    margin-left: -($size / 2);
-  }
 }

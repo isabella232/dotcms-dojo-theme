@@ -1,18 +1,6 @@
-fieldset {
-  border: none;
-  padding: 0;
-}
-
-
 .dijitArrowButton,
 .dijitArrowButtonInner {
   height: $field-height - 2px; // Need to substract the border (top and bottom)
-}
-
-.dijitArrowButton,
-.dijitArrowButtonInner {
-  background-image: url("/images/ico-combobox.svg");
-  background-position: 10px;
   border: none;
   padding: 0;
 }
@@ -26,14 +14,13 @@ fieldset {
   @include transition(background-color $field-animation-speed);
 }
 
-
 .dijitButton,
 .dijitComboButton,
 .dijitDropDownButton,
 .dijitTextBox,
 .dijitToggleButton {
-  @include border-radius($field-radius);
-  border: solid 1px $gray-dark;
+  @include border-radius($field-border-radius);
+  border: solid 1px $field-border-color;
   height: $field-height;
 }
 
@@ -48,30 +35,34 @@ fieldset {
   }
 }
 
+.dijitInputInner {
+  color: $text-color;
+  line-height: $field-height;
+}
+
 .dijitIcon {
-  width: 16px;
-  height: 16px;
+  width: $field-icon-size;
+  height: $field-icon-size;
   border: solid 1px $gray-dark;
-  margin-right: 5px;
+  margin-right: $field-padding / 2;
 }
 
 .dijitTextBox {
   padding: 0 $field-padding;
   width: 100%;
-}
 
-.dijitTextBoxHover {
-  @include box-shadow(0 0 $textbox-hover-shadow-size 0 $gray-ligth);
-}
+  &Hover {
+    @include box-shadow(0 0 $textbox-hover-shadow-size 0 rgba($gray-dark, 0.35));
 
-.dijitTextBoxFocused {
-  border-color: $blue;
-  background-color: rgba($blue, 0.1);
-}
+    &Focused {
+      @include box-shadow(none);
+    }
+  }
 
-.dijitInputInner {
-  color: $text-color;
-  line-height: $field-height;
+  &Focused {
+    border-color: $blue;
+    background-color: rgba($blue, 0.1);
+  }
 }
 
 .dijitPlaceHolder {

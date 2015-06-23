@@ -1,0 +1,32 @@
+.dijitTabContainerTop-tabs {
+  border-bottom: none;
+}
+
+.dijitTabContainerBottom-tabs {
+  border-top: none;
+}
+
+.dijitTabContainerBottom-container,
+.dijitTabContainerTop-container,
+.dijitTabContainerLeft-container,
+.dijitTabContainerRight-container {
+  border: solid 1px $gray-ligther;
+}
+
+.dijitTab {
+  @include transition(background-color $field-animation-speed); // TODO: move this to layout/common.scss?
+  border: solid 1px $gray-ligther;
+  border-bottom: none;
+  border-right: none;
+  height: $field-height;
+  padding: 0 $field-padding;
+
+  .tabLabel {
+    line-height: $field-height;
+  }
+
+  &.dijitTabChecked {
+    background-color: $gray-ligther;
+  }
+}
+

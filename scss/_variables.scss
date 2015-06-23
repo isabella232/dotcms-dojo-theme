@@ -1,42 +1,41 @@
 // COLORS
-
 $black: #000;
-$white: #fff;
-
-$blue: #108AC8;
 $blue-light: #1FA1D8;
-$gray: #68757E;
+$blue: #108AC8;
+$gray-dark: #45545B;
 $gray-ligth: #8D9DA9;
 $gray-ligther: #D1D8DD;
-$gray-dark: #45545B;
-$green: #4A9D51;
+$gray: #68757E;
 $green-ligth: #77BE61;
+$green: #4A9D51;
 $orange: #F3762A;
+$white: #fff;
 
 // TYPOGRAPHY
-$text-color: $gray-dark;
-$body-text: 'Open Sans', sans-serif;
 $body-size: 14px;
+$body-text: 'Open Sans', sans-serif;
+$text-color: $gray-dark;
 
 // FORMS
 
 // Common
+$field-animation-speed: .25s;
 $field-border-color: $gray-dark;
+$field-border-radius: 2px;
+$field-border-width: 1px;
 $field-disabled-border-color: rgba($gray-dark, .4);
 $field-disabled-text-color: rgba($gray-dark, .4);
-$field-border-width: 1px;
 $field-height: 36px;
-$field-radius: 2px;
+$field-icon-size: 16px;
 $field-padding: 10px;
-$field-animation-speed: .25s;
 $field-placeholder-color: rgba($gray-dark, .4);
 
 // Buttons
+$button-active-bgcolor: $gray;
+$button-active-textcolor: $white;
 $button-horizontal-padding: 10px;
 $button-hover-bgcolor: $blue;
 $button-hover-textcolor: $white;
-$button-active-bgcolor: $gray;
-$button-active-textcolor: $white;
 
 
 // Text Fields

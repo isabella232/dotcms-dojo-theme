@@ -1,0 +1,17 @@
+.dijitAccordionContainer {
+  border: none
+}
+
+.dijitAccordionInnerContainer {
+  border: solid 1px $gray-ligther;
+  margin-bottom: 5px;
+}
+
+.dijitAccordionTitle {
+  padding: 5px;
+}
+
+.dijitAccordionTitleSelected {
+  background-color: $gray-ligther;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+.dijitRadio {
+  @extend %rc;
+  @include border-radius($check-radio-size / 2);
+}
+
+.dijitRadioChecked {
+  position: relative;
+
+  &:before {
+    $size: $check-radio-size - 8;
+    @include border-radius($size / 2);
+    background-color: $field-border-color;
+    position: absolute;
+    content: "";
+    width: $size;
+    height: $size;
+    top: 50%;
+    left: 50%;
+    margin-top: -($size / 2);
+    margin-left: -($size / 2);
+  }
+}
