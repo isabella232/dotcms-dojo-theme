@@ -1,95 +1,128 @@
-.dijitButtonContents {
-  height: $field-height - ($field-border-width * 2);
-}
-
-.dijitButtonNode {
-  padding: 0 $button-horizontal-padding;
-  border: none;
-}
-
 .dijitButton,
 .dijitComboButton,
 .dijitDropDownButton,
 .dijitToggleButton {
   margin: 0;
-}
 
-.dijitButtonText {
-  line-height: $field-height - ($field-border-width * 2);
-}
-
-.dijitComboButton .dijitArrowButton,
-.dijitDropDownButton .dijitButtonNode {
-  padding: 0;
+  .dijitButtonNode {
+    border: none;
+    padding-left: $field-padding;
+  }
 }
 
 .dijitButton,
-.dijitComboButton,
-.dijitDropDownButton {
-  // TODO: not sure about this parent selector
-  &Hover{
-    @extend %hover
-  }
-}
-
 .dijitToggleButton {
-  &Hover {
-    background-color: $gray-ligther;
-  }
-
-  &Checked,
-  &CheckedHover,
-  &ActiveFocused {
-    @extend %active;
-  }
+  padding-right: $field-padding;
 }
 
-.dijitButton {
-  &HoverFocused {
-    @extend %hover;
-  }
-  &ActiveFocused {
-    @extend %active
-  }
-}
-
-
-.dijitComboButton,
-.dijitDropDownButton {
-  .dijitArrowButtonInner {
-    background: $gray-dark url("/images/ico-combobutton.svg") 8px 14px no-repeat;
-    padding: 0;
-    width: 24px;
-  }
-
-  // TODO: not sure about this parent selector
-  &Hover {
-    .dijitArrowButtonInner {
-      background-color: $blue-light;
-    }
-  }
-}
-
-.dijitDropDownButton {
-  .dijitButtonNode {
-    padding-left: 10px;
-  }
-
+.dijitDropDownButton,
+.dijitButton,
+.dijitToggleButton {
   .dijitButtonText {
-    padding: 0 $field-padding 0 0;
+    line-height: $field-height - 2px;
+    height: $field-height - 2px; // Need to substract the border (top and bottom)
   }
 }
 
-// EXTENDED PROPERTIES
-
-%hover {
-  background-color: $button-hover-bgcolor;
-  border-color: $button-hover-bgcolor;
-  color: $button-hover-textcolor
+.dijitDropDownButton {
+  .dijitButtonText {
+    margin-right: $field-padding;
+  }
 }
 
-%active {
-  background-color: $button-active-bgcolor;
-  border-color: $button-active-bgcolor;
-  color: $button-active-textcolor;
-}
+
+//.dijitButtonContents {
+//  height: $field-height - ($field-border-width * 2);
+//}
+//
+//.dijitButtonNode {
+//  padding: 0 $button-horizontal-padding;
+//  border: none;
+//}
+//
+//.dijitButton,
+//.dijitComboButton,
+//.dijitDropDownButton,
+//.dijitToggleButton {
+//  margin: 0;
+//}
+//
+//.dijitButtonText {
+//  line-height: $field-height - ($field-border-width * 2);
+//}
+//
+//.dijitComboButton .dijitArrowButton,
+//.dijitDropDownButton .dijitButtonNode {
+//  padding: 0;
+//}
+//
+//.dijitButton,
+//.dijitComboButton,
+//.dijitDropDownButton {
+//  // TODO: not sure about this parent selector
+//  &Hover{
+//    @extend %hover
+//  }
+//}
+//
+//.dijitToggleButton {
+//  &Hover {
+//    background-color: $gray-ligther;
+//  }
+//
+//  &Checked,
+//  &CheckedHover,
+//  &ActiveFocused {
+//    @extend %active;
+//  }
+//}
+//
+//.dijitButton {
+//  &HoverFocused {
+//    @extend %hover;
+//  }
+//  &ActiveFocused {
+//    @extend %active
+//  }
+//}
+//
+//
+//.dijitComboButton,
+//.dijitDropDownButton {
+//  .dijitArrowButtonInner {
+//    background: $gray-dark url("/images/ico-combobutton.svg") 8px 14px no-repeat;
+//    padding: 0;
+//    width: 24px;
+//  }
+//
+//  // TODO: not sure about this parent selector
+//  &Hover {
+//    .dijitArrowButtonInner {
+//      background-color: $blue-light;
+//    }
+//  }
+//}
+//
+//.dijitDropDownButton {
+//  .dijitButtonNode {
+//    padding-left: 10px;
+//  }
+//
+//  .dijitButtonText {
+//    padding: 0 $field-padding 0 0;
+//  }
+//}
+//
+//// EXTENDED PROPERTIES
+//
+//%hover {
+//  background-color: $button-hover-bgcolor;
+//  border-color: $button-hover-bgcolor;
+//  color: $button-hover-textcolor
+//}
+//
+//%active {
+//  background-color: $button-active-bgcolor;
+//  border-color: $button-active-bgcolor;
+//  color: $button-active-textcolor;
+//}

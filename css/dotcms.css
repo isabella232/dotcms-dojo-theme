@@ -14,12 +14,50 @@ html {
   box-sizing: border-box;
 }
 
-.dotcms .dijitButtonContents {
-  height: 34px;
-}
-.dotcms .dijitButtonNode {
-  padding: 0 10px;
-  border: none;
+.dotcms {
+  /*
+  
+  ====================================
+  DOJO DOM TREE INFORMATION
+  ====================================
+  Just for guideance
+  
+  .dijitDropDownButton {
+    .dijitArrowButtonInner <-- background container
+      :before <-- icon
+  }
+  
+  table.dijitComboButton {
+    td.dijitButtonNode.dijitArrowButton {
+      .dijitArrowButtonInner <-- background container
+        :before <-- icon
+    }
+  }
+  
+  .dijitComboBox {
+    .dijitButtonNode.dijitArrowButton { <-- background container
+      .dijitArrowButtonInner
+       :before <-- icon
+    }
+  }
+  
+  .dijitSpinner {
+    .dijitSpinnerButtonContainer { <-- container wrapper
+  
+      .dijitButtonNode.dijitArrowButton.dijitUpArrowButton { <-- icon wrapper
+        .dijitArrowButtonInner {
+          .dijitInputField
+        }
+      }
+      .dijitButtonNode.dijitArrowButton.dijitDownArrowButton { <-- icon wrapper
+        .dijitArrowButtonInner {
+          .dijitInputField
+        }
+      }
+    }
+  }
+  
+  */
 }
 .dotcms .dijitButton,
 .dotcms .dijitComboButton,
@@ -27,43 +65,25 @@ html {
 .dotcms .dijitToggleButton {
   margin: 0;
 }
-.dotcms .dijitButtonText {
-  line-height: 34px;
-}
-.dotcms .dijitComboButton .dijitArrowButton,
-.dotcms .dijitDropDownButton .dijitButtonNode {
-  padding: 0;
-}
-.dotcms .dijitToggleButtonHover {
-  background-color: #D1D8DD;
-}
-.dotcms .dijitComboButton .dijitArrowButtonInner,
-.dotcms .dijitDropDownButton .dijitArrowButtonInner {
-  background: #45545B url("/images/ico-combobutton.svg") 8px 14px no-repeat;
-  padding: 0;
-  width: 24px;
-}
-.dotcms .dijitComboButtonHover .dijitArrowButtonInner,
-.dotcms .dijitDropDownButtonHover .dijitArrowButtonInner {
-  background-color: #1FA1D8;
-}
-.dotcms .dijitDropDownButton .dijitButtonNode {
+.dotcms .dijitButton .dijitButtonNode,
+.dotcms .dijitComboButton .dijitButtonNode,
+.dotcms .dijitDropDownButton .dijitButtonNode,
+.dotcms .dijitToggleButton .dijitButtonNode {
+  border: none;
   padding-left: 10px;
 }
+.dotcms .dijitButton,
+.dotcms .dijitToggleButton {
+  padding-right: 10px;
+}
+.dotcms .dijitDropDownButton .dijitButtonText,
+.dotcms .dijitButton .dijitButtonText,
+.dotcms .dijitToggleButton .dijitButtonText {
+  line-height: 34px;
+  height: 34px;
+}
 .dotcms .dijitDropDownButton .dijitButtonText {
-  padding: 0 10px 0 0;
-}
-.dotcms .dijitButtonHover,
-.dotcms .dijitComboButtonHover,
-.dotcms .dijitDropDownButtonHover, .dotcms .dijitButtonHoverFocused {
-  background-color: #108AC8;
-  border-color: #108AC8;
-  color: #fff;
-}
-.dotcms .dijitToggleButtonChecked, .dotcms .dijitToggleButtonCheckedHover, .dotcms .dijitToggleButtonActiveFocused, .dotcms .dijitButtonActiveFocused {
-  background-color: #68757E;
-  border-color: #68757E;
-  color: #fff;
+  margin-right: 10px;
 }
 .dotcms .dijitCheckBox, .dotcms .dijitRadio {
   border: solid 2px #45545B;
@@ -73,23 +93,6 @@ html {
 .dotcms .dijitCheckBoxChecked {
   background: url("/images/ico-checkbox.svg") 1px 2px no-repeat;
 }
-.dotcms .dijitArrowButton,
-.dotcms .dijitArrowButtonInner {
-  height: 34px;
-  border: none;
-  padding: 0;
-}
-.dotcms .dijitArrowButton,
-.dotcms .dijitButton,
-.dotcms .dijitComboButton,
-.dotcms .dijitDropDownButton,
-.dotcms .dijitTextBox,
-.dotcms .dijitToggleButton {
-  -moz-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
-}
 .dotcms .dijitButton,
 .dotcms .dijitComboButton,
 .dotcms .dijitDropDownButton,
@@ -98,8 +101,53 @@ html {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
   border: solid 1px #45545B;
   height: 36px;
+}
+.dotcms .dijitComboBox .dijitArrowButtonContainer,
+.dotcms .dijitComboButton .dijitArrowButtonInner,
+.dotcms .dijitDropDownButton .dijitArrowButtonInner,
+.dotcms .dijitSpinner .dijitSpinnerButtonContainer {
+  height: 34px;
+  border: none;
+  position: relative;
+}
+.dotcms .dijitComboButton .dijitArrowButtonInner,
+.dotcms .dijitDropDownButton .dijitArrowButtonInner,
+.dotcms .dijitSpinner .dijitSpinnerButtonContainer {
+  background-color: #45545B;
+  width: 24px;
+}
+.dotcms .dijitComboBox .dijitArrowButtonContainer {
+  width: 36px;
+}
+.dotcms .dijitComboBox .dijitArrowButtonContainer:before {
+  content: "";
+  left: 50%;
+  margin-left: -7px;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  background-image: url("/images/ico-combobox.svg");
+  height: 10px !important;
+  width: 16px;
+}
+.dotcms .dijitComboButton .dijitArrowButtonInner:before,
+.dotcms .dijitDropDownButton .dijitArrowButtonInner:before,
+.dotcms .dijitSpinner .dijitArrowButtonInner:before {
+  content: "";
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  background-image: url("/images/ico-combobutton.svg");
+  height: 6px !important;
+  width: 10px;
 }
 .dotcms .dijitDisabled {
   border-style: dotted;
@@ -137,6 +185,15 @@ html {
   border-color: #108AC8;
   background-color: rgba(16, 138, 200, 0.1);
 }
+.dotcms .dijitSpinner {
+  padding-right: 0;
+}
+.dotcms .dijitSpinner .dijitUpArrowButton .dijitArrowButtonInner {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 .dotcms .dijitPlaceHolder {
   color: rgba(69, 84, 91, 0.4);
   font-style: normal;
@@ -172,11 +229,6 @@ html {
 }
 .dotcms .dijitComboBox {
   padding-right: 0;
-}
-.dotcms .dijitComboBox .dijitArrowButton {
-  background-image: url("/images/ico-combobox.svg");
-  background-position: 10px;
-  width: 36px;
 }
 .dotcms .dijitAccordionContainer {
   border: none;

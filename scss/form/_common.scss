@@ -1,18 +1,46 @@
-.dijitArrowButton,
-.dijitArrowButtonInner {
-  height: $field-height - 2px; // Need to substract the border (top and bottom)
-  border: none;
-  padding: 0;
+/*
+
+====================================
+DOJO DOM TREE INFORMATION
+====================================
+Just for guideance
+
+.dijitDropDownButton {
+  .dijitArrowButtonInner <-- background container
+    :before <-- icon
 }
 
-.dijitArrowButton,
-.dijitButton,
-.dijitComboButton,
-.dijitDropDownButton,
-.dijitTextBox,
-.dijitToggleButton {
-  @include transition(background-color $field-animation-speed);
+table.dijitComboButton {
+  td.dijitButtonNode.dijitArrowButton {
+    .dijitArrowButtonInner <-- background container
+      :before <-- icon
+  }
 }
+
+.dijitComboBox {
+  .dijitButtonNode.dijitArrowButton { <-- background container
+    .dijitArrowButtonInner
+     :before <-- icon
+  }
+}
+
+.dijitSpinner {
+  .dijitSpinnerButtonContainer { <-- container wrapper
+
+    .dijitButtonNode.dijitArrowButton.dijitUpArrowButton { <-- icon wrapper
+      .dijitArrowButtonInner {
+        .dijitInputField
+      }
+    }
+    .dijitButtonNode.dijitArrowButton.dijitDownArrowButton { <-- icon wrapper
+      .dijitArrowButtonInner {
+        .dijitInputField
+      }
+    }
+  }
+}
+
+*/
 
 .dijitButton,
 .dijitComboButton,
@@ -20,8 +48,53 @@
 .dijitTextBox,
 .dijitToggleButton {
   @include border-radius($field-border-radius);
+  @include transition(background-color $field-animation-speed);
   border: solid 1px $field-border-color;
   height: $field-height;
+}
+
+.dijitComboBox .dijitArrowButtonContainer,
+.dijitComboButton .dijitArrowButtonInner,
+.dijitDropDownButton .dijitArrowButtonInner,
+.dijitSpinner .dijitSpinnerButtonContainer {
+  height: $field-height - 2px; // Need to substract the border (top and bottom)
+  border: none;
+  position: relative;
+}
+
+.dijitComboButton .dijitArrowButtonInner,
+.dijitDropDownButton .dijitArrowButtonInner, // TODO: style correctly
+.dijitSpinner .dijitSpinnerButtonContainer {
+  background-color: $gray-dark;
+  width: 24px;
+}
+
+.dijitComboBox {
+  .dijitArrowButtonContainer {
+    width: $field-height;
+
+    &:before {
+      content: "";
+      @include center-icon(14px, 10px); // Sadly compass can't get width and height from a svg
+      background-image: url("/images/ico-combobox.svg");
+      height: 10px !important; // :( overwrite from dijit.css
+      width: 16px;
+    }
+  }
+}
+
+.dijitComboButton,
+.dijitDropDownButton,
+.dijitSpinner {
+  .dijitArrowButtonInner {
+    &:before {
+      content: "";
+      @include center-icon(10px, 6px); // Sadly compass can't get width and height from a svg
+      background-image: url("/images/ico-combobutton.svg");
+      height: 6px !important; // :( overwrite from dijit.css
+      width: 10px;
+    }
+  }
 }
 
 .dijitDisabled {
@@ -62,6 +135,16 @@
   &Focused {
     border-color: $blue;
     background-color: rgba($blue, 0.1);
+  }
+}
+
+.dijitSpinner {
+  padding-right: 0;
+
+  .dijitUpArrowButton {
+    .dijitArrowButtonInner {
+      @include rotate(180deg);
+    }
   }
 }
 

@@ -1,9 +1,3 @@
 .dijitComboBox {
   padding-right: 0; // Reset from .dijitTextBox in common.scss
-
-  .dijitArrowButton {
-    background-image: url("/images/ico-combobox.svg");
-    background-position: 10px;
-    width: $field-height;
-  }
 }
