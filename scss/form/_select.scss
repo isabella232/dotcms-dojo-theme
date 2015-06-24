@@ -1,3 +1,15 @@
+.dijitSelect {
+  .dijitButtonContents {
+    padding: 0 $field-padding;
+    border: none;
+  }
+}
+
 .dijitComboBox {
-  padding-right: 0; // Reset from .dijitTextBox in common.scss
+  padding-right: 0;
+  
+  &.dijitValidationTextBoxError .dijitValidationContainer,
+  .dijitValidationContainer {
+    display: none; // TODO: make sure we handle errors
+  }
 }

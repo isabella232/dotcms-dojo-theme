@@ -83,6 +83,9 @@ h2 {
   margin-right: 20px;
   width: 120px;
 }
+.dotcms .dijitSelect {
+  margin-right: 20px;
+}
 .dotcms .dijitTextArea {
   width: 600px;
 }
