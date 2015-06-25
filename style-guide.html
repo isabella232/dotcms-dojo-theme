@@ -8,23 +8,6 @@
     <link id="themeStyles" rel="stylesheet" href="/css/dotcms.css"/>
     <link rel="stylesheet" href="/css/pattern-library.css"/>
 
-
-    <style>
-        /* @import "//starter.dotcms.com:8080/html/common/css.jsp"; */
-        #doc,#doc1,#doc2,#doc3,#doc4{background-color:#fff;padding:10px;border:1px solid #d1d1d1;}
-        #hd{margin-top:5px;}
-        #bd{margin-bottom:20px;-moz-box-shadow:0px 0px 0px #fff;-webkit-box-shadow:0px 0px 0px #fff;border:0px;padding:0;}
-        body{font:13px/1.22 Verdana, Geneva,  Arial, sans-serif;*font-size:small;*font:x-small;color:#555;line-height:138.5%;background-color:#f3f3f3;}/* 13pt */
-        h1{font-size:174%;font-family:"Baskerville Old Face", "Times New Roman";margin:10px 0 10px 10px;font-weight:normal;}/* 22pt */
-        h2{font-size:108%;color:#990000;padding:10px 15px 0 0;font-weight:normal;}/* 18pt */
-        p,fieldset,table{font-size:85%;margin:0 0 .2em 0;}
-        a{color: #2C548D;}
-        a:hover{}
-        hr {border:0; color: #9E9E9E;background-color: #9E9E9E;height: 1px;width: 100%;text-align: left;}
-        pre {width: 100%;overflow: auto;font-size: 12px;padding: 0;margin: 0;background: #f0f0f0;border: 1px solid #ccc;line-height: 20px;overflow-Y: hidden;}
-        pre code {margin: 0 0 0 20px;padding: 0 0 16px 0;display: block;}
-    </style>
-
     <script type="text/javascript" src="http://starter.dotcms.com:8080/html/js/dojo/release/dojo/dojo/dojo.js" djConfig="parseOnLoad:true, isDebug:false"></script>
     <script type="text/javascript" src="//starter.dotcms.com:8080/html/js/dojo/release/dojo/dojo/dot-dojo.js"></script>
     <script type="text/javascript">
@@ -71,7 +54,6 @@
 <div id="doc3">
 
     <div id="hd">
-        <img src="http://www.dotcms.org/global/images/template/logo2.gif" />
         <div class="yui-g">
             <div class="yui-u first"><h1>dotCMS UI Style Guide</h1></div>
             <div class="yui-u" style="text-align:right;padding: 10px 10px 0 0;">
@@ -683,8 +665,8 @@
                 <div style="margin:0 50px;">
                     <div class="yui-gc portlet-toolbar">
                         <div class="yui-u first">
-                            <input type="text" name="filter" id="filter" class="large" value="" />
-                            <button dojoType="dijit.form.Button"  iconClass="searchIcon">Search</button>
+                            <input type="text" name="filter" id="filter" class="large" value="" dojoType="dijit.form.TextBox" />
+                            <button dojoType="dijit.form.Button" iconClass="searchIcon">Search</button>
                             <button dojoType="dijit.form.Button" iconClass="resetIcon">Reset</button>
                         </div>
                         <div class="yui-u" style="text-align:right;">

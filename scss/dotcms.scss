@@ -21,10 +21,14 @@
   @import "layout/SplitContainer";
   @import "layout/TabContainer";
 
+  @import "legacy";
+
 
   /* ===================================
   DOTCMS STYLE GUIDE
   =================================== */
+
+
 
   dl {
     margin: 0;
@@ -62,6 +66,69 @@
       padding: $field-padding;
       width: 200px;
     }
+  }
+  .listingTable {
+    border: 1px solid $gray-ligther;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+
+    tr {
+      &.selected {
+        background-color: $gray-ligther;
+      }
+
+      &.alternate_1 {
+        cursor: pointer;
+      }
+
+      &.alternate_2 {
+        background: rgba($gray-ligth, 0.25);
+        cursor: pointer;
+      }
+
+      &.alternate_1,
+      &.alternate_2 {
+        &:hover {
+          background-color: rgba($blue, 0.15);
+        }
+      }
+    }
+
+    th, td {
+      padding: 5px 8px;
+      border: 1px solid $gray-ligther;
+      border-top: none;
+
+      a {
+        text-decoration: none;
+      }
+
+      table tr {
+        border:none;
+      }
+    }
+
+    th {
+      font-weight: bold;
+      background: $gray-ligther;
+    }
+  }
+
+  .portlet-toolbar {
+    padding: 10px 0;
+  }
+
+  .buttonRow {
+    text-align: center;
+    padding: 10px 0;
+    line-height: $field-height;
+  }
+
+  .noResultsMessage {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
   }
 
 }
