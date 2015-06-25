@@ -647,7 +647,7 @@ html {
   background-color: rgba(16, 138, 200, 0.15);
 }
 .dotcms .listingTable th, .dotcms .listingTable td {
-  padding: 5px 8px;
+  padding: 8px 10px;
   border: 1px solid #D1D8DD;
   border-top: none;
 }
