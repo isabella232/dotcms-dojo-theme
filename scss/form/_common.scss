@@ -131,7 +131,6 @@ table.dijitComboButton {
 
 .dijitTextBox {
   padding: 0 $field-padding;
-  width: 100%;
 
   &Hover {
     @include box-shadow(0 0 $textbox-hover-shadow-size 0 rgba($gray-dark, 0.35));

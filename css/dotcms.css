@@ -182,7 +182,6 @@ html {
 }
 .dotcms .dijitTextBox {
   padding: 0 10px;
-  width: 100%;
 }
 .dotcms .dijitTextBoxHover {
   -moz-box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
@@ -271,11 +270,15 @@ html {
 .dotcms .dijitMenuItem {
   padding: 5px;
 }
+.dotcms .dijitTabContainerTop-tabs,
+.dotcms .dijitTabContainerBottom-tabs {
+  padding-left: 1px;
+}
 .dotcms .dijitTabContainerTop-tabs {
-  border-bottom: none;
+  border-bottom: solid 1px #D1D8DD;
 }
 .dotcms .dijitTabContainerBottom-tabs {
-  border-top: none;
+  border-top: solid 1px #D1D8DD;
 }
 .dotcms .dijitTabContainerBottom-container,
 .dotcms .dijitTabContainerTop-container,
@@ -283,22 +286,32 @@ html {
 .dotcms .dijitTabContainerRight-container {
   border: solid 1px #D1D8DD;
 }
+.dotcms .dijitTabContainerTop-container {
+  border-top: 0;
+}
+.dotcms .dijitTabContainerBottom-container {
+  border-bottom: 0;
+}
 .dotcms .dijitTab {
   -moz-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  background-color: #D1D8DD;
   border: solid 1px #D1D8DD;
   border-bottom: none;
-  border-right: none;
   height: 36px;
+  margin-right: -1px;
   padding: 0 10px;
+}
+.dotcms .dijitTab:first-child {
+  margin-right: 0;
 }
 .dotcms .dijitTab .tabLabel {
   line-height: 36px;
 }
 .dotcms .dijitTab.dijitTabChecked {
-  background-color: #D1D8DD;
+  background-color: #fff;
 }
 .dotcms .dijitTabPane {
   padding: 0 20px;
@@ -565,6 +578,13 @@ html {
   margin: 0 0 0 20px;
   padding: 0 0 16px 0;
   display: block;
+}
+.dotcms .spacer {
+  background-color: rgba(69, 84, 91, 0.15);
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+  width: 100%;
 }
 .dotcms dl {
   margin: 0;

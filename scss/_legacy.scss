@@ -241,3 +241,11 @@ pre code  {
   padding: 0 0 16px 0;
   display: block;
 }
+
+.spacer {
+  background-color: rgba($gray-dark, .15);
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+  width: 100%;
+}
