@@ -5,3 +5,8 @@
   position: absolute;
   top: 50%;
 }
+
+@mixin mouse {
+  font-size: 11px; // TODO: variable
+  color: $gray-ligth;
+}

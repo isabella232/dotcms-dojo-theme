@@ -7,9 +7,9 @@
 
 .dijitComboBox {
   padding-right: 0;
-  
+
   &.dijitValidationTextBoxError .dijitValidationContainer,
   .dijitValidationContainer {
-    display: none; // TODO: make sure we handle errors
+    display: none; // TODO: handle errors
   }
 }

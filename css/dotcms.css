@@ -64,6 +64,9 @@ html {
   }
   
   */
+  /* ===================================
+  DOTCMS STYLE GUIDE
+  =================================== */
 }
 .dotcms .dijitButton,
 .dotcms .dijitComboButton,
@@ -296,4 +299,48 @@ html {
 }
 .dotcms .dijitTab.dijitTabChecked {
   background-color: #D1D8DD;
+}
+.dotcms .dijitTabPane {
+  padding: 0 20px;
+}
+.dotcms dl {
+  margin: 0;
+}
+.dotcms dt,
+.dotcms dd {
+  line-height: 36px;
+  margin: 0 0 10px;
+}
+.dotcms dt {
+  float: left;
+  padding-right: 10px;
+  text-align: right;
+  width: 30%;
+}
+.dotcms dd {
+  text-align: left;
+  width: 70%;
+  margin-left: 30%;
+}
+.dotcms dd.inputCaption {
+  font-size: 11px;
+  color: #8D9DA9;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.dotcms dd .hintBox {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 11px;
+  color: #8D9DA9;
+  border: solid 1px #D1D8DD;
+  line-height: 1.5;
+  padding: 10px;
+  width: 200px;
 }

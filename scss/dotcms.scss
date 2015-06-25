@@ -20,4 +20,48 @@
   @import "layout/ContentPane";
   @import "layout/SplitContainer";
   @import "layout/TabContainer";
+
+
+  /* ===================================
+  DOTCMS STYLE GUIDE
+  =================================== */
+
+  dl {
+    margin: 0;
+  }
+
+  dt,
+  dd {
+    line-height: $field-height;
+    margin: 0 0 $field-padding;
+  }
+
+  dt {
+    float: left;
+    padding-right: $field-padding;
+    text-align:right;
+    width: 30%;
+  }
+  dd {
+    text-align:left;
+    width: 70%;
+    margin-left: 30%;
+
+    &.inputCaption {
+      @include mouse;
+      line-height: 1.5;
+      margin-bottom: $field-padding * 2;
+    }
+
+    .hintBox {
+      @include border-radius($field-border-radius);
+      @include inline-block(top);
+      @include mouse;
+      border: solid 1px $gray-ligther;
+      line-height: 1.5;
+      padding: $field-padding;
+      width: 200px;
+    }
+  }
+
 }
