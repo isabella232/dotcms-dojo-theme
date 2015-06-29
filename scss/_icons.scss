@@ -146,7 +146,8 @@
 .workflow,
 .working,
 .workStream,
-.wysiwyg {
+.wysiwyg,
+.dijit {
   &Icon {
     font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
     text-rendering: auto; // optimizelegibility throws things off #1094
@@ -311,5 +312,29 @@ $icons: (
         content: $icon;
       }
     }
+  }
+}
+
+.dijitIconTask {
+  &:before {
+    content: $fa-var-tasks;
+  }
+}
+
+.dijitIconEdit {
+  &:before {
+    content: $fa-var-edit;
+  }
+}
+
+.dijitIconSave {
+  &:before {
+    content: $fa-var-save;
+  }
+}
+
+.dijitCheckBoxIcon {
+  &:before {
+    content: $fa-var-check-square-o;
   }
 }

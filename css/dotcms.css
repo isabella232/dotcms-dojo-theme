@@ -168,7 +168,8 @@ html {
 .workflowIcon,
 .workingIcon,
 .workStreamIcon,
-.wysiwygIcon {
+.wysiwygIcon,
+.dijitIcon {
   font: normal normal normal 16px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -754,6 +755,22 @@ html {
 
 .wysiwygIcon:before {
   content: "";
+}
+
+.dijitIconTask:before {
+  content: "";
+}
+
+.dijitIconEdit:before {
+  content: "";
+}
+
+.dijitIconSave:before {
+  content: "";
+}
+
+.dijitCheckBoxIcon:before {
+  content: "";
 }
 
 .dotcms {
