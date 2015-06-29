@@ -827,11 +827,23 @@ html {
 .dotcms .dijitToggleButton {
   padding-right: 10px;
 }
-.dotcms .dijitDropDownButton .dijitButtonText,
 .dotcms .dijitButton .dijitButtonText,
+.dotcms .dijitDropDownButton .dijitButtonText,
 .dotcms .dijitToggleButton .dijitButtonText {
   line-height: 34px;
   height: 34px;
+}
+.dotcms .dijitButton {
+  background-color: #108AC8;
+  color: #fff;
+}
+.dotcms .dijitButtonHover {
+  background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitButtonFocused {
+  background-color: #68757E;
+  color: #fff;
 }
 .dotcms .dijitDropDownButton .dijitButtonText {
   margin-right: 10px;
@@ -857,8 +869,14 @@ html {
   -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
-  border: solid 1px #45545B;
   height: 36px;
+}
+.dotcms .dijitComboButton,
+.dotcms .dijitDropDownButton,
+.dotcms .dijitSelect,
+.dotcms .dijitTextBox,
+.dotcms .dijitToggleButton {
+  border: solid 1px #45545B;
 }
 .dotcms .dijitComboBox .dijitArrowButtonContainer,
 .dotcms .dijitComboButton .dijitArrowButtonInner,

@@ -15,13 +15,28 @@
   padding-right: $field-padding;
 }
 
-.dijitDropDownButton,
 .dijitButton,
+.dijitDropDownButton,
 .dijitToggleButton {
   .dijitButtonText {
     line-height: $field-height - 2px;
     height: $field-height - 2px; // Need to substract the border (top and bottom)
   }
+}
+
+.dijitButton {
+  background-color: $button-bgcolor;
+  color: $button-textcolor
+}
+
+.dijitButtonHover {
+  background-color: $button-hover-bgcolor;
+  color: $button-hover-textcolor
+}
+
+.dijitButtonFocused {
+  background-color: $button-active-bgcolor;
+  color: $button-active-textcolor
 }
 
 .dijitDropDownButton {

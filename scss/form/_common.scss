@@ -56,8 +56,15 @@ table.dijitComboButton {
 .dijitToggleButton {
   @include border-radius($field-border-radius);
   @include transition(background-color $field-animation-speed);
-  border: solid 1px $field-border-color;
   height: $field-height;
+}
+
+.dijitComboButton,
+.dijitDropDownButton,
+.dijitSelect,
+.dijitTextBox,
+.dijitToggleButton {
+  border: solid 1px $field-border-color;
 }
 
 .dijitComboBox .dijitArrowButtonContainer,
