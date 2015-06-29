@@ -836,11 +836,20 @@ html {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  height: 36px;
+}
+.dotcms .dijitButton,
+.dotcms .dijitComboButton,
+.dotcms .dijitComboButton .dijitArrowButtonInner,
+.dotcms .dijitDropDownButton,
+.dotcms .dijitDropDownButton .dijitArrowButtonInner,
+.dotcms .dijitSelect,
+.dotcms .dijitTextBox,
+.dotcms .dijitToggleButton {
   -moz-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
-  height: 36px;
 }
 .dotcms .dijitComboButton,
 .dotcms .dijitDropDownButton,
@@ -862,8 +871,11 @@ html {
 .dotcms .dijitComboButton .dijitArrowButtonInner,
 .dotcms .dijitDropDownButton .dijitArrowButtonInner,
 .dotcms .dijitSpinner .dijitSpinnerButtonContainer {
-  background-color: #45545B;
   width: 24px;
+}
+.dotcms .dijitComboButton .dijitArrowButtonInner,
+.dotcms .dijitSpinner .dijitSpinnerButtonContainer {
+  background-color: #45545B;
 }
 .dotcms .dijitComboBox .dijitArrowButtonContainer,
 .dotcms .dijitSelect .dijitArrowButtonContainer {
@@ -890,9 +902,15 @@ html {
   margin-top: -3px;
   position: absolute;
   top: 50%;
-  background-image: url("/images/ico-combobutton.svg");
   height: 6px !important;
   width: 10px;
+}
+.dotcms .dijitComboButton .dijitArrowButtonInner:before,
+.dotcms .dijitSpinner .dijitArrowButtonInner:before {
+  background-image: url("/images/ico-arrow-sm-light.svg");
+}
+.dotcms .dijitDropDownButton .dijitArrowButtonInner:before {
+  background-image: url("/images/ico-arrow-sm-dark.svg");
 }
 .dotcms .dijitDisabled {
   border-style: dotted;
@@ -982,6 +1000,18 @@ html {
 .dotcms .dijitButtonFocused {
   background-color: #68757E;
   color: #fff;
+}
+.dotcms .dijitComboButtonHover,
+.dotcms .dijitDropDownButtonHover {
+  border-color: #108AC8;
+  background-color: #108AC8;
+  color: #fff;
+}
+.dotcms .dijitComboButtonHover .dijitArrowButtonInner {
+  background-color: #1FA1D8;
+}
+.dotcms .dijitDropDownButtonHover .dijitArrowButtonInner:before {
+  background-image: url("/images/ico-arrow-sm-light.svg");
 }
 .dotcms .dijitToggleButtonHover {
   background-color: #45545B;

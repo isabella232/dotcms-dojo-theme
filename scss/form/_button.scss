@@ -39,6 +39,33 @@
   }
 }
 
+.dijitComboButton,
+.dijitDropDownButton {
+  &Hover {
+    border-color: $buttondrop-hover-bgcolor;
+    background-color: $buttondrop-hover-bgcolor;
+    color: $buttondrop-hover-textcolor;
+  }
+}
+
+.dijitComboButton {
+  &Hover {
+    .dijitArrowButtonInner {
+      background-color: $buttondrop-hover-bgcolorarrow;
+    }
+  }
+}
+
+.dijitDropDownButton {
+  &Hover {
+    .dijitArrowButtonInner {
+      &:before {
+        background-image: url("/images/ico-arrow-sm-light.svg");
+      }
+    }
+  }
+}
+
 .dijitToggleButton {
   &Hover {
     background-color: $buttontoggle-hover-bgcolor;

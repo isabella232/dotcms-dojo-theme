@@ -55,8 +55,18 @@ table.dijitComboButton {
 .dijitTextBox,
 .dijitToggleButton {
   @include border-radius($field-border-radius);
-  @include transition(background-color $field-animation-speed);
   height: $field-height;
+}
+
+.dijitButton,
+.dijitComboButton,
+.dijitComboButton .dijitArrowButtonInner,
+.dijitDropDownButton,
+.dijitDropDownButton .dijitArrowButtonInner,
+.dijitSelect,
+.dijitTextBox,
+.dijitToggleButton {
+  @include transition(background-color $field-animation-speed);
 }
 
 .dijitComboButton,
@@ -79,10 +89,14 @@ table.dijitComboButton {
 }
 
 .dijitComboButton .dijitArrowButtonInner,
-.dijitDropDownButton .dijitArrowButtonInner, // TODO: style correctly
+.dijitDropDownButton .dijitArrowButtonInner,
+.dijitSpinner .dijitSpinnerButtonContainer {
+  width: 24px;
+}
+
+.dijitComboButton .dijitArrowButtonInner,
 .dijitSpinner .dijitSpinnerButtonContainer {
   background-color: $gray-dark;
-  width: 24px;
 }
 
 .dijitComboBox,
@@ -107,9 +121,25 @@ table.dijitComboButton {
     &:before {
       content: "";
       @include center-icon(10px, 6px); // Sadly compass can't get width and height from a svg
-      background-image: url("/images/ico-combobutton.svg");
       height: 6px !important; // :( overwrite from dijit.css
       width: 10px;
+    }
+  }
+}
+
+.dijitComboButton,
+.dijitSpinner {
+  .dijitArrowButtonInner {
+    &:before {
+      background-image: url("/images/ico-arrow-sm-light.svg");
+    }
+  }
+}
+
+.dijitDropDownButton {
+  .dijitArrowButtonInner {
+    &:before {
+      background-image: url("/images/ico-arrow-sm-dark.svg");
     }
   }
 }
