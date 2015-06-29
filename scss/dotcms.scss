@@ -3,6 +3,7 @@
 @import "variables";
 @import "common";
 @import "mixins";
+@import "icons";
 
 .dotcms {
   // FORM
@@ -24,11 +25,11 @@
   @import "legacy";
 
 
+
+
   /* ===================================
-  DOTCMS STYLE GUIDE
+  DOTCMS STYLE GUIDE TODO: move to a file
   =================================== */
-
-
 
   dl {
     margin: 0;
