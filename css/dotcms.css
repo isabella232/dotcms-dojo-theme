@@ -830,52 +830,6 @@ html {
 .dotcms .dijitButton,
 .dotcms .dijitComboButton,
 .dotcms .dijitDropDownButton,
-.dotcms .dijitToggleButton {
-  margin: 0;
-}
-.dotcms .dijitButton .dijitButtonNode,
-.dotcms .dijitComboButton .dijitButtonNode,
-.dotcms .dijitDropDownButton .dijitButtonNode,
-.dotcms .dijitToggleButton .dijitButtonNode {
-  border: none;
-  padding-left: 10px;
-}
-.dotcms .dijitButton,
-.dotcms .dijitToggleButton {
-  padding-right: 10px;
-}
-.dotcms .dijitButton .dijitButtonText,
-.dotcms .dijitDropDownButton .dijitButtonText,
-.dotcms .dijitToggleButton .dijitButtonText {
-  line-height: 34px;
-  height: 34px;
-}
-.dotcms .dijitButton {
-  background-color: #108AC8;
-  color: #fff;
-}
-.dotcms .dijitButtonHover {
-  background-color: #45545B;
-  color: #fff;
-}
-.dotcms .dijitButtonFocused {
-  background-color: #68757E;
-  color: #fff;
-}
-.dotcms .dijitDropDownButton .dijitButtonText {
-  margin-right: 10px;
-}
-.dotcms .dijitCheckBox, .dotcms .dijitRadio {
-  border: solid 2px #45545B;
-  width: 16px;
-  height: 16px;
-}
-.dotcms .dijitCheckBoxChecked {
-  background: url("/images/ico-checkbox.svg") 1px 2px no-repeat;
-}
-.dotcms .dijitButton,
-.dotcms .dijitComboButton,
-.dotcms .dijitDropDownButton,
 .dotcms .dijitSelect,
 .dotcms .dijitTextBox,
 .dotcms .dijitToggleButton {
@@ -894,6 +848,7 @@ html {
 .dotcms .dijitTextBox,
 .dotcms .dijitToggleButton {
   border: solid 1px #45545B;
+  color: #45545B;
 }
 .dotcms .dijitComboBox .dijitArrowButtonContainer,
 .dotcms .dijitComboButton .dijitArrowButtonInner,
@@ -992,6 +947,61 @@ html {
   font-size: 14px;
   color: #45545B;
   padding: 5px 10px;
+}
+.dotcms .dijitButton,
+.dotcms .dijitComboButton,
+.dotcms .dijitDropDownButton,
+.dotcms .dijitToggleButton {
+  margin: 0;
+}
+.dotcms .dijitButton .dijitButtonNode,
+.dotcms .dijitComboButton .dijitButtonNode,
+.dotcms .dijitDropDownButton .dijitButtonNode,
+.dotcms .dijitToggleButton .dijitButtonNode {
+  border: none;
+  padding-left: 10px;
+}
+.dotcms .dijitButton,
+.dotcms .dijitToggleButton {
+  padding-right: 10px;
+}
+.dotcms .dijitButton .dijitButtonText,
+.dotcms .dijitDropDownButton .dijitButtonText,
+.dotcms .dijitToggleButton .dijitButtonText {
+  line-height: 34px;
+  height: 34px;
+}
+.dotcms .dijitButton {
+  background-color: #108AC8;
+  color: #fff;
+}
+.dotcms .dijitButtonHover {
+  background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitButtonFocused {
+  background-color: #68757E;
+  color: #fff;
+}
+.dotcms .dijitToggleButtonHover {
+  background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitToggleButtonChecked {
+  border-color: #68757E;
+  background-color: #68757E;
+  color: #fff;
+}
+.dotcms .dijitDropDownButton .dijitButtonText {
+  margin-right: 10px;
+}
+.dotcms .dijitCheckBox, .dotcms .dijitRadio {
+  border: solid 2px #45545B;
+  width: 16px;
+  height: 16px;
+}
+.dotcms .dijitCheckBoxChecked {
+  background: url("/images/ico-checkbox.svg") 1px 2px no-repeat;
 }
 .dotcms .dijitRadio {
   -moz-border-radius: 8px;

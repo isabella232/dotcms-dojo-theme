@@ -7,9 +7,9 @@
 
 .dotcms {
   // FORM
+  @import "form/common";
   @import "form/button";
   @import "form/checkbox";
-  @import "form/common";
   @import "form/numberSpinner";
   @import "form/radioButton";
   @import "form/select";

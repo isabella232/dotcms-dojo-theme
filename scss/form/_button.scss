@@ -26,17 +26,30 @@
 
 .dijitButton {
   background-color: $button-bgcolor;
-  color: $button-textcolor
+  color: $button-textcolor;
+
+  &Hover {
+    background-color: $button-hover-bgcolor;
+    color: $button-hover-textcolor
+  }
+
+  &Focused {
+    background-color: $button-active-bgcolor;
+    color: $button-active-textcolor
+  }
 }
 
-.dijitButtonHover {
-  background-color: $button-hover-bgcolor;
-  color: $button-hover-textcolor
-}
+.dijitToggleButton {
+  &Hover {
+    background-color: $buttontoggle-hover-bgcolor;
+    color: $buttontoggle-hover-textcolor;
+  }
 
-.dijitButtonFocused {
-  background-color: $button-active-bgcolor;
-  color: $button-active-textcolor
+  &Checked {
+    border-color: $button-active-bgcolor;
+    background-color: $button-active-bgcolor;
+    color: $button-active-textcolor
+  }
 }
 
 .dijitDropDownButton {
