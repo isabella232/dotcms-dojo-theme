@@ -836,6 +836,7 @@ html {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  font-size: 14px;
   height: 36px;
 }
 .dotcms .dijitButton,
@@ -993,8 +994,16 @@ html {
   background-color: #108AC8;
   color: #fff;
 }
+.dotcms .dijitButton.alt {
+  background-color: #D1D8DD;
+  color: #68757E;
+}
 .dotcms .dijitButtonHover {
   background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitButtonHover.alt {
+  background-color: #8D9DA9;
   color: #fff;
 }
 .dotcms .dijitButtonFocused {
@@ -1013,6 +1022,9 @@ html {
 .dotcms .dijitDropDownButtonHover .dijitArrowButtonInner:before {
   background-image: url("/images/ico-arrow-sm-light.svg");
 }
+.dotcms .dijitDropDownButton .dijitButtonText {
+  margin-right: 10px;
+}
 .dotcms .dijitToggleButtonHover {
   background-color: #45545B;
   color: #fff;
@@ -1021,9 +1033,6 @@ html {
   border-color: #68757E;
   background-color: #68757E;
   color: #fff;
-}
-.dotcms .dijitDropDownButton .dijitButtonText {
-  margin-right: 10px;
 }
 .dotcms .dijitCheckBox, .dotcms .dijitRadio {
   border: solid 2px #45545B;
@@ -1448,6 +1457,9 @@ html {
   border-collapse: collapse;
   margin: 0 auto;
   width: 100%;
+}
+.dotcms .listingTable a {
+  color: #45545B;
 }
 .dotcms .listingTable tr.selected {
   background-color: #D1D8DD;

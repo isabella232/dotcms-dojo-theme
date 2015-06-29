@@ -74,6 +74,10 @@
     margin: 0 auto;
     width: 100%;
 
+    a {
+      color: $text-color;
+    }
+
     tr {
       &.selected {
         background-color: $gray-ligther;

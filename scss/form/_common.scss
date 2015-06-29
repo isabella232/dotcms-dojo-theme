@@ -55,6 +55,7 @@ table.dijitComboButton {
 .dijitTextBox,
 .dijitToggleButton {
   @include border-radius($field-border-radius);
+  font-size: $body-size;
   height: $field-height;
 }
 
