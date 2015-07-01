@@ -1,10 +1,15 @@
 var gulp = require('gulp');
 var compass = require('gulp-compass');
 var connect = require('gulp-connect');
+var cors = require('cors');
 
 gulp.task('webserver', function() {
   connect.server({
-    livereload: true
+    livereload: true,
+    port: 3000,
+    middleware: function() {
+      return [cors()];
+    }
   });
 });
 
