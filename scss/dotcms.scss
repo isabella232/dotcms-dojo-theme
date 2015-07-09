@@ -27,6 +27,8 @@ body {
   @import "dijit/layout/SplitContainer";
   @import "dijit/layout/TabContainer";
 
+  @import "dijit/menu";
+
   // BACKEND
   @import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
   @import "backend/common";

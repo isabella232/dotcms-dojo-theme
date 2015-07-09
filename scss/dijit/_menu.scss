@@ -1,0 +1,95 @@
+// TODO round menu corners
+
+%selected {
+  background-color: $menu-item-selected-bgcolor;
+  color: $menu-item-selected-textcolor;
+}
+
+%hover { // needs to be the last one to avoid focused and selected to override
+  background-color: $menu-item-hover-bgcolor;
+  color: $menu-item-hover-textcolor
+}
+
+%focused {
+  @extend %selected;
+}
+
+.dijitComboBoxMenuPopup {
+  .dijitMenuItem {
+    line-height: $field-height;
+    padding: 0 10px;
+  }
+}
+
+.dijitMenu {
+  margin-top: 2px;
+  background-color: $menu-bgcolor;
+  border: solid $menu-item-separator-width $menu-item-separator-color;
+
+  .dijitMenuItem {
+    border-bottom: solid $menu-item-separator-width $menu-item-separator-color;
+    height: $field-height;
+  }
+
+  &ArrowCell {
+    .dijitIcon {
+      margin-right: $basic-padding;
+      text-align: right;
+      vertical-align: baseline;
+    }
+  }
+
+}
+
+.dijitMenuItem {
+
+  &Selected,
+  &Hover {
+    @extend %hover;
+  }
+
+  .dijitMenuItemIconCell {
+    padding-left: $basic-padding;
+    width: $icon-size;
+  }
+}
+
+.dijitMenuBar {
+  border: solid $menu-item-separator-width $gray-ligther;
+
+  .dijitMenuItem {
+    padding: 5px;
+  }
+}
+
+.dijitTimePicker {
+  margin-top: 2px;
+  background-color: $menu-bgcolor;
+  border: solid $menu-item-separator-width $menu-item-separator-color;
+
+  &Item {
+    line-height: $field-height;
+    height: $field-height;
+    color: $text-color;
+    border-bottom: solid $menu-item-separator-width $menu-item-separator-color;
+
+    &Hover {
+      @extend %hover;
+    }
+
+    &Selected {
+      .dijitTimePickerItemInner {
+        @extend %selected;
+      }
+    }
+
+    &Inner {
+      padding: 0
+    }
+  }
+
+  &Marker {
+    font-weight: bold;
+    background-color: transparent;
+  }
+}

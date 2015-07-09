@@ -163,9 +163,15 @@ table.dijitComboButton {
 }
 
 .dijitIcon {
-  width: $field-icon-size;
-  height: $field-icon-size;
+  width: $icon-size;
+  height: $icon-size;
   margin-right: $field-padding / 2;
+}
+
+.dijitNoIcon {
+  width: auto;
+  height: auto;
+  margin-right: 0;
 }
 
 .dijitTextBox {

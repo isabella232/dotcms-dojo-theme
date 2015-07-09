@@ -333,6 +333,42 @@ $icons: (
   }
 }
 
+.dijitIconCut {
+  &:before {
+    content: $fa-var-cut;
+  }
+}
+
+.dijitIconCopy {
+  &:before {
+    content: $fa-var-copy;
+  }
+}
+
+.dijitIconPaste {
+  &:before {
+    content: $fa-var-paste;
+  }
+}
+
+.dijitIconUndo {
+  &:before {
+    content: $fa-var-undo;
+  }
+}
+
+.dijitIconDelete {
+  &:before {
+    content: $fa-var-remove;
+  }
+}
+
+.dijitMenuExpand {
+  &:before {
+    content: $fa-var-angle-right;
+  }
+}
+
 .dijitCheckBoxIcon {
   &:before {
     content: $fa-var-check-square-o;

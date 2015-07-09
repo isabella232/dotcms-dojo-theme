@@ -769,6 +769,30 @@ html {
   content: "";
 }
 
+.dijitIconCut:before {
+  content: "";
+}
+
+.dijitIconCopy:before {
+  content: "";
+}
+
+.dijitIconPaste:before {
+  content: "";
+}
+
+.dijitIconUndo:before {
+  content: "";
+}
+
+.dijitIconDelete:before {
+  content: "";
+}
+
+.dijitMenuExpand:before {
+  content: "";
+}
+
 .dijitCheckBoxIcon:before {
   content: "";
 }
@@ -938,6 +962,11 @@ body {
   height: 16px;
   margin-right: 5px;
 }
+.dotcms .dijitNoIcon {
+  width: auto;
+  height: auto;
+  margin-right: 0;
+}
 .dotcms .dijitTextBox {
   padding: 0 10px;
 }
@@ -1100,12 +1129,6 @@ body {
   background-color: #D1D8DD;
   font-weight: bold;
 }
-.dotcms .dijitMenuBar {
-  border: solid 1px #D1D8DD;
-}
-.dotcms .dijitMenuItem {
-  padding: 5px;
-}
 .dotcms .dijitTabContainerTop-tabs,
 .dotcms .dijitTabContainerBottom-tabs {
   padding-left: 1px;
@@ -1151,6 +1174,60 @@ body {
 }
 .dotcms .dijitTabPane {
   padding: 0 20px;
+}
+.dotcms .dijitTimePickerItemSelected .dijitTimePickerItemInner {
+  background-color: #108AC8;
+  color: #fff;
+}
+.dotcms .dijitMenuItemSelected, .dotcms .dijitMenuItemHover, .dotcms .dijitTimePickerItemHover {
+  background-color: rgba(16, 138, 200, 0.15);
+  color: #45545B;
+}
+.dotcms .dijitComboBoxMenuPopup .dijitMenuItem {
+  line-height: 36px;
+  padding: 0 10px;
+}
+.dotcms .dijitMenu {
+  margin-top: 2px;
+  background-color: #fff;
+  border: solid 1px #D1D8DD;
+}
+.dotcms .dijitMenu .dijitMenuItem {
+  border-bottom: solid 1px #D1D8DD;
+  height: 36px;
+}
+.dotcms .dijitMenuArrowCell .dijitIcon {
+  margin-right: 10px;
+  text-align: right;
+  vertical-align: baseline;
+}
+.dotcms .dijitMenuItem .dijitMenuItemIconCell {
+  padding-left: 10px;
+  width: 16px;
+}
+.dotcms .dijitMenuBar {
+  border: solid 1px #D1D8DD;
+}
+.dotcms .dijitMenuBar .dijitMenuItem {
+  padding: 5px;
+}
+.dotcms .dijitTimePicker {
+  margin-top: 2px;
+  background-color: #fff;
+  border: solid 1px #D1D8DD;
+}
+.dotcms .dijitTimePickerItem {
+  line-height: 36px;
+  height: 36px;
+  color: #45545B;
+  border-bottom: solid 1px #D1D8DD;
+}
+.dotcms .dijitTimePickerItemInner {
+  padding: 0;
+}
+.dotcms .dijitTimePickerMarker {
+  font-weight: bold;
+  background-color: transparent;
 }
 .dotcms #doc, .dotcms #doc2, .dotcms #doc3, .dotcms #doc4, .dotcms .yui-t1, .dotcms .yui-t2, .dotcms .yui-t3, .dotcms .yui-t4, .dotcms .yui-t5, .dotcms .yui-t6, .dotcms .yui-t7 {
   margin: auto;
@@ -3263,9 +3340,6 @@ body {
 }
 .dotcms ul.withBullets li {
   list-style: circle;
-}
-.dotcms td.dijitMenuArrowCell {
-  width: 30px;
 }
 .dotcms a.fakeDojoButton {
   background: #ffffff url(images/buttonEnabled.png) repeat-x scroll left bottom;

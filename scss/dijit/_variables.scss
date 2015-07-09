@@ -19,6 +19,7 @@ $text-color: $gray-dark;
 // FORMS
 
 // Common
+$basic-padding: 10px;
 $field-animation-speed: .25s;
 $field-border-color: $gray-dark;
 $field-border-radius: 2px;
@@ -26,9 +27,9 @@ $field-border-size: 1px;
 $field-disabled-border-color: rgba($gray-dark, .4);
 $field-disabled-text-color: rgba($gray-dark, .4);
 $field-height: 36px;
-$field-icon-size: 16px;
-$field-padding: 10px;
+$field-padding: $basic-padding;
 $field-placeholder-color: rgba($gray-dark, .4);
+$icon-size: 16px;
 
 // Buttons
 $button-active-bgcolor: $gray;
@@ -59,3 +60,13 @@ $textbox-hover-shadow-size: 10px;
 $check-radio-border-width: 2px;
 $check-radio-radius: 2px;
 $check-radio-size: 16px;
+
+// Menus
+$menu-bgcolor: $white;
+$menu-item-bgcolor: $menu-bgcolor;
+$menu-item-separator-width: 1px;
+$menu-item-separator-color: $gray-ligther;
+$menu-item-hover-bgcolor: rgba($blue, 0.15);
+$menu-item-hover-textcolor: $gray-dark;
+$menu-item-selected-bgcolor: $blue;
+$menu-item-selected-textcolor: $white;
