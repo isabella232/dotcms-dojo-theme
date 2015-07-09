@@ -1175,6 +1175,121 @@ body {
 .dotcms .dijitTabPane {
   padding: 0 20px;
 }
+.dotcms .dijitA11ySideArrow {
+  display: none;
+}
+.dotcms .dijitCalendarArrow {
+  cursor: pointer;
+}
+.dotcms .dijitCalendarDayLabelTemplate, .dotcms .dijitCalendarDateTemplate {
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+.dotcms .dijitCalendarDayLabelTemplate {
+  background-color: #108AC8;
+  color: #fff;
+  font-weight: bold;
+}
+.dotcms .dijitCalendarHoveredDate {
+  background-color: rgba(16, 138, 200, 0.15);
+  color: #45545B;
+}
+.dotcms .dijitCalendarIncrementControl {
+  position: relative;
+  width: 36px;
+}
+.dotcms .dijitCalendarIncrementControl:before {
+  content: "";
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  background-image: url("/images/ico-arrow-sm-light.svg");
+  height: 6px;
+  width: 10px;
+}
+.dotcms .dijitCalendarDecrease {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.dotcms .dijitCalendarIncrease {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.dotcms .dijitCalendarMonthContainer {
+  background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitCalendarMonthContainer .dijitDropDownButton {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner {
+  background-color: transparent;
+  height: 36px;
+}
+.dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner:before {
+  background-image: url("/images/ico-arrow-sm-light.svg");
+}
+.dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner .dijitButtonText {
+  height: 36px;
+  line-height: 36px;
+}
+.dotcms .dijitCalendarMonthMenu.dijitMenu {
+  margin: 0;
+}
+.dotcms .dijitCalendarMonthLabel {
+  border-bottom: solid 1px #D1D8DD;
+  height: 36px;
+  line-height: 36px;
+}
+.dotcms .dijitCalendarMonthLabel:last-child {
+  border-bottom: none;
+}
+.dotcms .dijitCalendarPreviousMonth, .dotcms .dijitCalendarNextMonth {
+  background-color: rgba(209, 216, 221, 0.6);
+  color: #D1D8DD;
+}
+.dotcms .dijitCalendarPreviousMonth.dijitCalendarHoveredDate, .dotcms .dijitCalendarNextMonth.dijitCalendarHoveredDate {
+  background-color: rgba(209, 216, 221, 0.6);
+  color: #8D9DA9;
+}
+.dotcms .dijitCalendarNextYear, .dotcms .dijitCalendarPreviousYear {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dotcms .dijitCalendarSelectedDate {
+  background-color: #F3762A;
+  color: #fff;
+}
+.dotcms .dijitCalendarSelectedYear {
+  color: #fff;
+  font-weight: bold;
+}
+.dotcms .dijitCalendarYearLabel {
+  background-color: #45545B;
+  display: table;
+  height: 36px;
+  width: 100%;
+}
+.dotcms .dijitCalendarYearLabel span {
+  display: table-cell;
+  margin: 0;
+  text-align: center;
+}
 .dotcms .dijitTimePickerItemSelected .dijitTimePickerItemInner {
   background-color: #108AC8;
   color: #fff;

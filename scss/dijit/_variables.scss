@@ -5,6 +5,7 @@ $blue: #108AC8;
 $gray-dark: #45545B;
 $gray-ligth: #8D9DA9;
 $gray-ligther: #D1D8DD;
+$gray-ligthest: rgba($gray-ligther, 0.6);
 $gray: #68757E;
 $green-ligth: #77BE61;
 $green: #4A9D51;
@@ -50,7 +51,6 @@ $buttondrop-hover-bgcolor: $blue;
 $buttondrop-hover-bgcolorarrow: $blue-light;
 $buttondrop-hover-textcolor: $white;
 
-
 // Text Fields
 $textbox-focus-color: $blue;
 $textbox-hover-shadow-color: rgba($gray, 0.1);
@@ -70,3 +70,25 @@ $menu-item-hover-bgcolor: rgba($blue, 0.15);
 $menu-item-hover-textcolor: $gray-dark;
 $menu-item-selected-bgcolor: $blue;
 $menu-item-selected-textcolor: $white;
+
+// Calendar
+$calendar-item-size: $field-height;
+
+$calendar-month-bgcolor: $gray-dark;
+$calendar-month-textcolor: $white;
+
+$calendar-weekday-label-bgcolor: $blue;
+$calendar-weekday-label-textcolor: $white;
+
+$calendar-date-hover-bgcolor: rgba($blue, 0.15);
+$calendar-date-hover-textcolor: $text-color;
+$calendar-date-seleted-bgcolor: $orange;
+$calendar-date-seleted-textcolor: $white;
+
+$calendar-prev-next-month-date-bgcolor: $gray-ligthest;
+$calendar-prev-next-month-date-textcolor: $gray-ligther;
+$calendar-prev-next-month-date-hover-bgcolor: $gray-ligthest;
+$calendar-prev-next-month-date-hover-textcolor: $gray-ligth;
+
+$calendar-year-label-bgcolor: $gray-dark;
+$calendar-year-label-textcolor: $white;

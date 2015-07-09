@@ -1,0 +1,131 @@
+.dijitA11ySideArrow {
+  display: none;
+}
+
+.dijitCalendar {
+
+  &Arrow {
+    cursor: pointer;
+  }
+
+  &DayLabelTemplate,
+  &DateTemplate {
+    @include transition(background-color $field-animation-speed);
+    width: $calendar-item-size;
+    height: $calendar-item-size;
+    text-align: center;
+  }
+
+  &DayLabelTemplate {
+    background-color: $calendar-weekday-label-bgcolor;
+    color: $calendar-weekday-label-textcolor;
+    font-weight: bold;
+  }
+
+  &HoveredDate {
+    background-color: $calendar-date-hover-bgcolor;
+    color: $calendar-date-hover-textcolor;
+  }
+
+  &IncrementControl {
+    position: relative;
+    width: $calendar-item-size;
+
+    &:before {
+      content: "";
+      @include center-icon(10px, 6px); // Sadly compass can't get width and height from a svg
+      background-image: url("/images/ico-arrow-sm-light.svg");
+      height: 6px;
+      width: 10px;
+    }
+  }
+
+  &Decrease {
+    @include rotate(90deg);
+  }
+
+  &Increase {
+    @include rotate(-90deg);
+  }
+
+  &MonthContainer {
+    background-color: $calendar-month-bgcolor;
+    color: $calendar-month-textcolor;
+
+    .dijitDropDownButton {
+      @include border-radius(0);
+      border: none;
+      background-color: rgba($white, 0.1);
+      color: $white;
+
+      .dijitArrowButtonInner {
+        background-color: transparent;
+        height: $calendar-item-size;
+
+        &:before {
+          background-image: url("/images/ico-arrow-sm-light.svg");
+        }
+
+        .dijitButtonText {
+          height: $calendar-item-size;
+          line-height: $calendar-item-size;
+        }
+      }
+    }
+  }
+
+  // Popup menu months
+  &MonthMenu.dijitMenu {
+    margin: 0; // removing the top margin from _menu.scss
+  }
+
+  // Popup menu months item
+  &MonthLabel {
+    border-bottom: solid 1px $gray-ligther;
+    height: $calendar-item-size;
+    line-height: $calendar-item-size;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &PreviousMonth,
+  &NextMonth {
+    background-color: $calendar-prev-next-month-date-bgcolor;
+    color: $calendar-prev-next-month-date-textcolor;
+
+    &.dijitCalendarHoveredDate {
+      background-color: $calendar-prev-next-month-date-hover-bgcolor;
+      color: $calendar-prev-next-month-date-hover-textcolor;
+    }
+  }
+
+  &NextYear,
+  &PreviousYear {
+    color: rgba($calendar-year-label-textcolor, 0.5);
+  }
+
+  &SelectedDate {
+    background-color: $calendar-date-seleted-bgcolor;
+    color: $calendar-date-seleted-textcolor;
+  }
+
+  &SelectedYear {
+    color: $calendar-year-label-textcolor;
+    font-weight: bold;
+  }
+
+  &YearLabel {
+    background-color: $calendar-year-label-bgcolor;
+    display: table;
+    height: $calendar-item-size;
+    width: 100%;
+
+    span {
+      display: table-cell;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
