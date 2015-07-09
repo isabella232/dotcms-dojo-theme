@@ -18,7 +18,8 @@ gulp.task('compass', function() {
     .pipe(compass({
       config_file: './config.rb',
       css: 'css',
-      sass: 'scss'
+      sass: 'scss',
+      sourcemap: true
     }))
     .on('error', function(err) {})
     .pipe(connect.reload());

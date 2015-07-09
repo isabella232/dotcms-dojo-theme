@@ -1,0 +1,25 @@
+.headerBox {
+  padding: 0;
+  @include background-image(linear-gradient(to bottom, rgba($gray-ligther, 0.4) 0%, rgba($gray-ligther, 0.4) 56px, $gray-ligther 56px, $gray-ligther 57px, #ffffff 57px, #ffffff 100%));
+}
+
+.lineRight {
+  border-right: 1px solid $gray-ligther;
+}
+
+.shadowBox {
+  border: 1px solid $gray-ligther;
+}
+
+// Not sure if this is part of the Workflow page or the splitview component
+.buttonBoxLeft {
+  position: absolute;
+  left: 35px;
+  height: 56px;
+  z-index: 10;
+  line-height: 56px;
+
+  h3 {
+    margin: 0;
+  }
+}

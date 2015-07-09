@@ -1,141 +1,34 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import "compass";
-@import "variables";
-@import "common";
-@import "mixins";
-@import "icons";
+@import "dijit/mixins";
+@import "dijit/variables";
+@import "dijit/common";
+@import "dijit/icons";
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .dotcms {
   // FORM
-  @import "form/common";
-  @import "form/button";
-  @import "form/checkbox";
-  @import "form/numberSpinner";
-  @import "form/radioButton";
-  @import "form/select";
-  @import "form/slider";
+  @import "dijit/form/common";
+  @import "dijit/form/button";
+  @import "dijit/form/checkbox";
+  @import "dijit/form/numberSpinner";
+  @import "dijit/form/radioButton";
+  @import "dijit/form/select";
+  @import "dijit/form/slider";
 
   // LAYOUT
-  @import "layout/AccordionContainer";
-  @import "layout/BorderContainer";
-  @import "layout/ContentPane";
-  @import "layout/SplitContainer";
-  @import "layout/TabContainer";
-
-  // THINGS WE ARE GOING TO GET RID OFF
-  @import "legacy";
+  @import "dijit/layout/AccordionContainer";
+  @import "dijit/layout/BorderContainer";
+  @import "dijit/layout/ContentPane";
+  @import "dijit/layout/SplitContainer";
+  @import "dijit/layout/TabContainer";
 
   // BACKEND
+  @import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
   @import "backend/common";
-
-
-  /* ===================================
-  DOTCMS STYLE GUIDE TODO: move to a file
-  =================================== */
-
-  dl {
-    margin: 0;
-  }
-
-  dt,
-  dd {
-    line-height: $field-height;
-    margin: 0 0 $field-padding;
-  }
-
-  dt {
-    float: left;
-    padding-right: $field-padding;
-    text-align:right;
-    width: 30%;
-  }
-  dd {
-    text-align:left;
-    width: 70%;
-    margin-left: 30%;
-
-    &.inputCaption {
-      @include mouse;
-      line-height: 1.5;
-      margin-bottom: $field-padding * 2;
-    }
-
-    .hintBox {
-      @include border-radius($field-border-radius);
-      @include inline-block(top);
-      @include mouse;
-      border: solid 1px $gray-ligther;
-      line-height: 1.5;
-      padding: $field-padding;
-      width: 200px;
-    }
-  }
-  .listingTable {
-    border: 1px solid $gray-ligther;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 100%;
-
-    a {
-      color: $text-color;
-    }
-
-    tr {
-      &.selected {
-        background-color: $gray-ligther;
-      }
-
-      &.alternate_1 {
-        cursor: pointer;
-      }
-
-      &.alternate_2 {
-        background: rgba($gray-ligth, 0.25);
-        cursor: pointer;
-      }
-
-      &.alternate_1,
-      &.alternate_2 {
-        &:hover {
-          background-color: rgba($blue, 0.15);
-        }
-      }
-    }
-
-    th, td {
-      padding: 8px 10px;
-      border: 1px solid $gray-ligther;
-      border-top: none;
-
-      a {
-        text-decoration: none;
-      }
-
-      table tr {
-        border:none;
-      }
-    }
-
-    th {
-      font-weight: bold;
-      background: $gray-ligther;
-    }
-  }
-
-  .portlet-toolbar {
-    padding: 10px 0;
-  }
-
-  .buttonRow {
-    text-align: center;
-    padding: 10px 0;
-    line-height: $field-height;
-  }
-
-  .noResultsMessage {
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-  }
 
 }

@@ -13,16 +13,6 @@
 #doc4 {
   min-width: 970px;
 }
-#hd {
-  margin-top: 45px;
-}
-#bd {
-  @include box-shadow(0 -1px 6px rgba(0, 0, 0, 0.2));
-  background: #fff;
-  border: 1px solid #c9c9c9;
-  border-top: 0;
-  padding: 10px 0;
-}
 #ft {
   padding: 0;
   margin: 0;
@@ -48,19 +38,6 @@ dd {
   dd {
     margin-left: 50%;
   }
-}
-input {
-  color: #555555;
-  padding: 2px 5px 0;
-}
-select {
-  font-size: 93%;
-  padding: 2px;
-  color: #555;
-}
-fieldset {
-  border: 1px solid #ccc;
-  padding: 20px;
 }
 legend {
   font-weight: bold;

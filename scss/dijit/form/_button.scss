@@ -69,6 +69,7 @@
 .dijitDropDownButton {
   &Hover {
     .dijitArrowButtonInner {
+      background-color: $buttondrop-hover-bgcolor;
       &:before {
         background-image: url("/images/ico-arrow-sm-light.svg");
       }
