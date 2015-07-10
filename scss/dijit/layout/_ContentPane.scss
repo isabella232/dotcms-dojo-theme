@@ -1,0 +1,54 @@
+.dijitTitlePane {
+  @include border-radius($border-radius);
+
+  &ContentOuter {
+    border: solid $panel-border-size $panel-border-color;
+    border-top: none;
+    padding: 1px $basic-padding 0;
+  }
+
+  &Title {
+    @include transition(background-color, color, $field-animation-speed);
+    background-color: $panel-title-close-bgcolor;
+    color: $panel-title-close-textcolor;
+
+    &Closed {
+      .dijitArrowNode {
+        &:before {
+          @include transform(rotate(-90deg));
+        }
+      }
+    }
+
+    .dijitArrowNode {
+      margin-right: $basic-padding;
+      position: relative;
+      height: 6px;
+      width: 10px;
+
+      &:before {
+        @include transition(transform $field-animation-speed);
+        @include center-icon(10px, 6px); // Sadly compass can't get width and height from a svg
+        background-image: url("/images/ico-arrow-sm-light.svg");
+        content: "";
+        height: 6px;
+        width: 10px;
+      }
+    }
+
+    &Open {
+      background-color: $panel-title-open-bgcolor;
+      color: $panel-title-open-textcolor;
+    }
+
+    &Hover {
+      background-color: $panel-title-hover-bgcolor;
+      color: $panel-title-hover-textcolor;
+    }
+
+    &Focus {
+      padding: 0 $basic-padding;
+      line-height: $field-height;
+    }
+  }
+}

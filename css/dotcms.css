@@ -1185,6 +1185,63 @@ body {
   background-color: #D1D8DD;
   font-weight: bold;
 }
+.dotcms .dijitTitlePane {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.dotcms .dijitTitlePaneContentOuter {
+  border: solid 1px #D1D8DD;
+  border-top: none;
+  padding: 1px 10px 0;
+}
+.dotcms .dijitTitlePaneTitle {
+  -moz-transition: background-color, color, 0.25s;
+  -o-transition: background-color, color, 0.25s;
+  -webkit-transition: background-color, color, 0.25s;
+  transition: background-color, color, 0.25s;
+  background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitTitlePaneTitleClosed .dijitArrowNode:before {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.dotcms .dijitTitlePaneTitle .dijitArrowNode {
+  margin-right: 10px;
+  position: relative;
+  height: 6px;
+  width: 10px;
+}
+.dotcms .dijitTitlePaneTitle .dijitArrowNode:before {
+  -moz-transition: -moz-transform 0.25s;
+  -o-transition: -o-transform 0.25s;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  background-image: url("/images/ico-arrow-sm-light.svg");
+  content: "";
+  height: 6px;
+  width: 10px;
+}
+.dotcms .dijitTitlePaneTitleOpen {
+  background-color: #45545B;
+  color: #fff;
+}
+.dotcms .dijitTitlePaneTitleHover {
+  background-color: #108AC8;
+  color: #fff;
+}
+.dotcms .dijitTitlePaneTitleFocus {
+  padding: 0 10px;
+  line-height: 36px;
+}
 .dotcms .dijitTabContainerTop-tabs,
 .dotcms .dijitTabContainerBottom-tabs {
   padding-left: 1px;

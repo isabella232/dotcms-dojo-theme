@@ -17,20 +17,24 @@ $body-size: 14px;
 $body-text: 'Open Sans', sans-serif;
 $text-color: $gray-dark;
 
+// Basic stuffs
+$border-radius: 2px;
+$icon-size: 16px;
+$basic-padding: 10px;
+
 // FORMS
 
 // Common
-$basic-padding: 10px;
 $field-animation-speed: .25s;
 $field-border-color: $gray-dark;
-$field-border-radius: 2px;
+$field-border-radius: $border-radius;
 $field-border-size: 1px;
 $field-disabled-border-color: rgba($gray-dark, .4);
 $field-disabled-text-color: rgba($gray-dark, .4);
 $field-height: 36px;
 $field-padding: $basic-padding;
 $field-placeholder-color: rgba($gray-dark, .4);
-$icon-size: 16px;
+
 
 // Buttons
 $button-active-bgcolor: $gray;
@@ -106,3 +110,13 @@ $calendar-prev-next-month-date-hover-textcolor: $gray-ligth;
 
 $calendar-year-label-bgcolor: $gray-dark;
 $calendar-year-label-textcolor: $white;
+
+// Content Panel
+$panel-border-color: $gray-ligther;
+$panel-border-size: 1px;
+$panel-title-open-bgcolor: $gray-dark;
+$panel-title-open-textcolor: $white;
+$panel-title-hover-bgcolor: $blue;
+$panel-title-hover-textcolor: $white;
+$panel-title-close-bgcolor: $gray-dark;
+$panel-title-close-textcolor: $white;
