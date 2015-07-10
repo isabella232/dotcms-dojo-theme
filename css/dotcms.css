@@ -1115,6 +1115,62 @@ body {
 .dotcms .dijitComboBox .dijitValidationContainer {
   display: none;
 }
+.dotcms .dijitRuleLabel {
+  -moz-transition: color, 0.25s;
+  -o-transition: color, 0.25s;
+  -webkit-transition: color, 0.25s;
+  transition: color, 0.25s;
+  color: #8D9DA9;
+}
+.dotcms .dijitRuleMark {
+  -moz-transition: border-color, 0.25s;
+  -o-transition: border-color, 0.25s;
+  -webkit-transition: border-color, 0.25s;
+  transition: border-color, 0.25s;
+  border-color: #8D9DA9;
+}
+.dotcms .dijitSliderHover .dijitRuleLabel {
+  color: #45545B;
+}
+.dotcms .dijitSliderHover .dijitRuleMark {
+  border-color: #45545B;
+}
+.dotcms .dijitSliderImageHandle {
+  -moz-transition: -moz-transform, border-color, backgroun-color, 0.25s;
+  -o-transition: -o-transform, border-color, backgroun-color, 0.25s;
+  -webkit-transition: -webkit-transform, border-color, backgroun-color, 0.25s;
+  transition: transform, border-color, backgroun-color, 0.25s;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: solid 2px #45545B;
+  height: 16px;
+  top: -7px;
+  width: 16px;
+}
+.dotcms .dijitSliderThumbHover {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.dotcms .dijitSliderThumbFocused {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  border-color: #fff;
+  background-color: #45545B;
+}
+.dotcms .dijitSliderBottomBumper, .dotcms .dijitSliderLeftBumper, .dotcms .dijitSliderProgressBar {
+  background-color: #45545B;
+  border: none;
+}
+.dotcms .dijitSliderRemainingBar, .dotcms .dijitSliderRightBumper, .dotcms .dijitSliderTopBumper {
+  background-color: #D1D8DD;
+  border: none;
+}
 .dotcms .dijitAccordionContainer {
   border: none;
 }

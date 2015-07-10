@@ -61,6 +61,20 @@ $check-radio-border-width: 2px;
 $check-radio-radius: 2px;
 $check-radio-size: 16px;
 
+// Sliders
+$slide-handle-bordercolor: $gray-dark;
+$slide-handle-bordersize: 2px;
+$slide-handle-color: $white;
+$slide-handle-focused-bordercolor: $white;
+$slide-handle-focused-color: $gray-dark;
+$slide-mark-color: $gray-ligth;
+$slide-mark-hover-color: $gray-dark;
+$slide-rule-color: $gray-ligth;
+$slide-rule-hover-color: $gray-dark;
+$slider-handle-size: 16px;
+$slider-progress-color: $gray-dark;
+$slider-remaining-color: $gray-ligther;
+
 // Menus
 $menu-bgcolor: $white;
 $menu-item-bgcolor: $menu-bgcolor;

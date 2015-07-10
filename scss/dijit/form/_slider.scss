@@ -1,0 +1,60 @@
+.dijit {
+
+  &Rule {
+    &Label {
+      @include transition(color, $field-animation-speed);
+      color: $slide-rule-color;
+    }
+    &Mark {
+      @include transition(border-color, $field-animation-speed);
+      border-color: $slide-mark-color;
+    }
+  }
+
+  &Slider {
+    &Hover {
+      .dijitRuleLabel {
+        color: $slide-rule-hover-color;
+      }
+
+      .dijitRuleMark {
+        border-color: $slide-mark-hover-color;
+      }
+    }
+
+    &ImageHandle {
+      @include transition(transform, border-color, backgroun-color, $field-animation-speed);
+      @include border-radius($slider-handle-size / 2);
+      background-color: $slide-handle-color;
+      border: solid $slide-handle-bordersize $slide-handle-bordercolor;
+      height: $slider-handle-size;
+      top: -($slider-handle-size / 2) + 1; // TODO: +1 needs to be remove at some point
+      width: $slider-handle-size;
+    }
+
+    &ThumbHover {
+      @include transform(scale(1.2));
+    }
+
+    &ThumbFocused {
+      @include transform(scale(1));
+      border-color: $slide-handle-focused-bordercolor;
+      background-color: $slide-handle-focused-color;
+    }
+
+    &BottomBumper,
+    &LeftBumper,
+    &ProgressBar {
+      background-color: $slider-progress-color;
+      border: none;
+    }
+
+    &RemainingBar,
+    &RightBumper,
+    &TopBumper {
+      background-color: $slider-remaining-color;
+      border: none
+    }
+  }
+}
+
