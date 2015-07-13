@@ -1457,6 +1457,27 @@ body {
   font-weight: bold;
   background-color: transparent;
 }
+.dotcms .dijitProgressBar {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  height: 30px;
+}
+.dotcms .dijitProgressBarEmpty {
+  border: solid 1px #45545B;
+}
+.dotcms .dijitProgressBarFull {
+  background: none;
+  height: 100%;
+}
+.dotcms .dijitProgressBarLabel {
+  line-height: 28px;
+}
+.dotcms .dijitProgressBarTile {
+  background-color: #D1D8DD;
+  height: 100%;
+}
 .dotcms #doc, .dotcms #doc2, .dotcms #doc3, .dotcms #doc4, .dotcms .yui-t1, .dotcms .yui-t2, .dotcms .yui-t3, .dotcms .yui-t4, .dotcms .yui-t5, .dotcms .yui-t6, .dotcms .yui-t7 {
   margin: auto;
   text-align: left;
