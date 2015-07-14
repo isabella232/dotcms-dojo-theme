@@ -1,5 +1,9 @@
 .dijitAccordionContainer {
-  border: none
+  border: none;
+
+  .dijitAccordionContainer-child {
+    padding: $basic-padding;
+  }
 }
 
 .dijitAccordionInnerContainer {

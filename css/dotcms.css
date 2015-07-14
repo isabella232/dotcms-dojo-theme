@@ -1174,6 +1174,9 @@ body {
 .dotcms .dijitAccordionContainer {
   border: none;
 }
+.dotcms .dijitAccordionContainer .dijitAccordionContainer-child {
+  padding: 10px;
+}
 .dotcms .dijitAccordionInnerContainer {
   border: solid 1px #D1D8DD;
   margin-bottom: 5px;
