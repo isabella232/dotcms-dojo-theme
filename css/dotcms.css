@@ -1299,9 +1299,11 @@ body {
   -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
-  width: 36px;
+  background-color: #fff;
+  color: #45545B;
   height: 36px;
   text-align: center;
+  width: 36px;
 }
 .dotcms .dijitCalendarDayLabelTemplate {
   background-color: #108AC8;
