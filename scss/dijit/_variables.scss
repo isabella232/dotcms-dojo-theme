@@ -45,12 +45,10 @@ $button-hover-bgcolor: $gray-dark;
 $button-hover-textcolor: $white;
 $button-textcolor: $white;
 $buttonextra-textcolor: $gray-dark;
-
 $buttontoggle-hover-bgcolor: $gray-dark;
 $buttontoggle-hover-textcolor: $white;
 $buttontoggle-active-bgcolor: $blue;
 $buttontoggle-active-textcolor: $white;
-
 $buttondrop-hover-bgcolor: $blue;
 $buttondrop-hover-bgcolorarrow: $blue-light;
 $buttondrop-hover-textcolor: $white;
@@ -59,6 +57,8 @@ $buttondrop-hover-textcolor: $white;
 $textbox-focus-color: $blue;
 $textbox-hover-shadow-color: rgba($gray, 0.1);
 $textbox-hover-shadow-size: 10px;
+$textbox-focused-border-color: $blue;
+$textbox-focused-bgcolor: rgba($blue, 0.1);
 
 // Checkboxes & RadioButtons
 $check-radio-border-width: 2px;
@@ -122,3 +122,8 @@ $progressbar-border-color: $gray-dark;
 $progressbar-bgcolor: $white;
 $progressbar-tile-bgcolor: $gray-ligther;
 $progressbar-heigth: 30px;
+
+// Inline Edit Box
+$inlineeditbox-hover-border-size: $field-border-size;
+$inlineeditbox-hover-border-color: $textbox-focused-border-color;
+$inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;

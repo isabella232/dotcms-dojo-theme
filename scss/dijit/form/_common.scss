@@ -186,8 +186,8 @@ table.dijitComboButton {
   }
 
   &Focused {
-    border-color: $blue;
-    background-color: rgba($blue, 0.1);
+    border-color: $textbox-focused-border-color;
+    background-color: $textbox-focused-bgcolor;
   }
 }
 

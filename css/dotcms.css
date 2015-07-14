@@ -1478,6 +1478,34 @@ body {
   background-color: #D1D8DD;
   height: 100%;
 }
+.dotcms .dijitInline .dijitButton {
+  margin: 5px 5px 0 0;
+}
+.dotcms .dijitInline .dijitButton {
+  line-height: normal;
+}
+.dotcms .dijitInline .dijitTextBox,
+.dotcms .dijitInline .dijitInputInner {
+  height: auto;
+  line-height: normal;
+  padding: 0;
+}
+.dotcms .dijitInlineEditBoxDisplayMode {
+  -moz-transition: background-color, border-color, 0.25s;
+  -o-transition: background-color, border-color, 0.25s;
+  -webkit-transition: background-color, border-color, 0.25s;
+  transition: background-color, border-color, 0.25s;
+}
+.dotcms .dijitInlineEditBoxDisplayModeHover {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: solid 1px #108AC8;
+  background: rgba(16, 138, 200, 0.1);
+}
+.dotcms .dijitInlineEditBoxDisplayMode.dijitOffScreen {
+  display: none;
+}
 .dotcms #doc, .dotcms #doc2, .dotcms #doc3, .dotcms #doc4, .dotcms .yui-t1, .dotcms .yui-t2, .dotcms .yui-t3, .dotcms .yui-t4, .dotcms .yui-t5, .dotcms .yui-t6, .dotcms .yui-t7 {
   margin: auto;
   text-align: left;
