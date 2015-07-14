@@ -24,7 +24,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-.addIcon,
+#iconBase, .addIcon,
 .androidIcon,
 .appleIcon,
 .appMonitorIcon,
@@ -169,12 +169,16 @@ html {
 .workingIcon,
 .workStreamIcon,
 .wysiwygIcon,
-.dijitIcon {
+.dijitIcon, .dijitTabCloseButton {
   font: normal normal normal 16px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
+}
+
+.dijitTabCloseButton {
+  margin-left: 0;
 }
 
 .addIcon:before {
@@ -755,6 +759,10 @@ html {
 
 .wysiwygIcon:before {
   content: "";
+}
+
+.dijitTabCloseButton:before {
+  content: "";
 }
 
 .dijitIconTask:before {

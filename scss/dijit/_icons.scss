@@ -2,6 +2,14 @@
 @import "../font-awesome/variables";
 @import "../font-awesome/path";
 
+#iconBase {
+  font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
 .add,
 .android,
 .apple,
@@ -149,13 +157,14 @@
 .wysiwyg,
 .dijit {
   &Icon {
-    font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
-    text-rendering: auto; // optimizelegibility throws things off #1094
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+    @extend #iconBase;
   };
 }
+
+.dijitTabCloseButton {
+  @extend #iconBase;
+  margin-left: 0;
+};
 
 $icons: (
   add: $fa-var-square,
@@ -312,6 +321,12 @@ $icons: (
         content: $icon;
       }
     }
+  }
+}
+
+.dijitTabCloseButton {
+  &:before {
+    content: $fa-var-close;
   }
 }
 
