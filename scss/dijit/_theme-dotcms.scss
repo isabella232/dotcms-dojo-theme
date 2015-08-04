@@ -1,0 +1,131 @@
+// COLORS
+$black: #000;
+$blue-light: #1FA1D8;
+$blue: #108AC8;
+$gray-dark: #45545B;
+$gray-ligth: #8D9DA9;
+$gray-ligther: #D1D8DD;
+$gray-ligthest: rgba($gray-ligther, 0.6);
+$gray: #68757E;
+$green-ligth: #77BE61;
+$green: #4A9D51;
+$orange: #F3762A;
+$white: #fff;
+
+// TYPOGRAPHY
+$body-size: 12px;
+$body-text: 'Open Sans', sans-serif;
+$text-color: $gray-dark;
+
+// Basic stuffs
+$border-radius: 2px;
+$icon-size: 16px;
+$basic-padding: 10px;
+
+// FORMS
+
+// Common
+$field-animation-speed: .25s;
+$field-border-color: $gray-dark;
+$field-border-radius: $border-radius;
+$field-border-size: 1px;
+$field-disabled-border-color: rgba($gray-dark, .4);
+$field-disabled-text-color: rgba($gray-dark, .4);
+$field-height: 29px;
+$field-padding: $basic-padding;
+$field-placeholder-color: rgba($gray-dark, .4);
+
+
+// Buttons
+$button-active-bgcolor: $gray;
+$button-active-textcolor: $white;
+$button-bgcolor: $blue;
+$button-horizontal-padding: 10px;
+$button-hover-bgcolor: $gray-dark;
+$button-hover-textcolor: $white;
+$button-textcolor: $white;
+$buttonextra-textcolor: $gray-dark;
+$buttontoggle-hover-bgcolor: $gray-dark;
+$buttontoggle-hover-textcolor: $white;
+$buttontoggle-active-bgcolor: $blue;
+$buttontoggle-active-textcolor: $white;
+$buttondrop-hover-bgcolor: $blue;
+$buttondrop-hover-bgcolorarrow: $blue-light;
+$buttondrop-hover-textcolor: $white;
+
+// Text Fields
+$textbox-focus-color: $blue;
+$textbox-hover-shadow-color: rgba($gray, 0.1);
+$textbox-hover-shadow-size: 10px;
+$textbox-focused-border-color: $blue;
+$textbox-focused-bgcolor: rgba($blue, 0.1);
+
+// Checkboxes & RadioButtons
+$check-radio-border-width: 2px;
+$check-radio-radius: 2px;
+$check-radio-size: 16px;
+
+// Sliders
+$slide-handle-bordercolor: $gray-dark;
+$slide-handle-bordersize: 2px;
+$slide-handle-color: $white;
+$slide-handle-focused-bordercolor: $white;
+$slide-handle-focused-color: $gray-dark;
+$slide-mark-color: $gray-ligth;
+$slide-mark-hover-color: $gray-dark;
+$slide-rule-color: $gray-ligth;
+$slide-rule-hover-color: $gray-dark;
+$slider-handle-size: 16px;
+$slider-progress-color: $gray-dark;
+$slider-remaining-color: $gray-ligther;
+
+// Menus
+$menu-bgcolor: $white;
+$menu-item-bgcolor: $menu-bgcolor;
+$menu-item-separator-width: 1px;
+$menu-item-separator-color: $gray-ligther;
+$menu-item-hover-bgcolor: rgba($blue, 0.15);
+$menu-item-hover-textcolor: $gray-dark;
+$menu-item-selected-bgcolor: $blue;
+$menu-item-selected-textcolor: $white;
+
+// Calendar
+$calendar-item-size: $field-height;
+$calendar-month-bgcolor: $gray-dark;
+$calendar-month-textcolor: $white;
+$calendar-weekday-label-bgcolor: $blue;
+$calendar-weekday-label-textcolor: $white;
+$calendar-date-bgcolor: $white;
+$calendar-date-textcolor: $gray-dark;
+$calendar-date-hover-bgcolor: rgba($blue, 0.15);
+$calendar-date-hover-textcolor: $text-color;
+$calendar-date-seleted-bgcolor: $orange;
+$calendar-date-seleted-textcolor: $white;
+$calendar-prev-next-month-date-bgcolor: $gray-ligthest;
+$calendar-prev-next-month-date-textcolor: $gray-ligther;
+$calendar-prev-next-month-date-hover-bgcolor: $gray-ligthest;
+$calendar-prev-next-month-date-hover-textcolor: $gray-ligth;
+$calendar-year-label-bgcolor: $gray-dark;
+$calendar-year-label-textcolor: $white;
+
+// Content Panel
+$panel-border-color: $gray-ligther;
+$panel-border-size: 1px;
+$panel-title-open-bgcolor: $gray-dark;
+$panel-title-open-textcolor: $white;
+$panel-title-hover-bgcolor: $blue;
+$panel-title-hover-textcolor: $white;
+$panel-title-close-bgcolor: $gray-dark;
+$panel-title-close-textcolor: $white;
+
+// Progress Bar
+$progressbar-border-size: 1px;
+$progressbar-border-color: $gray-dark;
+$progressbar-bgcolor: $white;
+$progressbar-tile-bgcolor: $gray-ligther;
+$progressbar-heigth: 30px;
+
+// Inline Edit Box
+$inlineeditbox-hover-border-size: $field-border-size;
+$inlineeditbox-hover-border-color: $textbox-focused-border-color;
+$inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;

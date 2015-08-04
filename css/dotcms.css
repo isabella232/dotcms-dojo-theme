@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #45545B;
 }
 
@@ -871,8 +871,8 @@ body {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  font-size: 14px;
-  height: 36px;
+  font-size: 12px;
+  height: 29px;
 }
 .dotcms .dijitButton,
 .dotcms .dijitComboButton,
@@ -901,7 +901,7 @@ body {
 .dotcms .dijitDropDownButton .dijitArrowButtonInner,
 .dotcms .dijitSelect .dijitArrowButtonContainer,
 .dotcms .dijitSpinner .dijitSpinnerButtonContainer {
-  height: 34px;
+  height: 27px;
   border: none;
   position: relative;
 }
@@ -916,7 +916,7 @@ body {
 }
 .dotcms .dijitComboBox .dijitArrowButtonContainer,
 .dotcms .dijitSelect .dijitArrowButtonContainer {
-  width: 36px;
+  width: 29px;
 }
 .dotcms .dijitComboBox .dijitArrowButtonContainer:before,
 .dotcms .dijitSelect .dijitArrowButtonContainer:before {
@@ -957,9 +957,10 @@ body {
 .dotcms .dijitDisabled.dijitCheckBox, .dotcms .dijitDisabled.dijitCheckBoxInput, .dotcms .dijitDisabled.dijitRadio {
   border-style: solid;
 }
-.dotcms .dijitInputInner {
-  color: #45545B;
-  line-height: 34px;
+.dotcms .dijitPlaceHolder {
+  color: rgba(69, 84, 91, 0.4);
+  font-style: normal;
+  line-height: 27px;
 }
 .dotcms .dijitIcon {
   width: 16px;
@@ -997,14 +998,9 @@ body {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.dotcms .dijitPlaceHolder {
-  color: rgba(69, 84, 91, 0.4);
-  font-style: normal;
-  line-height: 36px;
-}
 .dotcms .dijitTextArea {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #45545B;
   padding: 5px 10px;
 }
@@ -1028,8 +1024,8 @@ body {
 .dotcms .dijitButton .dijitButtonText,
 .dotcms .dijitDropDownButton .dijitButtonText,
 .dotcms .dijitToggleButton .dijitButtonText {
-  line-height: 34px;
-  height: 34px;
+  line-height: 27px;
+  height: 27px;
 }
 .dotcms .dijitButton {
   background-color: #108AC8;
@@ -1247,7 +1243,7 @@ body {
 }
 .dotcms .dijitTitlePaneTitleFocus {
   padding: 0 10px;
-  line-height: 36px;
+  line-height: 29px;
 }
 .dotcms .dijitTab {
   -moz-transition: background-color 0.25s;
@@ -1257,7 +1253,7 @@ body {
   background-color: #D1D8DD;
   border: none;
   border-bottom: none;
-  height: 36px;
+  height: 29px;
   margin-right: -1px;
   padding: 0 10px;
 }
@@ -1265,7 +1261,7 @@ body {
   margin-right: 0;
 }
 .dotcms .dijitTab .tabLabel {
-  line-height: 36px;
+  line-height: 29px;
 }
 .dotcms .dijitTabChecked {
   background-color: #fff;
@@ -1295,8 +1291,8 @@ body {
   margin-left: 0;
 }
 .dotcms .dijitTabStripIcon {
-  height: 36px;
-  width: 36px;
+  height: 29px;
+  width: 29px;
   border-right: solid 1px #fff;
 }
 .dotcms .dijitTabStripIcon:before {
@@ -1335,9 +1331,9 @@ body {
   transition: background-color 0.25s;
   background-color: #fff;
   color: #45545B;
-  height: 36px;
+  height: 29px;
   text-align: center;
-  width: 36px;
+  width: 29px;
 }
 .dotcms .dijitCalendarDayLabelTemplate {
   background-color: #108AC8;
@@ -1350,7 +1346,7 @@ body {
 }
 .dotcms .dijitCalendarIncrementControl {
   position: relative;
-  width: 36px;
+  width: 29px;
 }
 .dotcms .dijitCalendarIncrementControl:before {
   content: "";
@@ -1389,22 +1385,22 @@ body {
 }
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner {
   background-color: transparent;
-  height: 36px;
+  height: 29px;
 }
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner:before {
   background-image: url("/images/ico-arrow-sm-light.svg");
 }
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner .dijitButtonText {
-  height: 36px;
-  line-height: 36px;
+  height: 29px;
+  line-height: 29px;
 }
 .dotcms .dijitCalendarMonthMenu.dijitMenu {
   margin: 0;
 }
 .dotcms .dijitCalendarMonthLabel {
   border-bottom: solid 1px #D1D8DD;
-  height: 36px;
-  line-height: 36px;
+  height: 29px;
+  line-height: 29px;
 }
 .dotcms .dijitCalendarMonthLabel:last-child {
   border-bottom: none;
@@ -1431,7 +1427,7 @@ body {
 .dotcms .dijitCalendarYearLabel {
   background-color: #45545B;
   display: table;
-  height: 36px;
+  height: 29px;
   width: 100%;
 }
 .dotcms .dijitCalendarYearLabel span {
@@ -1448,7 +1444,7 @@ body {
   color: #45545B;
 }
 .dotcms .dijitComboBoxMenuPopup .dijitMenuItem {
-  line-height: 36px;
+  line-height: 29px;
   padding: 0 10px;
 }
 .dotcms .dijitMenu {
@@ -1458,7 +1454,7 @@ body {
 }
 .dotcms .dijitMenu .dijitMenuItem {
   border-bottom: solid 1px #D1D8DD;
-  height: 36px;
+  height: 29px;
 }
 .dotcms .dijitMenuArrowCell .dijitIcon {
   margin-right: 10px;
@@ -1481,8 +1477,8 @@ body {
   border: solid 1px #D1D8DD;
 }
 .dotcms .dijitTimePickerItem {
-  line-height: 36px;
-  height: 36px;
+  line-height: 29px;
+  height: 29px;
   color: #45545B;
   border-bottom: solid 1px #D1D8DD;
 }
@@ -1520,10 +1516,9 @@ body {
 .dotcms .dijitInline .dijitButton {
   line-height: normal;
 }
-.dotcms .dijitInline .dijitTextBox,
-.dotcms .dijitInline .dijitInputInner {
+.dotcms .dijitInline.dijitTextBox .dijitInputInner {
   height: auto;
-  line-height: normal;
+  line-height: 27px;
   padding: 0;
 }
 .dotcms .dijitInlineEditBoxDisplayMode {
@@ -4151,7 +4146,7 @@ body {
 }
 .dotcms dt {
   float: left;
-  line-height: 36px;
+  line-height: 29px;
   padding-right: 10px;
   text-align: right;
   width: 30%;
@@ -4226,7 +4221,7 @@ body {
 .dotcms .buttonRow {
   text-align: center;
   padding: 10px 0;
-  line-height: 36px;
+  line-height: 29px;
 }
 .dotcms .noResultsMessage {
   text-align: center;

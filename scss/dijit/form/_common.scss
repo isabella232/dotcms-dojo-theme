@@ -157,8 +157,9 @@ table.dijitComboButton {
   }
 }
 
-.dijitInputInner {
-  color: $text-color;
+.dijitPlaceHolder {
+  color: $field-placeholder-color;
+  font-style: normal;
   line-height: $field-height - ($field-border-size * 2);
 }
 
@@ -201,11 +202,7 @@ table.dijitComboButton {
   }
 }
 
-.dijitPlaceHolder {
-  color: $field-placeholder-color;
-  font-style: normal;
-  line-height: $field-height;
-}
+
 
 .dijitTextArea {
   font-family: $body-text;
