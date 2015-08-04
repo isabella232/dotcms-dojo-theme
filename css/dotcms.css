@@ -24,7 +24,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-#iconBase, .addIcon,
+#font-icon-base, .addIcon,
 .androidIcon,
 .appleIcon,
 .appMonitorIcon,
@@ -169,16 +169,12 @@ html {
 .workingIcon,
 .workStreamIcon,
 .wysiwygIcon,
-.dijitIcon, .dijitTabCloseButton {
+.dijitIcon, .dotcms .dijitTabCloseButton, .dotcms .dijitTabStripIcon {
   font: normal normal normal 16px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
-}
-
-.dijitTabCloseButton {
-  margin-left: 0;
 }
 
 .addIcon:before {
@@ -1253,35 +1249,13 @@ body {
   padding: 0 10px;
   line-height: 36px;
 }
-.dotcms .dijitTabContainerTop-tabs,
-.dotcms .dijitTabContainerBottom-tabs {
-  padding-left: 1px;
-}
-.dotcms .dijitTabContainerTop-tabs {
-  border-bottom: solid 1px #D1D8DD;
-}
-.dotcms .dijitTabContainerBottom-tabs {
-  border-top: solid 1px #D1D8DD;
-}
-.dotcms .dijitTabContainerBottom-container,
-.dotcms .dijitTabContainerTop-container,
-.dotcms .dijitTabContainerLeft-container,
-.dotcms .dijitTabContainerRight-container {
-  border: solid 1px #D1D8DD;
-}
-.dotcms .dijitTabContainerTop-container {
-  border-top: 0;
-}
-.dotcms .dijitTabContainerBottom-container {
-  border-bottom: 0;
-}
 .dotcms .dijitTab {
   -moz-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
   background-color: #D1D8DD;
-  border: solid 1px #D1D8DD;
+  border: none;
   border-bottom: none;
   height: 36px;
   margin-right: -1px;
@@ -1293,11 +1267,60 @@ body {
 .dotcms .dijitTab .tabLabel {
   line-height: 36px;
 }
-.dotcms .dijitTab.dijitTabChecked {
+.dotcms .dijitTabChecked {
   background-color: #fff;
+}
+.dotcms .dijitTabContainerTop-tabs, .dotcms .dijitTabContainerBottom-tabs {
+  padding-left: 1px;
+}
+.dotcms .dijitTabContainerTop-tabs {
+  border-bottom: none;
+}
+.dotcms .dijitTabContainerBottom-tabs {
+  border-top: solid 1px #D1D8DD;
+}
+.dotcms .dijitTabContainerBottom-container, .dotcms .dijitTabContainerTop-container, .dotcms .dijitTabContainerLeft-container, .dotcms .dijitTabContainerRight-container {
+  border: solid 1px #D1D8DD;
+}
+.dotcms .dijitTabContainerTop-container {
+  border-top: 0;
+}
+.dotcms .dijitTabContainerBottom-container {
+  border-bottom: 0;
 }
 .dotcms .dijitTabPane {
   padding: 0 20px;
+}
+.dotcms .dijitTabCloseButton {
+  margin-left: 0;
+}
+.dotcms .dijitTabStripIcon {
+  height: 36px;
+  width: 36px;
+  border-right: solid 1px #fff;
+}
+.dotcms .dijitTabStripIcon:before {
+  content: "";
+  color: #fff;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+}
+.dotcms .tabStripButton {
+  background-color: #108AC8;
+  width: 36px;
+  padding: 0;
+}
+.dotcms .dijitTabStripSlideRightIcon {
+  border-left: solid 1px #fff;
+}
+.dotcms .dijitTabStripSlideRightIcon:before {
+  content: "";
+}
+.dotcms .dijitTabStripMenuIcon:before {
+  content: "";
 }
 .dotcms .dijitA11ySideArrow {
   display: none;

@@ -1,35 +1,7 @@
-.dijitTabContainerTop-tabs,
-.dijitTabContainerBottom-tabs {
-  padding-left: 1px
-}
-
-.dijitTabContainerTop-tabs {
-  border-bottom: solid 1px $gray-ligther;
-}
-
-.dijitTabContainerBottom-tabs {
-  border-top: solid 1px $gray-ligther;
-}
-
-.dijitTabContainerBottom-container,
-.dijitTabContainerTop-container,
-.dijitTabContainerLeft-container,
-.dijitTabContainerRight-container {
-  border: solid 1px $gray-ligther;
-}
-
-.dijitTabContainerTop-container {
-  border-top: 0;
-}
-
-.dijitTabContainerBottom-container {
-  border-bottom: 0;
-}
-
 .dijitTab {
   @include transition(background-color $field-animation-speed); // TODO: move this to layout/common.scss?
   background-color: $gray-ligther;
-  border: solid 1px $gray-ligther;
+  border: none;
   border-bottom: none;
   height: $field-height;
   margin-right: -1px;
@@ -43,12 +15,79 @@
     line-height: $field-height;
   }
 
-  &.dijitTabChecked {
+  &Checked {
     background-color: $white;
+  }
+
+  &ContainerTop-tabs,
+  &ContainerBottom-tabs {
+    padding-left: 1px
+  }
+
+  &ContainerTop-tabs {
+    border-bottom: none;
+  }
+
+  &ContainerBottom-tabs {
+    border-top: solid 1px $gray-ligther;
+  }
+
+  &ContainerBottom-container,
+  &ContainerTop-container,
+  &ContainerLeft-container,
+  &ContainerRight-container {
+    border: solid 1px $gray-ligther;
+  }
+
+  &ContainerTop-container {
+    border-top: 0;
+  }
+
+  &ContainerBottom-container {
+    border-bottom: 0;
+  }
+
+  &Pane {
+    padding: 0 20px ;
+  }
+
+  &CloseButton {
+    @extend #font-icon-base;
+    margin-left: 0;
+  };
+}
+
+.dijitTabStripIcon {
+  @extend #font-icon-base;
+  height: $field-height;
+  width: $field-height;
+  border-right: solid 1px $white;
+
+  &:before {
+    content: $fa-var-angle-left;
+    color: $white;
+    @include center-icon(5px, 16px); // Sadly compass can't get width and height from a svg
   }
 }
 
-.dijitTabPane {
-  padding: 0 20px ;
+.tabStripButton {
+  background-color: $blue;
+  width: 36px;
+  padding: 0;
 }
 
+.dijitTabStripSlideRightIcon {
+  border-left: solid 1px $white;
+
+  &:before {
+    content: $fa-var-angle-right;
+  }
+}
+
+.dijitTabStripMenuIcon {
+  //border-right: none;
+
+  &:before {
+    content: $fa-var-angle-down;
+  }
+}

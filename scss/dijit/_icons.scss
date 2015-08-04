@@ -2,7 +2,7 @@
 @import "../font-awesome/variables";
 @import "../font-awesome/path";
 
-#iconBase {
+#font-icon-base {
   font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
   text-rendering: auto; // optimizelegibility throws things off #1094
   -webkit-font-smoothing: antialiased;
@@ -157,14 +157,10 @@
 .wysiwyg,
 .dijit {
   &Icon {
-    @extend #iconBase;
-  };
+    @extend #font-icon-base;
+  }
+;
 }
-
-.dijitTabCloseButton {
-  @extend #iconBase;
-  margin-left: 0;
-};
 
 $icons: (
   add: $fa-var-square,
