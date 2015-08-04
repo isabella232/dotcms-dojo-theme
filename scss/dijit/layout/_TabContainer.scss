@@ -1,8 +1,8 @@
 .dijitTab {
   @include transition(background-color $field-animation-speed); // TODO: move this to layout/common.scss?
-  background-color: $gray-ligther;
-  border: none;
-  border-bottom: none;
+  background-color: $tab-inactive-bgcolor;
+  color: $tab-inactive-textcolor;
+  border: $tab-border;
   height: $field-height;
   margin-right: -1px;
   padding: 0 $field-padding;
@@ -16,7 +16,8 @@
   }
 
   &Checked {
-    background-color: $white;
+    background-color: $tab-active-bgcolor;
+    color: $tab-active-textcolor;
   }
 
   &ContainerTop-tabs,
@@ -29,14 +30,14 @@
   }
 
   &ContainerBottom-tabs {
-    border-top: solid 1px $gray-ligther;
+    border-top: $tab-border;
   }
 
   &ContainerBottom-container,
   &ContainerTop-container,
   &ContainerLeft-container,
   &ContainerRight-container {
-    border: solid 1px $gray-ligther;
+    border: $tab-border;
   }
 
   &ContainerTop-container {
@@ -61,23 +62,23 @@
   @extend #font-icon-base;
   height: $field-height;
   width: $field-height;
-  border-right: solid 1px $white;
+  border-right: $tab-strip-border;
 
   &:before {
     content: $fa-var-angle-left;
-    color: $white;
+    color: $tab-strip-icon-color;
     @include center-icon(5px, 16px); // Sadly compass can't get width and height from a svg
   }
 }
 
 .tabStripButton {
-  background-color: $blue;
+  background-color: $tab-strip-bgcolor;
   width: 36px;
   padding: 0;
 }
 
 .dijitTabStripSlideRightIcon {
-  border-left: solid 1px $white;
+  border-left: $tab-strip-border;
 
   &:before {
     content: $fa-var-angle-right;

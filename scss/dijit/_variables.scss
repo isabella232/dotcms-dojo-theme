@@ -5,7 +5,7 @@ $blue: #108AC8;
 $gray-dark: #45545B;
 $gray-ligth: #8D9DA9;
 $gray-ligther: #D1D8DD;
-$gray-ligthest: rgba($gray-ligther, 0.6);
+$gray-ligthest: #e3e7ea; // rgba($gray-ligther, 0.6);
 $gray: #68757E;
 $green-ligth: #77BE61;
 $green: #4A9D51;
@@ -129,3 +129,13 @@ $progressbar-heigth: 30px;
 $inlineeditbox-hover-border-size: $field-border-size;
 $inlineeditbox-hover-border-color: $textbox-focused-border-color;
 $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
+
+// Tabs
+$tab-border: solid 1px $gray-ligther;
+$tab-inactive-bgcolor: $gray-ligther;
+$tab-inactive-textcolor: $text-color;
+$tab-active-bgcolor: $white;
+$tab-active-textcolor: $text-color;
+$tab-strip-bgcolor: $blue;
+$tab-strip-border: solid 1px $white;
+$tab-strip-icon-color: $white;

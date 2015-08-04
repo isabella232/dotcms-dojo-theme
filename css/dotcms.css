@@ -1251,8 +1251,8 @@ body {
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s;
   background-color: #D1D8DD;
-  border: none;
-  border-bottom: none;
+  color: #45545B;
+  border: solid 1px #D1D8DD;
   height: 29px;
   margin-right: -1px;
   padding: 0 10px;
@@ -1265,6 +1265,7 @@ body {
 }
 .dotcms .dijitTabChecked {
   background-color: #fff;
+  color: #45545B;
 }
 .dotcms .dijitTabContainerTop-tabs, .dotcms .dijitTabContainerBottom-tabs {
   padding-left: 1px;
@@ -1406,11 +1407,11 @@ body {
   border-bottom: none;
 }
 .dotcms .dijitCalendarPreviousMonth, .dotcms .dijitCalendarNextMonth {
-  background-color: rgba(209, 216, 221, 0.6);
+  background-color: #e3e7ea;
   color: #D1D8DD;
 }
 .dotcms .dijitCalendarPreviousMonth.dijitCalendarHoveredDate, .dotcms .dijitCalendarNextMonth.dijitCalendarHoveredDate {
-  background-color: rgba(209, 216, 221, 0.6);
+  background-color: #e3e7ea;
   color: #8D9DA9;
 }
 .dotcms .dijitCalendarNextYear, .dotcms .dijitCalendarPreviousYear {
