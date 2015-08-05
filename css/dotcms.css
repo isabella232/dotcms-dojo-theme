@@ -1085,6 +1085,11 @@ body {
   height: 0;
   width: 0;
 }
+.dotcms .dijitDropDownButtonFocused {
+  background-color: #CACED0;
+  border: solid 1px #CACED0;
+  color: #45545B;
+}
 .dotcms .dijitDropDownButtonDisabled {
   background-color: #ECEDEE;
   border: solid 1px #E3E4E6;
@@ -1169,6 +1174,28 @@ body {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #108AC8;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitComboButtonFocused, .dotcms .dijitComboButtonHoverFocused {
+  background-color: #CACED0;
+  border: solid 1px #CACED0;
+  color: #45545B;
+}
+.dotcms .dijitComboButtonFocused .dijitArrowButtonInner, .dotcms .dijitComboButtonHoverFocused .dijitArrowButtonInner {
+  border-left: solid 1px #CACED0;
+  background-color: transparent;
+}
+.dotcms .dijitComboButtonFocused .dijitArrowButtonInner:before, .dotcms .dijitComboButtonHoverFocused .dijitArrowButtonInner:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
   content: "";
   height: 0;
   width: 0;
@@ -1588,7 +1615,7 @@ body {
   color: #fff;
 }
 .dotcms .dijitMenuItemSelected, .dotcms .dijitMenuItemHover, .dotcms .dijitTimePickerItemHover {
-  background-color: rgba(16, 138, 200, 0.15);
+  background-color: #ECEDEE;
   color: #45545B;
 }
 .dotcms .dijitComboBoxMenuPopup .dijitMenuItem {
@@ -1596,12 +1623,10 @@ body {
   padding: 0 10px;
 }
 .dotcms .dijitMenu {
-  margin-top: 2px;
   background-color: #fff;
   border: solid 1px #CACED0;
 }
 .dotcms .dijitMenu .dijitMenuItem {
-  border-bottom: solid 1px #CACED0;
   height: 29px;
 }
 .dotcms .dijitMenuArrowCell .dijitIcon {

@@ -78,6 +78,13 @@ $dropdownbutton-active-arrow-bgcolor: transparent;
 $dropdownbutton-active-arrow-url: false;
 $dropdownbutton-active-arrow-color: $blue;
 
+$dropdownbutton-focused-bgcolor: $gray-ligther;
+$dropdownbutton-focused-textcolor: $gray-dark;
+$dropdownbutton-focused-border: solid 1px $gray-ligther;
+$dropdownbutton-focused-arrow-bgcolor: transparent;
+$dropdownbutton-focused-arrow-url: false;
+$dropdownbutton-focused-arrow-color: $blue;
+
 $dropdownbutton-disabled-bgcolor: $button-normal-bgcolor;
 $dropdownbutton-disabled-textcolor: $gray-ligther;
 $dropdownbutton-disabled-border: $button-disabled-border;
@@ -112,6 +119,14 @@ $combobutton-active-arrow-bgcolor: transparent;
 $combobutton-active-arrow-url: false;
 $combobutton-active-arrow-color: $blue;
 $combobutton-active-arrow-border: $combobutton-active-border;
+
+$combobutton-focused-bgcolor: $gray-ligther;
+$combobutton-focused-textcolor: $button-normal-textcolor;
+$combobutton-focused-border: solid 1px $gray-ligther;
+$combobutton-focused-arrow-bgcolor: transparent;
+$combobutton-focused-arrow-url: false;
+$combobutton-focused-arrow-color: $button-normal-textcolor;
+$combobutton-focused-arrow-border: solid 1px $gray-ligther;
 
 $combobutton-disabled-bgcolor: $button-normal-bgcolor;
 $combobutton-disabled-textcolor: $gray-ligther;
@@ -169,7 +184,7 @@ $menu-bgcolor: $white;
 $menu-item-bgcolor: $menu-bgcolor;
 $menu-item-separator-width: 1px;
 $menu-item-separator-color: $gray-ligther;
-$menu-item-hover-bgcolor: rgba($blue, 0.15);
+$menu-item-hover-bgcolor: $gray-ligthest;
 $menu-item-hover-textcolor: $gray-dark;
 $menu-item-selected-bgcolor: $blue;
 $menu-item-selected-textcolor: $white;

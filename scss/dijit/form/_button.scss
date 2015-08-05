@@ -119,6 +119,12 @@
       }
     }
 
+    &Focused {
+      background-color: $dropdownbutton-focused-bgcolor;
+      border: $dropdownbutton-focused-border;
+      color: $dropdownbutton-focused-textcolor;
+    }
+
     &Disabled {
       background-color: $dropdownbutton-disabled-bgcolor;
       border: $dropdownbutton-disabled-border;
@@ -202,6 +208,29 @@
             background-image: url($combobutton-active-arrow-url);
           } @else {
             @include create-arrow($combobutton-arrow-size, $combobutton-active-arrow-color);
+          }
+        }
+      }
+    }
+
+    &Focused,
+    &HoverFocused {
+      background-color: $combobutton-focused-bgcolor;
+      border: $combobutton-focused-border;
+      color: $combobutton-focused-textcolor;
+
+      .dijitArrowButtonInner {
+        border-left: $combobutton-focused-arrow-border;
+
+        @if $combobutton-focused-arrow-bgcolor != 'transparent' {
+          background-color: $combobutton-focused-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $combobutton-focused-arrow-url {
+            background-image: url($combobutton-focused-arrow-url);
+          } @else {
+            @include create-arrow($combobutton-arrow-size, $combobutton-focused-arrow-color);
           }
         }
       }

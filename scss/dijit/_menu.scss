@@ -22,12 +22,10 @@
 }
 
 .dijitMenu {
-  margin-top: 2px;
   background-color: $menu-bgcolor;
   border: solid $menu-item-separator-width $menu-item-separator-color;
 
   .dijitMenuItem {
-    border-bottom: solid $menu-item-separator-width $menu-item-separator-color;
     height: $field-height;
   }
 
