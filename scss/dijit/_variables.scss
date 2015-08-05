@@ -37,21 +37,31 @@ $field-placeholder-color: rgba($gray-dark, .4);
 
 
 // Buttons
-$button-active-bgcolor: $gray;
-$button-active-textcolor: $white;
-$button-bgcolor: $blue;
-$button-horizontal-padding: 10px;
+$button-normal-bgcolor: $blue;
+$button-normal-textcolor: $white;
+$button-normal-border: none;
+
 $button-hover-bgcolor: $gray-dark;
 $button-hover-textcolor: $white;
-$button-textcolor: $white;
+$button-hover-border: none;
+
+$button-active-bgcolor: $gray;
+$button-active-textcolor: $white;
+$button-active-border: none;
+
+$buttondrop-hover-bgcolor: $blue;
+$buttondrop-hover-bgcolorarrow: $blue-light;
+$buttondrop-hover-textcolor: $white;
+$buttondrop-hover-border: none;
+
+
+$button-horizontal-padding: 10px;
 $buttonextra-textcolor: $gray-dark;
 $buttontoggle-hover-bgcolor: $gray-dark;
 $buttontoggle-hover-textcolor: $white;
 $buttontoggle-active-bgcolor: $blue;
 $buttontoggle-active-textcolor: $white;
-$buttondrop-hover-bgcolor: $blue;
-$buttondrop-hover-bgcolorarrow: $blue-light;
-$buttondrop-hover-textcolor: $white;
+
 
 // Text Fields
 $textbox-focus-color: $blue;

@@ -10,3 +10,13 @@
   font-size: 11px; // TODO: set a variable
   color: $gray-ligth;
 }
+
+@mixin create-arrow($arrow-size, $arrow-color) {
+  @include center-icon($arrow-size * 2, $arrow-size); // Sadly compass can't get width and height from a svg
+  border-left: $arrow-size solid transparent;
+  border-right: $arrow-size solid transparent;
+  border-top: $arrow-size solid $arrow-color;
+  content: "";
+  height: 0;
+  width: 0;
+}

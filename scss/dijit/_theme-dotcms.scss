@@ -3,9 +3,9 @@ $black: #000;
 $blue-light: #1FA1D8;
 $blue: #108AC8;
 $gray-dark: #45545B;
-$gray-ligth: #8D9DA9;
-$gray-ligther: #D1D8DD;
-$gray-ligthest: #e3e7ea; // rgba($gray-ligther, 0.6);
+$gray-ligth: #BABEC1;
+$gray-ligther: #CACED0;
+$gray-ligthest: #ECEDEE;
 $gray: #68757E;
 $green-ligth: #77BE61;
 $green: #4A9D51;
@@ -26,7 +26,7 @@ $basic-padding: 10px;
 
 // Common
 $field-animation-speed: .25s;
-$field-border-color: $gray-dark;
+$field-border-color: $gray-ligther;
 $field-border-radius: $border-radius;
 $field-border-size: 1px;
 $field-disabled-border-color: rgba($gray-dark, .4);
@@ -35,23 +35,108 @@ $field-height: 29px;
 $field-padding: $basic-padding;
 $field-placeholder-color: rgba($gray-dark, .4);
 
+// Button
+$button-normal-bgcolor: $gray-ligthest;
+$button-normal-textcolor: $gray-dark;
+$button-normal-border: solid 1px $gray-ligther;
 
-// Buttons
-$button-active-bgcolor: $gray;
-$button-active-textcolor: $white;
-$button-bgcolor: $blue;
-$button-horizontal-padding: 10px;
-$button-hover-bgcolor: $gray-dark;
-$button-hover-textcolor: $white;
-$button-textcolor: $white;
-$buttonextra-textcolor: $gray-dark;
-$buttontoggle-hover-bgcolor: $gray-dark;
-$buttontoggle-hover-textcolor: $white;
-$buttontoggle-active-bgcolor: $blue;
-$buttontoggle-active-textcolor: $white;
-$buttondrop-hover-bgcolor: $blue;
-$buttondrop-hover-bgcolorarrow: $blue-light;
-$buttondrop-hover-textcolor: $white;
+$button-hover-bgcolor: $gray-ligthest;
+$button-hover-textcolor: $gray-dark;
+$button-hover-border: solid 1px $gray-dark;
+
+$button-active-bgcolor: $white;
+$button-active-textcolor: $blue;
+$button-active-border: solid 1px $blue;
+
+$button-disabled-bgcolor: $gray-ligthest;
+$button-disabled-textcolor: $gray-ligther;
+$button-disabled-border: solid 1px #E3E4E6;
+
+
+// DropDownButton
+$dropdownbutton-arrow-size: 5px;
+$dropdownbutton-arrow-container-size: $field-height;
+
+$dropdownbutton-normal-bgcolor: $button-normal-bgcolor;
+$dropdownbutton-normal-textcolor: $button-normal-textcolor;
+$dropdownbutton-normal-border: $button-normal-border;
+$dropdownbutton-normal-arrow-bgcolor: transparent;
+$dropdownbutton-normal-arrow-url: false;
+$dropdownbutton-normal-arrow-color: $gray-dark;
+
+$dropdownbutton-hover-bgcolor: $button-hover-bgcolor;
+$dropdownbutton-hover-textcolor: $button-hover-textcolor;
+$dropdownbutton-hover-border: $button-hover-border;
+$dropdownbutton-hover-arrow-bgcolor: transparent;
+$dropdownbutton-hover-arrow-url: false;
+$dropdownbutton-hover-arrow-color: $gray-dark;
+
+$dropdownbutton-active-bgcolor: $button-active-bgcolor;
+$dropdownbutton-active-textcolor: $button-active-textcolor;
+$dropdownbutton-active-border: $button-active-border;
+$dropdownbutton-active-arrow-bgcolor: transparent;
+$dropdownbutton-active-arrow-url: false;
+$dropdownbutton-active-arrow-color: $blue;
+
+$dropdownbutton-disabled-bgcolor: $button-normal-bgcolor;
+$dropdownbutton-disabled-textcolor: $gray-ligther;
+$dropdownbutton-disabled-border: $button-disabled-border;
+$dropdownbutton-disabled-arrow-bgcolor: transparent;
+$dropdownbutton-disabled-arrow-url: false;
+$dropdownbutton-disabled-arrow-color: $gray-ligther;
+
+// ComboButton
+$combobutton-arrow-size: 5px;
+$combobutton-arrow-container-size: $field-height;
+
+$combobutton-normal-bgcolor: $button-normal-bgcolor;
+$combobutton-normal-textcolor: $button-normal-textcolor;
+$combobutton-normal-border: $button-normal-border;
+$combobutton-normal-arrow-bgcolor: transparent;
+$combobutton-normal-arrow-url: false;
+$combobutton-normal-arrow-color: $gray-dark;
+$combobutton-normal-arrow-border: $combobutton-normal-border;
+
+$combobutton-hover-bgcolor: $button-hover-bgcolor;
+$combobutton-hover-textcolor: $button-hover-textcolor;
+$combobutton-hover-border: $button-hover-border;
+$combobutton-hover-arrow-bgcolor: transparent;
+$combobutton-hover-arrow-url: false;
+$combobutton-hover-arrow-color: $gray-dark;
+$combobutton-hover-arrow-border: $combobutton-hover-border;
+
+$combobutton-active-bgcolor: $button-active-bgcolor;
+$combobutton-active-textcolor: $button-active-textcolor;
+$combobutton-active-border: $button-active-border;
+$combobutton-active-arrow-bgcolor: transparent;
+$combobutton-active-arrow-url: false;
+$combobutton-active-arrow-color: $blue;
+$combobutton-active-arrow-border: $combobutton-active-border;
+
+$combobutton-disabled-bgcolor: $button-normal-bgcolor;
+$combobutton-disabled-textcolor: $gray-ligther;
+$combobutton-disabled-border: $button-disabled-border;
+$combobutton-disabled-arrow-bgcolor: transparent;
+$combobutton-disabled-arrow-url: false;
+$combobutton-disabled-arrow-color: $gray-ligther;
+$combobutton-disabled-arrow-border: $button-disabled-border;
+
+//ToggleButton
+$togglebutton-normal-bgcolor: $gray-ligthest;
+$togglebutton-normal-textcolor: $gray-dark;
+$togglebutton-normal-border: solid 1px $gray-ligther;
+
+$togglebutton-hover-bgcolor: $gray-ligthest;
+$togglebutton-hover-textcolor: $gray-dark;
+$togglebutton-hover-border: solid 1px $gray-dark;
+
+$togglebutton-active-bgcolor: $white;
+$togglebutton-active-textcolor: $blue;
+$togglebutton-active-border: solid 1px $blue;
+
+$togglebutton-disabled-bgcolor: $gray-ligthest;
+$togglebutton-disabled-textcolor: $gray-ligther;
+$togglebutton-disabled-border: solid 1px #E3E4E6;
 
 // Text Fields
 $textbox-focus-color: $blue;

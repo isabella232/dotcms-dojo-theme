@@ -67,17 +67,7 @@ table.dijitComboButton {
 .dijitSelect,
 .dijitTextBox,
 .dijitToggleButton {
-  background-color: $white;
-  @include transition(background-color $field-animation-speed);
-}
-
-.dijitComboButton,
-.dijitDropDownButton,
-.dijitSelect,
-.dijitTextBox,
-.dijitToggleButton {
-  border: solid $field-border-size $field-border-color;
-  color: $buttonextra-textcolor;
+  @include transition(all $field-animation-speed);
 }
 
 .dijitComboBox .dijitArrowButtonContainer,
@@ -90,18 +80,14 @@ table.dijitComboButton {
   position: relative;
 }
 
-.dijitComboButton .dijitArrowButtonInner,
-.dijitDropDownButton .dijitArrowButtonInner,
 .dijitSpinner .dijitSpinnerButtonContainer {
   width: 24px;
 }
 
-.dijitComboButton .dijitArrowButtonInner,
 .dijitSpinner .dijitSpinnerButtonContainer {
   background-color: $gray-dark;
 }
 
-.dijitComboBox,
 .dijitSelect {
   .dijitArrowButtonContainer {
     width: $field-height;
@@ -116,8 +102,6 @@ table.dijitComboButton {
   }
 }
 
-.dijitComboButton,
-.dijitDropDownButton,
 .dijitSpinner {
   .dijitArrowButtonInner {
     &:before {
@@ -129,31 +113,11 @@ table.dijitComboButton {
   }
 }
 
-.dijitComboButton,
 .dijitSpinner {
   .dijitArrowButtonInner {
     &:before {
       background-image: url("/images/ico-arrow-sm-light.svg");
     }
-  }
-}
-
-.dijitDropDownButton {
-  .dijitArrowButtonInner {
-    &:before {
-      background-image: url("/images/ico-arrow-sm-dark.svg");
-    }
-  }
-}
-
-.dijitDisabled {
-  border-style: dotted;
-  @include opacity(0.3);
-
-  &.dijitCheckBox,
-  &.dijitCheckBoxInput,
-  &.dijitRadio {
-    border-style: solid;
   }
 }
 
@@ -201,8 +165,6 @@ table.dijitComboButton {
     }
   }
 }
-
-
 
 .dijitTextArea {
   font-family: $body-text;
