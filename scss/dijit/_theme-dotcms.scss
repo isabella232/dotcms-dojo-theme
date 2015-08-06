@@ -85,7 +85,7 @@ $dropdownbutton-focused-arrow-bgcolor: transparent;
 $dropdownbutton-focused-arrow-url: false;
 $dropdownbutton-focused-arrow-color: $blue;
 
-$dropdownbutton-disabled-bgcolor: $button-normal-bgcolor;
+$dropdownbutton-disabled-bgcolor: $gray-ligthest;
 $dropdownbutton-disabled-textcolor: $gray-ligther;
 $dropdownbutton-disabled-border: $button-disabled-border;
 $dropdownbutton-disabled-arrow-bgcolor: transparent;
@@ -160,10 +160,31 @@ $textbox-hover-shadow-size: 10px;
 $textbox-focused-border-color: $blue;
 $textbox-focused-bgcolor: rgba($blue, 0.1);
 
-// Checkboxes & RadioButtons
-$check-radio-border-width: 2px;
-$check-radio-radius: 2px;
-$check-radio-size: 16px;
+// Checkboxes
+$check-border-width: 1px;
+$check-radius: 2px;
+$check-size: 16px;
+$check-normal-border-color: $gray-dark;
+$check-normal-bgcolor: $white;
+$check-checked-border-color: $gray-dark;
+$check-checked-bgcolor: $white;
+$check-checked-icon: "/images/ico-checkbox.svg"; // TODO: move this to base64?
+$check-disabled-border-color: $gray-ligther;
+$check-disabled-bgcolor: $gray-ligthest;
+$check-disabled-icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMTFweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxMSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4gICAgICAgIDx0aXRsZT5QYXRoIDkzMiBDb3B5PC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8cGF0aCBkPSJNMSwzLjkwOTUzNDMxIEw0LjA2NjA1NTkzLDcgTDEwLDEiIGlkPSJQYXRoLTkzMi1Db3B5IiBzdHJva2U9IiNDQUNFRDAiIHN0cm9rZS13aWR0aD0iMiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPiAgICA8L2c+PC9zdmc+";
+
+// RadioButtons
+$radio-radius: 2px;
+$radio-size: 16px;
+$radio-border-width: 1px;
+$radio-normal-border-color: $gray-dark;
+$radio-normal-bgcolor: $white;
+$radio-checked-color: $gray-dark;
+$radio-checked-border-color: $gray-dark;
+$radio-checked-bgcolor: $white;
+$radio-checked-disabled-color: $gray-ligther;
+$radio-disabled-border-color: $gray-ligther;
+$radio-disabled-bgcolor: $gray-ligthest;
 
 // Sliders
 $slide-handle-bordercolor: $gray-dark;
