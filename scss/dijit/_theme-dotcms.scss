@@ -154,11 +154,39 @@ $togglebutton-disabled-textcolor: $gray-ligther;
 $togglebutton-disabled-border: solid 1px #E3E4E6;
 
 // Text Fields
-$textbox-focus-color: $blue;
-$textbox-hover-shadow-color: rgba($gray, 0.1);
-$textbox-hover-shadow-size: 10px;
-$textbox-focused-border-color: $blue;
-$textbox-focused-bgcolor: rgba($blue, 0.1);
+$textbox-arrow-size: 5px;
+
+$textbox-normal-border: solid $field-border-size $gray-ligther;
+$textbox-normal-bgcolor: $white;
+$textbox-normal-arrow-color: $gray-dark;
+$textbox-normal-arrow-border: $textbox-normal-border;
+$textbox-normal-arrow-bgcolor: $white;
+
+$textbox-hover-border: solid $field-border-size $gray-dark;
+$textbox-hover-bgcolor: $white;
+$textbox-hover-arrow-color: $gray-dark;
+$textbox-hover-arrow-border: $textbox-hover-border;
+$textbox-hover-arrow-bgcolor: $white;
+// Hover the field and hover the arrow
+$textbox-hoverarrow-arrow-color: $gray-dark;
+$textbox-hoverarrow-arrow-border: $textbox-hover-border;
+$textbox-hoverarrow-arrow-bgcolor: $gray-ligther;
+
+
+$textbox-focused-border: solid $field-border-size $blue;
+$textbox-focused-bgcolor: $white;
+$textbox-focused-arrow-color: $blue;
+$textbox-focused-arrow-border: $textbox-focused-border;
+// Hover the field and hover the arrow
+$textbox-focusedarrow-arrow-color: $textbox-focused-arrow-color;
+$textbox-focusedarrow-arrow-border: $textbox-focused-border;
+$textbox-focusedarrow-arrow-bgcolor: rgba($blue, 0.1);
+
+$textbox-disabled-border: solid $field-border-size $gray-ligther;
+$textbox-disabled-bgcolor: $gray-ligthest;
+$textbox-disabled-textcolor: $gray-ligther;
+$textbox-disabled-arrow-color: $gray-ligther;
+$textbox-disabled-arrow-border: $textbox-disabled-border;
 
 // Checkboxes
 $check-border-width: 1px;
@@ -248,7 +276,7 @@ $progressbar-heigth: 30px;
 
 // Inline Edit Box
 $inlineeditbox-hover-border-size: $field-border-size;
-$inlineeditbox-hover-border-color: $textbox-focused-border-color;
+$inlineeditbox-hover-border-color: $textbox-focused-border;
 $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
 
 // Tabs

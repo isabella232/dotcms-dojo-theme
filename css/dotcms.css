@@ -876,12 +876,12 @@ body {
 }
 .dotcms .dijitButton,
 .dotcms .dijitComboButton,
-.dotcms .dijitComboButton .dijitArrowButtonInner,
+.dotcms .dijitArrowButtonInner,
 .dotcms .dijitDropDownButton,
-.dotcms .dijitDropDownButton .dijitArrowButtonInner,
 .dotcms .dijitSelect,
 .dotcms .dijitTextBox,
-.dotcms .dijitToggleButton {
+.dotcms .dijitToggleButton,
+.dotcms .dijitDownArrowButton {
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   -webkit-transition: all 0.25s;
@@ -945,21 +945,131 @@ body {
   margin-right: 0;
 }
 .dotcms .dijitTextBox {
+  background-color: #fff;
+  border: solid 1px #CACED0;
   padding: 0 10px;
 }
-.dotcms .dijitTextBoxHover {
-  -moz-box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
-  -webkit-box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
-  box-shadow: 0 0 10px 0 rgba(69, 84, 91, 0.35);
+.dotcms .dijitTextBox .dijitDownArrowButton {
+  height: 27px;
+  width: 29px;
+  background-color: #fff;
+  border-left: solid 1px #CACED0;
 }
-.dotcms .dijitTextBoxHoverFocused {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.dotcms .dijitTextBox .dijitDownArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTextBoxHover {
+  background-color: #fff;
+  border: solid 1px #45545B;
+}
+.dotcms .dijitTextBoxHover .dijitDownArrowButton {
+  background-color: #fff;
+  border-left: solid 1px #45545B;
+}
+.dotcms .dijitTextBoxHover .dijitDownArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTextBoxHover .dijitDownArrowButtonHover {
+  background-color: #CACED0;
+  border-left: solid 1px #45545B;
+}
+.dotcms .dijitTextBoxHover .dijitDownArrowButtonHover:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
 }
 .dotcms .dijitTextBoxFocused {
-  border-color: #108AC8;
+  border: solid 1px #108AC8;
+  background-color: #fff;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+  box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+}
+.dotcms .dijitTextBoxFocused .dijitDownArrowButton {
+  background-color: #fff;
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitTextBoxFocused .dijitDownArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #108AC8;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTextBoxFocused .dijitDownArrowButtonHover {
   background-color: rgba(16, 138, 200, 0.1);
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitTextBoxFocused .dijitDownArrowButtonHover:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #108AC8;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTextBoxDisabled {
+  border: solid 1px #CACED0;
+  background-color: #ECEDEE;
+}
+.dotcms .dijitTextBoxDisabled .dijitDownArrowButton {
+  background-color: #ECEDEE;
+  border-left: solid 1px #CACED0;
+}
+.dotcms .dijitTextBoxDisabled .dijitDownArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #CACED0;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTextBoxDisabled .dijitPlaceHolder {
+  color: #CACED0;
 }
 .dotcms .dijitSpinner {
   padding-right: 0;
@@ -1722,8 +1832,8 @@ body {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  border: solid 1px #108AC8;
-  background: rgba(16, 138, 200, 0.1);
+  border: solid 1px solid 1px #108AC8;
+  background: #fff;
 }
 .dotcms .dijitInlineEditBoxDisplayMode.dijitOffScreen {
   display: none;
