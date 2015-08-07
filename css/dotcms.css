@@ -896,20 +896,6 @@ body {
   border: none;
   position: relative;
 }
-.dotcms .dijitSelect .dijitArrowButtonContainer {
-  width: 29px;
-}
-.dotcms .dijitSelect .dijitArrowButtonContainer:before {
-  content: "";
-  left: 50%;
-  margin-left: -7px;
-  margin-top: -5px;
-  position: absolute;
-  top: 50%;
-  background-image: url("/images/ico-combobox.svg");
-  height: 10px !important;
-  width: 16px;
-}
 .dotcms .dijitPlaceHolder {
   color: rgba(69, 84, 91, 0.4);
   font-style: normal;
@@ -1478,16 +1464,225 @@ body {
   border: solid 1px #CACED0;
   position: relative;
 }
+.dotcms .dijitSelect {
+  background-color: #fff;
+  border: solid 1px #CACED0;
+  color: #45545B;
+}
 .dotcms .dijitSelect .dijitButtonContents {
   padding: 0 10px;
   border: none;
 }
-.dotcms .dijitComboBox {
-  padding-right: 0;
+.dotcms .dijitSelect .dijitArrowButton {
+  border-left: solid 1px #CACED0;
+  width: 29px;
+  background-color: #fff;
 }
-.dotcms .dijitComboBox.dijitValidationTextBoxError .dijitValidationContainer,
-.dotcms .dijitComboBox .dijitValidationContainer {
-  display: none;
+.dotcms .dijitSelect .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitSelectHover {
+  background-color: #fff;
+  border: solid 1px #45545B;
+  color: #45545B;
+}
+.dotcms .dijitSelectHover .dijitArrowButton {
+  border-left: solid 1px #45545B;
+  background-color: #fff;
+}
+.dotcms .dijitSelectHover .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitSelectActive {
+  background-color: #fff;
+  border: solid 1px #108AC8;
+  color: #108AC8;
+}
+.dotcms .dijitSelectActive .dijitArrowButton {
+  border-left: solid 1px #108AC8;
+  background-color: #fff;
+}
+.dotcms .dijitSelectActive .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #108AC8;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitSelectOpened {
+  background-color: #fff;
+  border: solid 1px #108AC8;
+  color: #108AC8;
+}
+.dotcms .dijitSelectOpened .dijitArrowButton {
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitSelectOpened .dijitArrowButton:before {
+  border-top-color: #108AC8;
+}
+.dotcms .dijitSelectDisabled {
+  background-color: #ECEDEE;
+  border: solid 1px #CACED0;
+  color: #CACED0;
+}
+.dotcms .dijitSelectDisabled .dijitButtonContents {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.dotcms .dijitSelectDisabled .dijitArrowButton {
+  border-left: solid 1px #CACED0;
+  background-color: #ECEDEE;
+}
+.dotcms .dijitSelectDisabled .dijitArrowButton:before {
+  border-top-color: #CACED0;
+}
+.dotcms .dijitComboBox {
+  background-color: #fff;
+  border: solid 1px #CACED0;
+  padding: 0 0 0 10px;
+}
+.dotcms .dijitComboBox .dijitArrowButton {
+  height: 27px;
+  width: 29px;
+  background-color: #fff;
+  border-left: solid 1px #CACED0;
+}
+.dotcms .dijitComboBox .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitComboBoxHover {
+  background-color: #fff;
+  border: solid 1px #45545B;
+}
+.dotcms .dijitComboBoxHover .dijitArrowButton {
+  background-color: #fff;
+  border-left: solid 1px #45545B;
+}
+.dotcms .dijitComboBoxHover .dijitArrowButton:before {
+  border-top-color: #45545B;
+}
+.dotcms .dijitComboBoxHover .dijitDownArrowButtonHover {
+  background-color: #CACED0;
+  border-left: solid 1px #45545B;
+}
+.dotcms .dijitComboBoxHover .dijitDownArrowButtonHover:before {
+  border-top-color: #45545B;
+}
+.dotcms .dijitComboBoxFocused {
+  border: solid 1px #108AC8;
+  background-color: #fff;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+  box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+}
+.dotcms .dijitComboBoxFocused .dijitArrowButton {
+  background-color: #fff;
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitComboBoxFocused .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #108AC8;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitComboBoxFocused .dijitDownArrowButtonHover {
+  background-color: rgba(16, 138, 200, 0.2);
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitComboBoxFocused .dijitDownArrowButtonHover:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #108AC8;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitComboBoxOpenedFocused {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.dotcms .dijitComboBoxDisabled {
+  border: solid 1px #CACED0;
+  background-color: #ECEDEE;
+}
+.dotcms .dijitComboBoxDisabled .dijitArrowButton {
+  background-color: #ECEDEE;
+  border-left: solid 1px #CACED0;
+}
+.dotcms .dijitComboBoxDisabled .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #CACED0;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitComboBoxDisabled .dijitPlaceHolder {
+  color: #CACED0;
+}
+.dotcms .dijitComboBoxDisabled .dijitInputInner {
+  color: #CACED0;
+}
+.dotcms .dijitComboBox .dijitDownArrowButtonActive {
+  background-color: #108AC8;
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitComboBox .dijitDownArrowButtonActive:before {
+  border-top-color: #fff;
 }
 .dotcms .dijitRuleLabel {
   -moz-transition: color, 0.1s;
@@ -1826,7 +2021,7 @@ body {
   color: #45545B;
 }
 .dotcms .dijitMenu .dijitMenuItemSelected {
-  background-color: #108AC8;
+  background-color: #BABEC1;
   color: #fff;
 }
 .dotcms .dijitMenu .dijitMenuItem .dijitMenuItemIconCell {

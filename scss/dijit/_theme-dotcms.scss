@@ -234,6 +234,79 @@ $spinner-disabled-arrow-color: $gray-ligther;
 $spinner-disabled-arrow-border: $spinner-disabled-border;
 $spinner-disabled-arrow-bgcolor: $spinner-disabled-bgcolor;
 
+// Select
+$select-arrow-size: 5px;
+$select-arrow-container-size: $field-height;
+
+$select-normal-border: solid $field-border-size $gray-ligther;
+$select-normal-bgcolor: $white;
+$select-normal-textcolor: $gray-dark;
+$select-normal-arrow-color: $gray-dark;
+$select-normal-arrow-border: $select-normal-border;
+$select-normal-arrow-bgcolor: $white;
+
+$select-hover-border: solid $field-border-size $gray-dark;
+$select-hover-bgcolor: $white;
+$select-hover-textcolor: $gray-dark;
+$select-hover-arrow-color: $gray-dark;
+$select-hover-arrow-border: $select-hover-border;
+$select-hover-arrow-bgcolor: $white;
+
+$select-active-border: solid $field-border-size $blue;
+$select-active-bgcolor: $white;
+$select-active-textcolor: $blue;
+$select-active-arrow-color: $blue;
+$select-active-arrow-border: solid 1px $blue;
+$select-active-arrow-bgcolor: $white;
+
+$select-disabled-border: solid $field-border-size $gray-ligther;
+$select-disabled-bgcolor: $gray-ligthest;
+$select-disabled-textcolor: $gray-ligther;
+$select-disabled-arrow-color: $gray-ligther;
+$select-disabled-arrow-border: $select-disabled-border;
+$select-disabled-arrow-bgcolor: $gray-ligthest;
+
+// Combobox
+$combobox-arrow-size: 5px;
+
+$combobox-normal-border: solid $field-border-size $gray-ligther;
+$combobox-normal-bgcolor: $white;
+$combobox-normal-arrow-color: $gray-dark;
+$combobox-normal-arrow-border: $combobox-normal-border;
+$combobox-normal-arrow-bgcolor: $white;
+
+$combobox-hover-border: solid $field-border-size $gray-dark;
+$combobox-hover-bgcolor: $white;
+$combobox-hover-arrow-color: $gray-dark;
+$combobox-hover-arrow-border: $combobox-hover-border;
+$combobox-hover-arrow-bgcolor: $white;
+// Hover the field and hover the arrow
+$combobox-hoverarrow-arrow-color: $gray-dark;
+$combobox-hoverarrow-arrow-border: $combobox-hover-border;
+$combobox-hoverarrow-arrow-bgcolor: $gray-ligther;
+
+$combobox-focused-border: solid $field-border-size $blue;
+$combobox-focused-bgcolor: $white;
+$combobox-focused-arrow-color: $blue;
+$combobox-focused-arrow-border: $combobox-focused-border;
+$combobox-focused-arrow-bgcolor: $white;
+// Hover the field and hover the arrow
+$combobox-focusedarrow-arrow-color: $combobox-focused-arrow-color;
+$combobox-focusedarrow-arrow-border: $combobox-focused-border;
+$combobox-focusedarrow-arrow-bgcolor: rgba($blue, 0.2);
+
+// Click the arrow
+$combobox-activearrow-arrow-color: $white;
+$combobox-activearrow-arrow-border: $combobox-focused-border;
+$combobox-activearrow-arrow-bgcolor: $blue;
+
+$combobox-disabled-border: solid $field-border-size $gray-ligther;
+$combobox-disabled-bgcolor: $gray-ligthest;
+$combobox-disabled-textcolor: $gray-ligther;
+$combobox-disabled-textcolor: $gray-ligther;
+$combobox-disabled-arrow-color: $gray-ligther;
+$combobox-disabled-arrow-border: $combobox-disabled-border;
+
 // Checkboxes
 $check-border-width: 1px;
 $check-radius: 2px;
@@ -281,7 +354,7 @@ $menu-item-bgcolor: $menu-bgcolor;
 $menu-item-separator: none;
 $menu-item-hover-bgcolor: $gray-ligthest;
 $menu-item-hover-textcolor: $gray-dark;
-$menu-item-selected-bgcolor: $blue;
+$menu-item-selected-bgcolor: $gray-ligth;
 $menu-item-selected-textcolor: $white;
 
 //TimePicker menu

@@ -80,20 +80,6 @@ table.dijitComboButton {
   position: relative;
 }
 
-.dijitSelect {
-  .dijitArrowButtonContainer {
-    width: $field-height;
-
-    &:before {
-      content: "";
-      @include center-icon(14px, 10px); // Sadly compass can't get width and height from a svg
-      background-image: url("/images/ico-combobox.svg");
-      height: 10px !important; // :( overwrite from dijit.css
-      width: 16px;
-    }
-  }
-}
-
 .dijitPlaceHolder {
   color: $field-placeholder-color;
   font-style: normal;
