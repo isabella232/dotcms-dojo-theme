@@ -882,10 +882,10 @@ body {
 .dotcms .dijitTextBox,
 .dotcms .dijitToggleButton,
 .dotcms .dijitDownArrowButton {
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 .dotcms .dijitComboBox .dijitArrowButtonContainer,
 .dotcms .dijitComboButton .dijitArrowButtonInner,
@@ -895,12 +895,6 @@ body {
   height: 27px;
   border: none;
   position: relative;
-}
-.dotcms .dijitSpinner .dijitSpinnerButtonContainer {
-  width: 24px;
-}
-.dotcms .dijitSpinner .dijitSpinnerButtonContainer {
-  background-color: #45545B;
 }
 .dotcms .dijitSelect .dijitArrowButtonContainer {
   width: 29px;
@@ -915,19 +909,6 @@ body {
   background-image: url("/images/ico-combobox.svg");
   height: 10px !important;
   width: 16px;
-}
-.dotcms .dijitSpinner .dijitArrowButtonInner:before {
-  content: "";
-  left: 50%;
-  margin-left: -5px;
-  margin-top: -3px;
-  position: absolute;
-  top: 50%;
-  height: 6px !important;
-  width: 10px;
-}
-.dotcms .dijitSpinner .dijitArrowButtonInner:before {
-  background-image: url("/images/ico-arrow-sm-light.svg");
 }
 .dotcms .dijitPlaceHolder {
   color: rgba(69, 84, 91, 0.4);
@@ -944,18 +925,24 @@ body {
   height: auto;
   margin-right: 0;
 }
+.dotcms .dijitTextArea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #45545B;
+  padding: 5px 10px;
+}
 .dotcms .dijitTextBox {
   background-color: #fff;
   border: solid 1px #CACED0;
   padding: 0 10px;
 }
-.dotcms .dijitTextBox .dijitDownArrowButton {
+.dotcms .dijitTextBox .dijitArrowButton {
   height: 27px;
   width: 29px;
   background-color: #fff;
   border-left: solid 1px #CACED0;
 }
-.dotcms .dijitTextBox .dijitDownArrowButton:before {
+.dotcms .dijitTextBox .dijitArrowButton:before {
   left: 50%;
   margin-left: -5px;
   margin-top: -2.5px;
@@ -972,39 +959,19 @@ body {
   background-color: #fff;
   border: solid 1px #45545B;
 }
-.dotcms .dijitTextBoxHover .dijitDownArrowButton {
+.dotcms .dijitTextBoxHover .dijitArrowButton {
   background-color: #fff;
   border-left: solid 1px #45545B;
 }
-.dotcms .dijitTextBoxHover .dijitDownArrowButton:before {
-  left: 50%;
-  margin-left: -5px;
-  margin-top: -2.5px;
-  position: absolute;
-  top: 50%;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #45545B;
-  content: "";
-  height: 0;
-  width: 0;
+.dotcms .dijitTextBoxHover .dijitArrowButton:before {
+  border-top-color: #45545B;
 }
 .dotcms .dijitTextBoxHover .dijitDownArrowButtonHover {
   background-color: #CACED0;
   border-left: solid 1px #45545B;
 }
 .dotcms .dijitTextBoxHover .dijitDownArrowButtonHover:before {
-  left: 50%;
-  margin-left: -5px;
-  margin-top: -2.5px;
-  position: absolute;
-  top: 50%;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #45545B;
-  content: "";
-  height: 0;
-  width: 0;
+  border-top-color: #45545B;
 }
 .dotcms .dijitTextBoxFocused {
   border: solid 1px #108AC8;
@@ -1013,11 +980,11 @@ body {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
   box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
 }
-.dotcms .dijitTextBoxFocused .dijitDownArrowButton {
+.dotcms .dijitTextBoxFocused .dijitArrowButton {
   background-color: #fff;
   border-left: solid 1px #108AC8;
 }
-.dotcms .dijitTextBoxFocused .dijitDownArrowButton:before {
+.dotcms .dijitTextBoxFocused .dijitArrowButton:before {
   left: 50%;
   margin-left: -5px;
   margin-top: -2.5px;
@@ -1031,7 +998,7 @@ body {
   width: 0;
 }
 .dotcms .dijitTextBoxFocused .dijitDownArrowButtonHover {
-  background-color: rgba(16, 138, 200, 0.1);
+  background-color: rgba(16, 138, 200, 0.2);
   border-left: solid 1px #108AC8;
 }
 .dotcms .dijitTextBoxFocused .dijitDownArrowButtonHover:before {
@@ -1047,15 +1014,20 @@ body {
   height: 0;
   width: 0;
 }
+.dotcms .dijitTextBoxOpenedFocused {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .dotcms .dijitTextBoxDisabled {
   border: solid 1px #CACED0;
   background-color: #ECEDEE;
 }
-.dotcms .dijitTextBoxDisabled .dijitDownArrowButton {
+.dotcms .dijitTextBoxDisabled .dijitArrowButton {
   background-color: #ECEDEE;
   border-left: solid 1px #CACED0;
 }
-.dotcms .dijitTextBoxDisabled .dijitDownArrowButton:before {
+.dotcms .dijitTextBoxDisabled .dijitArrowButton:before {
   left: 50%;
   margin-left: -5px;
   margin-top: -2.5px;
@@ -1071,20 +1043,120 @@ body {
 .dotcms .dijitTextBoxDisabled .dijitPlaceHolder {
   color: #CACED0;
 }
-.dotcms .dijitSpinner {
-  padding-right: 0;
+.dotcms .dijitTextBoxDisabled .dijitInputInner {
+  color: #CACED0;
 }
-.dotcms .dijitSpinner .dijitUpArrowButton .dijitArrowButtonInner {
+.dotcms .dijitTextBox .dijitDownArrowButtonActive {
+  background-color: #108AC8;
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitTextBox .dijitDownArrowButtonActive:before {
+  border-top-color: #fff;
+}
+.dotcms .dijitSpinner {
+  background-color: #fff;
+  border: solid 1px #CACED0;
+  padding: 0 0 0 10px;
+}
+.dotcms .dijitSpinner .dijitSpinnerButtonContainer {
+  width: 29px;
+}
+.dotcms .dijitSpinner .dijitSpinnerButtonContainer .dijitDownArrowButton {
+  border-top: solid 1px #CACED0 !important;
+}
+.dotcms .dijitSpinner .dijitArrowButton {
+  height: 14.5px;
+  border-left: solid 1px #CACED0;
+  background-color: #fff;
+}
+.dotcms .dijitSpinner .dijitArrowButton:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitSpinner .dijitUpArrowButton:before {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.dotcms .dijitTextArea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  color: #45545B;
-  padding: 5px 10px;
+.dotcms .dijitSpinnerHover {
+  background-color: #fff;
+  border: solid 1px #45545B;
+}
+.dotcms .dijitSpinnerHover .dijitSpinnerButtonContainer .dijitDownArrowButton {
+  border-top: solid 1px #45545B !important;
+}
+.dotcms .dijitSpinnerHover .dijitArrowButton {
+  border-left: solid 1px #45545B;
+}
+.dotcms .dijitSpinnerHover .dijitArrowButton:before {
+  border-top-color: #45545B;
+}
+.dotcms .dijitSpinnerHover .dijitDownArrowButtonHover,
+.dotcms .dijitSpinnerHover .dijitUpArrowButtonHover {
+  background-color: #CACED0;
+  border-left: solid 1px #45545B;
+}
+.dotcms .dijitSpinnerHover .dijitDownArrowButtonHover:before,
+.dotcms .dijitSpinnerHover .dijitUpArrowButtonHover:before {
+  border-top-color: #45545B;
+}
+.dotcms .dijitSpinnerFocused {
+  background-color: #fff;
+  border: solid 1px #108AC8;
+}
+.dotcms .dijitSpinnerFocused .dijitSpinnerButtonContainer .dijitDownArrowButton {
+  border-top: solid 1px #108AC8 !important;
+}
+.dotcms .dijitSpinnerFocused .dijitArrowButton {
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitSpinnerFocused .dijitArrowButton:before {
+  border-top-color: #108AC8;
+}
+.dotcms .dijitSpinnerFocused .dijitDownArrowButtonHover,
+.dotcms .dijitSpinnerFocused .dijitUpArrowButtonHover {
+  background-color: rgba(16, 138, 200, 0.2);
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitSpinnerFocused .dijitDownArrowButtonHover:before,
+.dotcms .dijitSpinnerFocused .dijitUpArrowButtonHover:before {
+  border-top-color: #108AC8;
+}
+.dotcms .dijitSpinnerDisabled {
+  background-color: #ECEDEE;
+  border: solid 1px #CACED0;
+}
+.dotcms .dijitSpinnerDisabled .dijitSpinnerButtonContainer .dijitDownArrowButton {
+  border-top: solid 1px #CACED0 !important;
+}
+.dotcms .dijitSpinnerDisabled .dijitArrowButton {
+  border-left: solid 1px #CACED0;
+  background-color: #ECEDEE;
+}
+.dotcms .dijitSpinnerDisabled .dijitArrowButton:before {
+  border-top-color: #CACED0;
+}
+.dotcms .dijitSpinnerDisabled .dijitInputInner {
+  color: #CACED0;
+}
+.dotcms .dijitSpinner .dijitDownArrowButtonActive,
+.dotcms .dijitSpinner .dijitUpArrowButtonActive {
+  background-color: #108AC8;
+  border-left: solid 1px #108AC8;
+}
+.dotcms .dijitSpinner .dijitDownArrowButtonActive:before,
+.dotcms .dijitSpinner .dijitUpArrowButtonActive:before {
+  border-top-color: #fff;
 }
 .dotcms .dijitButton .dijitButtonNode,
 .dotcms .dijitToggleButton .dijitButtonNode,
@@ -1418,17 +1490,17 @@ body {
   display: none;
 }
 .dotcms .dijitRuleLabel {
-  -moz-transition: color, 0.25s;
-  -o-transition: color, 0.25s;
-  -webkit-transition: color, 0.25s;
-  transition: color, 0.25s;
+  -moz-transition: color, 0.1s;
+  -o-transition: color, 0.1s;
+  -webkit-transition: color, 0.1s;
+  transition: color, 0.1s;
   color: #BABEC1;
 }
 .dotcms .dijitRuleMark {
-  -moz-transition: border-color, 0.25s;
-  -o-transition: border-color, 0.25s;
-  -webkit-transition: border-color, 0.25s;
-  transition: border-color, 0.25s;
+  -moz-transition: border-color, 0.1s;
+  -o-transition: border-color, 0.1s;
+  -webkit-transition: border-color, 0.1s;
+  transition: border-color, 0.1s;
   border-color: #BABEC1;
 }
 .dotcms .dijitSliderHover .dijitRuleLabel {
@@ -1438,10 +1510,10 @@ body {
   border-color: #45545B;
 }
 .dotcms .dijitSliderImageHandle {
-  -moz-transition: -moz-transform, border-color, backgroun-color, 0.25s;
-  -o-transition: -o-transform, border-color, backgroun-color, 0.25s;
-  -webkit-transition: -webkit-transform, border-color, backgroun-color, 0.25s;
-  transition: transform, border-color, backgroun-color, 0.25s;
+  -moz-transition: -moz-transform, border-color, backgroun-color, 0.1s;
+  -o-transition: -o-transform, border-color, backgroun-color, 0.1s;
+  -webkit-transition: -webkit-transform, border-color, backgroun-color, 0.1s;
+  transition: transform, border-color, backgroun-color, 0.1s;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -1501,10 +1573,10 @@ body {
   padding: 1px 10px 0;
 }
 .dotcms .dijitTitlePaneTitle {
-  -moz-transition: background-color, color, 0.25s;
-  -o-transition: background-color, color, 0.25s;
-  -webkit-transition: background-color, color, 0.25s;
-  transition: background-color, color, 0.25s;
+  -moz-transition: background-color, color, 0.1s;
+  -o-transition: background-color, color, 0.1s;
+  -webkit-transition: background-color, color, 0.1s;
+  transition: background-color, color, 0.1s;
   background-color: #45545B;
   color: #fff;
 }
@@ -1521,10 +1593,10 @@ body {
   width: 10px;
 }
 .dotcms .dijitTitlePaneTitle .dijitArrowNode:before {
-  -moz-transition: -moz-transform 0.25s;
-  -o-transition: -o-transform 0.25s;
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
+  -moz-transition: -moz-transform 0.1s;
+  -o-transition: -o-transform 0.1s;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
   left: 50%;
   margin-left: -5px;
   margin-top: -3px;
@@ -1548,10 +1620,10 @@ body {
   line-height: 29px;
 }
 .dotcms .dijitTab {
-  -moz-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
   background-color: #CACED0;
   color: #45545B;
   border: solid 1px #CACED0;
@@ -1628,10 +1700,10 @@ body {
   cursor: pointer;
 }
 .dotcms .dijitCalendarDayLabelTemplate, .dotcms .dijitCalendarDateTemplate {
-  -moz-transition: background-color 0.25s;
-  -o-transition: background-color 0.25s;
-  -webkit-transition: background-color 0.25s;
-  transition: background-color 0.25s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
   background-color: #fff;
   color: #45545B;
   height: 29px;
@@ -1738,57 +1810,68 @@ body {
   margin: 0;
   text-align: center;
 }
-.dotcms .dijitTimePickerItemSelected .dijitTimePickerItemInner {
-  background-color: #108AC8;
-  color: #fff;
-}
-.dotcms .dijitMenuItemSelected, .dotcms .dijitMenuItemHover, .dotcms .dijitTimePickerItemHover {
-  background-color: #ECEDEE;
-  color: #45545B;
-}
-.dotcms .dijitComboBoxMenuPopup .dijitMenuItem {
-  line-height: 29px;
-  padding: 0 10px;
-}
 .dotcms .dijitMenu {
   background-color: #fff;
   border: solid 1px #CACED0;
 }
 .dotcms .dijitMenu .dijitMenuItem {
+  border-bottom: none;
   height: 29px;
+}
+.dotcms .dijitMenu .dijitMenuItem:last-child {
+  border-bottom: none;
+}
+.dotcms .dijitMenu .dijitMenuItemHover {
+  background-color: #ECEDEE;
+  color: #45545B;
+}
+.dotcms .dijitMenu .dijitMenuItemSelected {
+  background-color: #108AC8;
+  color: #fff;
+}
+.dotcms .dijitMenu .dijitMenuItem .dijitMenuItemIconCell {
+  padding-left: 10px;
+  width: 16px;
 }
 .dotcms .dijitMenuArrowCell .dijitIcon {
   margin-right: 10px;
   text-align: right;
   vertical-align: baseline;
 }
-.dotcms .dijitMenuItem .dijitMenuItemIconCell {
-  padding-left: 10px;
-  width: 16px;
-}
-.dotcms .dijitMenuBar {
-  border: solid 1px #CACED0;
+.dotcms .dijitComboBoxMenuPopup .dijitMenuItem {
+  line-height: 29px;
+  padding: 0 10px;
 }
 .dotcms .dijitMenuBar .dijitMenuItem {
   padding: 5px;
 }
 .dotcms .dijitTimePicker {
-  margin-top: 2px;
   background-color: #fff;
-  border: solid 1px #CACED0;
+  margin-top: 1px;
+}
+.dotcms .dijitTimePickerPopup {
+  border: solid 1px #CACED0 !important;
 }
 .dotcms .dijitTimePickerItem {
   line-height: 29px;
   height: 29px;
   color: #45545B;
-  border-bottom: solid 1px #CACED0;
+  border-bottom: none;
+}
+.dotcms .dijitTimePickerItemHover {
+  background-color: #ECEDEE;
+  color: #45545B;
+}
+.dotcms .dijitTimePickerItemSelected .dijitTimePickerItemInner {
+  background-color: #F3762A;
+  color: #fff;
 }
 .dotcms .dijitTimePickerItemInner {
   padding: 0;
 }
 .dotcms .dijitTimePickerMarker {
   font-weight: bold;
-  background-color: transparent;
+  background-color: #CACED0;
 }
 .dotcms .dijitProgressBar {
   -moz-border-radius: 2px;
@@ -1823,10 +1906,10 @@ body {
   padding: 0;
 }
 .dotcms .dijitInlineEditBoxDisplayMode {
-  -moz-transition: background-color, border-color, 0.25s;
-  -o-transition: background-color, border-color, 0.25s;
-  -webkit-transition: background-color, border-color, 0.25s;
-  transition: background-color, border-color, 0.25s;
+  -moz-transition: background-color, border-color, 0.1s;
+  -o-transition: background-color, border-color, 0.1s;
+  -webkit-transition: background-color, border-color, 0.1s;
+  transition: background-color, border-color, 0.1s;
 }
 .dotcms .dijitInlineEditBoxDisplayModeHover {
   -moz-border-radius: 2px;

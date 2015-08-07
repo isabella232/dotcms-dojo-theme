@@ -25,7 +25,7 @@ $basic-padding: 10px;
 // FORMS
 
 // Common
-$field-animation-speed: .25s;
+$field-animation-speed: .1s;
 $field-border-color: $gray-ligther;
 $field-border-radius: $border-radius;
 $field-border-size: 1px;
@@ -172,21 +172,67 @@ $textbox-hoverarrow-arrow-color: $gray-dark;
 $textbox-hoverarrow-arrow-border: $textbox-hover-border;
 $textbox-hoverarrow-arrow-bgcolor: $gray-ligther;
 
-
 $textbox-focused-border: solid $field-border-size $blue;
 $textbox-focused-bgcolor: $white;
 $textbox-focused-arrow-color: $blue;
 $textbox-focused-arrow-border: $textbox-focused-border;
+$textbox-focused-arrow-bgcolor: $white;
 // Hover the field and hover the arrow
 $textbox-focusedarrow-arrow-color: $textbox-focused-arrow-color;
 $textbox-focusedarrow-arrow-border: $textbox-focused-border;
-$textbox-focusedarrow-arrow-bgcolor: rgba($blue, 0.1);
+$textbox-focusedarrow-arrow-bgcolor: rgba($blue, 0.2);
+
+// Click the arrow
+$textbox-activearrow-arrow-color: $white;
+$textbox-activearrow-arrow-border: $textbox-focused-border;
+$textbox-activearrow-arrow-bgcolor: $blue;
 
 $textbox-disabled-border: solid $field-border-size $gray-ligther;
 $textbox-disabled-bgcolor: $gray-ligthest;
 $textbox-disabled-textcolor: $gray-ligther;
+$textbox-disabled-textcolor: $gray-ligther;
 $textbox-disabled-arrow-color: $gray-ligther;
 $textbox-disabled-arrow-border: $textbox-disabled-border;
+
+// Dijit Spinner
+$spinner-arrow-size: 5px;
+
+$spinner-normal-border: solid $field-border-size $gray-ligther;
+$spinner-normal-bgcolor: $white;
+$spinner-normal-arrow-color: $gray-dark;
+$spinner-normal-arrow-border: $spinner-normal-border;
+$spinner-normal-arrow-bgcolor: $white;
+
+$spinner-hover-border: solid $field-border-size $gray-dark;
+$spinner-hover-bgcolor: $white;
+$spinner-hover-arrow-color: $gray-dark;
+$spinner-hover-arrow-border: $spinner-hover-border;
+$spinner-hover-arrow-bgcolor: $white;
+// Hover the arrow
+$spinner-hoverarrow-arrow-color: $gray-dark;
+$spinner-hoverarrow-arrow-border: $spinner-hover-border;
+$spinner-hoverarrow-arrow-bgcolor: $gray-ligther;
+
+$spinner-focused-border: solid $field-border-size $blue;
+$spinner-focused-bgcolor: $white;
+$spinner-focused-arrow-color: $blue;
+$spinner-focused-arrow-border: $spinner-focused-border;
+$spinner-focused-arrow-bgcolor: $white;
+// Hover the arrow
+$spinner-focusedarrow-arrow-color: $spinner-focused-arrow-color;
+$spinner-focusedarrow-arrow-border: $spinner-focused-border;
+$spinner-focusedarrow-arrow-bgcolor: rgba($blue, 0.2);
+// Click the arrow
+$spinner-activearrow-arrow-color: $white;
+$spinner-activearrow-arrow-border: $spinner-focused-border;
+$spinner-activearrow-arrow-bgcolor: $blue;
+
+$spinner-disabled-border: solid $field-border-size $gray-ligther;
+$spinner-disabled-bgcolor: $gray-ligthest;
+$spinner-disabled-textcolor: $gray-ligther;
+$spinner-disabled-arrow-color: $gray-ligther;
+$spinner-disabled-arrow-border: $spinner-disabled-border;
+$spinner-disabled-arrow-bgcolor: $spinner-disabled-bgcolor;
 
 // Checkboxes
 $check-border-width: 1px;
@@ -230,13 +276,24 @@ $slider-remaining-color: $gray-ligther;
 
 // Menus
 $menu-bgcolor: $white;
+$menu-border: solid 1px $gray-ligther;
 $menu-item-bgcolor: $menu-bgcolor;
-$menu-item-separator-width: 1px;
-$menu-item-separator-color: $gray-ligther;
+$menu-item-separator: none;
 $menu-item-hover-bgcolor: $gray-ligthest;
 $menu-item-hover-textcolor: $gray-dark;
 $menu-item-selected-bgcolor: $blue;
 $menu-item-selected-textcolor: $white;
+
+//TimePicker menu
+$timepicker-bgcolor: $white;
+$timepicker-marker-bgcolor: $gray-ligther;
+$timepicker-border: solid 1px $gray-ligther;
+$timepicker-item-bgcolor: $menu-bgcolor;
+$timepicker-item-separator: none;
+$timepicker-item-hover-bgcolor: $gray-ligthest;
+$timepicker-item-hover-textcolor: $gray-dark;
+$timepicker-item-selected-bgcolor: $orange;
+$timepicker-item-selected-textcolor: $white;
 
 // Calendar
 $calendar-item-size: $field-height;

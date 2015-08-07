@@ -1,32 +1,29 @@
-// TODO round menu corners
-
-%selected {
-  background-color: $menu-item-selected-bgcolor;
-  color: $menu-item-selected-textcolor;
-}
-
-%hover { // needs to be the last one to avoid focused and selected to override
-  background-color: $menu-item-hover-bgcolor;
-  color: $menu-item-hover-textcolor
-}
-
-%focused {
-  @extend %selected;
-}
-
-.dijitComboBoxMenuPopup {
-  .dijitMenuItem {
-    line-height: $field-height;
-    padding: 0 10px;
-  }
-}
-
 .dijitMenu {
   background-color: $menu-bgcolor;
-  border: solid $menu-item-separator-width $menu-item-separator-color;
+  border: $menu-border;
 
   .dijitMenuItem {
+    border-bottom: $menu-item-separator;
     height: $field-height;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &Hover {
+      background-color: $menu-item-hover-bgcolor;
+      color: $menu-item-hover-textcolor
+    }
+
+    &Selected {
+      background-color: $menu-item-selected-bgcolor;
+      color: $menu-item-selected-textcolor;
+    }
+
+    .dijitMenuItemIconCell {
+      padding-left: $basic-padding;
+      width: $icon-size;
+    }
   }
 
   &ArrowCell {
@@ -39,21 +36,16 @@
 
 }
 
-.dijitMenuItem {
-
-  &Selected,
-  &Hover {
-    @extend %hover;
-  }
-
-  .dijitMenuItemIconCell {
-    padding-left: $basic-padding;
-    width: $icon-size;
+.dijitComboBoxMenuPopup {
+  .dijitMenuItem {
+    line-height: $field-height;
+    padding: 0 10px;
   }
 }
 
+
 .dijitMenuBar {
-  border: solid $menu-item-separator-width $gray-ligther;
+  //border: ;
 
   .dijitMenuItem {
     padding: 5px;
@@ -61,23 +53,28 @@
 }
 
 .dijitTimePicker {
-  margin-top: 2px;
-  background-color: $menu-bgcolor;
-  border: solid $menu-item-separator-width $menu-item-separator-color;
+  background-color: $timepicker-bgcolor;
+  margin-top: 1px;
+
+  &Popup {
+    border: $timepicker-border !important;
+  }
 
   &Item {
     line-height: $field-height;
     height: $field-height;
     color: $text-color;
-    border-bottom: solid $menu-item-separator-width $menu-item-separator-color;
+    border-bottom: $timepicker-item-separator;
 
     &Hover {
-      @extend %hover;
+      background-color: $timepicker-item-hover-bgcolor;
+      color: $timepicker-item-hover-textcolor
     }
 
     &Selected {
       .dijitTimePickerItemInner {
-        @extend %selected;
+        background-color: $timepicker-item-selected-bgcolor;
+        color: $timepicker-item-selected-textcolor;
       }
     }
 
@@ -88,6 +85,6 @@
 
   &Marker {
     font-weight: bold;
-    background-color: transparent;
+    background-color: $timepicker-marker-bgcolor;
   }
 }
