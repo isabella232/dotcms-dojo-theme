@@ -1039,6 +1039,30 @@ body {
 .dotcms .dijitTextBox .dijitDownArrowButtonActive:before {
   border-top-color: #fff;
 }
+.dotcms .dijitTextArea {
+  background-color: #fff;
+  border: solid 1px #CACED0;
+  color: #45545B;
+  padding: 0 10px;
+}
+.dotcms .dijitTextAreaHover {
+  background-color: #fff;
+  border: solid 1px #45545B;
+  color: #45545B;
+}
+.dotcms .dijitTextAreaFocused {
+  border: solid 1px #108AC8;
+  background-color: #fff;
+  color: #45545B;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+  box-shadow: 0px 0px 8px 0px rgba(16, 138, 200, 0.6);
+}
+.dotcms .dijitTextAreaDisabled {
+  border: solid 1px #E3E4E6;
+  background-color: #ECEDEE;
+  color: #CACED0;
+}
 .dotcms .dijitSpinner {
   background-color: #fff;
   border: solid 1px #CACED0;

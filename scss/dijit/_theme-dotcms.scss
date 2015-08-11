@@ -213,7 +213,6 @@ $textbox-focused-arrow-bgcolor: $white;
 $textbox-focusedarrow-arrow-color: $field-focusedarrow-arrow-color;
 $textbox-focusedarrow-arrow-border: $field-focusedarrow-arrow-color;
 $textbox-focusedarrow-arrow-bgcolor: $field-focusedarrow-arrow-color;
-
 // Click the arrow
 $textbox-activearrow-arrow-color: $field-activearrow-arrow-color;
 $textbox-activearrow-arrow-border: $field-activearrow-arrow-border;
@@ -224,6 +223,23 @@ $textbox-disabled-bgcolor: $field-disabled-bgcolor;
 $textbox-disabled-textcolor: $field-disabled-textcolor;
 $textbox-disabled-arrow-color: $gray-ligther;
 $textbox-disabled-arrow-border: $textbox-disabled-border;
+
+// TextArea
+$textarea-normal-bgcolor: $white;
+$textarea-normal-border: $field-normal-border;
+$textarea-normal-textcolor: $field-normal-textcolor;
+
+$textarea-hover-bgcolor: $white;
+$textarea-hover-border: $field-hover-border;
+$textarea-hover-textcolor: $field-hover-textcolor;
+
+$textarea-focused-border: solid $field-border-size $blue;
+$textarea-focused-bgcolor: $white;
+$textarea-focused-textcolor: $field-focused-textcolor;
+
+$textarea-disabled-border: $field-disabled-border;
+$textarea-disabled-bgcolor: $field-disabled-bgcolor;
+$textarea-disabled-textcolor: $field-disabled-textcolor;
 
 // Dijit Spinner
 $spinner-arrow-size: 5px;

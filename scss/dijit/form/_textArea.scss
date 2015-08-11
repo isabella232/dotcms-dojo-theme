@@ -1,0 +1,25 @@
+.dijitTextArea {
+  background-color: $textarea-normal-bgcolor;
+  border: $textarea-normal-border;
+  color: $textarea-normal-textcolor;
+  padding: 0 $field-padding;
+
+  &Hover {
+    background-color: $textarea-hover-bgcolor;
+    border: $textarea-hover-border;
+    color: $textarea-hover-textcolor;
+  }
+
+  &Focused {
+    border: $textarea-focused-border;
+    background-color: $textarea-focused-bgcolor;
+    color: $textarea-focused-textcolor;
+    @include box-shadow(0px 0px 8px 0px rgba($blue, .6));
+  }
+
+  &Disabled {
+    border: $textarea-disabled-border;
+    background-color: $textarea-disabled-bgcolor;
+    color: $textarea-disabled-textcolor;
+  }
+}
