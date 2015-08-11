@@ -1,11 +1,12 @@
 .dijitRadio {
   @include border-radius($radio-size / 2);
   background-color: $radio-normal-bgcolor;
-  border: solid $radio-border-width $radio-normal-border-color;
+  border: $radio-normal-border;
   height: $radio-size;
   width: $radio-size;
 
   &Checked {
+    border: $radio-checked-border;
     position: relative;
 
     &:before {
@@ -25,7 +26,7 @@
   
   &Disabled {
     background-color: $radio-disabled-bgcolor;
-    border: solid $radio-border-width $radio-disabled-border-color;
+    border: $radio-disabled-border;
     position: relative;
   }
 }

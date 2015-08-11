@@ -984,8 +984,8 @@ body {
   width: 0;
 }
 .dotcms .dijitTextBoxFocused .dijitDownArrowButtonHover {
-  background-color: rgba(16, 138, 200, 0.2);
-  border-left: solid 1px #108AC8;
+  background-color: #108AC8;
+  border-left: #108AC8;
 }
 .dotcms .dijitTextBoxFocused .dijitDownArrowButtonHover:before {
   left: 50%;
@@ -1006,12 +1006,12 @@ body {
   box-shadow: none;
 }
 .dotcms .dijitTextBoxDisabled {
-  border: solid 1px #CACED0;
+  border: solid 1px #E3E4E6;
   background-color: #ECEDEE;
 }
 .dotcms .dijitTextBoxDisabled .dijitArrowButton {
   background-color: #ECEDEE;
-  border-left: solid 1px #CACED0;
+  border-left: solid 1px #E3E4E6;
 }
 .dotcms .dijitTextBoxDisabled .dijitArrowButton:before {
   left: 50%;
@@ -1120,13 +1120,13 @@ body {
 }
 .dotcms .dijitSpinnerDisabled {
   background-color: #ECEDEE;
-  border: solid 1px #CACED0;
+  border: solid 1px #E3E4E6;
 }
 .dotcms .dijitSpinnerDisabled .dijitSpinnerButtonContainer .dijitDownArrowButton {
-  border-top: solid 1px #CACED0 !important;
+  border-top: solid 1px #E3E4E6 !important;
 }
 .dotcms .dijitSpinnerDisabled .dijitArrowButton {
-  border-left: solid 1px #CACED0;
+  border-left: solid 1px #E3E4E6;
   background-color: #ECEDEE;
 }
 .dotcms .dijitSpinnerDisabled .dijitArrowButton:before {
@@ -1248,7 +1248,7 @@ body {
   top: 50%;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #108AC8;
+  border-top: 5px solid #45545B;
   content: "";
   height: 0;
   width: 0;
@@ -1443,6 +1443,7 @@ body {
   width: 16px;
 }
 .dotcms .dijitRadioChecked {
+  border: solid 1px #45545B;
   position: relative;
 }
 .dotcms .dijitRadioChecked:before {
@@ -1548,7 +1549,7 @@ body {
 }
 .dotcms .dijitSelectDisabled {
   background-color: #ECEDEE;
-  border: solid 1px #CACED0;
+  border: solid 1px #E3E4E6;
   color: #CACED0;
 }
 .dotcms .dijitSelectDisabled .dijitButtonContents {
@@ -1556,7 +1557,7 @@ body {
   opacity: 0.5;
 }
 .dotcms .dijitSelectDisabled .dijitArrowButton {
-  border-left: solid 1px #CACED0;
+  border-left: solid 1px #E3E4E6;
   background-color: #ECEDEE;
 }
 .dotcms .dijitSelectDisabled .dijitArrowButton:before {
@@ -1651,12 +1652,12 @@ body {
   box-shadow: none;
 }
 .dotcms .dijitComboBoxDisabled {
-  border: solid 1px #CACED0;
+  border: solid 1px #E3E4E6;
   background-color: #ECEDEE;
 }
 .dotcms .dijitComboBoxDisabled .dijitArrowButton {
   background-color: #ECEDEE;
-  border-left: solid 1px #CACED0;
+  border-left: solid 1px #E3E4E6;
 }
 .dotcms .dijitComboBoxDisabled .dijitArrowButton:before {
   left: 50%;

@@ -79,17 +79,6 @@ h2 {
   width: 162px;
 }
 
-.dotcms .dijitTextBox {
-  margin-right: 20px;
-  width: 120px;
-}
-.dotcms .dijitSelect {
-  margin-right: 20px;
-}
-.dotcms .dijitTextArea {
-  width: 600px;
-}
-
 .section-buttons label {
   display: inline-block;
   vertical-align: middle;
