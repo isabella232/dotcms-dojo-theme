@@ -190,12 +190,14 @@ $textbox-arrow-size: 5px;
 
 $textbox-normal-bgcolor: $white;
 $textbox-normal-border: $field-normal-border;
+$textbox-normal-textcolor: $field-normal-textcolor;
 $textbox-normal-arrow-color: $gray-dark;
 $textbox-normal-arrow-border: $textbox-normal-border;
 $textbox-normal-arrow-bgcolor: $white;
 
 $textbox-hover-bgcolor: $white;
 $textbox-hover-border: $field-hover-border;
+$textbox-hover-textcolor: $field-hover-textcolor;
 $textbox-hover-arrow-color: $gray-dark;
 $textbox-hover-arrow-border: $textbox-hover-border;
 $textbox-hover-arrow-bgcolor: $white;
@@ -206,6 +208,7 @@ $textbox-hoverarrow-arrow-bgcolor: $field-hoverarrow-arrow-bgcolor;
 
 $textbox-focused-border: solid $field-border-size $blue;
 $textbox-focused-bgcolor: $white;
+$textbox-focused-textcolor: $field-focused-textcolor;
 $textbox-focused-arrow-color: $blue;
 $textbox-focused-arrow-border: $textbox-focused-border;
 $textbox-focused-arrow-bgcolor: $white;
