@@ -459,10 +459,28 @@ $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
 
 // Tabs
 $tab-border: solid $field-border-size $gray-ligther;
-$tab-inactive-bgcolor: $gray-ligther;
-$tab-inactive-textcolor: $text-color;
-$tab-active-bgcolor: $white;
-$tab-active-textcolor: $text-color;
-$tab-strip-bgcolor: $blue;
-$tab-strip-border: solid $field-border-size $white;
-$tab-strip-icon-color: $white;
+$tab-height: $field-height;
+
+$tab-normal-bgcolor: $field-normal-bgcolor;
+$tab-normal-textcolor: $field-normal-textcolor;
+$tab-hover-bgcolor: $gray-ligther;
+$tab-hover-textcolor: $field-hover-textcolor;
+$tab-disabled-bgcolor: $field-disabled-bgcolor;
+$tab-disabled-textcolor: $field-disabled-textcolor;
+$tab-active-bgcolor: $field-active-bgcolor;
+$tab-active-textcolor: $field-active-textcolor;
+
+$tab-nested-active-border: solid 1px $gray-dark;
+
+$tab-strip-arrow-size: 5px;
+$tab-strip-normal-bgcolor: $white;
+$tab-strip-normal-arrow-color: $field-normal-textcolor;
+$tab-strip-hover-bgcolor: $gray-ligther;
+$tab-strip-hover-arrow-color: $field-hover-textcolor;
+$tab-strip-disabled-bgcolor: $field-disabled-bgcolor;
+$tab-strip-disabled-arrow-color: $field-disabled-textcolor;
+$tab-strip-active-bgcolor: $field-focusedarrow-arrow-bgcolor;
+$tab-strip-active-arrow-color: $field-focusedarrow-arrow-color;
+
+$tab-closeicon-bgcolor: $gray-ligther;
+$tab-closeicon-color: $white;

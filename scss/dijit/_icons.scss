@@ -320,12 +320,6 @@ $icons: (
   }
 }
 
-.dijitTabCloseButton {
-  &:before {
-    content: $fa-var-close;
-  }
-}
-
 .dijitIconTask {
   &:before {
     content: $fa-var-tasks;

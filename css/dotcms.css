@@ -169,7 +169,7 @@ html {
 .workingIcon,
 .workStreamIcon,
 .wysiwygIcon,
-.dijitIcon, .dotcms .dijitTabCloseButton, .dotcms .dijitTabStripIcon {
+.dijitIcon {
   font: normal normal normal 16px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -755,10 +755,6 @@ html {
 
 .wysiwygIcon:before {
   content: "";
-}
-
-.dijitTabCloseButton:before {
-  content: "";
 }
 
 .dijitIconTask:before {
@@ -1849,78 +1845,188 @@ body {
   line-height: 29px;
 }
 .dotcms .dijitTab {
-  -moz-transition: background-color 0.1s;
-  -o-transition: background-color 0.1s;
-  -webkit-transition: background-color 0.1s;
-  transition: background-color 0.1s;
-  background-color: #CACED0;
-  color: #45545B;
-  border: solid 1px #CACED0;
   height: 29px;
-  margin-right: -1px;
-  padding: 0 10px;
-}
-.dotcms .dijitTab:first-child {
-  margin-right: 0;
-}
-.dotcms .dijitTab .tabLabel {
   line-height: 29px;
+  background-color: #ECEDEE;
+  color: #45545B;
+  border-right: solid 1px #CACED0;
+  padding: 0 10px;
+  position: relative;
+  top: 0;
+}
+.dotcms .dijitTab.dijitClosable {
+  padding-right: 20px;
 }
 .dotcms .dijitTabChecked {
   background-color: #fff;
+  height: 30px;
+  line-height: 30px;
+}
+.dotcms .dijitTab:last-child {
+  border-right: solid 1px #CACED0;
+}
+.dotcms .dijitTabCloseIcon {
+  width: 13px;
+  height: 13px;
+  background-color: #CACED0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-left: 0;
+}
+.dotcms .dijitTabCloseIcon:before, .dotcms .dijitTabCloseIcon:after {
+  background-color: #fff;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 8px;
+  font-size: 0;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+}
+.dotcms .dijitTabCloseIcon:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.dotcms .dijitTabCloseIcon:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.dotcms .dijitTabHover {
+  background-color: #CACED0;
   color: #45545B;
 }
-.dotcms .dijitTabContainerTop-tabs, .dotcms .dijitTabContainerBottom-tabs {
-  padding-left: 1px;
+.dotcms .dijitTabDisabled {
+  background-color: #ECEDEE;
+  color: #CACED0;
 }
-.dotcms .dijitTabContainerTop-tabs {
-  border-bottom: none;
+.dotcms .dijitTab.tabStripButton {
+  height: 29px !important;
+  width: 29px;
+  background-color: #fff;
 }
-.dotcms .dijitTabContainerBottom-tabs {
-  border-top: solid 1px #CACED0;
+.dotcms .dijitTab.tabStripButton .dijitTabStripSlideLeftIcon:before {
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTab.tabStripButton .dijitTabStripSlideRightIcon:before {
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTab.tabStripButton .dijitTabStripMenuIcon:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitTab.tabStripButtonHover {
+  background-color: #CACED0;
+}
+.dotcms .dijitTab.tabStripButtonHover .dijitTabStripSlideLeftIcon:before {
+  border-right-color: #45545B;
+}
+.dotcms .dijitTab.tabStripButtonHover .dijitTabStripSlideRightIcon:before {
+  border-left-color: #45545B;
+}
+.dotcms .dijitTab.tabStripButtonHover .dijitTabStripMenuIcon:before {
+  border-top-color: #45545B;
+}
+.dotcms .dijitTab.tabStripButtonActive {
+  background-color: rgba(16, 138, 200, 0.2);
+}
+.dotcms .dijitTab.tabStripButtonActive .dijitTabStripSlideLeftIcon:before {
+  border-right-color: #108AC8;
+}
+.dotcms .dijitTab.tabStripButtonActive .dijitTabStripSlideRightIcon:before {
+  border-left-color: #108AC8;
+}
+.dotcms .dijitTab.tabStripButtonActive .dijitTabStripMenuIcon:before {
+  border-top-color: #108AC8;
+}
+.dotcms .dijitTab.tabStripButtonDisabled {
+  background-color: #ECEDEE;
+  color: #CACED0;
+}
+.dotcms .dijitTab.tabStripButtonDisabled .dijitTabStripSlideLeftIcon:before {
+  border-right-color: #CACED0;
+}
+.dotcms .dijitTab.tabStripButtonDisabled .dijitTabStripSlideRightIcon:before {
+  border-left-color: #CACED0;
+}
+.dotcms .dijitTab.tabStripButtonDisabled .dijitTabStripMenuIcon:before {
+  border-top-color: #CACED0;
 }
 .dotcms .dijitTabContainerBottom-container, .dotcms .dijitTabContainerTop-container, .dotcms .dijitTabContainerLeft-container, .dotcms .dijitTabContainerRight-container {
   border: solid 1px #CACED0;
 }
 .dotcms .dijitTabContainerTop-container {
-  border-top: 0;
+  border-top: none;
 }
 .dotcms .dijitTabContainerBottom-container {
-  border-bottom: 0;
+  border-bottom: none;
 }
-.dotcms .dijitTabPane {
-  padding: 0 20px;
+.dotcms .dijitTabContainerTop-tabs, .dotcms .dijitTabContainerBottom-tabs {
+  height: 31px;
+  border: none;
 }
-.dotcms .dijitTabCloseButton {
-  margin-left: 0;
+.dotcms .dijitTabListContainer-top, .dotcms .dijitTabListContainer-bottom {
+  border: solid 1px #CACED0;
+  height: 31px !important;
+  overflow: visible;
 }
-.dotcms .dijitTabStripIcon {
-  height: 29px;
-  width: 29px;
-  border-right: solid 1px #fff;
+.dotcms .dijitTabListContainer-bottom .dijitTabListWrapper {
+  top: -1px !important;
 }
-.dotcms .dijitTabStripIcon:before {
-  content: "";
-  color: #fff;
-  left: 50%;
-  margin-left: -2.5px;
-  margin-top: -8px;
-  position: absolute;
-  top: 50%;
+.dotcms .dijitTabListContainer-bottom .dijitTabChecked {
+  top: -1px;
+  line-height: 31px;
+  height: 31px;
 }
-.dotcms .tabStripButton {
-  background-color: #108AC8;
-  width: 36px;
-  padding: 0;
+.dotcms .dijitTabContainerNested .dijitTab {
+  background: none;
+  border: none;
 }
-.dotcms .dijitTabStripSlideRightIcon {
-  border-left: solid 1px #fff;
+.dotcms .dijitTabContainerNested .dijitTab.dijitTabChecked {
+  height: 31px;
+  line-height: 31px;
+  border-bottom: solid 1px #45545B;
 }
-.dotcms .dijitTabStripSlideRightIcon:before {
-  content: "";
+.dotcms .dijitTabContainerNested .dijitTabContainerTop-tabs {
+  border-bottom: solid 1px #CACED0;
 }
-.dotcms .dijitTabStripMenuIcon:before {
-  content: "";
+.dotcms .dijitTabContainerNested .dijitTabContainerTop-container {
+  border: none;
+  padding: 0 10px;
 }
 .dotcms .dijitA11ySideArrow {
   display: none;

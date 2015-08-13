@@ -1,94 +1,224 @@
-.dijitTab {
-  @include transition(background-color $field-animation-speed); // TODO: move this to layout/common.scss?
-  background-color: $tab-inactive-bgcolor;
-  color: $tab-inactive-textcolor;
-  border: $tab-border;
-  height: $field-height;
-  margin-right: -1px;
-  padding: 0 $field-padding;
+.dijit {
+  &Tab {
+    height: $tab-height;
+    line-height: $tab-height;
+    background-color: $tab-normal-bgcolor;
+    color: $tab-normal-textcolor;
+    border-right: $field-normal-border;
+    padding: 0 $field-padding;
+    position: relative;
+    top: 0;
 
-  &:first-child {
-    margin-right: 0;
-  }
+    &.dijitClosable {
+      padding-right: $field-padding * 2;
+    }
 
-  .tabLabel {
-    line-height: $field-height;
-  }
 
-  &Checked {
-    background-color: $tab-active-bgcolor;
-    color: $tab-active-textcolor;
-  }
+    &Checked {
+      background-color: $tab-active-bgcolor;
+      height: $tab-height + $field-border-size;
+      line-height: $tab-height + $field-border-size;
+    }
 
-  &ContainerTop-tabs,
-  &ContainerBottom-tabs {
-    padding-left: 1px
-  }
+    &:last-child {
+      border-right: $field-normal-border;
+    }
 
-  &ContainerTop-tabs {
-    border-bottom: none;
-  }
+    &CloseIcon {
+      width: 13px;
+      height: 13px;
+      background-color: $tab-closeicon-bgcolor;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-left: 0;
 
-  &ContainerBottom-tabs {
-    border-top: $tab-border;
-  }
+      &:before,
+      &:after {
+        background-color: $tab-closeicon-color;
+        display: block;
+        content: "";
+        width: 1px;
+        height: 8px;
+        font-size: 0;
+        position: absolute;
+        left: 7px;
+        top: 3px;
+      }
 
-  &ContainerBottom-container,
-  &ContainerTop-container,
-  &ContainerLeft-container,
-  &ContainerRight-container {
-    border: $tab-border;
-  }
+      &:before {
+        @include rotate(45deg);
+      }
 
-  &ContainerTop-container {
-    border-top: 0;
-  }
+      &:after {
+        @include rotate(-45deg);
+      }
+    }
 
-  &ContainerBottom-container {
-    border-bottom: 0;
-  }
+    &Hover {
+      background-color: $tab-hover-bgcolor;
+      color: $tab-hover-textcolor;
+    }
 
-  &Pane {
-    padding: 0 20px ;
-  }
+    &Disabled {
+      background-color: $tab-disabled-bgcolor;
+      color: $tab-disabled-textcolor;
+    }
 
-  &CloseButton {
-    @extend #font-icon-base;
-    margin-left: 0;
-  };
-}
+    &.tabStripButton {
+      height: $tab-height !important;
+      width: $tab-height;
+      background-color: $tab-strip-normal-bgcolor;
 
-.dijitTabStripIcon {
-  @extend #font-icon-base;
-  height: $field-height;
-  width: $field-height;
-  border-right: $tab-strip-border;
+      .dijitTabStripSlideLeftIcon {
+        &:before {
+          // TODO: add option so user can add image icon
+          @include create-arrow($tab-strip-arrow-size, $tab-strip-normal-arrow-color, left);
+        }
+      }
 
-  &:before {
-    content: $fa-var-angle-left;
-    color: $tab-strip-icon-color;
-    @include center-icon(5px, 16px); // Sadly compass can't get width and height from a svg
-  }
-}
+      .dijitTabStripSlideRightIcon {
+        &:before {
+          // TODO: add option so user can add image icon
+          @include create-arrow($tab-strip-arrow-size, $tab-strip-normal-arrow-color, right);
+        }
+      }
 
-.tabStripButton {
-  background-color: $tab-strip-bgcolor;
-  width: 36px;
-  padding: 0;
-}
+      .dijitTabStripMenuIcon {
+        &:before {
+          // TODO: add option so user can add image icon
+          @include create-arrow($tab-strip-arrow-size, $tab-strip-normal-arrow-color);
+        }
+      }
 
-.dijitTabStripSlideRightIcon {
-  border-left: $tab-strip-border;
+      &Hover {
+        background-color: $tab-hover-bgcolor;
 
-  &:before {
-    content: $fa-var-angle-right;
-  }
-}
+        .dijitTabStripSlideLeftIcon {
+          &:before {
+            border-right-color: $tab-strip-hover-arrow-color;
+          }
+        }
 
-.dijitTabStripMenuIcon {
-  //border-right: none;
+        .dijitTabStripSlideRightIcon {
+          &:before {
+            border-left-color: $tab-strip-hover-arrow-color;
+          }
+        }
 
-  &:before {
-    content: $fa-var-angle-down;
+        .dijitTabStripMenuIcon {
+          &:before {
+            border-top-color: $tab-strip-hover-arrow-color;
+          }
+        }
+      }
+
+      &Active {
+        background-color: $tab-strip-active-bgcolor;
+
+        .dijitTabStripSlideLeftIcon {
+          &:before {
+            border-right-color: $tab-strip-active-arrow-color;
+          }
+        }
+
+        .dijitTabStripSlideRightIcon {
+          &:before {
+            border-left-color: $tab-strip-active-arrow-color;
+          }
+        }
+
+        .dijitTabStripMenuIcon {
+          &:before {
+            border-top-color: $tab-strip-active-arrow-color;
+          }
+        }
+      }
+
+      &Disabled {
+        background-color: $tab-disabled-bgcolor;
+        color: $tab-disabled-textcolor;
+
+        .dijitTabStripSlideLeftIcon {
+          &:before {
+            border-right-color: $tab-strip-disabled-arrow-color;
+          }
+        }
+
+        .dijitTabStripSlideRightIcon {
+          &:before {
+            border-left-color: $tab-strip-disabled-arrow-color;
+          }
+        }
+
+        .dijitTabStripMenuIcon {
+          &:before {
+            border-top-color: $tab-strip-disabled-arrow-color;
+          }
+        }
+      }
+    }
+
+    &ContainerBottom-container,
+    &ContainerTop-container,
+    &ContainerLeft-container,
+    &ContainerRight-container {
+      border: $tab-border;
+    }
+
+    &ContainerTop-container {
+      border-top: none;
+    }
+
+    &ContainerBottom-container {
+      border-bottom: none;
+    }
+
+    &ContainerTop-tabs,
+    &ContainerBottom-tabs{
+      height: $tab-height + ($field-border-size * 2);
+      border: none;
+    }
+
+    &ListContainer-top,
+    &ListContainer-bottom {
+      border: $field-normal-border;
+      height: $tab-height + ($field-border-size * 2) !important;
+      overflow: visible;
+    }
+
+    &ListContainer-bottom {
+      .dijitTabListWrapper {
+        top: -1px !important;
+      }
+
+      .dijitTabChecked {
+        top: -1px;
+        line-height: $tab-height + ($field-border-size * 2);
+        height: $tab-height + ($field-border-size * 2);
+      }
+    }
+
+    &ContainerNested {
+      .dijitTab {
+        background: none;
+        border: none;
+
+        &.dijitTabChecked {
+          height: $tab-height + ($field-border-size * 2);
+          line-height: $tab-height + ($field-border-size * 2);
+          border-bottom: $tab-nested-active-border;
+        }
+      }
+
+      .dijitTabContainerTop-tabs {
+        border-bottom: $tab-border;
+      }
+
+      .dijitTabContainerTop-container {
+        border: none;
+        padding: 0 $field-padding
+      }
+    }
   }
 }
