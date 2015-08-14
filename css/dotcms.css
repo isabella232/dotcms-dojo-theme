@@ -2058,47 +2058,59 @@ body {
   position: relative;
   width: 29px;
 }
-.dotcms .dijitCalendarIncrementControl:before {
-  content: "";
+.dotcms .dijitCalendarDecrease:before {
   left: 50%;
-  margin-left: -5px;
-  margin-top: -3px;
+  margin-left: -2.5px;
+  margin-top: -5px;
   position: absolute;
   top: 50%;
-  background-image: url("/images/ico-arrow-sm-light.svg");
-  height: 6px;
-  width: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #fff;
+  content: "";
+  height: 0;
+  width: 0;
 }
-.dotcms .dijitCalendarDecrease {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.dotcms .dijitCalendarIncrease {
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+.dotcms .dijitCalendarIncrease:before {
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #fff;
+  content: "";
+  height: 0;
+  width: 0;
 }
 .dotcms .dijitCalendarMonthContainer {
   background-color: #45545B;
   color: #fff;
+  height: 29px;
+}
+.dotcms .dijitCalendarMonthContainer .dijitCalendarMonthLabel,
+.dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner {
+  height: 19px;
+  line-height: 19px;
 }
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  height: 21px;
+  border: solid 1px #fff;
   color: #fff;
 }
+.dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitSpacer {
+  height: 0;
+}
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner {
-  background-color: transparent;
-  height: 29px;
+  width: 19px;
 }
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner:before {
-  background-image: url("/images/ico-arrow-sm-light.svg");
+  border-top-color: #fff;
 }
 .dotcms .dijitCalendarMonthContainer .dijitDropDownButton .dijitArrowButtonInner .dijitButtonText {
   height: 29px;
@@ -2108,9 +2120,11 @@ body {
   margin: 0;
 }
 .dotcms .dijitCalendarMonthLabel {
-  border-bottom: solid 1px #CACED0;
   height: 29px;
   line-height: 29px;
+}
+.dotcms .dijitCalendarMonthLabelHover {
+  background-color: #ECEDEE;
 }
 .dotcms .dijitCalendarMonthLabel:last-child {
   border-bottom: none;
@@ -2126,9 +2140,16 @@ body {
 .dotcms .dijitCalendarNextYear, .dotcms .dijitCalendarPreviousYear {
   color: rgba(255, 255, 255, 0.5);
 }
-.dotcms .dijitCalendarSelectedDate {
+.dotcms .dijitCalendarSelectedDate .dijitCalendarDateLabel {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   background-color: #F3762A;
   color: #fff;
+  display: block;
+  height: 29px;
+  line-height: 29px;
+  width: 29px;
 }
 .dotcms .dijitCalendarSelectedYear {
   color: #fff;

@@ -434,6 +434,10 @@ $calendar-prev-next-month-date-hover-bgcolor: $gray-ligthest;
 $calendar-prev-next-month-date-hover-textcolor: $gray-ligth;
 $calendar-year-label-bgcolor: $gray-dark;
 $calendar-year-label-textcolor: $white;
+$calendar-dropdown-color: $white;
+$calendar-dropdown-arrow-color: $calendar-dropdown-color;
+$calendar-dropdown-arrow-border: solid 1px $white;
+$calendar-dropdown-arrow-size: 5px;
 
 // Content Panel
 $panel-border-color: $gray-ligther;
