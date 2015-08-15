@@ -1714,61 +1714,177 @@ body {
 .dotcms .dijitComboBox .dijitDownArrowButtonActive:before {
   border-top-color: #fff;
 }
+.dotcms .dijitSliderBarH, .dotcms .dijitSliderBumperH {
+  height: 6px;
+}
+.dotcms .dijitSliderBarV, .dotcms .dijitSliderBumperV {
+  width: 6px;
+}
 .dotcms .dijitRuleLabel {
   -moz-transition: color, 0.1s;
   -o-transition: color, 0.1s;
   -webkit-transition: color, 0.1s;
   transition: color, 0.1s;
-  color: #BABEC1;
+  color: #45545B;
 }
 .dotcms .dijitRuleMark {
   -moz-transition: border-color, 0.1s;
   -o-transition: border-color, 0.1s;
   -webkit-transition: border-color, 0.1s;
   transition: border-color, 0.1s;
-  border-color: #BABEC1;
+  border: solid 1px #CACED0;
 }
-.dotcms .dijitSliderHover .dijitRuleLabel {
-  color: #45545B;
+.dotcms .dijitSliderProgressBar, .dotcms .dijitSliderBottomBumper, .dotcms .dijitSliderLeftBumper {
+  background: #108AC8;
+  border-color: #CACED0;
 }
-.dotcms .dijitSliderHover .dijitRuleMark {
-  border-color: #45545B;
+.dotcms .dijitSliderRemainingBar, .dotcms .dijitSliderTopBumper, .dotcms .dijitSliderRightBumper {
+  background: #fff;
+  border-color: #CACED0;
+}
+.dotcms .dijitSliderLeftBumper {
+  border-left-width: 1px;
+}
+.dotcms .dijitSliderRightBumper {
+  border-right-width: 1px;
+}
+.dotcms .dijitSliderBottomBumper {
+  border-bottom-width: 1px;
+}
+.dotcms .dijitSliderTopBumper {
+  border-top-width: 1px;
+}
+.dotcms .dijitSliderDecrementIconH, .dotcms .dijitSliderIncrementIconH, .dotcms .dijitSliderDecrementIconV, .dotcms .dijitSliderIncrementIconV {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 20px;
+  height: 16px;
+  border: solid 1px #CACED0;
+  background-color: #ECEDEE;
+  position: relative;
+}
+.dotcms .dijitSliderDecrementIconH .dijitSliderButtonInner, .dotcms .dijitSliderIncrementIconH .dijitSliderButtonInner, .dotcms .dijitSliderDecrementIconV .dijitSliderButtonInner, .dotcms .dijitSliderIncrementIconV .dijitSliderButtonInner {
+  display: none;
+}
+.dotcms .dijitSliderDecrementButtonHover, .dotcms .dijitSliderIncrementButtonHover {
+  border: solid 1px #45545B;
+}
+.dotcms .dijitSliderIncrementIconV {
+  margin-bottom: 5px;
+}
+.dotcms .dijitSliderIncrementIconV:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitSliderDecrementIconV {
+  margin-top: 5px;
+}
+.dotcms .dijitSliderDecrementIconV:before {
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #45545B;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dotcms .dijitSliderDecrementButtonActive, .dotcms .dijitSliderIncrementButtonActive {
+  background-color: #fff;
+  border: solid 1px #108AC8;
+}
+.dotcms .dijitSliderIncrementButtonActive:before {
+  border-top-color: #108AC8;
+}
+.dotcms .dijitSliderDecrementButtonActive:before {
+  border-bottom-color: #108AC8;
 }
 .dotcms .dijitSliderImageHandle {
   -moz-transition: -moz-transform, border-color, backgroun-color, 0.1s;
   -o-transition: -o-transform, border-color, backgroun-color, 0.1s;
   -webkit-transition: -webkit-transform, border-color, backgroun-color, 0.1s;
   transition: transform, border-color, backgroun-color, 0.1s;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  -moz-border-radius: 6.5px;
+  -webkit-border-radius: 6.5px;
+  border-radius: 6.5px;
   background-color: #fff;
-  border: solid 2px #45545B;
-  height: 16px;
-  top: -7px;
-  width: 16px;
+  border: solid 1px #CACED0;
+  height: 13px;
+  top: -5px;
+  width: 13px;
 }
-.dotcms .dijitSliderThumbHover {
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+.dotcms .dijitSliderHover .dijitRuleLabel {
+  color: #45545B;
 }
-.dotcms .dijitSliderThumbFocused {
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  border-color: #fff;
-  background-color: #45545B;
+.dotcms .dijitSliderHover .dijitRuleMark {
+  border: solid 1px #45545B;
 }
-.dotcms .dijitSliderBottomBumper, .dotcms .dijitSliderLeftBumper, .dotcms .dijitSliderProgressBar {
-  background-color: #45545B;
-  border: none;
+.dotcms .dijitSliderHover .dijitSliderBottomBumper,
+.dotcms .dijitSliderHover .dijitSliderProgressBar,
+.dotcms .dijitSliderHover .dijitSliderLeftBumper {
+  background: #108AC8;
+  border-color: #45545B;
 }
-.dotcms .dijitSliderRemainingBar, .dotcms .dijitSliderRightBumper, .dotcms .dijitSliderTopBumper {
-  background-color: #CACED0;
-  border: none;
+.dotcms .dijitSliderHover .dijitSliderRemainingBar,
+.dotcms .dijitSliderHover .dijitSliderTopBumper,
+.dotcms .dijitSliderHover .dijitSliderRightBumper {
+  background: #fff;
+  border-color: #45545B;
+}
+.dotcms .dijitSliderHover .dijitSliderImageHandle {
+  background-color: #fff;
+  border: solid 1px #45545B;
+}
+.dotcms .dijitSliderHover .dijitSliderThumbFocused {
+  background: #45545B;
+  border: solid 1px #45545B;
+}
+.dotcms .dijitSliderDisabled .dijitRuleLabel {
+  color: #CACED0;
+}
+.dotcms .dijitSliderDisabled .dijitRuleMark {
+  border: solid 1px #CACED0;
+}
+.dotcms .dijitSliderDisabled .dijitSliderBottomBumper,
+.dotcms .dijitSliderDisabled .dijitSliderProgressBar,
+.dotcms .dijitSliderDisabled .dijitSliderLeftBumper {
+  background: #ECEDEE;
+  border-color: #ECEDEE;
+}
+.dotcms .dijitSliderDisabled .dijitSliderRemainingBar,
+.dotcms .dijitSliderDisabled .dijitSliderTopBumper,
+.dotcms .dijitSliderDisabled .dijitSliderRightBumper {
+  background: #fff;
+  border-color: #ECEDEE;
+}
+.dotcms .dijitSliderDisabled .dijitSliderImageHandle {
+  background-color: #ECEDEE;
+  border: solid 1px #ECEDEE;
+}
+.dotcms .dijitSliderDisabled .dijitSliderDecrementIconH,
+.dotcms .dijitSliderDisabled .dijitSliderIncrementIconH,
+.dotcms .dijitSliderDisabled .dijitSliderDecrementIconV,
+.dotcms .dijitSliderDisabled .dijitSliderIncrementIconV {
+  border: solid 1px #E3E4E6;
+}
+.dotcms .dijitSliderDisabled .dijitSliderDecrementIconV:before {
+  border-top-color: #CACED0;
+}
+.dotcms .dijitSliderDisabled .dijitSliderIncrementIconV:before {
+  border-bottom-color: #CACED0;
 }
 .dotcms .dijitAccordionContainer {
   border: none;

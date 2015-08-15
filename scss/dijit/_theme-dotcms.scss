@@ -382,18 +382,39 @@ $radio-disabled-border: solid $field-border-size $gray-ligther;
 $radio-disabled-bgcolor: $gray-ligthest;
 
 // Sliders
-$slide-handle-bordercolor: $gray-dark;
-$slide-handle-bordersize: 2px;
-$slide-handle-color: $white;
-$slide-handle-focused-bordercolor: $white;
-$slide-handle-focused-color: $gray-dark;
-$slide-mark-color: $gray-ligth;
-$slide-mark-hover-color: $gray-dark;
-$slide-rule-color: $gray-ligth;
-$slide-rule-hover-color: $gray-dark;
-$slider-handle-size: 16px;
-$slider-progress-color: $gray-dark;
-$slider-remaining-color: $gray-ligther;
+$slider-bar-size: 6px;
+
+$slider-handle-size: 13px;
+$slider-handle-normal-border: solid $field-border-size $gray-ligther;
+$slider-handle-normal-bgcolor: $white;
+$slider-handle-hover-border: solid $field-border-size $gray-dark;
+$slider-handle-hover-bgcolor: $white;
+$slider-handle-focused-border: solid $field-border-size $gray-dark;
+$slider-handle-focused-bgcolor: $gray-dark;
+$slider-handle-disabled-border: solid $field-border-size $gray-ligthest;
+$slider-handle-disabled-bgcolor: $gray-ligthest;
+
+$slider-rule-label-normal-color: $gray-dark;
+$slider-rule-label-hover-color: $gray-dark;
+$slider-rule-label-disabled-color: $gray-ligther;
+
+$slider-rule-mark-normal: solid 1px $gray-ligther;
+$slider-rule-mark-hover: solid 1px $gray-dark;
+$slider-rule-mark-disabled: solid 1px $gray-ligther;
+
+$slider-progress-normal-border-color: $gray-ligther;
+$slider-progress-normal-color: $blue;
+$slider-progress-hover-border-color: $gray-dark;
+$slider-progress-hover-color: $blue;
+$slider-progress-disabled-border-color: $gray-ligthest;
+$slider-progress-disabled-color: $gray-ligthest;
+
+$slider-remaining-normal-border-color: $gray-ligther;
+$slider-remaining-normal-color: $white;
+$slider-remaining-hover-border-color: $gray-dark;
+$slider-remaining-hover-color: $white;
+$slider-remaining-disabled-border-color: $gray-ligthest;
+$slider-remaining-disabled-color: $white;
 
 // Menus
 $menu-bgcolor: $white;
@@ -473,7 +494,6 @@ $tab-disabled-bgcolor: $field-disabled-bgcolor;
 $tab-disabled-textcolor: $field-disabled-textcolor;
 $tab-active-bgcolor: $field-active-bgcolor;
 $tab-active-textcolor: $field-active-textcolor;
-
 $tab-nested-active-border: solid 1px $gray-dark;
 
 $tab-strip-arrow-size: 5px;
