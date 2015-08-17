@@ -1892,16 +1892,34 @@ body {
 .dotcms .dijitAccordionContainer .dijitAccordionContainer-child {
   padding: 10px;
 }
-.dotcms .dijitAccordionInnerContainer {
-  border: solid 1px #CACED0;
-  margin-bottom: 5px;
+.dotcms .dijitAccordionInnerContainerSelected .dijitAccordionTitleHover {
+  background-color: #CACED0;
 }
 .dotcms .dijitAccordionTitle {
-  padding: 5px;
+  -moz-transition: background-color, color, border, 0.1s;
+  -o-transition: background-color, color, border, 0.1s;
+  -webkit-transition: background-color, color, border, 0.1s;
+  transition: background-color, color, border, 0.1s;
+  background-color: #ECEDEE;
+  border: solid 1px #CACED0;
+  border-bottom: none;
+  height: 29px;
+  line-height: 29px;
+  padding: 0 10px;
+}
+.dotcms .dijitAccordionTitle:last-child {
+  border-bottom: solid 1px #CACED0;
+}
+.dotcms .dijitAccordionTitleHover {
+  background-color: #CACED0;
 }
 .dotcms .dijitAccordionTitleSelected {
   background-color: #CACED0;
   font-weight: bold;
+}
+.dotcms .dijitAccordionChildWrapper {
+  border-left: solid 1px #CACED0;
+  border-right: solid 1px #CACED0;
 }
 .dotcms .dijitTitlePane {
   -moz-border-radius: 2px;
