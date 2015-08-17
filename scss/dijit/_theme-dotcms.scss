@@ -84,7 +84,6 @@ $button-disabled-bgcolor: $field-disabled-bgcolor;
 $button-disabled-textcolor: $field-disabled-textcolor;
 $button-disabled-border: $field-disabled-border;
 
-
 // DropDownButton
 $dropdownbutton-arrow-size: 5px;
 $dropdownbutton-arrow-container-size: $field-height;
@@ -461,14 +460,19 @@ $calendar-dropdown-arrow-border: solid 1px $white;
 $calendar-dropdown-arrow-size: 5px;
 
 // Content Panel
-$panel-border-color: $gray-ligther;
 $panel-border-size: $field-border-size;
-$panel-title-open-bgcolor: $gray-dark;
-$panel-title-open-textcolor: $white;
-$panel-title-hover-bgcolor: $blue;
-$panel-title-hover-textcolor: $white;
-$panel-title-close-bgcolor: $gray-dark;
-$panel-title-close-textcolor: $white;
+$panel-title-height: $field-height;
+
+$panel-normal-border: solid 1px $gray-ligther;
+$panel-normal-title-bgcolor: $gray-ligthest;
+$panel-normal-title-textcolor: $gray-dark;
+
+$panel-hover-border: solid 1px $gray-dark;
+$panel-hover-title-bgcolor: $gray-ligther;
+$panel-hover-title-textcolor: $gray-dark;
+
+$panel-open-title-bgcolor: $gray-ligther;
+$panel-open-title-textcolor: $gray-dark;
 
 // Progress Bar
 $progressbar-border-size: $field-border-size;
