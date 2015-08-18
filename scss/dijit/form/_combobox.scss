@@ -89,6 +89,22 @@
     }
   }
 
+  &Error {
+    border: $field-error-border;
+
+    .dijitValidationContainer {
+      margin-right: 0;
+    }
+
+    .dijitArrowButton {
+      border-left: $field-error-border;
+
+      &:before {
+        border-top-color: $error;
+      }
+    }
+  }
+
   .dijitDownArrowButtonActive {
     background-color: $spinner-activearrow-arrow-bgcolor;
     border-left: $spinner-activearrow-arrow-border;

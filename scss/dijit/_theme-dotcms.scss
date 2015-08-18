@@ -11,6 +11,7 @@ $green-ligth: #77BE61;
 $green: #4A9D51;
 $orange: #F3762A;
 $white: #fff;
+$error: #D0021B;
 
 // TYPOGRAPHY
 $body-size: 12px;
@@ -66,6 +67,8 @@ $field-focused-arrow-color: $blue;
 $field-focusedarrow-arrow-color: $blue;
 $field-focusedarrow-arrow-border: solid $field-border-size $blue;
 $field-focusedarrow-arrow-bgcolor: rgba($blue, 0.2);
+
+$field-error-border: solid 1px $error;
 
 // Button
 $button-normal-bgcolor: $field-normal-bgcolor;

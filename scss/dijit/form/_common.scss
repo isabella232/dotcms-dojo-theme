@@ -104,3 +104,36 @@ table.dijitComboButton {
   color: $text-color;
   padding: $field-padding / 2 $field-padding;
 }
+
+.dijitValidationContainer {
+  background-color: $error;
+  height: $field-height - (2 * $field-border-size);
+  position: relative;
+  width: 10px;
+
+  // TODO: make available option to add image icon
+  &:before {
+    @include border-radius(2px);
+    background-color: $white;
+    content: "";
+    height: 13px;
+    left: 50%;
+    position: absolute;
+    top: 5px;
+    width: 2px;
+  }
+
+  &:after {
+    background-color: $white;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    top: 19px;
+    width: 2px;
+  }
+
+  .dijitValidationInner {
+    display: none;
+  }
+}

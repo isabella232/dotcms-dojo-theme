@@ -913,13 +913,40 @@ body {
   color: #45545B;
   padding: 5px 10px;
 }
+.dotcms .dijitValidationContainer {
+  background-color: #D0021B;
+  height: 27px;
+  position: relative;
+  width: 10px;
+}
+.dotcms .dijitValidationContainer:before {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  content: "";
+  height: 13px;
+  left: 50%;
+  position: absolute;
+  top: 5px;
+  width: 2px;
+}
+.dotcms .dijitValidationContainer:after {
+  background-color: #fff;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  top: 19px;
+  width: 2px;
+}
+.dotcms .dijitValidationContainer .dijitValidationInner {
+  display: none;
+}
 .dotcms .dijitTextBox {
   background-color: #fff;
   border: solid 1px #CACED0;
   padding: 0 10px;
-}
-.dotcms .dijitTextBox .dijitInputInner {
-  color: #CACED0;
 }
 .dotcms .dijitTextBox .dijitArrowButton {
   height: 27px;
@@ -1036,6 +1063,18 @@ body {
 }
 .dotcms .dijitTextBoxDisabled .dijitInputInner {
   color: #CACED0;
+}
+.dotcms .dijitTextBoxError {
+  border: solid 1px #D0021B;
+}
+.dotcms .dijitTextBoxError .dijitValidationContainer {
+  margin-right: -10px;
+}
+.dotcms .dijitTextBoxError .dijitArrowButton {
+  border-left: solid 1px #D0021B;
+}
+.dotcms .dijitTextBoxError .dijitArrowButton:before {
+  border-top-color: #D0021B;
 }
 .dotcms .dijitTextBox .dijitDownArrowButtonActive {
   background-color: #108AC8;
@@ -1163,6 +1202,21 @@ body {
 }
 .dotcms .dijitSpinnerDisabled .dijitInputInner {
   color: #CACED0;
+}
+.dotcms .dijitSpinnerError {
+  border: solid 1px #D0021B;
+}
+.dotcms .dijitSpinnerError .dijitValidationContainer {
+  margin-right: 0;
+}
+.dotcms .dijitSpinnerError .dijitArrowButton {
+  border-left: solid 1px #D0021B;
+}
+.dotcms .dijitSpinnerError .dijitArrowButton:before {
+  border-top-color: #D0021B;
+}
+.dotcms .dijitSpinnerError .dijitSpinnerButtonContainer .dijitDownArrowButton {
+  border-top-color: #D0021B !important;
 }
 .dotcms .dijitSpinner .dijitDownArrowButtonActive,
 .dotcms .dijitSpinner .dijitUpArrowButtonActive {
@@ -1706,6 +1760,18 @@ body {
 }
 .dotcms .dijitComboBoxDisabled .dijitInputInner {
   color: #CACED0;
+}
+.dotcms .dijitComboBoxError {
+  border: solid 1px #D0021B;
+}
+.dotcms .dijitComboBoxError .dijitValidationContainer {
+  margin-right: 0;
+}
+.dotcms .dijitComboBoxError .dijitArrowButton {
+  border-left: solid 1px #D0021B;
+}
+.dotcms .dijitComboBoxError .dijitArrowButton:before {
+  border-top-color: #D0021B;
 }
 .dotcms .dijitComboBox .dijitDownArrowButtonActive {
   background-color: #108AC8;

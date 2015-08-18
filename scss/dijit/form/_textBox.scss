@@ -3,9 +3,9 @@
   border: $textbox-normal-border;
   padding: 0 $field-padding;
 
-  .dijitInputInner {
-    color: $textbox-disabled-textcolor;
-  }
+  //.dijitInputInner {
+  //  color: $textbox-disabled-textcolor;
+  //}
 
   .dijitArrowButton {
     height: $field-height - 2;
@@ -98,6 +98,22 @@
 
     .dijitInputInner {
       color: $textbox-disabled-textcolor;
+    }
+  }
+
+  &Error {
+    border: $field-error-border;
+
+    .dijitValidationContainer {
+      margin-right: -#{$field-padding};
+    }
+
+    .dijitArrowButton {
+      border-left: $field-error-border;
+
+      &:before {
+        border-top-color: $error;
+      }
     }
   }
 
