@@ -1,6 +1,6 @@
-@import "../font-awesome/mixins";
-@import "../font-awesome/variables";
-@import "../font-awesome/path";
+@import "../font-awesome-4.4.0/mixins";
+@import "../font-awesome-4.4.0/variables";
+@import "../font-awesome-4.4.0/path";
 
 #font-icon-base {
   font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
@@ -130,7 +130,6 @@
 .scrollPane,
 .search,
 .select,
-.shim,
 .shrink,
 .spell,
 .splitter,
@@ -221,8 +220,8 @@ $icons: (
   folderEdit: $fa-var-square,
   folderFiles: $fa-var-square,
   folderGlobe: $fa-var-square,
-  folderOpen: $fa-var-square,
-  folderSelected: $fa-var-square,
+  folderOpen: $fa-var-folder-open,
+  folderSelected: $fa-var-folder-open,
   form: $fa-var-square,
   formNew: $fa-var-square,
   gear: $fa-var-square,
@@ -285,7 +284,6 @@ $icons: (
   scrollPane: $fa-var-square,
   search: $fa-var-search,
   select: $fa-var-square,
-  shim: $fa-var-square,
   shrink: $fa-var-square,
   spell: $fa-var-square,
   splitter: $fa-var-square,
@@ -296,8 +294,8 @@ $icons: (
   tag: $fa-var-square,
   textField: $fa-var-square,
   thumbnailView: $fa-var-square,
-  toggleClose: $fa-var-square,
-  toggleOpen: $fa-var-square,
+  toggleClose: $fa-var-minus-square-o,
+  toggleOpen: $fa-var-plus-square-o,
   trash: $fa-var-square,
   ukn: $fa-var-square,
   unarchive: $fa-var-square,
