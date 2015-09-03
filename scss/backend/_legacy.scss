@@ -213,10 +213,11 @@
 
 #bd {
   margin-bottom: 20px;
-  -moz-box-shadow: 0px 0px 0px #fff;
-  -webkit-box-shadow: 0px 0px 0px #fff;
-  border: 0px;
+  -moz-box-shadow: 0 0 0 #fff;
+  -webkit-box-shadow: 0 0 0 #fff;
+  border: 0;
   padding: 0;
+  clear: both;
 }
 
 pre  {

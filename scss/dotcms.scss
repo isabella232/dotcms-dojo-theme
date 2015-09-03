@@ -27,6 +27,7 @@ body {
   @import "dijit/layout/AccordionContainer";
   @import "dijit/layout/BorderContainer";
   @import "dijit/layout/ContentPane";
+  @import "dijit/layout/dialogBox";
   @import "dijit/layout/SplitContainer";
   @import "dijit/layout/TabContainer";
 
@@ -37,5 +38,5 @@ body {
 
   // BACKEND
   @import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
-  @import "backend/common";
+  //@import "backend/common";
 }

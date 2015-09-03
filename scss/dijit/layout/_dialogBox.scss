@@ -1,0 +1,23 @@
+.dijitDialog {
+  @include border-radius($border-radius);
+  background-color: $dialog-normal-bgcolor;
+  border: $dialog-normal-border;
+
+  &PaneActionBar,
+  &PaneContent {
+    padding: $field-padding;
+  }
+
+  &PaneActionBar {
+    padding-top: 0;
+  }
+
+  &TitleBar {
+    background-color: $dialog-normal-title-bgcolor;
+    color: $dialog-normal-title-textcolor;
+    font-weight: bold;
+    height: $field-height;
+    line-height: $field-height;
+    padding: 0 $field-padding;
+  }
+}

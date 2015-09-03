@@ -158,6 +158,8 @@
 .dijit {
   &Icon {
     @extend #font-icon-base;
+    // TODO: this is for remove the old png icons but this is not the right way, we should edit the HTML and remove the classes
+    background: none;
   }
 ;
 }
