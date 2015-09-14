@@ -3,6 +3,37 @@
   background-color: $dialog-normal-bgcolor;
   border: $dialog-normal-border;
 
+  &CloseIcon {
+    width: 17px;
+    height: 18px;
+    background-color: $dialog-closeicon-bgcolor;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-left: 0;
+
+    &:before,
+    &:after {
+      background-color: $dialog-closeicon-color;
+      display: block;
+      content: "";
+      width: 1px;
+      height: 10px;
+      font-size: 0;
+      position: absolute;
+      left: 8px;
+      top: 4px;
+    }
+
+    &:before {
+      @include rotate(45deg);
+    }
+
+    &:after {
+      @include rotate(-45deg);
+    }
+  }
+
   &PaneActionBar,
   &PaneContent {
     padding: $field-padding;
@@ -19,5 +50,6 @@
     height: $field-height;
     line-height: $field-height;
     padding: 0 $field-padding;
+    position: relative;
   }
 }
