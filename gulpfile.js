@@ -35,4 +35,15 @@ gulp.task('watch', function() {
   gulp.watch('*.html',['reload']);
 });
 
+gulp.task('dotcms', function() {
+  gulp.src('scss/dotcms.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: '/Volumes/Macintosh HD/Users/fmontes/dev/dotcms/core/dotCMS/html/css/dijit-dotcms/',
+      sass: 'scss',
+      sourcemap: false,
+      environment: 'production'
+    }))
+});
+
 gulp.task('default', ['compass', 'webserver', 'watch']);
