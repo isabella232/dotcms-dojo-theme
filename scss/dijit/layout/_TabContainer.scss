@@ -9,6 +9,10 @@
     position: relative;
     top: 0;
 
+    &PaneWrapper {
+      padding: $field-padding;
+    }
+
     &.dijitClosable {
       padding-right: $field-padding * 2;
     }

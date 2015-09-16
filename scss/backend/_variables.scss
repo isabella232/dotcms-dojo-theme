@@ -1,3 +1,5 @@
+@import "../dijit/theme-dotcms";
+
 $dotcms-host: "http://localhost:8080";
 $ajax-loader: "#{$dotcms-host}/html/images/icons/ajax-loader.gif";
 $chevron-menu: "#{$dotcms-host}/html/images/icons/chevron-menu.png";

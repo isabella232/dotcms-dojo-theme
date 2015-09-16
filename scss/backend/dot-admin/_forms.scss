@@ -1,0 +1,99 @@
+/*
+------------ FORMS ------------
+- Extract from: base.css
+- Handle vertical and horizontal forms
+*/
+
+dl {
+  margin: 0;
+
+  // Just for the Add/Edit Field form
+  // TODO: add a class to style this
+  &#indexed,
+  &#listed,
+  &#required,
+  &#unique,
+  &#userSearchable {
+    dd {
+      min-height: auto;
+      line-height: normal;
+
+      .dijitCheckBox {
+        margin: 0;
+      }
+    }
+  }
+}
+
+dd,
+dt {
+
+  &.wide {
+    clear: both;
+    width: auto;
+  }
+}
+
+dt {
+  clear: left;
+  float: left;
+  margin-right: 10px;
+  padding: 6px 0px 7px;
+  text-align: right;
+  width: 30%;
+}
+
+dd {
+  margin: 0 0 $field-padding 30%;
+  min-height: $field-height;
+
+  // CONTENT SEARCH FORM
+  #advancedSearch & {
+    margin: 0 0 $field-padding 30%;
+  }
+
+  .inputCaption,
+  .buttonCaption {
+    padding-left: $field-padding !important;
+  }
+
+  .dijitCheckBox,
+  .dijitRadio {
+    margin: 6px 0;
+  }
+}
+
+input,
+select {
+  color: $text-color;
+  font-family: $body-text;
+  font-size: $body-size;
+  height: $field-height;
+  line-height: $field-height;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"] {
+  @include border-radius($field-border-radius);
+  background-color: $textbox-normal-bgcolor;
+  border: $textbox-normal-border;
+  padding: 0 $field-padding;
+
+  &.dijitReset {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+.buttonRow {
+  margin-left: 30%;
+  padding: $field-padding $field-padding 0;
+
+  // CONTENT SEARCH FORM
+  #advancedSearch + & {
+    padding: 0 $field-padding $field-padding;
+  }
+}
+

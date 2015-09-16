@@ -1,3 +1,5 @@
+@import "variables";
+
 #doc {
   min-width: 970px;
 }
@@ -81,6 +83,7 @@ fieldset {
 
 a {
   color: #2c548d;
+
   &:hover {
   }
 }
@@ -117,67 +120,6 @@ ul {
 
 table {
   font-size: inherit;
-  font-family: Verdana, Geneva, Arial, sans-serif;
-}
-
-td {
-}
-
-dl {
-  margin: 0;
-}
-
-dt {
-  float: left;
-  clear: left;
-  margin: 0 0 10px 0;
-  font-size: 12px;
-  padding-top: 8px;
-  width: 30%;
-  text-align: right;
-  &.wide {
-    width: 100%;
-    clear: both;
-  }
-}
-
-dd {
-  clear: right;
-  font-size: 12px;
-  padding-top: 8px;
-  padding-left: 10px;
-  margin: 0 0 10px 30%;
-  text-align: left;
-  &.wide {
-    width: 100%;
-    clear: both;
-  }
-  &.inputCaption {
-    margin-top: -10px;
-  }
-  &.buttonCaption {
-    margin-top: -10px;
-  }
-}
-
-button {
-  font-family: Verdana, Geneva, Arial, sans-serif;
-}
-
-select {
-  font-family: Verdana, Geneva, Arial, sans-serif;
-  font-size: 93%;
-  padding: 2px;
-  color: #555;
-}
-
-input {
-  font-family: Verdana, Geneva, Arial, sans-serif;
-  color: #555555;
-  padding: 2px 5px 0;
-}
-
-label {
   font-family: Verdana, Geneva, Arial, sans-serif;
 }
 

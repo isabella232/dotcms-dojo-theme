@@ -433,11 +433,6 @@ li.smallify .navMenu-arrow {
 .portlet-body {
   padding: 5px 15px 15px 15px;
 }
-.buttonRow {
-  text-align: center;
-  padding: 10px 8px 10px 8px;
-  line-height: 12px;
-}
 .formRow {
   text-align: center;
   padding: 10px 8px;
@@ -899,11 +894,11 @@ table.workflowInfo td {
   width: 350px;
 }
 .buttonBoxLeft {
-  position: absolute;
+  height: 38px;
   left: 35px;
-  height: 35px;
+  line-height: 38px;
+  position: absolute;
   z-index: 10;
-  line-height: 30px;
 }
 .buttonBoxRight {
   position: absolute;
@@ -1057,13 +1052,7 @@ table.workflowInfo td {
 ul.withBullets li {
   list-style: circle;
 }
-.dotcms .dijitButton,
-.dotcms .dijitTextBox,
-.dotcms .dijitComboBox,
-.dotcms .dijitComboButton {
-  margin: 0 .2em;
-  vertical-align: middle;
-}
+
 /* STRUCTURE MANAGER STYLES 2.0 */
 
 .selectBoxImage {
