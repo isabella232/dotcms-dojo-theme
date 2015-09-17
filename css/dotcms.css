@@ -1030,144 +1030,6 @@ hr {
   color: #fff;
 }
 
-/* NAV MENU STYLES 2.0 */
-#menu {
-  width: 100%;
-  white-space: nowrap;
-}
-
-#menu ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-#menu ul li {
-  list-style: none;
-}
-
-#menu ul li a {
-  float: left;
-  display: block;
-  text-decoration: none;
-}
-
-#menu ul.horizontal li.level1 {
-  float: left;
-  padding: 0px;
-}
-
-#menu ul.horizontal li.level1 a {
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat left -140px;
-}
-
-#menu ul.horizontal li.level1 a:hover,
-#menu ul.horizontal li.Active a {
-  background-position: left -190px;
-}
-
-#menu ul.horizontal li.level1 .tabLeft {
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -240px;
-  padding: 8px 10px 5px 10px;
-}
-
-#menu ul.horizontal li.level1 a:hover .navMenu-title,
-#menu ul.horizontal li.Active a .navMenu-title {
-  color: #cc0000;
-}
-
-#menu ul.horizontal > li.level1 a {
-  width: auto;
-}
-
-li.level1 .navMenu-title {
-  margin: 0;
-  padding: 0;
-  line-height: 14px;
-  overflow: hidden;
-  color: #404040;
-  font-size: 93%;
-  font-weight: bold;
-}
-
-li.level1 .navMenu-subtitle {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  color: #5f5f5f;
-  font-size: 77%;
-}
-
-li.level1 .navMenu-arrow {
-  display: none;
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat -250px -300px;
-  width: 13px;
-  height: 13px;
-  margin: 4px auto 2px auto;
-  font-size: 77%;
-}
-
-li.smallify .navMenu-subtitle {
-  display: none;
-}
-
-li.smallify .navMenu-arrow {
-  display: block;
-}
-
-/* Commented Backslash Hack hides rule from IE5-Mac \*/
-#menu ul li a {
-  float: none;
-}
-
-/* End IE5-Mac hack */
-#menu ul.dropdown {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  visibility: hidden;
-  z-index: 999;
-  background: #fff;
-  border-bottom: 1px solid #D1D1D1;
-  border-left: 1px solid #D1D1D1;
-  border-right: 1px solid #D1D1D1;
-  text-decoration: none;
-  min-width: 220px;
-  -moz-box-shadow: 0px 3px 5px #aaa;
-  -webkit-box-shadow: 0px 3px 5px #aaa;
-}
-
-#menu ul.dropdown li.level2 {
-  background-image: none;
-  padding: 0;
-  overflow: hidden;
-}
-
-#menu ul.dropdown li.level2 a {
-  font-size: 85%;
-  color: #5f5f5f;
-  margin: 0;
-  background: #fff;
-  background-image: none;
-  display: block;
-  vertical-align: middle;
-  line-height: 18px;
-  height: 18px;
-  padding: 3px 10px;
-}
-
-#menu ul.dropdown li.level2 a:hover {
-  background: #F2F2F2;
-}
-
-#menu ul.dropdown li.level2 a span {
-  display: inline-block;
-  float: left;
-  width: 18px;
-  height: 18px;
-  margin: 0 5px 2px 5px;
-}
-
 /* CRUMBTRAIL STYLES 2.0 */
 .subNavCrumbTrail {
   height: 24px;
@@ -3407,6 +3269,116 @@ div#_dotHelpMenu {
   margin-left: 230px;
   border-left: 1px solid #ccc;
   padding-left: 15px;
+}
+
+#menu {
+  width: 100%;
+  white-space: nowrap;
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#menu ul li {
+  list-style: none;
+}
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  float: none;
+}
+#menu ul.horizontal li.level1 {
+  float: left;
+  padding: 0;
+}
+#menu ul.horizontal li.level1 a {
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat right -140px;
+}
+#menu ul.horizontal li.level1 a:hover {
+  background-position: right -190px;
+}
+#menu ul.horizontal li.level1 a:hover .navMenu-title {
+  color: #cc0000;
+}
+#menu ul.horizontal li.level1 .tabLeft {
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -240px;
+  padding: 8px 10px 5px;
+}
+#menu ul.horizontal li.Active a {
+  background-position: left -190px;
+}
+#menu ul.horizontal li.Active a .navMenu-title {
+  color: #cc0000;
+}
+#menu ul.horizontal > li.level1 a {
+  width: auto;
+}
+#menu ul.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 999;
+  background: #fff;
+  border-bottom: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+  text-decoration: none;
+  min-width: 220px;
+}
+#menu ul.dropdown li.level2 {
+  background-image: none;
+  padding: 0;
+  overflow: hidden;
+}
+#menu ul.dropdown li.level2 a {
+  color: #5f5f5f;
+  margin: 0;
+  background: #fff;
+  background-image: none;
+  display: block;
+  vertical-align: middle;
+  padding: 3px 10px;
+}
+#menu ul.dropdown li.level2 a:hover {
+  background: #f2f2f2;
+}
+#menu ul.dropdown li.level2 a span {
+  display: inline-block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 2px;
+}
+
+li.level1 .navMenu-title {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #404040;
+  font-weight: bold;
+}
+li.level1 .navMenu-subtitle {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #5f5f5f;
+  font-size: 77%;
+}
+li.level1 .navMenu-arrow {
+  display: none;
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat -250px -300px;
+  width: 13px;
+  height: 13px;
+  margin: 4px auto 2px auto;
+  font-size: 77%;
+}
+li.smallify .navMenu-subtitle {
+  display: none;
+}
+li.smallify .navMenu-arrow {
+  display: block;
 }
 
 /* ----------------------------------- */

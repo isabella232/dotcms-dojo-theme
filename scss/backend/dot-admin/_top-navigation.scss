@@ -1,0 +1,119 @@
+#menu {
+  width: 100%;
+  white-space: nowrap;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        text-decoration: none;
+        float: none;
+      }
+    }
+    &.horizontal {
+      li {
+        &.level1 {
+          float: left;
+          padding: 0;
+          a {
+            background: url($skin-sprite) repeat right -140px;
+            &:hover {
+              background-position: right -190px;
+              .navMenu-title {
+                color: #cc0000;
+              }
+            }
+          }
+          .tabLeft {
+            background: url($skin-sprite) no-repeat 0 -240px;
+            padding: 8px 10px 5px;
+          }
+        }
+        &.Active a {
+          background-position: left -190px;
+          .navMenu-title {
+            color: #cc0000;
+          }
+        }
+      }
+      > li.level1 a {
+        width: auto;
+      }
+    }
+    &.dropdown {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      z-index: 999;
+      background: #fff;
+      border-bottom: 1px solid #d1d1d1;
+      border-left: 1px solid #d1d1d1;
+      border-right: 1px solid #d1d1d1;
+      text-decoration: none;
+      min-width: 220px;
+      li.level2 {
+        background-image: none;
+        padding: 0;
+        overflow: hidden;
+        a {
+          color: #5f5f5f;
+          margin: 0;
+          background: #fff;
+          background-image: none;
+          display: block;
+          vertical-align: middle;
+          padding: 3px 10px;
+          &:hover {
+            background: #f2f2f2;
+          }
+          span {
+            display: inline-block;
+            float: left;
+            width: 18px;
+            height: 18px;
+            margin: 0 5px 2px;
+          }
+        }
+      }
+    }
+  }
+}
+li {
+  &.level1 {
+    .navMenu-title {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      color: #404040;
+      font-weight: bold;
+    }
+    .navMenu-subtitle {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      color: #5f5f5f;
+      font-size: 77%;
+    }
+    .navMenu-arrow {
+      display: none;
+      background: url($skin-sprite) no-repeat -250px -300px;
+      width: 13px;
+      height: 13px;
+      margin: 4px auto 2px auto;
+      font-size: 77%;
+    }
+  }
+  &.smallify {
+    .navMenu-subtitle {
+      display: none;
+    }
+    .navMenu-arrow {
+      display: block;
+    }
+  }
+}
