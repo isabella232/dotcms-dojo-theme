@@ -1431,30 +1431,6 @@ tr.active {
   overflow: auto;
 }
 
-.fieldWrapper {
-  margin: 0 0 20px 0;
-  padding: 0;
-  position: relative;
-}
-
-.fieldName {
-  font-size: 93%;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.fieldValue {
-  float: left;
-  margin: 0 0 0 20px;
-}
-
-.fieldValueText {
-  color: #999;
-  border: 1px solid #ddd;
-  padding: 3px 8px;
-  width: 400px;
-}
-
 .lockedAgo {
   display: block;
   color: #999;
@@ -3538,7 +3514,6 @@ li.smallify .navMenu-arrow {
 .workStreamIcon,
 .wysiwygIcon,
 .dijitIcon {
-  background: none;
   display: none;
 }
 
@@ -3551,7 +3526,9 @@ li.smallify .navMenu-arrow {
 .folderOpenIcon,
 .folderSelectedIcon,
 .toggleCloseIcon,
-.toggleOpenIcon {
+.toggleOpenIcon,
+.pageIcon,
+.uknIcon {
   display: inline;
 }
 
@@ -3634,6 +3611,59 @@ input[type="text"].dijitReset {
 }
 #advancedSearch + .buttonRow {
   padding: 0 10px 10px;
+}
+
+.fieldWrapper {
+  margin-bottom: 20px;
+  padding: 0;
+  position: relative;
+}
+
+.fieldName {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fieldValue {
+  float: left;
+}
+
+.fieldValueText {
+  color: #999;
+  border: 1px solid #ddd;
+  padding: 3px 8px;
+  width: 400px;
+}
+
+.toggleEditorField,
+.langVariablesField {
+  margin-top: 10px;
+}
+
+.glossaryTermPopup {
+  background-color: rgba(243, 118, 42, 0.2);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  border: solid 1px #F3762A;
+  position: absolute;
+}
+
+.langVariablesField {
+  position: relative;
+}
+.langVariablesField .glossaryTermPopup {
+  right: 0;
+  top: 0;
+}
+
+.WYSIWYGTools {
+  margin-top: 10px;
+}
+.WYSIWYGTools .glossaryTermPopup {
+  left: 150px;
+  top: 35px;
 }
 
 /* The main calendar widget.  DIV containing a table. */
@@ -4606,7 +4636,7 @@ html {
 }
 
 .uknIcon:before {
-  content: "";
+  content: "";
 }
 
 .unarchiveIcon:before {
