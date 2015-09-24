@@ -3940,6 +3940,13 @@ html {
   box-sizing: border-box;
 }
 
+.dojoDndItem {
+  padding: 0;
+}
+.dojoDndItemItemOver, .dojoDndItemItemAfter {
+  padding: 0;
+}
+
 /* FONT PATH
  * -------------------------- */
 @font-face {
