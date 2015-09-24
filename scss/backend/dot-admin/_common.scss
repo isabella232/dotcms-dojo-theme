@@ -2,3 +2,9 @@
 @import "top-navigation";
 @import "icons";
 @import "forms";
+
+#addFileAssetDialog {
+  .dijitComboBox {
+    margin-right: $basic-padding;
+  }
+}

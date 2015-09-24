@@ -3514,6 +3514,7 @@ li.smallify .navMenu-arrow {
 .workStreamIcon,
 .wysiwygIcon,
 .dijitIcon {
+  background: none;
   display: none;
 }
 
@@ -3526,9 +3527,7 @@ li.smallify .navMenu-arrow {
 .folderOpenIcon,
 .folderSelectedIcon,
 .toggleCloseIcon,
-.toggleOpenIcon,
-.pageIcon,
-.uknIcon {
+.toggleOpenIcon {
   display: inline;
 }
 
@@ -3664,6 +3663,10 @@ input[type="text"].dijitReset {
 .WYSIWYGTools .glossaryTermPopup {
   left: 150px;
   top: 35px;
+}
+
+#addFileAssetDialog .dijitComboBox {
+  margin-right: 10px;
 }
 
 /* The main calendar widget.  DIV containing a table. */
@@ -4636,7 +4639,7 @@ html {
 }
 
 .uknIcon:before {
-  content: "";
+  content: "";
 }
 
 .unarchiveIcon:before {
