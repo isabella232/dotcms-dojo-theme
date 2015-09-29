@@ -1,4 +1,8 @@
 .dijit {
+  &ContentPane {
+    padding: $field-padding;
+  }
+
   &Tab {
     height: $tab-height;
     line-height: $tab-height;
@@ -9,16 +13,13 @@
     position: relative;
     top: 0;
 
-    &PaneWrapper {
-      padding: $field-padding;
-    }
-
     &.dijitClosable {
       padding-right: $field-padding * 2;
     }
 
 
-    &Checked {
+    &Checked,
+    &Checked.dijitTabCheckedHover {
       background-color: $tab-active-bgcolor;
       height: $tab-height + $field-border-size;
       line-height: $tab-height + $field-border-size;
@@ -186,8 +187,9 @@
 
     &ListContainer-top,
     &ListContainer-bottom {
+      @include box-sizing("content-box");
       border: $field-normal-border;
-      height: $tab-height + ($field-border-size * 2) !important;
+      height: $tab-height !important;
       overflow: visible;
     }
 

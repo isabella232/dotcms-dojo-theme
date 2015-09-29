@@ -6031,6 +6031,9 @@ body {
   padding: 0 10px;
   position: relative;
 }
+.dotcms .dijitContentPane {
+  padding: 10px;
+}
 .dotcms .dijitTab {
   height: 29px;
   line-height: 29px;
@@ -6041,13 +6044,10 @@ body {
   position: relative;
   top: 0;
 }
-.dotcms .dijitTabPaneWrapper {
-  padding: 10px;
-}
 .dotcms .dijitTab.dijitClosable {
   padding-right: 20px;
 }
-.dotcms .dijitTabChecked {
+.dotcms .dijitTabChecked, .dotcms .dijitTabChecked.dijitTabCheckedHover {
   background-color: #fff;
   height: 30px;
   line-height: 30px;
@@ -6190,8 +6190,11 @@ body {
   border: none;
 }
 .dotcms .dijitTabListContainer-top, .dotcms .dijitTabListContainer-bottom {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   border: solid 1px #CACED0;
-  height: 31px !important;
+  height: 29px !important;
   overflow: visible;
 }
 .dotcms .dijitTabListContainer-bottom .dijitTabListWrapper {
