@@ -1030,47 +1030,6 @@ hr {
   color: #fff;
 }
 
-/* CRUMBTRAIL STYLES 2.0 */
-.subNavCrumbTrail {
-  height: 24px;
-  margin: -9px -10px 10px -10px;
-  overflow: hidden;
-  border-bottom: 1px solid #ddd;
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat-x 0 -330px;
-}
-
-.subNavCrumbTrail ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.subNavCrumbTrail li {
-  font-size: 85%;
-  margin: 0;
-  list-style: none;
-  float: left;
-  padding: 3px 10px 5px 25px;
-  line-height: 16px;
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -391px;
-}
-
-.subNavCrumbTrail .lastCrumb {
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -361px;
-}
-
-.subNavCrumbTrail a {
-  text-decoration: none;
-}
-
-.subNavCrumbTrail a:hover {
-  color: #cc0000;
-}
-
-.lastCrumb span {
-  font-weight: bold;
-}
-
 .changeHost {
   float: right;
   font-size: 85%;
@@ -1084,12 +1043,6 @@ hr {
   font-weight: bold;
   float: left;
   margin: 0 5px 0 0;
-}
-
-#selectHostDiv {
-  cursor: pointer;
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat-x 0 -421px;
-  padding: 3px 10px 5px 15px;
 }
 
 #hostSelectDialog {
@@ -3355,6 +3308,48 @@ li.smallify .navMenu-subtitle {
 }
 li.smallify .navMenu-arrow {
   display: block;
+}
+
+/* CRUMBTRAIL STYLES 2.0 */
+.subNavCrumbTrail {
+  height: 27px;
+  margin: -10px -10px 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat-x 0 -329px;
+}
+.subNavCrumbTrail ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.subNavCrumbTrail li {
+  font-size: 85%;
+  margin: 0;
+  list-style: none;
+  float: left;
+  padding: 5px 10px 6px 25px;
+  line-height: 16px;
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -390px;
+}
+.subNavCrumbTrail .lastCrumb {
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -360px;
+}
+.subNavCrumbTrail a {
+  text-decoration: none;
+}
+.subNavCrumbTrail a:hover {
+  color: #cc0000;
+}
+
+.lastCrumb span {
+  font-weight: bold;
+}
+
+#selectHostDiv {
+  cursor: pointer;
+  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat-x 0 -420px;
+  padding: 5px 10px 6px 15px;
 }
 
 /* ----------------------------------- */
@@ -6031,9 +6026,6 @@ body {
   padding: 0 10px;
   position: relative;
 }
-.dotcms .dijitContentPane {
-  padding: 10px;
-}
 .dotcms .dijitTab {
   height: 29px;
   line-height: 29px;
@@ -6046,6 +6038,9 @@ body {
 }
 .dotcms .dijitTab.dijitClosable {
   padding-right: 20px;
+}
+.dotcms .dijitTabPaneWrapper .dijitContentPane {
+  padding: 10px;
 }
 .dotcms .dijitTabChecked, .dotcms .dijitTabChecked.dijitTabCheckedHover {
   background-color: #fff;

@@ -1,7 +1,4 @@
 .dijit {
-  &ContentPane {
-    padding: $field-padding;
-  }
 
   &Tab {
     height: $tab-height;
@@ -17,6 +14,11 @@
       padding-right: $field-padding * 2;
     }
 
+    &PaneWrapper {
+      .dijitContentPane {
+        padding: $field-padding;
+      }
+    }
 
     &Checked,
     &Checked.dijitTabCheckedHover {

@@ -213,42 +213,6 @@
   -webkit-opcity: 0.9;
   color: #fff;
 }
-
-/* CRUMBTRAIL STYLES 2.0 */
-
-.subNavCrumbTrail {
-  height: 24px;
-  margin: -9px -10px 10px -10px;
-  overflow: hidden;
-  border-bottom: 1px solid #ddd;
-  background: url($skin-sprite) repeat-x 0 -330px;
-}
-.subNavCrumbTrail ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.subNavCrumbTrail li {
-  font-size: 85%;
-  margin: 0;
-  list-style: none;
-  float: left;
-  padding: 3px 10px 5px 25px;
-  line-height: 16px;
-  background: url($skin-sprite) no-repeat 0 -391px;
-}
-.subNavCrumbTrail .lastCrumb {
-  background: url($skin-sprite) no-repeat 0 -361px;
-}
-.subNavCrumbTrail a {
-  text-decoration: none;
-}
-.subNavCrumbTrail a:hover {
-  color: #cc0000;
-}
-.lastCrumb span {
-  font-weight: bold;
-}
 .changeHost {
   float: right;
   font-size: 85%;
@@ -262,11 +226,7 @@
   float: left;
   margin: 0 5px 0 0;
 }
-#selectHostDiv {
-  cursor: pointer;
-  background: url($skin-sprite) repeat-x 0 -421px;
-  padding: 3px 10px 5px 15px;
-}
+
 #hostSelectDialog {
   width: 300px;
 }
