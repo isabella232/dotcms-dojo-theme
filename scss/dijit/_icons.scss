@@ -1,380 +1,77 @@
-@import "../font-awesome-4.4.0/mixins";
-@import "../font-awesome-4.4.0/variables";
-@import "../font-awesome-4.4.0/path";
-
-#font-icon-base {
-  font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
-  text-rendering: auto; // optimizelegibility throws things off #1094
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
-}
-
-.add,
-.android,
-.apple,
-.appMonitor,
-.archive,
-.archived,
-.arrowLeft,
-.arrowRight,
-.assignWorkflow,
-.backup,
-.bg,
-.browse,
-.bug,
-.bundle,
-.calClock,
-.calDay,
-.calList,
-.calMonth,
-.calWeek,
-.cancel,
-.cancelWorkflow,
-.cart,
-.checkBox,
-.chevron,
-.chevronExpand,
-.close,
-.color,
-.content,
-.copy,
-.cut,
-.delete,
-.deleteWorkflow,
-.detailView,
-.docConvert,
-.docCopy,
-.docNum,
-.docText,
-.document,
-.download,
-.drop,
-.edit,
-.editScript,
-.encrypt,
-.exclamation,
-.exclamation-red,
-.female,
-.file,
-.fileMulti,
-.fileNew,
-.fix,
-.folder,
-.folderAdd,
-.folderCopy,
-.folderDelete,
-.folderEdit,
-.folderFiles,
-.folderGlobe,
-.folderOpen,
-.folderSelected,
-.form,
-.formNew,
-.gear,
-.gearMinus,
-.gearPencil,
-.gearPlus,
-.greyDot,
-.help,
-.hide,
-.hint,
-.host,
-.hostArchived,
-.hostDefault,
-.hostStopped,
-.hourGlass,
-.imageNew,
-.info,
-.key,
-.keyvalue,
-.link,
-.linkAdd,
-.listView,
-.live,
-.lock,
-.login,
-.loginAs,
-.mailList,
-.mapPin,
-.minus,
-.mobile,
-.movePage,
-.multiSelect,
-.newPage,
-.newTask,
-.newWorkflow,
-.next,
-.page,
-.pageProp,
-.paste,
-.plus,
-.preview,
-.previous,
-.property,
-.publish,
-.query,
-.radio,
-.reindex,
-.remember,
-.reopenWorkflow,
-.reorder,
-.repeat,
-.republish,
-.required,
-.reset,
-.resolve,
-.resolveWorkflow,
-.rServer,
-.save,
-.saveAssign,
-.scrollPane,
-.search,
-.select,
-.shrink,
-.spell,
-.splitter,
-.sServer,
-.statistics,
-.stop,
-.tab,
-.tag,
-.textField,
-.thumbnailView,
-.toggleClose,
-.toggleOpen,
-.trash,
-.ukn,
-.unarchive,
-.unlock,
-.unpublish,
-.upload,
-.user,
-.windows,
-.workflow,
-.working,
-.workStream,
-.wysiwyg,
 .dijit {
+
   &Icon {
     @extend #font-icon-base;
-  }
-}
+    width: $icon-size;
+    height: $icon-size;
+    margin-right: $field-padding / 2;
 
-$icons: (
-  add: $fa-var-square,
-  android: $fa-var-square,
-  apple: $fa-var-square,
-  appMonitor: $fa-var-square,
-  archive: $fa-var-shield,
-  archived: $fa-var-arrow-circle-down,
-  arrowLeft: $fa-var-chevron-left,
-  arrowRight: $fa-var-chevron-right,
-  assignWorkflow: $fa-var-square,
-  backup: $fa-var-square,
-  bg: $fa-var-square,
-  browse: $fa-var-square,
-  bug: $fa-var-bug,
-  bundle: $fa-var-square,
-  calClock: $fa-var-square,
-  calDay: $fa-var-square,
-  calList: $fa-var-square,
-  calMonth: $fa-var-square,
-  calWeek: $fa-var-square,
-  cancel: $fa-var-times-circle-o,
-  cancelWorkflow: $fa-var-square,
-  cart: $fa-var-square,
-  checkBox: $fa-var-square,
-  chevron: $fa-var-square,
-  chevronExpand: $fa-var-chevron-down,
-  close: $fa-var-times,
-  color: $fa-var-square,
-  content: $fa-var-square,
-  copy: $fa-var-copy,
-  cut: $fa-var-scissors,
-  delete: $fa-var-trash-o,
-  deleteWorkflow: $fa-var-square,
-  detailView: $fa-var-square,
-  docConvert: $fa-var-square,
-  docCopy: $fa-var-square,
-  docNum: $fa-var-square,
-  docText: $fa-var-square,
-  document: $fa-var-square,
-  download: $fa-var-download,
-  drop: $fa-var-square,
-  edit: $fa-var-edit,
-  editScript: $fa-var-pencil-square-o,
-  encrypt: $fa-var-square,
-  exclamation-red: $fa-var-square,
-  exclamation: $fa-var-square,
-  female: $fa-var-square,
-  file: $fa-var-square,
-  fileMulti: $fa-var-square,
-  fileNew: $fa-var-square,
-  fix: $fa-var-square,
-  folder: $fa-var-folder-o,
-  folderAdd: $fa-var-square,
-  folderCopy: $fa-var-square,
-  folderDelete: $fa-var-square,
-  folderEdit: $fa-var-square,
-  folderFiles: $fa-var-square,
-  folderGlobe: $fa-var-square,
-  folderOpen: $fa-var-folder-open,
-  folderSelected: $fa-var-folder-open,
-  form: $fa-var-square,
-  formNew: $fa-var-square,
-  gear: $fa-var-square,
-  gearMinus: $fa-var-square,
-  gearPencil: $fa-var-square,
-  gearPlus: $fa-var-square,
-  greyDot: $fa-var-square,
-  help: $fa-var-life-saver,
-  hide: $fa-var-square,
-  hint: $fa-var-square,
-  host: $fa-var-globe,
-  hostArchived: $fa-var-square,
-  hostDefault: $fa-var-square,
-  hostStopped: $fa-var-square,
-  hourGlass: $fa-var-square,
-  imageNew: $fa-var-square,
-  info: $fa-var-info-circle,
-  key: $fa-var-key,
-  keyvalue: $fa-var-square,
-  link: $fa-var-link,
-  linkAdd: $fa-var-square,
-  listView: $fa-var-square,
-  live: $fa-var-dot-circle-o,
-  lock: $fa-var-lock,
-  login: $fa-var-users,
-  loginAs: $fa-var-square,
-  mailList: $fa-var-envelope-o,
-  mapPin: $fa-var-square,
-  minus: $fa-var-minus,
-  mobile: $fa-var-square,
-  movePage: $fa-var-square,
-  multiSelect: $fa-var-square,
-  newPage: $fa-var-square,
-  newTask: $fa-var-square,
-  newWorkflow: $fa-var-square,
-  next: $fa-var-arrow-circle-right,
-  page: $fa-var-file-o,
-  pageProp: $fa-var-square,
-  paste: $fa-var-square,
-  plus: $fa-var-plus,
-  preview: $fa-var-eye,
-  previous: $fa-var-arrow-circle-left,
-  property: $fa-var-square,
-  publish: $fa-var-square,
-  query: $fa-var-square,
-  radio: $fa-var-square,
-  reindex: $fa-var-square,
-  remember: $fa-var-square,
-  reopenWorkflow: $fa-var-square,
-  reorder: $fa-var-square,
-  repeat: $fa-var-arrows,
-  republish: $fa-var-square,
-  required: $fa-var-square,
-  reset: $fa-var-refresh,
-  resolve: $fa-var-check,
-  resolveWorkflow: $fa-var-square,
-  rServer: $fa-var-square,
-  save: $fa-var-floppy-o,
-  saveAssign: $fa-var-square,
-  scrollPane: $fa-var-square,
-  search: $fa-var-search,
-  select: $fa-var-square,
-  shrink: $fa-var-square,
-  spell: $fa-var-square,
-  splitter: $fa-var-square,
-  sServer: $fa-var-square,
-  statistics: $fa-var-bar-chart,
-  stop: $fa-var-square,
-  tab: $fa-var-square,
-  tag: $fa-var-square,
-  textField: $fa-var-square,
-  thumbnailView: $fa-var-square,
-  toggleClose: $fa-var-minus-square-o,
-  toggleOpen: $fa-var-plus-square-o,
-  trash: $fa-var-square,
-  ukn: $fa-var-square,
-  unarchive: $fa-var-square,
-  unlock: $fa-var-unlock,
-  unpublish: $fa-var-square,
-  upload: $fa-var-upload,
-  user: $fa-var-square,
-  windows: $fa-var-square,
-  workflow: $fa-var-square,
-  working: $fa-var-circle-thin,
-  workStream: $fa-var-square,
-  wysiwyg: $fa-var-square
-);
-
-@each $class, $icon in $icons {
-  .#{$class} {
-    &Icon {
+    &Task {
       &:before {
-        content: $icon;
+        content: $fa-var-tasks;
+      }
+    }
+
+    &Edit {
+      &:before {
+        content: $fa-var-edit;
+      }
+    }
+
+    &Save {
+      &:before {
+        content: $fa-var-save;
+      }
+    }
+
+    &Cut {
+      &:before {
+        content: $fa-var-cut;
+      }
+    }
+
+    &Copy {
+      @extend #font-icon-base;
+      &:before {
+        content: $fa-var-copy;
+      }
+    }
+
+    &Paste {
+      &:before {
+        content: $fa-var-paste;
+      }
+    }
+
+    &Undo {
+      &:before {
+        content: $fa-var-undo;
+      }
+    }
+
+    &Delete {
+      &:before {
+        content: $fa-var-remove;
+      }
+    }
+
+    &Expand {
+      &:before {
+        content: $fa-var-angle-right;
       }
     }
   }
-}
 
-.dijitIconTask {
-  &:before {
-    content: $fa-var-tasks;
+  // USED IN THE TOGGLE BUTTON WIDGET
+  &CheckBoxIcon {
+    &:before {
+      content: $fa-var-check-square-o;
+    }
   }
-}
 
-.dijitIconEdit {
-  &:before {
-    content: $fa-var-edit;
-  }
-}
-
-.dijitIconSave {
-  &:before {
-    content: $fa-var-save;
-  }
-}
-
-.dijitIconCut {
-  &:before {
-    content: $fa-var-cut;
-  }
-}
-
-.dijitIconCopy {
-  &:before {
-    content: $fa-var-copy;
-  }
-}
-
-.dijitIconPaste {
-  &:before {
-    content: $fa-var-paste;
-  }
-}
-
-.dijitIconUndo {
-  &:before {
-    content: $fa-var-undo;
-  }
-}
-
-.dijitIconDelete {
-  &:before {
-    content: $fa-var-remove;
-  }
-}
-
-.dijitMenuExpand {
-  &:before {
-    content: $fa-var-angle-right;
-  }
-}
-
-.dijitCheckBoxIcon {
-  &:before {
-    content: $fa-var-check-square-o;
+  .dijitNoIcon {
+    width: auto;
+    height: auto;
+    margin-right: 0;
   }
 }

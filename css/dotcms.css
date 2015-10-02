@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 Copyright (c) 2009, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
@@ -3355,14 +3364,6 @@ li.smallify .navMenu-arrow {
 /* ----------------------------------- */
 /* -------------- ICONS -------------- */
 /* ----------------------------------- */
-.required {
-  background: url("http://localhost:8080/html/images/icons/dotcms-sprite.png") no-repeat -4px -1161px;
-  width: 10px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .addIcon,
 .androidIcon,
 .appleIcon,
@@ -3507,8 +3508,7 @@ li.smallify .navMenu-arrow {
 .workflowIcon,
 .workingIcon,
 .workStreamIcon,
-.wysiwygIcon,
-.dijitIcon {
+.wysiwygIcon {
   background: none;
   display: none;
 }
@@ -3526,7 +3526,866 @@ li.smallify .navMenu-arrow {
   display: inline;
 }
 
-/* BUTTON ICONS 2.0 */
+.addIcon:before {
+  content: "";
+}
+
+.androidIcon:before {
+  content: "";
+}
+
+.appleIcon:before {
+  content: "";
+}
+
+.appMonitorIcon:before {
+  content: "";
+}
+
+.archiveIcon:before {
+  content: "";
+}
+
+.archivedIcon:before {
+  content: "";
+}
+
+.arrowLeftIcon:before {
+  content: "";
+}
+
+.arrowRightIcon:before {
+  content: "";
+}
+
+.assignWorkflowIcon:before {
+  content: "";
+}
+
+.backupIcon:before {
+  content: "";
+}
+
+.bgIcon:before {
+  content: "";
+}
+
+.browseIcon:before {
+  content: "";
+}
+
+.bugIcon:before {
+  content: "";
+}
+
+.bundleIcon:before {
+  content: "";
+}
+
+.calClockIcon:before {
+  content: "";
+}
+
+.calDayIcon:before {
+  content: "";
+}
+
+.calListIcon:before {
+  content: "";
+}
+
+.calMonthIcon:before {
+  content: "";
+}
+
+.calWeekIcon:before {
+  content: "";
+}
+
+.cancelIcon:before {
+  content: "";
+}
+
+.cancelWorkflowIcon:before {
+  content: "";
+}
+
+.cartIcon:before {
+  content: "";
+}
+
+.checkBoxIcon:before {
+  content: "";
+}
+
+.chevronIcon:before {
+  content: "";
+}
+
+.chevronExpandIcon:before {
+  content: "";
+}
+
+.closeIcon:before {
+  content: "";
+}
+
+.colorIcon:before {
+  content: "";
+}
+
+.contentIcon:before {
+  content: "";
+}
+
+.copyIcon:before {
+  content: "";
+}
+
+.cutIcon:before {
+  content: "";
+}
+
+.deleteIcon:before {
+  content: "";
+}
+
+.deleteWorkflowIcon:before {
+  content: "";
+}
+
+.detailViewIcon:before {
+  content: "";
+}
+
+.docConvertIcon:before {
+  content: "";
+}
+
+.docCopyIcon:before {
+  content: "";
+}
+
+.docNumIcon:before {
+  content: "";
+}
+
+.docTextIcon:before {
+  content: "";
+}
+
+.documentIcon:before {
+  content: "";
+}
+
+.downloadIcon:before {
+  content: "";
+}
+
+.dropIcon:before {
+  content: "";
+}
+
+.editIcon:before {
+  content: "";
+}
+
+.editScriptIcon:before {
+  content: "";
+}
+
+.encryptIcon:before {
+  content: "";
+}
+
+.exclamation-redIcon:before {
+  content: "";
+}
+
+.exclamationIcon:before {
+  content: "";
+}
+
+.femaleIcon:before {
+  content: "";
+}
+
+.fileIcon:before {
+  content: "";
+}
+
+.fileMultiIcon:before {
+  content: "";
+}
+
+.fileNewIcon:before {
+  content: "";
+}
+
+.fixIcon:before {
+  content: "";
+}
+
+.folderIcon:before {
+  content: "";
+}
+
+.folderAddIcon:before {
+  content: "";
+}
+
+.folderCopyIcon:before {
+  content: "";
+}
+
+.folderDeleteIcon:before {
+  content: "";
+}
+
+.folderEditIcon:before {
+  content: "";
+}
+
+.folderFilesIcon:before {
+  content: "";
+}
+
+.folderGlobeIcon:before {
+  content: "";
+}
+
+.folderOpenIcon:before {
+  content: "";
+}
+
+.folderSelectedIcon:before {
+  content: "";
+}
+
+.formIcon:before {
+  content: "";
+}
+
+.formNewIcon:before {
+  content: "";
+}
+
+.gearIcon:before {
+  content: "";
+}
+
+.gearMinusIcon:before {
+  content: "";
+}
+
+.gearPencilIcon:before {
+  content: "";
+}
+
+.gearPlusIcon:before {
+  content: "";
+}
+
+.greyDotIcon:before {
+  content: "";
+}
+
+.helpIcon:before {
+  content: "";
+}
+
+.hideIcon:before {
+  content: "";
+}
+
+.hintIcon:before {
+  content: "";
+}
+
+.hostIcon:before {
+  content: "";
+}
+
+.hostArchivedIcon:before {
+  content: "";
+}
+
+.hostDefaultIcon:before {
+  content: "";
+}
+
+.hostStoppedIcon:before {
+  content: "";
+}
+
+.hourGlassIcon:before {
+  content: "";
+}
+
+.imageNewIcon:before {
+  content: "";
+}
+
+.infoIcon:before {
+  content: "";
+}
+
+.keyIcon:before {
+  content: "";
+}
+
+.keyvalueIcon:before {
+  content: "";
+}
+
+.linkAddIcon:before {
+  content: "";
+}
+
+.listViewIcon:before {
+  content: "";
+}
+
+.liveIcon:before {
+  content: "";
+}
+
+.lockIcon:before {
+  content: "";
+}
+
+.loginIcon:before {
+  content: "";
+}
+
+.loginAsIcon:before {
+  content: "";
+}
+
+.mailListIcon:before {
+  content: "";
+}
+
+.mapPinIcon:before {
+  content: "";
+}
+
+.minusIcon:before {
+  content: "";
+}
+
+.mobileIcon:before {
+  content: "";
+}
+
+.movePageIcon:before {
+  content: "";
+}
+
+.multiSelectIcon:before {
+  content: "";
+}
+
+.newPageIcon:before {
+  content: "";
+}
+
+.newTaskIcon:before {
+  content: "";
+}
+
+.newWorkflowIcon:before {
+  content: "";
+}
+
+.nextIcon:before {
+  content: "";
+}
+
+.pagePropIcon:before {
+  content: "";
+}
+
+.pasteIcon:before {
+  content: "";
+}
+
+.plusIcon:before {
+  content: "";
+}
+
+.previewIcon:before {
+  content: "";
+}
+
+.previousIcon:before {
+  content: "";
+}
+
+.propertyIcon:before {
+  content: "";
+}
+
+.publishIcon:before {
+  content: "";
+}
+
+.queryIcon:before {
+  content: "";
+}
+
+.radioIcon:before {
+  content: "";
+}
+
+.reindexIcon:before {
+  content: "";
+}
+
+.rememberIcon:before {
+  content: "";
+}
+
+.reopenWorkflowIcon:before {
+  content: "";
+}
+
+.reorderIcon:before {
+  content: "";
+}
+
+.repeatIcon:before {
+  content: "";
+}
+
+.republishIcon:before {
+  content: "";
+}
+
+.requiredIcon:before {
+  content: "";
+}
+
+.resetIcon:before {
+  content: "";
+}
+
+.resolveIcon:before {
+  content: "";
+}
+
+.resolveWorkflowIcon:before {
+  content: "";
+}
+
+.rServerIcon:before {
+  content: "";
+}
+
+.saveIcon:before {
+  content: "";
+}
+
+.saveAssignIcon:before {
+  content: "";
+}
+
+.scrollPaneIcon:before {
+  content: "";
+}
+
+.searchIcon:before {
+  content: "";
+}
+
+.selectIcon:before {
+  content: "";
+}
+
+.shrinkIcon:before {
+  content: "";
+}
+
+.spellIcon:before {
+  content: "";
+}
+
+.splitterIcon:before {
+  content: "";
+}
+
+.sServerIcon:before {
+  content: "";
+}
+
+.statisticsIcon:before {
+  content: "";
+}
+
+.stopIcon:before {
+  content: "";
+}
+
+.tabIcon:before {
+  content: "";
+}
+
+.tagIcon:before {
+  content: "";
+}
+
+.textFieldIcon:before {
+  content: "";
+}
+
+.thumbnailViewIcon:before {
+  content: "";
+}
+
+.toggleCloseIcon:before {
+  content: "";
+}
+
+.toggleOpenIcon:before {
+  content: "";
+}
+
+.trashIcon:before {
+  content: "";
+}
+
+.unarchiveIcon:before {
+  content: "";
+}
+
+.unlockIcon:before {
+  content: "";
+}
+
+.unpublishIcon:before {
+  content: "";
+}
+
+.uploadIcon:before {
+  content: "";
+}
+
+.userIcon:before {
+  content: "";
+}
+
+.windowsIcon:before {
+  content: "";
+}
+
+.workflowIcon:before {
+  content: "";
+}
+
+.workingIcon:before {
+  content: "";
+}
+
+.workStreamIcon:before {
+  content: "";
+}
+
+.wysiwygIcon:before {
+  content: "";
+}
+
+.shimIconSmall {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 1px;
+  width: 12px;
+}
+
+#file-type-icons, .uknIcon, .pageIcon, .linkIcon, .bmpIcon,
+.imageIcon,
+.jpegIcon,
+.jpgIcon,
+.pctIcon, .giffIcon,
+.gifIcon,
+.pngIcon, .flaIcon,
+.flvIcon,
+.swfIcon, .epsIcon,
+.psdIcon,
+.pxrIcon,
+.tiffIcon,
+.tifIcon, .airIcon,
+.pdfIcon, .aiIcon,
+.drwIcon,
+.graffleIcon,
+.psIcon,
+.svgIcon,
+.vdxIcon, .docIcon,
+.docxIcon, .appIcon,
+.batIcon,
+.cgiIcon,
+.comIcon,
+.exeIcon,
+.jarIcon,
+.pifIcon,
+.vbIcon,
+.wsfIcon, .csvIcon,
+.numbersIcon,
+.wksIcon,
+.xlsIcon,
+.xlsxIcon, .accdbIcon,
+.dbIcon,
+.mdbIcon,
+.pdbIcon,
+.sqlIcon, .keynote,
+.pptIcon,
+.pptxIcon, .asxIcon,
+.wmvIcon, .asfIcon,
+.aviIcon,
+.movIcon,
+.mp4Icon,
+.mpgIcon,
+.oggIcon,
+.ogvIcon,
+.rmIcon,
+.vobIcon, .aacIcon,
+.aifIcon,
+.iffIcon,
+.m3uIcon,
+.midIcon,
+.mp3Icon,
+.mpaIcon,
+.raIcon,
+.wavIcon,
+.wmaIcon, .cssIcon, .vtlIcon, .aspIcon,
+.gyIcon,
+.jsIcon,
+.jsonIcon,
+.jspIcon,
+.phpIcon,
+.pyIcon,
+.rbIcon,
+.xmlIcon, .htmIcon,
+.htmlIcon,
+.rssIcon, .datIcon,
+.pagesIcon,
+.rtfIcon,
+.sdfIcon,
+.txtIcon, .debIcon,
+.gzIcon,
+.pkgIcon,
+.rarIcon,
+.sitIcon,
+.sitxIcon,
+.zipIcon,
+.zipxIcon, .eotIcon,
+.otfIcon,
+.ttfIcon,
+.woffIcon, .icoIcon, .azwIcon,
+.epubIcon,
+.ibooksIcon,
+.kf8Icon {
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background: url("http://localhost:8080/html/images/icons/dotcms-sprite.png") no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
+.uknIcon {
+  background-position: -21px -2000px;
+}
+
+.pageIcon {
+  background-position: -1px -400px;
+}
+
+.linkIcon {
+  background-position: -1px -660px;
+}
+
+.bmpIcon,
+.imageIcon,
+.jpegIcon,
+.jpgIcon,
+.pctIcon {
+  background-position: -1px -1540px;
+}
+
+.giffIcon,
+.gifIcon,
+.pctIcon,
+.pngIcon {
+  background-position: -21px -1540px;
+}
+
+.flaIcon,
+.flvIcon,
+.swfIcon {
+  background-position: -1px -1560px;
+}
+
+.epsIcon,
+.psdIcon,
+.pxrIcon,
+.tiffIcon,
+.tifIcon {
+  background-position: -21px -1560px;
+}
+
+.airIcon,
+.pdfIcon {
+  background-position: -1px -1580px;
+}
+
+.aiIcon,
+.drwIcon,
+.epsIcon,
+.graffleIcon,
+.psIcon,
+.svgIcon,
+.vdxIcon {
+  background-position: -21px -1580px;
+}
+
+.docIcon,
+.docxIcon {
+  background-position: -1px -1600px;
+}
+
+.appIcon,
+.batIcon,
+.cgiIcon,
+.comIcon,
+.exeIcon,
+.jarIcon,
+.pifIcon,
+.vbIcon,
+.wsfIcon {
+  background-position: -21px -1600px;
+}
+
+.csvIcon,
+.numbersIcon,
+.wksIcon,
+.xlsIcon,
+.xlsxIcon {
+  background-position: -1px -1620px;
+}
+
+.accdbIcon,
+.dbIcon,
+.mdbIcon,
+.pdbIcon,
+.sqlIcon {
+  background-position: -21px -1620px;
+}
+
+.keynote,
+.pptIcon,
+.pptxIcon {
+  background-position: -1px -1640px;
+}
+
+.asxIcon,
+.wmvIcon {
+  background-position: -21px -1640px;
+}
+
+.asfIcon,
+.aviIcon,
+.movIcon,
+.mp4Icon,
+.mpgIcon,
+.oggIcon,
+.ogvIcon,
+.rmIcon,
+.vobIcon {
+  background-position: -1px -1660px;
+}
+
+.aacIcon,
+.aifIcon,
+.iffIcon,
+.m3uIcon,
+.midIcon,
+.mp3Icon,
+.mpaIcon,
+.raIcon,
+.wavIcon,
+.wmaIcon {
+  background-position: -21px -1660px;
+}
+
+.cssIcon {
+  background-position: -1px -1680px;
+}
+
+.vtlIcon {
+  background-position: -21px -1680px;
+}
+
+.aspIcon,
+.gyIcon,
+.jsIcon,
+.jsonIcon,
+.jspIcon,
+.phpIcon,
+.pyIcon,
+.rbIcon,
+.xmlIcon {
+  background-position: -1px -1700px;
+}
+
+.htmIcon,
+.htmlIcon,
+.rssIcon {
+  background-position: -21px -1700px;
+}
+
+.datIcon,
+.pagesIcon,
+.rtfIcon,
+.sdfIcon,
+.txtIcon {
+  background-position: -1px -1720px;
+}
+
+.debIcon,
+.gzIcon,
+.pkgIcon,
+.rarIcon,
+.sitIcon,
+.sitxIcon,
+.zipIcon,
+.zipxIcon {
+  background-position: -21px -1720px;
+}
+
+.eotIcon,
+.otfIcon,
+.svgIcon,
+.ttfIcon,
+.woffIcon {
+  background-position: -21px -1840px;
+}
+
+.icoIcon {
+  background-position: -21px -1920px;
+}
+
+.azwIcon,
+.epubIcon,
+.ibooksIcon,
+.kf8Icon {
+  background-position: -21px -100px;
+}
+
 /*
 ------------ FORMS ------------
 - Extract from: base.css
@@ -3920,6 +4779,23 @@ div.calendar {
   color: #0f0;
 }
 
+#font-icon-base, .arrowLeftIcon,
+.arrowRightIcon,
+.chevronExpandIcon,
+.deleteIcon,
+.editIcon,
+.folderIcon,
+.folderOpenIcon,
+.folderSelectedIcon,
+.toggleCloseIcon,
+.toggleOpenIcon, .dijitIcon, .dijitIconCopy {
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -3942,786 +4818,45 @@ html {
   padding: 0;
 }
 
-/* FONT PATH
- * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-#font-icon-base, .addIcon,
-.androidIcon,
-.appleIcon,
-.appMonitorIcon,
-.archiveIcon,
-.archivedIcon,
-.arrowLeftIcon,
-.arrowRightIcon,
-.assignWorkflowIcon,
-.backupIcon,
-.bgIcon,
-.browseIcon,
-.bugIcon,
-.bundleIcon,
-.calClockIcon,
-.calDayIcon,
-.calListIcon,
-.calMonthIcon,
-.calWeekIcon,
-.cancelIcon,
-.cancelWorkflowIcon,
-.cartIcon,
-.checkBoxIcon,
-.chevronIcon,
-.chevronExpandIcon,
-.closeIcon,
-.colorIcon,
-.contentIcon,
-.copyIcon,
-.cutIcon,
-.deleteIcon,
-.deleteWorkflowIcon,
-.detailViewIcon,
-.docConvertIcon,
-.docCopyIcon,
-.docNumIcon,
-.docTextIcon,
-.documentIcon,
-.downloadIcon,
-.dropIcon,
-.editIcon,
-.editScriptIcon,
-.encryptIcon,
-.exclamationIcon,
-.exclamation-redIcon,
-.femaleIcon,
-.fileIcon,
-.fileMultiIcon,
-.fileNewIcon,
-.fixIcon,
-.folderIcon,
-.folderAddIcon,
-.folderCopyIcon,
-.folderDeleteIcon,
-.folderEditIcon,
-.folderFilesIcon,
-.folderGlobeIcon,
-.folderOpenIcon,
-.folderSelectedIcon,
-.formIcon,
-.formNewIcon,
-.gearIcon,
-.gearMinusIcon,
-.gearPencilIcon,
-.gearPlusIcon,
-.greyDotIcon,
-.helpIcon,
-.hideIcon,
-.hintIcon,
-.hostIcon,
-.hostArchivedIcon,
-.hostDefaultIcon,
-.hostStoppedIcon,
-.hourGlassIcon,
-.imageNewIcon,
-.infoIcon,
-.keyIcon,
-.keyvalueIcon,
-.linkIcon,
-.linkAddIcon,
-.listViewIcon,
-.liveIcon,
-.lockIcon,
-.loginIcon,
-.loginAsIcon,
-.mailListIcon,
-.mapPinIcon,
-.minusIcon,
-.mobileIcon,
-.movePageIcon,
-.multiSelectIcon,
-.newPageIcon,
-.newTaskIcon,
-.newWorkflowIcon,
-.nextIcon,
-.pageIcon,
-.pagePropIcon,
-.pasteIcon,
-.plusIcon,
-.previewIcon,
-.previousIcon,
-.propertyIcon,
-.publishIcon,
-.queryIcon,
-.radioIcon,
-.reindexIcon,
-.rememberIcon,
-.reopenWorkflowIcon,
-.reorderIcon,
-.repeatIcon,
-.republishIcon,
-.requiredIcon,
-.resetIcon,
-.resolveIcon,
-.resolveWorkflowIcon,
-.rServerIcon,
-.saveIcon,
-.saveAssignIcon,
-.scrollPaneIcon,
-.searchIcon,
-.selectIcon,
-.shrinkIcon,
-.spellIcon,
-.splitterIcon,
-.sServerIcon,
-.statisticsIcon,
-.stopIcon,
-.tabIcon,
-.tagIcon,
-.textFieldIcon,
-.thumbnailViewIcon,
-.toggleCloseIcon,
-.toggleOpenIcon,
-.trashIcon,
-.uknIcon,
-.unarchiveIcon,
-.unlockIcon,
-.unpublishIcon,
-.uploadIcon,
-.userIcon,
-.windowsIcon,
-.workflowIcon,
-.workingIcon,
-.workStreamIcon,
-.wysiwygIcon,
 .dijitIcon {
-  font: normal normal normal 14px/1 FontAwesome;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
 }
-
-.addIcon:before {
-  content: "";
-}
-
-.androidIcon:before {
-  content: "";
-}
-
-.appleIcon:before {
-  content: "";
-}
-
-.appMonitorIcon:before {
-  content: "";
-}
-
-.archiveIcon:before {
-  content: "";
-}
-
-.archivedIcon:before {
-  content: "";
-}
-
-.arrowLeftIcon:before {
-  content: "";
-}
-
-.arrowRightIcon:before {
-  content: "";
-}
-
-.assignWorkflowIcon:before {
-  content: "";
-}
-
-.backupIcon:before {
-  content: "";
-}
-
-.bgIcon:before {
-  content: "";
-}
-
-.browseIcon:before {
-  content: "";
-}
-
-.bugIcon:before {
-  content: "";
-}
-
-.bundleIcon:before {
-  content: "";
-}
-
-.calClockIcon:before {
-  content: "";
-}
-
-.calDayIcon:before {
-  content: "";
-}
-
-.calListIcon:before {
-  content: "";
-}
-
-.calMonthIcon:before {
-  content: "";
-}
-
-.calWeekIcon:before {
-  content: "";
-}
-
-.cancelIcon:before {
-  content: "";
-}
-
-.cancelWorkflowIcon:before {
-  content: "";
-}
-
-.cartIcon:before {
-  content: "";
-}
-
-.checkBoxIcon:before {
-  content: "";
-}
-
-.chevronIcon:before {
-  content: "";
-}
-
-.chevronExpandIcon:before {
-  content: "";
-}
-
-.closeIcon:before {
-  content: "";
-}
-
-.colorIcon:before {
-  content: "";
-}
-
-.contentIcon:before {
-  content: "";
-}
-
-.copyIcon:before {
-  content: "";
-}
-
-.cutIcon:before {
-  content: "";
-}
-
-.deleteIcon:before {
-  content: "";
-}
-
-.deleteWorkflowIcon:before {
-  content: "";
-}
-
-.detailViewIcon:before {
-  content: "";
-}
-
-.docConvertIcon:before {
-  content: "";
-}
-
-.docCopyIcon:before {
-  content: "";
-}
-
-.docNumIcon:before {
-  content: "";
-}
-
-.docTextIcon:before {
-  content: "";
-}
-
-.documentIcon:before {
-  content: "";
-}
-
-.downloadIcon:before {
-  content: "";
-}
-
-.dropIcon:before {
-  content: "";
-}
-
-.editIcon:before {
-  content: "";
-}
-
-.editScriptIcon:before {
-  content: "";
-}
-
-.encryptIcon:before {
-  content: "";
-}
-
-.exclamation-redIcon:before {
-  content: "";
-}
-
-.exclamationIcon:before {
-  content: "";
-}
-
-.femaleIcon:before {
-  content: "";
-}
-
-.fileIcon:before {
-  content: "";
-}
-
-.fileMultiIcon:before {
-  content: "";
-}
-
-.fileNewIcon:before {
-  content: "";
-}
-
-.fixIcon:before {
-  content: "";
-}
-
-.folderIcon:before {
-  content: "";
-}
-
-.folderAddIcon:before {
-  content: "";
-}
-
-.folderCopyIcon:before {
-  content: "";
-}
-
-.folderDeleteIcon:before {
-  content: "";
-}
-
-.folderEditIcon:before {
-  content: "";
-}
-
-.folderFilesIcon:before {
-  content: "";
-}
-
-.folderGlobeIcon:before {
-  content: "";
-}
-
-.folderOpenIcon:before {
-  content: "";
-}
-
-.folderSelectedIcon:before {
-  content: "";
-}
-
-.formIcon:before {
-  content: "";
-}
-
-.formNewIcon:before {
-  content: "";
-}
-
-.gearIcon:before {
-  content: "";
-}
-
-.gearMinusIcon:before {
-  content: "";
-}
-
-.gearPencilIcon:before {
-  content: "";
-}
-
-.gearPlusIcon:before {
-  content: "";
-}
-
-.greyDotIcon:before {
-  content: "";
-}
-
-.helpIcon:before {
-  content: "";
-}
-
-.hideIcon:before {
-  content: "";
-}
-
-.hintIcon:before {
-  content: "";
-}
-
-.hostIcon:before {
-  content: "";
-}
-
-.hostArchivedIcon:before {
-  content: "";
-}
-
-.hostDefaultIcon:before {
-  content: "";
-}
-
-.hostStoppedIcon:before {
-  content: "";
-}
-
-.hourGlassIcon:before {
-  content: "";
-}
-
-.imageNewIcon:before {
-  content: "";
-}
-
-.infoIcon:before {
-  content: "";
-}
-
-.keyIcon:before {
-  content: "";
-}
-
-.keyvalueIcon:before {
-  content: "";
-}
-
-.linkIcon:before {
-  content: "";
-}
-
-.linkAddIcon:before {
-  content: "";
-}
-
-.listViewIcon:before {
-  content: "";
-}
-
-.liveIcon:before {
-  content: "";
-}
-
-.lockIcon:before {
-  content: "";
-}
-
-.loginIcon:before {
-  content: "";
-}
-
-.loginAsIcon:before {
-  content: "";
-}
-
-.mailListIcon:before {
-  content: "";
-}
-
-.mapPinIcon:before {
-  content: "";
-}
-
-.minusIcon:before {
-  content: "";
-}
-
-.mobileIcon:before {
-  content: "";
-}
-
-.movePageIcon:before {
-  content: "";
-}
-
-.multiSelectIcon:before {
-  content: "";
-}
-
-.newPageIcon:before {
-  content: "";
-}
-
-.newTaskIcon:before {
-  content: "";
-}
-
-.newWorkflowIcon:before {
-  content: "";
-}
-
-.nextIcon:before {
-  content: "";
-}
-
-.pageIcon:before {
-  content: "";
-}
-
-.pagePropIcon:before {
-  content: "";
-}
-
-.pasteIcon:before {
-  content: "";
-}
-
-.plusIcon:before {
-  content: "";
-}
-
-.previewIcon:before {
-  content: "";
-}
-
-.previousIcon:before {
-  content: "";
-}
-
-.propertyIcon:before {
-  content: "";
-}
-
-.publishIcon:before {
-  content: "";
-}
-
-.queryIcon:before {
-  content: "";
-}
-
-.radioIcon:before {
-  content: "";
-}
-
-.reindexIcon:before {
-  content: "";
-}
-
-.rememberIcon:before {
-  content: "";
-}
-
-.reopenWorkflowIcon:before {
-  content: "";
-}
-
-.reorderIcon:before {
-  content: "";
-}
-
-.repeatIcon:before {
-  content: "";
-}
-
-.republishIcon:before {
-  content: "";
-}
-
-.requiredIcon:before {
-  content: "";
-}
-
-.resetIcon:before {
-  content: "";
-}
-
-.resolveIcon:before {
-  content: "";
-}
-
-.resolveWorkflowIcon:before {
-  content: "";
-}
-
-.rServerIcon:before {
-  content: "";
-}
-
-.saveIcon:before {
-  content: "";
-}
-
-.saveAssignIcon:before {
-  content: "";
-}
-
-.scrollPaneIcon:before {
-  content: "";
-}
-
-.searchIcon:before {
-  content: "";
-}
-
-.selectIcon:before {
-  content: "";
-}
-
-.shrinkIcon:before {
-  content: "";
-}
-
-.spellIcon:before {
-  content: "";
-}
-
-.splitterIcon:before {
-  content: "";
-}
-
-.sServerIcon:before {
-  content: "";
-}
-
-.statisticsIcon:before {
-  content: "";
-}
-
-.stopIcon:before {
-  content: "";
-}
-
-.tabIcon:before {
-  content: "";
-}
-
-.tagIcon:before {
-  content: "";
-}
-
-.textFieldIcon:before {
-  content: "";
-}
-
-.thumbnailViewIcon:before {
-  content: "";
-}
-
-.toggleCloseIcon:before {
-  content: "";
-}
-
-.toggleOpenIcon:before {
-  content: "";
-}
-
-.trashIcon:before {
-  content: "";
-}
-
-.uknIcon:before {
-  content: "";
-}
-
-.unarchiveIcon:before {
-  content: "";
-}
-
-.unlockIcon:before {
-  content: "";
-}
-
-.unpublishIcon:before {
-  content: "";
-}
-
-.uploadIcon:before {
-  content: "";
-}
-
-.userIcon:before {
-  content: "";
-}
-
-.windowsIcon:before {
-  content: "";
-}
-
-.workflowIcon:before {
-  content: "";
-}
-
-.workingIcon:before {
-  content: "";
-}
-
-.workStreamIcon:before {
-  content: "";
-}
-
-.wysiwygIcon:before {
-  content: "";
-}
-
 .dijitIconTask:before {
   content: "";
 }
-
 .dijitIconEdit:before {
   content: "";
 }
-
 .dijitIconSave:before {
   content: "";
 }
-
 .dijitIconCut:before {
   content: "";
 }
-
 .dijitIconCopy:before {
   content: "";
 }
-
 .dijitIconPaste:before {
   content: "";
 }
-
 .dijitIconUndo:before {
   content: "";
 }
-
 .dijitIconDelete:before {
   content: "";
 }
-
-.dijitMenuExpand:before {
+.dijitIconExpand:before {
   content: "";
 }
-
 .dijitCheckBoxIcon:before {
   content: "";
+}
+.dijit .dijitNoIcon {
+  width: auto;
+  height: auto;
+  margin-right: 0;
 }
 
 body {
@@ -4818,16 +4953,6 @@ body {
   color: rgba(69, 84, 91, 0.4);
   font-style: normal;
   line-height: 27px;
-}
-.dotcms .dijitIcon {
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-}
-.dotcms .dijitNoIcon {
-  width: auto;
-  height: auto;
-  margin-right: 0;
 }
 .dotcms .dijitTextArea {
   font-family: "Open Sans", sans-serif;

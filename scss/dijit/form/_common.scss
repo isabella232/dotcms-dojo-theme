@@ -86,18 +86,6 @@ table.dijitComboButton {
   line-height: $field-height - ($field-border-size * 2);
 }
 
-.dijitIcon {
-  width: $icon-size;
-  height: $icon-size;
-  margin-right: $field-padding / 2;
-}
-
-.dijitNoIcon {
-  width: auto;
-  height: auto;
-  margin-right: 0;
-}
-
 .dijitTextArea {
   font-family: $body-text;
   font-size: $body-size;
