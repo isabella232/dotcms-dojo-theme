@@ -4411,7 +4411,6 @@ dt.wide {
 dt {
   clear: left;
   float: left;
-  margin-right: 10px;
   padding: 6px 0px 7px;
   text-align: right;
   width: 30%;
@@ -4420,6 +4419,10 @@ dt {
 dd {
   margin: 0 0 10px 30%;
   min-height: 29px;
+  padding-left: 10px;
+}
+dd:last-child {
+  margin-bottom: 0;
 }
 #advancedSearch dd {
   margin: 0 0 10px 30%;
@@ -4517,6 +4520,10 @@ input[type="text"].dijitReset {
 .WYSIWYGTools .glossaryTermPopup {
   left: 150px;
   top: 35px;
+}
+
+.filter-tasks-frm .who-user label {
+  margin-right: 5px;
 }
 
 #addFileAssetDialog .dijitComboBox {

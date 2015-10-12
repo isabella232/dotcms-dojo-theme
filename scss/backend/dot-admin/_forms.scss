@@ -39,7 +39,6 @@ dt {
 dt {
   clear: left;
   float: left;
-  margin-right: 10px;
   padding: 6px 0px 7px;
   text-align: right;
   width: 30%;
@@ -48,6 +47,11 @@ dt {
 dd {
   margin: 0 0 $field-padding 30%;
   min-height: $field-height;
+  padding-left: $field-padding;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   // CONTENT SEARCH FORM
   #advancedSearch & {
@@ -153,5 +157,15 @@ input[type="text"] {
   .glossaryTermPopup {
     left: 150px;
     top: 35px;
+  }
+}
+
+// WORKFLOW TASK SEARCH FORM
+
+.filter-tasks-frm {
+  .who-user {
+    label {
+      margin-right: $field-padding / 2;
+    }
   }
 }
