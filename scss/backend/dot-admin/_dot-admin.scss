@@ -255,70 +255,7 @@
 .catPreview a:hover {
   color: #cc0000;
 }
-/* PORTLET STYLES 2.0 */
 
-.portlet-wrapper {
-  background: #fff;
-  margin: 0 10px;
-}
-.portlet-toolbar {
-  padding: 5px 8px;
-}
-.portlet-toolbar a {
-  text-decoration: none;
-}
-#tablemessage {
-  font-size: 80%;
-  color: #cc0000;
-}
-.portlet-body {
-  padding: 5px 15px 15px 15px;
-}
-.formRow {
-  text-align: center;
-  padding: 10px 8px;
-}
-.buttonRightInBox {
-  text-align: right;
-  margin: 4px 10px 2px 0;
-  font-weight: normal;
-}
-.buttonRightInBoxTab {
-  position: absolute;
-  text-align: right;
-  z-index: 5;
-  top: 3px;
-  right: 15px;
-}
-.shadowBox {
-  border: 1px solid #ccc;
-  -moz-box-shadow: 0px 0px 5px #ccc;
-  -webkit-box-shadow: 0px 0px 5px #ccc;
-}
-.shadowBoxLine {
-  margin-bottom: 15px;
-  padding: 45px 5px 20px 5px;
-  border: 1px solid #ccc;
-  -moz-box-shadow: 0px 0px 5px #ccc;
-  -webkit-box-shadow: 0px 0px 5px #ccc;
-  background: transparent url($portal-tab) repeat-x 0 0;
-}
-.headerBox {
-  padding: 0;
-  background: transparent url($skin-sprite) repeat-x 0 -558px;
-}
-.lineRight {
-  border-right: 1px solid #ccc;
-}
-.lineCenter {
-  background: url($yui-background-line) repeat-y center top;
-}
-.roundBox {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #d0d0d0;
-  padding: 5px;
-}
 /* TABLE STYLES 2.0 */
 
 .listingTable {
@@ -731,12 +668,11 @@ table.workflowInfo td {
 }
 .buttonBoxRightTopPadding {
   position: absolute;
-  right: 25px;
-  height: 35px;
+  right: 5px;
+  top: 5px;
   z-index: 10;
-  line-height: 33px;
-  padding-top: 7px
 }
+
 .buttonBoxLeftRightPane {
   position: absolute;
   right: 800px;
