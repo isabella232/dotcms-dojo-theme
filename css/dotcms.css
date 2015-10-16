@@ -6158,6 +6158,46 @@ body {
   padding: 0 10px;
   position: relative;
 }
+.dotcms .dijitSplitter {
+  background: rgba(236, 237, 238, 0.25);
+}
+.dotcms .dijitSplitterHover {
+  background: rgba(236, 237, 238, 0.5);
+}
+.dotcms .dijitSplitterHover .dijitSplitterThumb {
+  background: #68757E;
+}
+.dotcms .dijitSplitterActive {
+  background-color: rgba(104, 117, 126, 0.2);
+}
+.dotcms .dijitSplitterActive .dijitSplitterThumb {
+  background: #68757E;
+}
+.dotcms .dijitSplitterThumb {
+  background-color: #CACED0;
+}
+.dotcms .dijitSplitterV {
+  width: 6px;
+}
+.dotcms .dijitSplitterV .dijitSplitterThumb {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  margin: -10px 0 0 -1px;
+}
+.dotcms .dijitSplitterH {
+  height: 6px;
+}
+.dotcms .dijitSplitterH .dijitSplitterThumb {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  margin-left: -10px;
+}
 .dotcms .dijitTab {
   height: 29px;
   line-height: 29px;
