@@ -1,22 +1,33 @@
 .dijitRadio {
-  @extend %rc;
-  @include border-radius($check-radio-size / 2);
-}
+  @include border-radius($radio-size / 2);
+  background-color: $radio-normal-bgcolor;
+  border: $radio-normal-border;
+  height: $radio-size;
+  width: $radio-size;
 
-.dijitRadioChecked {
-  position: relative;
+  &Checked {
+    border: $radio-checked-border;
+    position: relative;
 
-  &:before {
-    $size: $check-radio-size - 8;
-    @include border-radius($size / 2);
-    background-color: $field-border-color;
-    position: absolute;
-    content: "";
-    width: $size;
-    height: $size;
-    top: 50%;
-    left: 50%;
-    margin-top: -($size / 2);
-    margin-left: -($size / 2);
+    &:before {
+      $size: $radio-size - 8;
+      @include border-radius($size / 2);
+      background-color: $radio-checked-color;
+      content: "";
+      height: $size;
+      left: 50%;
+      margin-left: -($size / 2);
+      margin-top: -($size / 2);
+      position: absolute;
+      top: 50%;
+      width: $size;
+    }
+  }
+  
+  &Disabled {
+    background-color: $radio-disabled-bgcolor;
+    border: $radio-disabled-border;
+    position: relative;
   }
 }
+

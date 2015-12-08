@@ -1,0 +1,44 @@
+/* CRUMBTRAIL STYLES 2.0 */
+
+.subNavCrumbTrail {
+  height: 27px;
+  margin: -10px -10px 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  background: url($skin-sprite) repeat-x 0 -329px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    font-size: 85%;
+    margin: 0;
+    list-style: none;
+    float: left;
+    padding: 5px 10px 6px 25px;
+    line-height: 16px;
+    background: url($skin-sprite) no-repeat 0 -390px;
+  }
+  .lastCrumb {
+    background: url($skin-sprite) no-repeat 0 -360px;
+  }
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #cc0000;
+    }
+  }
+}
+
+.lastCrumb span {
+  font-weight: bold;
+}
+
+#selectHostDiv {
+  cursor: pointer;
+  background: url($skin-sprite) repeat-x 0 -420px;
+  padding: 5px 10px 6px 15px;
+}

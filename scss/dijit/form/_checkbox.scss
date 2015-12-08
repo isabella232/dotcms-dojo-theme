@@ -1,14 +1,18 @@
-// TODO: use a mixin?
-%rc {
-  border: solid $check-radio-border-width $field-border-color;
-  width: $check-radio-size;
-  height: $check-radio-size;
-}
-
 .dijitCheckBox {
-  @extend %rc
+  @include border-radius($check-radius);
+  border: $check-normal-border;
+  background-color: $check-normal-bgcolor;
+  width: $check-size;
+  height: $check-size;
+
+  &Checked {
+    border: $check-checked-border;
+    background: $check-checked-bgcolor url($check-checked-icon) 2px 3px no-repeat;
+  }
+
+  &Disabled {
+    border: $check-disabled-border;
+    background: $check-disabled-bgcolor url($check-disabled-icon) 2px 3px no-repeat;
+  }
 }
 
-.dijitCheckBoxChecked {
-  background: url("/images/ico-checkbox.svg") 1px 2px no-repeat;
-}

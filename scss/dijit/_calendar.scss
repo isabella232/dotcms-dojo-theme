@@ -1,3 +1,5 @@
+$dropdown-size: $field-height - 10;
+
 .dijitA11ySideArrow {
   display: none;
 }
@@ -32,40 +34,48 @@
   &IncrementControl {
     position: relative;
     width: $calendar-item-size;
-
-    &:before {
-      content: "";
-      @include center-icon(10px, 6px); // Sadly compass can't get width and height from a svg
-      background-image: url("/images/ico-arrow-sm-light.svg");
-      height: 6px;
-      width: 10px;
-    }
   }
 
   &Decrease {
-    @include rotate(90deg);
+    &:before {
+      // TODO: add option for image icon
+      @include create-arrow($calendar-dropdown-arrow-size, $calendar-dropdown-arrow-color, left);
+    }
   }
 
   &Increase {
-    @include rotate(-90deg);
+    &:before {
+      @include create-arrow($calendar-dropdown-arrow-size, $calendar-dropdown-arrow-color, right);
+    }
   }
 
   &MonthContainer {
     background-color: $calendar-month-bgcolor;
     color: $calendar-month-textcolor;
+    height: $field-height;
+
+    .dijitCalendarMonthLabel,
+    .dijitDropDownButton .dijitArrowButtonInner {
+      height: $dropdown-size;
+      line-height: $dropdown-size;
+    }
 
     .dijitDropDownButton {
       @include border-radius(0);
-      border: none;
-      background-color: rgba($white, 0.1);
-      color: $white;
+      background-color: transparent;
+      height: $dropdown-size + ($field-border-size * 2);
+      border: $calendar-dropdown-arrow-border;
+      color: $calendar-dropdown-color;
+
+      .dijitSpacer {
+        height: 0;
+      }
 
       .dijitArrowButtonInner {
-        background-color: transparent;
-        height: $calendar-item-size;
+        width: $dropdown-size;
 
         &:before {
-          background-image: url("/images/ico-arrow-sm-light.svg");
+          border-top-color: $calendar-dropdown-color;
         }
 
         .dijitButtonText {
@@ -83,9 +93,12 @@
 
   // Popup menu months item
   &MonthLabel {
-    border-bottom: solid 1px $gray-ligther;
     height: $calendar-item-size;
     line-height: $calendar-item-size;
+
+    &Hover {
+      background-color: $gray-ligthest;
+    }
 
     &:last-child {
       border-bottom: none;
@@ -109,8 +122,15 @@
   }
 
   &SelectedDate {
-    background-color: $calendar-date-seleted-bgcolor;
-    color: $calendar-date-seleted-textcolor;
+    .dijitCalendarDateLabel {
+      @include border-radius($field-border-radius);
+      background-color: $calendar-date-seleted-bgcolor;
+      color: $calendar-date-seleted-textcolor;
+      display: block;
+      height: $field-height;
+      line-height: $field-height;
+      width: $field-height;
+    }
   }
 
   &SelectedYear {

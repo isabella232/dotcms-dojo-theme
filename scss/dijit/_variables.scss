@@ -5,7 +5,7 @@ $blue: #108AC8;
 $gray-dark: #45545B;
 $gray-ligth: #8D9DA9;
 $gray-ligther: #D1D8DD;
-$gray-ligthest: rgba($gray-ligther, 0.6);
+$gray-ligthest: #e3e7ea; // rgba($gray-ligther, 0.6);
 $gray: #68757E;
 $green-ligth: #77BE61;
 $green: #4A9D51;
@@ -37,21 +37,31 @@ $field-placeholder-color: rgba($gray-dark, .4);
 
 
 // Buttons
-$button-active-bgcolor: $gray;
-$button-active-textcolor: $white;
-$button-bgcolor: $blue;
-$button-horizontal-padding: 10px;
+$button-normal-bgcolor: $blue;
+$button-normal-textcolor: $white;
+$button-normal-border: none;
+
 $button-hover-bgcolor: $gray-dark;
 $button-hover-textcolor: $white;
-$button-textcolor: $white;
+$button-hover-border: none;
+
+$button-active-bgcolor: $gray;
+$button-active-textcolor: $white;
+$button-active-border: none;
+
+$buttondrop-hover-bgcolor: $blue;
+$buttondrop-hover-bgcolorarrow: $blue-light;
+$buttondrop-hover-textcolor: $white;
+$buttondrop-hover-border: none;
+
+
+$button-horizontal-padding: 10px;
 $buttonextra-textcolor: $gray-dark;
 $buttontoggle-hover-bgcolor: $gray-dark;
 $buttontoggle-hover-textcolor: $white;
 $buttontoggle-active-bgcolor: $blue;
 $buttontoggle-active-textcolor: $white;
-$buttondrop-hover-bgcolor: $blue;
-$buttondrop-hover-bgcolorarrow: $blue-light;
-$buttondrop-hover-textcolor: $white;
+
 
 // Text Fields
 $textbox-focus-color: $blue;
@@ -129,3 +139,13 @@ $progressbar-heigth: 30px;
 $inlineeditbox-hover-border-size: $field-border-size;
 $inlineeditbox-hover-border-color: $textbox-focused-border-color;
 $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
+
+// Tabs
+$tab-border: solid 1px $gray-ligther;
+$tab-inactive-bgcolor: $gray-ligther;
+$tab-inactive-textcolor: $text-color;
+$tab-active-bgcolor: $white;
+$tab-active-textcolor: $text-color;
+$tab-strip-bgcolor: $blue;
+$tab-strip-border: solid 1px $white;
+$tab-strip-icon-color: $white;

@@ -1,21 +1,47 @@
-.dijitAccordionContainer {
-  border: none;
+.dijitAccordion {
+  &Container {
+    border: none;
 
-  .dijitAccordionContainer-child {
-    padding: $basic-padding;
+    .dijitAccordionContainer-child {
+      padding: $basic-padding;
+    }
   }
-}
 
-.dijitAccordionInnerContainer {
-  border: solid 1px $gray-ligther;
-  margin-bottom: 5px;
-}
+  &InnerContainer {
 
-.dijitAccordionTitle {
-  padding: 5px;
-}
+    &Selected {
+      .dijitAccordionTitleHover {
+        background-color: $accordion-title-selected-bgcolor;
+      }
+    }
+  }
 
-.dijitAccordionTitleSelected {
-  background-color: $gray-ligther;
-  font-weight: bold;
+  &Title {
+    @include transition(background-color, color, border, $field-animation-speed);
+    background-color: $accordion-title-normal-bgcolor;
+    border: $accordion-title-border;
+    border-bottom: none;
+    height: $accordion-title-heigth;
+    line-height: $accordion-title-heigth;
+    padding: 0 $field-padding;
+
+    &:last-child {
+      border-bottom: $accordion-title-border;
+    }
+
+    &Hover {
+      background-color: $accordion-title-hover-bgcolor;
+    }
+
+    &Selected {
+      background-color: $accordion-title-selected-bgcolor;
+      font-weight: bold;
+    }
+  }
+
+  &ChildWrapper {
+    border-left: $accordion-title-border;
+    border-right: $accordion-title-border;
+  }
+
 }

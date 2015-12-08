@@ -1,3 +1,12 @@
-.portlet-wrapper {
-  margin: 0 20px;
+@import "dot-admin";
+@import "top-navigation";
+@import "crumbtrail";
+@import "icons";
+@import "forms";
+@import "portlets";
+
+#addFileAssetDialog {
+  .dijitComboBox {
+    margin-right: $basic-padding;
+  }
 }

@@ -1,1875 +1,347 @@
+/* ----------------------------------- */
+/* -------------- ICONS -------------- */
+/* ----------------------------------- */
+// We are moving to font-awesome icons
+
+// HIDDEN ICONS
+// We decided remove all the icons using css properties,
+// but in the future we have to revisit and do it the right way
+// by editing the html
+
+.add,
+.android,
+.apple,
+.appMonitor,
+.archive,
+.archived,
+.arrowLeft,
+.arrowRight,
+.assignWorkflow,
+.backup,
+.bg,
+.browse,
+.bug,
+.bundle,
+.calClock,
+.calDay,
+.calList,
+.calMonth,
+.calWeek,
+.cancel,
+.cancelWorkflow,
+.cart,
+.checkBox,
+.chevron,
+.chevronExpand,
+.close,
+.color,
+.content,
+.copy,
+.cut,
+.delete,
+.deleteWorkflow,
+.detailView,
+.docConvert,
+.docCopy,
+.docNum,
+.docText,
+.document,
+.download,
+.drop,
+.edit,
+.editScript,
+.encrypt,
+.exclamation,
+.exclamation-red,
+.female,
+.file,
+.fileMulti,
+.fileNew,
+.fix,
+.folder,
+.folderAdd,
+.folderCopy,
+.folderDelete,
+.folderEdit,
+.folderFiles,
+.folderGlobe,
+.folderOpen,
+.folderSelected,
+.form,
+.formNew,
+.gear,
+.gearMinus,
+.gearPencil,
+.gearPlus,
+.greyDot,
+.help,
+.hide,
+.hint,
+.host,
+.hostArchived,
+.hostDefault,
+.hostStopped,
+.hourGlass,
+.imageNew,
+.info,
+.key,
+.keyvalue,
+.link,
+.linkAdd,
+.listView,
+.live,
+.lock,
+.login,
+.loginAs,
+.mailList,
+.mapPin,
+.minus,
+.mobile,
+.movePage,
+.multiSelect,
+.newPage,
+.newTask,
+.newWorkflow,
+.next,
+.page,
+.pageProp,
+.paste,
+.plus,
+.preview,
+.previous,
+.property,
+.publish,
+.query,
+.radio,
+.reindex,
+.remember,
+.reopenWorkflow,
+.reorder,
+.repeat,
+.republish,
+.required,
+.reset,
+.resolve,
+.resolveWorkflow,
+.rServer,
+.save,
+.saveAssign,
+.scrollPane,
+.search,
+.select,
+.shrink,
+.spell,
+.splitter,
+.sServer,
+.statistics,
+.stop,
+.tab,
+.tag,
+.textField,
+.thumbnailView,
+.toggleClose,
+.toggleOpen,
+.trash,
+.ukn,
+.unarchive,
+.unlock,
+.unpublish,
+.upload,
+.user,
+.windows,
+.workflow,
+.working,
+.workStream,
+.wysiwyg {
+  &Icon {
+    background: none;
+    display: none;
+  }
+}
+
+// SHOW ICONS
+.arrowLeft,
+.arrowRight,
+.chevronExpand,
+.delete,
+.edit,
+.folder,
+.folderOpen,
+.folderSelected,
+.toggleClose,
+.toggleOpen {
+  &Icon {
+    @extend #font-icon-base;
+    display: inline;
+  }
+}
+
+// Paring class name with font-awesome icon
+$icons: (
+  add: $fa-var-square,
+  android: $fa-var-square,
+  apple: $fa-var-square,
+  appMonitor: $fa-var-square,
+  archive: $fa-var-shield,
+  archived: $fa-var-arrow-circle-down,
+  arrowLeft: $fa-var-chevron-left,
+  arrowRight: $fa-var-chevron-right,
+  assignWorkflow: $fa-var-square,
+  backup: $fa-var-square,
+  bg: $fa-var-square,
+  browse: $fa-var-square,
+  bug: $fa-var-bug,
+  bundle: $fa-var-square,
+  calClock: $fa-var-square,
+  calDay: $fa-var-square,
+  calList: $fa-var-square,
+  calMonth: $fa-var-square,
+  calWeek: $fa-var-square,
+  cancel: $fa-var-times-circle-o,
+  cancelWorkflow: $fa-var-square,
+  cart: $fa-var-square,
+  checkBox: $fa-var-square,
+  chevron: $fa-var-square,
+  chevronExpand: $fa-var-chevron-down,
+  close: $fa-var-times,
+  color: $fa-var-square,
+  content: $fa-var-square,
+  copy: $fa-var-copy,
+  cut: $fa-var-scissors,
+  delete: $fa-var-trash-o,
+  deleteWorkflow: $fa-var-square,
+  detailView: $fa-var-square,
+  docConvert: $fa-var-square,
+  docCopy: $fa-var-square,
+  docNum: $fa-var-square,
+  docText: $fa-var-square,
+  document: $fa-var-square,
+  download: $fa-var-download,
+  drop: $fa-var-square,
+  edit: $fa-var-edit,
+  editScript: $fa-var-pencil-square-o,
+  encrypt: $fa-var-square,
+  exclamation-red: $fa-var-square,
+  exclamation: $fa-var-square,
+  female: $fa-var-square,
+  file: $fa-var-square,
+  fileMulti: $fa-var-square,
+  fileNew: $fa-var-square,
+  fix: $fa-var-square,
+  folder: $fa-var-folder-o,
+  folderAdd: $fa-var-square,
+  folderCopy: $fa-var-square,
+  folderDelete: $fa-var-square,
+  folderEdit: $fa-var-square,
+  folderFiles: $fa-var-square,
+  folderGlobe: $fa-var-square,
+  folderOpen: $fa-var-folder-open,
+  folderSelected: $fa-var-folder-open,
+  form: $fa-var-square,
+  formNew: $fa-var-square,
+  gear: $fa-var-square,
+  gearMinus: $fa-var-square,
+  gearPencil: $fa-var-square,
+  gearPlus: $fa-var-square,
+  greyDot: $fa-var-square,
+  help: $fa-var-life-saver,
+  hide: $fa-var-square,
+  hint: $fa-var-square,
+  host: $fa-var-globe,
+  hostArchived: $fa-var-square,
+  hostDefault: $fa-var-square,
+  hostStopped: $fa-var-square,
+  hourGlass: $fa-var-square,
+  imageNew: $fa-var-square,
+  info: $fa-var-info-circle,
+  key: $fa-var-key,
+  keyvalue: $fa-var-square,
+  //link: $fa-var-link,
+  linkAdd: $fa-var-square,
+  listView: $fa-var-square,
+  live: $fa-var-dot-circle-o,
+  lock: $fa-var-lock,
+  login: $fa-var-users,
+  loginAs: $fa-var-square,
+  mailList: $fa-var-envelope-o,
+  mapPin: $fa-var-square,
+  minus: $fa-var-minus,
+  mobile: $fa-var-square,
+  movePage: $fa-var-square,
+  multiSelect: $fa-var-square,
+  newPage: $fa-var-square,
+  newTask: $fa-var-square,
+  newWorkflow: $fa-var-square,
+  next: $fa-var-arrow-circle-right,
+  //page: $fa-var-file-o,
+  pageProp: $fa-var-square,
+  paste: $fa-var-square,
+  plus: $fa-var-plus,
+  preview: $fa-var-eye,
+  previous: $fa-var-arrow-circle-left,
+  property: $fa-var-square,
+  publish: $fa-var-square,
+  query: $fa-var-square,
+  radio: $fa-var-square,
+  reindex: $fa-var-square,
+  remember: $fa-var-square,
+  reopenWorkflow: $fa-var-square,
+  reorder: $fa-var-square,
+  repeat: $fa-var-arrows,
+  republish: $fa-var-square,
+  required: $fa-var-square,
+  reset: $fa-var-refresh,
+  resolve: $fa-var-check,
+  resolveWorkflow: $fa-var-square,
+  rServer: $fa-var-square,
+  save: $fa-var-floppy-o,
+  saveAssign: $fa-var-square,
+  scrollPane: $fa-var-square,
+  search: $fa-var-search,
+  select: $fa-var-square,
+  shrink: $fa-var-square,
+  spell: $fa-var-square,
+  splitter: $fa-var-square,
+  sServer: $fa-var-square,
+  statistics: $fa-var-bar-chart,
+  stop: $fa-var-square,
+  tab: $fa-var-square,
+  tag: $fa-var-square,
+  textField: $fa-var-square,
+  thumbnailView: $fa-var-square,
+  toggleClose: $fa-var-minus-square-o,
+  toggleOpen: $fa-var-plus-square-o,
+  trash: $fa-var-square,
+  //ukn: $fa-var-square,
+  unarchive: $fa-var-square,
+  unlock: $fa-var-unlock,
+  unpublish: $fa-var-square,
+  upload: $fa-var-upload,
+  user: $fa-var-square,
+  windows: $fa-var-square,
+  workflow: $fa-var-square,
+  working: $fa-var-circle-thin,
+  workStream: $fa-var-square,
+  wysiwyg: $fa-var-square
+);
+
+@each $class, $icon in $icons {
+  .#{$class} {
+    &Icon {
+      &:before {
+        content: $icon;
+      }
+    }
+  }
+}
+
 .shimIconSmall {
-  width: 18px;
+  @include inline-block();
   height: 1px;
-  display: inline-block;
-}
-.uknIcon {
-  background: url($dotcms-sprite) no-repeat -21px -2000px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.plusIcon {
-  background: url($dotcms-sprite) no-repeat -1px 0;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.colorIcon {
-  background: url($dotcms-sprite) no-repeat -21px 0;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.addIcon {
-  background: url($dotcms-sprite) no-repeat -1px -20px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.bgIcon {
-  background: url($dotcms-sprite) no-repeat -21px -20px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.minusIcon {
-  background: url($dotcms-sprite) no-repeat -1px -40px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.searchIcon {
-  background: url($dotcms-sprite) no-repeat -1px -60px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.deleteIcon {
-  background: url($dotcms-sprite) no-repeat -1px -80px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.editIcon {
-  background: url($dotcms-sprite) no-repeat -1px -100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.resetIcon {
-  background: url($dotcms-sprite) no-repeat -1px -120px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.cancelIcon {
-  background: url($dotcms-sprite) no-repeat -21px -120px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.repeatIcon {
-  background: url($dotcms-sprite) no-repeat -1px -140px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.reorderIcon {
-  background: url($dotcms-sprite) no-repeat -21px -140px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.saveIcon {
-  background: url($dotcms-sprite) no-repeat -1px -160px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.copyIcon {
-  background: url($dotcms-sprite) no-repeat -21px -160px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.browseIcon {
-  background: url($dotcms-sprite) no-repeat -1px -180px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mailListIcon {
-  background: url($dotcms-sprite) no-repeat -21px -180px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.spellIcon {
-  background: url($dotcms-sprite) no-repeat -1px -200px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.editScriptIcon {
-  background: url($dotcms-sprite) no-repeat -21px -200px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.lockIcon {
-  background: url($dotcms-sprite) no-repeat -1px -220px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.unlockIcon {
-  background: url($dotcms-sprite) no-repeat -21px -220px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.uploadIcon {
-  background: url($dotcms-sprite) no-repeat -1px -240px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.downloadIcon {
-  background: url($dotcms-sprite) no-repeat -21px -240px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.closeIcon {
-  background: url($dotcms-sprite) no-repeat -1px -260px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.stopIcon {
-  background: url($dotcms-sprite) no-repeat -21px -260px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.previewIcon {
-  background: url($dotcms-sprite) no-repeat -1px -280px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hideIcon {
-  background: url($dotcms-sprite) no-repeat -21px -280px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.keyIcon {
-  background: url($dotcms-sprite) no-repeat -1px -300px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.infoIcon {
-  background: url($dotcms-sprite) no-repeat -21px -300px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.publishIcon {
-  background: url($dotcms-sprite) no-repeat -1px -320px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hostIcon {
-  background: url($dotcms-sprite) no-repeat -1px -320px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hostStoppedIcon {
-  background: url($dotcms-sprite) no-repeat -21px -320px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.republishIcon {
-  background: url($dotcms-sprite) no-repeat -1px -340px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.unpublishIcon {
-  background: url($dotcms-sprite) no-repeat -21px -340px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hostDefaultIcon {
-  background: url($dotcms-sprite) no-repeat -1px -360px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hostArchivedIcon {
-  background: url($dotcms-sprite) no-repeat -21px -360px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.helpIcon {
-  background: url($dotcms-sprite) no-repeat -1px -380px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.bugIcon {
-  background: url($dotcms-sprite) no-repeat -21px -380px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pageIcon {
-  background: url($dotcms-sprite) no-repeat -1px -400px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.newPageIcon {
-  background: url($dotcms-sprite) no-repeat -21px -400px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.movePageIcon {
-  background: url($dotcms-sprite) no-repeat -1px -420px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.cutIcon {
-  background: url($dotcms-sprite) no-repeat -21px -420px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.userIcon {
-  background: url($dotcms-sprite) no-repeat -1px -440px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.loginIcon {
-  background: url($dotcms-sprite) no-repeat -1px -440px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.loginAsIcon {
-  background: url($dotcms-sprite) no-repeat -1px -460px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.femaleIcon {
-  background: url($dotcms-sprite) no-repeat -21px -460px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.archiveIcon {
-  background: url($dotcms-sprite) no-repeat -21px -480px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.unarchiveIcon {
-  background: url($dotcms-sprite) no-repeat -1px -480px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.workflowIcon {
-  background: url($dotcms-sprite) no-repeat -1px -500px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.resolveWorkflowIcon {
-  background: url($dotcms-sprite) no-repeat -21px -500px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.newWorkflowIcon {
-  background: url($dotcms-sprite) no-repeat -1px -520px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.newTaskIcon {
-  background: url($dotcms-sprite) no-repeat -1px -520px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.deleteWorkflowIcon {
-  background: url($dotcms-sprite) no-repeat -21px -520px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.cancelWorkflowIcon {
-  background: url($dotcms-sprite) no-repeat -1px -540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.reopenWorkflowIcon {
-  background: url($dotcms-sprite) no-repeat -21px -540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.assignWorkflowIcon {
-  background: url($dotcms-sprite) no-repeat -1px -560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.saveAssignIcon {
-  background: url($dotcms-sprite) no-repeat -21px -560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.calMonthIcon {
-  background: url($dotcms-sprite) no-repeat -1px -580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.calDayIcon {
-  background: url($dotcms-sprite) no-repeat -21px -580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.calWeekIcon {
-  background: url($dotcms-sprite) no-repeat -1px -600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.calClockIcon {
-  background: url($dotcms-sprite) no-repeat -21px -600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.calListIcon {
-  background: url($dotcms-sprite) no-repeat -1px -620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.chevronIcon {
-  background: url($dotcms-sprite) no-repeat -1px -640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.chevronExpandIcon {
-  background: url($dotcms-sprite) no-repeat -21px -640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.linkIcon {
-  background: url($dotcms-sprite) no-repeat -1px -660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.resolveIcon {
-  background: url($dotcms-sprite) no-repeat -21px -660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.exclamation {
-  background: url($dotcms-sprite) no-repeat -1px -680px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.exclamation-red {
-  background: url($dotcms-sprite) no-repeat -21px -680px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.imageNewIcon {
-  background: url($dotcms-sprite) no-repeat -1px -700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.trashIcon {
-  background: url($dotcms-sprite) no-repeat -21px -700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.statisticsIcon {
-  background: url($dotcms-sprite) no-repeat -1px -720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.linkAddIcon {
-  background: url($dotcms-sprite) no-repeat -21px -720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.fileNewIcon {
-  background: url($dotcms-sprite) no-repeat -1px -740px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.fileMultiIcon {
-  background: url($dotcms-sprite) no-repeat -21px -740px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.nextIcon {
-  float: right;
-  background: url($dotcms-sprite) no-repeat -1px -760px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.previousIcon {
-  background: url($dotcms-sprite) no-repeat -1px -780px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderIcon {
-  background: url($dotcms-sprite) no-repeat -1px -800px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderAddIcon {
-  background: url($dotcms-sprite) no-repeat -21px -800px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderEditIcon {
-  background: url($dotcms-sprite) no-repeat -1px -820px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderDeleteIcon {
-  background: url($dotcms-sprite) no-repeat -21px -820px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderFilesIcon {
-  background: url($dotcms-sprite) no-repeat -1px -840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderGlobeIcon {
-  background: url($dotcms-sprite) no-repeat -21px -840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderCopyIcon {
-  background: url($dotcms-sprite) no-repeat -1px -860px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pasteIcon {
-  background: url($dotcms-sprite) no-repeat -21px -860px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderSelectedIcon {
-  background: url($dotcms-sprite) no-repeat -1px -880px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.folderOpenIcon {
-  background: url($dotcms-sprite) no-repeat -21px -880px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pagePropIcon {
-  background: url($dotcms-sprite) no-repeat -1px -900px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hintIcon {
-  background: url($dotcms-sprite) no-repeat -21px -900px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-  opacity: .4;
-  &:hover {
-    opacity: .9;
-  }
-}
-.arrowLeftIcon {
-  background: url($dotcms-sprite) no-repeat -1px -920px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.arrowRightIcon {
-  background: url($dotcms-sprite) no-repeat -21px -920px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.toggleOpenIcon {
-  background: url($dotcms-sprite) no-repeat -1px -940px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.toggleCloseIcon {
-  background: url($dotcms-sprite) no-repeat -21px -940px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.formNewIcon {
-  background: url($dotcms-sprite) no-repeat -1px -960px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.hourGlassIcon {
-  background: url($dotcms-sprite) no-repeat -21px -960px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.docCopyIcon {
-  background: url($dotcms-sprite) no-repeat -1px -980px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.documentIcon {
-  background: url($dotcms-sprite) no-repeat -21px -980px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.cartIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1000px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.fixIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1020px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.dropIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1020px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.backupIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1040px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.shrinkIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1040px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.reindexIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1060px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.liveIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1080px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.workingIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1080px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.archivedIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.greyDotIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gearIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1120px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gearPlusIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1120px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gearMinusIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1140px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gearPencilIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1140px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.required {
-  background: url($dotcms-sprite) no-repeat -4px -1161px;
-  width: 10px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.queryIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1340px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.thumbnailViewIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1360px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.detailViewIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1360px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.listViewIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1380px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.docConvertIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1380px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.tagIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1400px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mapPinIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1400px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.docNumIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1420px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.tabIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1420px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.checkBoxIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1440px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.textFieldIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1440px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.propertyIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1460px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.scrollPaneIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1460px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.wysiwygIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1480px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.docTextIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1480px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.splitterIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1500px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.radioIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1500px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.multiSelectIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1520px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.selectIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1520px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.appMonitorIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1740px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.workStreamIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1740px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rememberIcon {
-  background: url(/html/images/icons/clock-select-remain.png) no-repeat center center;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.exclamationIcon {
-  background: url(/html/images/icons/exclamation-octagon.png) no-repeat center center;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.keyvalueIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1380px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.fileIcon {
-  background: url($dotcms-sprite) no-repeat -1px -840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rServerIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1880px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mobileIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1860px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.androidIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1900px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.appleIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1900px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.windowsIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1920px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.encryptIcon {
-  background: url($dotcms-sprite) no-repeat -21px -80px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.bundleIcon {
-  background: url($dotcms-sprite) no-repeat -1px -2000px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.designTemplateIcon {
-  background: url($dotcms-sprite) no-repeat -21px -40px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.dijitDisabled {
-  .plusIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px 0;
-  }
-  .addIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -20px;
-  }
-  .minusIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -40px;
-  }
-  .searchIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -60px;
-  }
-  .deleteIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -80px;
-  }
-  .editIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -100px;
-  }
-  .publishIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -320px;
-  }
-  .unpublishIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -21px -340px;
-  }
-  .archiveIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -21px -480px;
-  }
-  .unarchiveIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -480px;
-  }
-  .calMonthIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -580px;
-  }
-  .calDayIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -21px -580px;
-  }
-  .calWeekIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -600px;
-  }
-  .nextIcon {
-    float: right;
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -760px;
-  }
-  .previousIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -780px;
-  }
-  .pagePropIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -900px;
-  }
-  .reindexIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -1060px;
-  }
-  .resetIcon {
-    background: url(/html/images/icons/dotcms-sprite-off.png) no-repeat -1px -120px;
-  }
-}
-.cropIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1780px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rotateIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1820px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.saveAsIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.clipIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1800px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.resizeIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1800px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.arrowIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1820px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.imageIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.jpgIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.jpegIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.bmpIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pctIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-  background: url($dotcms-sprite) no-repeat -21px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gifIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.giffIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pngIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1540px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.flaIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.swfIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.flvIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.psdIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.epsIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pxrIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.tifIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.tiffIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1560px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pdfIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.airIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.aiIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.drwIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.psIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.svgIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-  background: url($dotcms-sprite) no-repeat -21px -1840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.graffleIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.vdxIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1580px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.docIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.docxIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.exeIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.appIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.batIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.cgiIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.comIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.jarIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pifIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.vbIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.wsfIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1600px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.xlsIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.xlsxIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.wksIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.csvIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.numbersIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.accdbIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.dbIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mdbIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pdbIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.sqlIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1620px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pptIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pptxIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.keynote {
-  background: url($dotcms-sprite) no-repeat -1px -1640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.wmvIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.asxIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1640px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.oggIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.asfIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.aviIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.movIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mpgIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mp4Icon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rmIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.vobIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.ogvIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mp3Icon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.aacIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.aifIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.iffIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.m3uIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.midIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.mpaIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.raIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.wavIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.wmaIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1660px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.cssIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1680px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.vtlIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1680px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.phpIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.jsIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.jspIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.aspIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.xmlIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gyIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pyIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rbIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.jsonIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.htmIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.htmlIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rssIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1700px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.datIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.sdfIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.txtIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rtfIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pagesIcon {
-  background: url($dotcms-sprite) no-repeat -1px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.zipIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.debIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.gzIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.pkgIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.rarIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.sitIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.sitxIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.zipxIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1720px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.ttfIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.woffIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.eotIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1840px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.twitterIcon {
-  background: url(/html/images/icons/twitter.png) no-repeat;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.icoIcon {
-  background: url($dotcms-sprite) no-repeat -21px -1920px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.epubIcon {
-  background: url($dotcms-sprite) no-repeat -21px -100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.ibooksIcon {
-  background: url($dotcms-sprite) no-repeat -21px -100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.azwIcon {
-  background: url($dotcms-sprite) no-repeat -21px -100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.kf8Icon {
-  background: url($dotcms-sprite) no-repeat -21px -100px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: top;
-}
-.worldOn {
-  background: url($dotcms-sprite) no-repeat -0px -1940px;
-  width: 22px;
-  height: 22px;
-  margin: 0 1px 0 7px;
-  display: inline-block;
-  vertical-align: top;
-}
+  width: 12px;
+}
+
+// FILE TYPE ICONS
+// font-awesome don't have icons for all the file types
+// that dotCMS support, so for now we are stuck with .png
+@import "file-type-icons";

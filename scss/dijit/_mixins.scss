@@ -1,7 +1,21 @@
-@mixin center-icon($width, $height) {
+// TODO: find a better location for this
+#font-icon-base {
+  font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
+@mixin center-icon($width, $height, $direction: "") {
   left: 50%;
-  margin-left: -($width / 2);
-  margin-top: -($height / 2);
+  @if $direction == right or $direction == left {
+    margin-left: -($height / 2);
+    margin-top: -($width / 2);
+  } @else {
+    margin-left: -($width / 2);
+    margin-top: -($height / 2);
+  }
   position: absolute;
   top: 50%;
 }
@@ -9,4 +23,29 @@
 @mixin mouse {
   font-size: 11px; // TODO: set a variable
   color: $gray-ligth;
+}
+
+@mixin create-arrow($arrow-size, $arrow-color, $direction: "") {
+  @include center-icon($arrow-size * 2, $arrow-size, $direction); // Sadly compass can't get width and height from a svg
+
+  @if $direction == right {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent;
+    border-left: $arrow-size solid $arrow-color;
+  } @elseif $direction == left {
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent;
+    border-right: $arrow-size solid $arrow-color;
+  } @elseif $direction == up {
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid $arrow-color;
+  } @else {
+    border-left: $arrow-size solid transparent;
+    border-right: $arrow-size solid transparent;
+    border-top: $arrow-size solid $arrow-color;
+  }
+  content: "";
+  height: 0;
+  width: 0;
 }

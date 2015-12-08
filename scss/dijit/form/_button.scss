@@ -1,13 +1,18 @@
 .dijitButton,
-.dijitComboButton,
-.dijitDropDownButton,
-.dijitToggleButton {
-  margin: 0;
-
+.dijitToggleButton,
+.dijitComboButton {
   .dijitButtonNode {
     border: none;
     padding-left: $field-padding;
   }
+}
+
+.dijitButton,
+.dijitComboBox,
+.dijitComboButton,
+.dijitDropDownButton,
+.dijitToggleButton {
+  margin: 0;
 }
 
 .dijitButton,
@@ -16,7 +21,6 @@
 }
 
 .dijitButton,
-.dijitDropDownButton,
 .dijitToggleButton {
   .dijitButtonText {
     line-height: $field-height - 2px;
@@ -24,73 +28,276 @@
   }
 }
 
-.dijitButton {
-  background-color: $button-bgcolor;
-  color: $button-textcolor;
+.dijit {
+  &Button {
+    background-color: $button-normal-bgcolor;
+    border: $button-normal-border;
+    color: $button-normal-textcolor;
 
-  &.alt { // TODO: define buttons types
-    background-color: $gray-ligther;
-    color: $gray;
-  }
+    // TODO: we have to remove this in the HTML
+    .dijitIcon {
+      display: none;
+    }
 
-  &Hover {
-    background-color: $button-hover-bgcolor;
-    color: $button-hover-textcolor;
+    &Hover {
+      background-color: $button-hover-bgcolor;
+      border: $button-hover-border;
+      color: $button-hover-textcolor;
+    }
 
-    &.alt {
-      background-color: $gray-ligth;
-      color: $white;
+    &Focused {
+      background-color: $button-active-bgcolor;
+      border: $button-active-border;
+      color: $button-active-textcolor
+    }
+
+    &Disabled {
+      background-color: $button-disabled-bgcolor;
+      border: $button-disabled-border;
+      color: $button-disabled-textcolor
     }
   }
 
-  &Focused {
-    background-color: $button-active-bgcolor;
-    color: $button-active-textcolor
-  }
-}
+  &DropDownButton {
+    background-color: $dropdownbutton-normal-bgcolor;
+    border: $dropdownbutton-normal-border;
+    color: $dropdownbutton-normal-textcolor;
 
-.dijitComboButton,
-.dijitDropDownButton {
-  &Hover {
-    border-color: $buttondrop-hover-bgcolor;
-    background-color: $buttondrop-hover-bgcolor;
-    color: $buttondrop-hover-textcolor;
-  }
-}
-
-.dijitComboButton {
-  &Hover {
-    .dijitArrowButtonInner {
-      background-color: $buttondrop-hover-bgcolorarrow;
+    .dijitButtonNode {
+      border: none;
+      padding-left: $field-padding;
     }
-  }
-}
 
-.dijitDropDownButton {
-  &Hover {
     .dijitArrowButtonInner {
-      background-color: $buttondrop-hover-bgcolor;
+      width: $dropdownbutton-arrow-container-size;
+
+      @if $dropdownbutton-normal-arrow-bgcolor != 'transparent' {
+        // TODO: write this mixin
+        background-color: $dropdownbutton-normal-arrow-bgcolor;
+      }
+
       &:before {
-        background-image: url("/images/ico-arrow-sm-light.svg");
+        @if $dropdownbutton-normal-arrow-url {
+          background-image: url($dropdownbutton-normal-arrow-url);
+        } @else {
+          @include create-arrow($dropdownbutton-arrow-size, $dropdownbutton-normal-arrow-color);
+        }
+      }
+    }
+
+    &Hover {
+      background-color: $dropdownbutton-hover-bgcolor;
+      border: $dropdownbutton-hover-border;
+      color: $dropdownbutton-hover-textcolor;
+
+      .dijitArrowButtonInner {
+        @if $dropdownbutton-hover-arrow-bgcolor != 'transparent' {
+          background-color: $dropdownbutton-hover-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $dropdownbutton-hover-arrow-url {
+            background-image: url($dropdownbutton-hover-arrow-url);
+          } @else {
+            @include create-arrow($dropdownbutton-arrow-size, $dropdownbutton-hover-arrow-color);
+          }
+        }
+      }
+    }
+
+    &Active {
+      background-color: $dropdownbutton-active-bgcolor;
+      border: $dropdownbutton-active-border;
+      color: $dropdownbutton-active-textcolor;
+
+      .dijitArrowButtonInner {
+        @if $dropdownbutton-active-arrow-bgcolor != 'transparent' {
+          background-color: $dropdownbutton-active-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $dropdownbutton-active-arrow-url {
+            background-image: url($dropdownbutton-active-arrow-url);
+          } @else {
+            @include create-arrow($dropdownbutton-arrow-size, $dropdownbutton-active-arrow-color);
+          }
+        }
+      }
+    }
+
+    &Focused {
+      background-color: $dropdownbutton-focused-bgcolor;
+      border: $dropdownbutton-focused-border;
+      color: $dropdownbutton-focused-textcolor;
+    }
+
+    &Disabled {
+      background-color: $dropdownbutton-disabled-bgcolor;
+      border: $dropdownbutton-disabled-border;
+      color: $dropdownbutton-disabled-textcolor;
+
+      .dijitArrowButtonInner {
+        @if $dropdownbutton-disabled-arrow-bgcolor != 'transparent' {
+          background-color: $dropdownbutton-disabled-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $dropdownbutton-disabled-arrow-url {
+            background-image: url($dropdownbutton-disabled-arrow-url);
+          } @else {
+            @include create-arrow($dropdownbutton-arrow-size, $dropdownbutton-disabled-arrow-color);
+          }
+        }
       }
     }
   }
 
-  .dijitButtonText {
-    margin-right: $field-padding;
-  }
-}
+  &ComboButton {
+    background-color: $combobutton-normal-bgcolor;
+    border: $combobutton-normal-border;
+    color: $combobutton-normal-textcolor;
 
-.dijitToggleButton {
-  &Hover {
-    background-color: $buttontoggle-hover-bgcolor;
-    color: $buttontoggle-hover-textcolor;
+    .dijitArrowButtonInner {
+      border-left: $combobutton-normal-arrow-border;
+      width: $combobutton-arrow-container-size;
+
+      @if $combobutton-normal-arrow-bgcolor != 'transparent' {
+        // TODO: write this mixin
+        background-color: $combobutton-normal-arrow-bgcolor;
+      }
+
+      &:before {
+        @if $combobutton-normal-arrow-url {
+          background-image: url($combobutton-normal-arrow-url);
+        } @else {
+          @include create-arrow($combobutton-arrow-size, $combobutton-normal-arrow-color);
+        }
+      }
+    }
+
+    &Hover {
+      background-color: $combobutton-hover-bgcolor;
+      border: $combobutton-hover-border;
+      color: $combobutton-hover-textcolor;
+
+      .dijitArrowButtonInner {
+        border-left: $combobutton-hover-arrow-border;
+
+        @if $combobutton-hover-arrow-bgcolor != 'transparent' {
+          background-color: $combobutton-hover-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $combobutton-hover-arrow-url {
+            background-image: url($combobutton-hover-arrow-url);
+          } @else {
+            @include create-arrow($combobutton-arrow-size, $combobutton-hover-arrow-color);
+          }
+        }
+      }
+    }
+
+    &Active {
+      background-color: $combobutton-active-bgcolor;
+      border: $combobutton-active-border;
+      color: $combobutton-active-textcolor;
+
+      .dijitArrowButtonInner {
+        border-left: $combobutton-active-arrow-border;
+
+        @if $combobutton-active-arrow-bgcolor != 'transparent' {
+          background-color: $combobutton-active-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $combobutton-active-arrow-url {
+            background-image: url($combobutton-active-arrow-url);
+          } @else {
+            @include create-arrow($combobutton-arrow-size, $combobutton-active-arrow-color);
+          }
+        }
+      }
+    }
+
+    &Focused,
+    &HoverFocused {
+      background-color: $combobutton-focused-bgcolor;
+      border: $combobutton-focused-border;
+      color: $combobutton-focused-textcolor;
+
+      .dijitArrowButtonInner {
+        border-left: $combobutton-focused-arrow-border;
+
+        @if $combobutton-focused-arrow-bgcolor != 'transparent' {
+          background-color: $combobutton-focused-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $combobutton-focused-arrow-url {
+            background-image: url($combobutton-focused-arrow-url);
+          } @else {
+            @include create-arrow($combobutton-arrow-size, $combobutton-focused-arrow-color);
+          }
+        }
+      }
+    }
+
+    &Disabled {
+      background-color: $combobutton-disabled-bgcolor;
+      border: $combobutton-disabled-border;
+      color: $combobutton-disabled-textcolor;
+
+      .dijitArrowButtonInner {
+        border-left: $combobutton-disabled-arrow-border;
+
+        @if $combobutton-disabled-arrow-bgcolor != 'transparent' {
+          background-color: $combobutton-disabled-arrow-bgcolor;
+        }
+
+        &:before {
+          @if $combobutton-disabled-arrow-url {
+            background-image: url($combobutton-disabled-arrow-url);
+          } @else {
+            @include create-arrow($combobutton-arrow-size, $combobutton-disabled-arrow-color);
+          }
+        }
+      }
+    }
   }
 
-  &Checked {
-    border-color: $button-active-bgcolor;
-    background-color: $button-active-bgcolor;
-    color: $button-active-textcolor
+  &ToggleButton {
+    background-color: $togglebutton-normal-bgcolor;
+    border: $togglebutton-normal-border;
+    color: $togglebutton-normal-textcolor;
+
+    .dijitIcon {
+      visibility: hidden;
+    }
+
+    &Hover {
+      background-color: $togglebutton-hover-bgcolor;
+      border: $togglebutton-hover-border;
+      color: $togglebutton-hover-textcolor;
+    }
+
+    &Focused,
+    &Checked {
+      background-color: $togglebutton-active-bgcolor;
+      border: $togglebutton-active-border;
+      color: $togglebutton-active-textcolor
+    }
+
+    &Checked {
+      .dijitIcon {
+        visibility: visible;
+      }
+    }
+
+    &Disabled {
+      background-color: $togglebutton-disabled-bgcolor;
+      border: $togglebutton-disabled-border;
+      color: $togglebutton-disabled-textcolor;
+    }
   }
 }
 

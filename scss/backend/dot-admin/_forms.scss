@@ -1,0 +1,174 @@
+/*
+------------ FORMS ------------
+- Extract from: base.css
+- Handle vertical and horizontal forms
+*/
+
+
+// Horizontal forms
+dl {
+  //margin: 0;
+
+  // Just for the Add/Edit Field form
+  // TODO: add a class to style this
+  &#indexed,
+  &#listed,
+  &#required,
+  &#unique,
+  &#userSearchable {
+    dd {
+      min-height: auto;
+      line-height: normal;
+
+      .dijitCheckBox {
+        margin: 0;
+      }
+    }
+  }
+}
+
+dd,
+dt {
+
+  &.wide {
+    clear: both;
+    width: auto;
+  }
+}
+
+dt {
+  clear: left;
+  float: left;
+  padding: 6px 0px 7px;
+  text-align: right;
+  width: 30%;
+}
+
+dd {
+  margin: 0 0 $field-padding 30%;
+  line-height: $field-height;
+  min-height: $field-height;
+  padding-left: $field-padding;
+
+  // It breaks some forms where each line is a <dl>
+  // TODO: edit the html
+  //&:last-child {
+  //  margin-bottom: 0;
+  //}
+
+  // CONTENT SEARCH FORM
+  #advancedSearch & {
+    margin: 0 0 $field-padding 30%;
+  }
+
+  .inputCaption,
+  .buttonCaption {
+    padding-left: $field-padding !important;
+  }
+
+  .dijitCheckBox,
+  .dijitRadio {
+    margin: 6px 0;
+  }
+}
+
+input,
+select {
+  color: $text-color;
+  font-family: $body-text;
+  font-size: $body-size;
+  height: $field-height;
+  line-height: $field-height;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"] {
+  @include border-radius($field-border-radius);
+  background-color: $textbox-normal-bgcolor;
+  border: $textbox-normal-border;
+  padding: 0 $field-padding;
+
+  &.dijitReset {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+.buttonRow {
+  margin-top: $field-padding;
+  text-align: center;
+
+  // CONTENT SEARCH FORM
+  #advancedSearch + & {
+    padding: 0 $field-padding $field-padding;
+  }
+}
+
+// Vertical forms
+
+.fieldWrapper {
+  margin-bottom: $field-padding * 2;
+  padding: 0;
+  position: relative;
+}
+
+.fieldName {
+  font-weight: bold;
+  margin-bottom: $field-padding / 2;
+}
+
+.fieldValue {
+  float: left;
+}
+
+.fieldValueText {
+  color: #999;
+  border: 1px solid #ddd;
+  padding: 3px 8px;
+  width: 400px;
+}
+
+
+.toggleEditorField,
+.langVariablesField {
+  margin-top: $field-padding;
+}
+
+.glossaryTermPopup {
+  background-color: rgba($orange, 0.2);
+  @include border-radius($border-radius);
+  padding: ($field-padding / 2) $field-padding;
+  border: solid 1px $orange;
+  position: absolute;
+}
+
+.langVariablesField {
+  position: relative;
+
+  .glossaryTermPopup {
+
+    right: 0;
+    top: 0;
+  }
+}
+
+.WYSIWYGTools {
+  margin-top: $field-padding;
+
+  .glossaryTermPopup {
+    left: 150px;
+    top: 35px;
+  }
+}
+
+// WORKFLOW TASK SEARCH FORM
+
+.filter-tasks-frm {
+  .who-user {
+    label {
+      margin-right: $field-padding / 2;
+    }
+  }
+}

@@ -1,7 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+// Compass SASS Framework
 @import "compass";
+
+// Font-icons
+@import "font-awesome-4.4.0/mixins";
+@import "font-awesome-4.4.0/variables";
+@import "font-awesome-4.4.0/path";
+
+// BACKEND
+//@import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
+@import "backend/common";
+
+
+// DIJIT WIDGETS
 @import "dijit/mixins";
-@import "dijit/variables";
+@import "dijit/theme-dotcms";
 @import "dijit/common";
 @import "dijit/icons";
 
@@ -13,27 +25,27 @@ body {
 .dotcms {
   // FORM
   @import "dijit/form/common";
+  @import "dijit/form/textBox";
+  @import "dijit/form/textArea";
+  @import "dijit/form/numberSpinner";
   @import "dijit/form/button";
   @import "dijit/form/checkbox";
-  @import "dijit/form/numberSpinner";
   @import "dijit/form/radioButton";
   @import "dijit/form/select";
+  @import "dijit/form/combobox";
   @import "dijit/form/slider";
 
   // LAYOUT
   @import "dijit/layout/AccordionContainer";
   @import "dijit/layout/BorderContainer";
   @import "dijit/layout/ContentPane";
+  @import "dijit/layout/dialogBox";
   @import "dijit/layout/SplitContainer";
   @import "dijit/layout/TabContainer";
+  @import "dijit/layout/toolTip";
 
   @import "dijit/calendar";
   @import "dijit/menu";
   @import "dijit/progressBar";
   @import "dijit/inlineEditBox";
-
-  // BACKEND
-  @import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
-  @import "backend/common";
-
 }

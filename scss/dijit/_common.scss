@@ -12,3 +12,16 @@ html {
   outline: none; // not 100% sure about this, google it
   box-sizing: border-box;
 }
+
+
+// Drag & Drop functionality
+.dojo {
+  &DndItem {
+    padding: 0;
+
+    &ItemOver,
+    &ItemAfter {
+      padding: 0;
+    }
+  }
+}
