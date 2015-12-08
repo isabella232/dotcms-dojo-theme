@@ -516,7 +516,6 @@ $tab-strip-active-arrow-color: $field-focusedarrow-arrow-color;
 $tab-closeicon-bgcolor: $gray-ligther;
 $tab-closeicon-color: $white;
 
-
 // Accordion
 $accordion-title-heigth: $field-height;
 $accordion-title-border: solid 1px $gray-ligther;
@@ -531,3 +530,8 @@ $dialog-normal-title-bgcolor: $gray-ligth;
 $dialog-normal-title-textcolor: $gray-dark;
 $dialog-closeicon-bgcolor: $gray-dark;
 $dialog-closeicon-color: $white;
+
+// ToolTip
+$tooltip-normal-bgcolor: $white;
+$tooltip-normal-border: solid 1px $gray-ligth;
+$tooltop-normal-padding: $basic-padding;

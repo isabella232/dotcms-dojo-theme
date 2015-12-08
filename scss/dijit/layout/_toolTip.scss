@@ -1,0 +1,13 @@
+.dijitTooltip {
+  &Container {
+    background: $tooltip-normal-bgcolor;
+    border: $tooltip-normal-border;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  &FocusNode {
+    padding: $tooltop-normal-padding;
+  }
+}
+

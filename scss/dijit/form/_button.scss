@@ -34,6 +34,11 @@
     border: $button-normal-border;
     color: $button-normal-textcolor;
 
+    // TODO: we have to remove this in the HTML
+    .dijitIcon {
+      display: none;
+    }
+
     &Hover {
       background-color: $button-hover-bgcolor;
       border: $button-hover-border;

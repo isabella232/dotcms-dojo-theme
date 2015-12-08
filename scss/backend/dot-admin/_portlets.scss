@@ -1,16 +1,38 @@
 /* PORTLET STYLES 2.0 */
+.portlet {
+  &-wrapper {
+    background: #fff;
+    margin: 0 $field-padding;
+    position: relative;
+  }
 
-.portlet-wrapper {
-  background: #fff;
-  margin: 0 $field-padding;
-  position: relative;
+  &-toolbar {
+    margin: $basic-padding 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  // STYLE FOR EACH PORTLET
+  &-content-search {
+    margin: 35px 0 0 0;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 0 $field-padding $field-padding;
+  }
 }
-.portlet-toolbar {
-  padding: 5px 8px;
+
+// Some dotcms portlets have dijitContentPane nested
+// TODO: have to fix the html
+.dotcms .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
+  padding: 0;
 }
-.portlet-toolbar a {
-  text-decoration: none;
+
+.contentIdentifier {
+  margin: 0 0 $basic-padding;
 }
+
 #tablemessage {
   font-size: 80%;
   color: #cc0000;

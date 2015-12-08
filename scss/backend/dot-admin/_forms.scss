@@ -7,7 +7,7 @@
 
 // Horizontal forms
 dl {
-  margin: 0;
+  //margin: 0;
 
   // Just for the Add/Edit Field form
   // TODO: add a class to style this
@@ -46,12 +46,15 @@ dt {
 
 dd {
   margin: 0 0 $field-padding 30%;
+  line-height: $field-height;
   min-height: $field-height;
   padding-left: $field-padding;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+  // It breaks some forms where each line is a <dl>
+  // TODO: edit the html
+  //&:last-child {
+  //  margin-bottom: 0;
+  //}
 
   // CONTENT SEARCH FORM
   #advancedSearch & {
@@ -94,8 +97,8 @@ input[type="text"] {
 }
 
 .buttonRow {
-  margin-left: 30%;
-  padding: $field-padding $field-padding 0;
+  margin-top: $field-padding;
+  text-align: center;
 
   // CONTENT SEARCH FORM
   #advancedSearch + & {
