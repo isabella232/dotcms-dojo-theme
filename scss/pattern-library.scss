@@ -71,14 +71,14 @@ h2 {
   border: 0;
 }
 
-#textboxTab {
-  label {
-    @include inline-block();
-    margin-right: 10px;
-    text-align: right;
-    width: 162px;
-  }
-}
+// #textboxTab {
+//   label {
+//     @include inline-block();
+//     margin-right: 10px;
+//     text-align: right;
+//     width: 162px;
+//   }
+// }
 
 //.dotcms {
 //  .dijitTextBox {

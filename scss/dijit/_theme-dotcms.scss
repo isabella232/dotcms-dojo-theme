@@ -290,6 +290,7 @@ $spinner-disabled-arrow-bgcolor: $spinner-disabled-bgcolor;
 // Select
 $select-arrow-size: 5px;
 $select-arrow-container-size: $field-height;
+$select-padding: $field-padding * 2;
 
 $select-normal-border: $field-normal-border;
 $select-normal-bgcolor: $white;
