@@ -71,6 +71,7 @@ $field-focusedarrow-arrow-bgcolor: rgba($blue, 0.2);
 $field-error-border: solid 1px $error;
 
 // Button
+$button-padding: $field-padding * 2;
 $button-normal-bgcolor: $field-normal-bgcolor;
 $button-normal-textcolor: $field-normal-textcolor;
 $button-normal-border: $field-normal-border;

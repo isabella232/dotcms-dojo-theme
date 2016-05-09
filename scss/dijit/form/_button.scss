@@ -3,7 +3,7 @@
 .dijitComboButton {
   .dijitButtonNode {
     border: none;
-    padding-left: $field-padding;
+    padding-left: $button-padding;
   }
 }
 
@@ -17,7 +17,7 @@
 
 .dijitButton,
 .dijitToggleButton {
-  padding-right: $field-padding;
+  padding-right: $button-padding;
 }
 
 .dijitButton,
@@ -65,7 +65,7 @@
 
     .dijitButtonNode {
       border: none;
-      padding-left: $field-padding;
+      padding-left: $button-padding;
     }
 
     .dijitArrowButtonInner {
@@ -300,4 +300,3 @@
     }
   }
 }
-

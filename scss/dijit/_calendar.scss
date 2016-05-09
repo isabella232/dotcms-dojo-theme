@@ -10,6 +10,10 @@ $dropdown-size: $field-height - 10;
     cursor: pointer;
   }
 
+  &Container th {
+    text-align: center;
+  }
+
   &DayLabelTemplate,
   &DateTemplate {
     @include transition(background-color $field-animation-speed);
