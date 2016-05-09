@@ -36,7 +36,7 @@
 
   &PaneActionBar,
   &PaneContent {
-    padding: $field-padding;
+    padding: $dialog-padding;
   }
 
   &PaneActionBar {
@@ -49,8 +49,7 @@
     font-weight: bold;
     height: $field-height;
     line-height: $field-height;
-    padding: 0 $field-padding;
+    padding: 0 $dialog-padding;
     position: relative;
   }
 }
-

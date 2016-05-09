@@ -4,8 +4,48 @@
 - Handle vertical and horizontal forms
 */
 
+// Inline forms
 
-// Horizontal forms
+
+// Horizontal forms and inline forms
+.form-horizontal, .form-inline {
+  display: table;
+
+  dl {
+    display: table-row;
+  }
+
+  dt, dd {
+    display: table-cell;
+    min-height: auto;
+    line-height: normal;
+    height: auto;
+    float: none;
+  }
+
+  label {
+    white-space: nowrap;
+  }
+
+  dt {
+    width: 1%;
+  }
+
+  dd {
+    padding: 0 0 10px 10px;
+    width: 99%;
+  }
+}
+
+.form-horizontal {
+  width: 100%;
+
+  .dijitTextBox {
+      width: 100%;
+  }
+}
+
+
 dl {
   //margin: 0;
 
@@ -45,7 +85,7 @@ dt {
 }
 
 dd {
-  margin: 0 0 $field-padding 30%;
+  margin: 0 0 $field-padding * 2 30%;
   line-height: $field-height;
   min-height: $field-height;
   padding-left: $field-padding;
@@ -97,7 +137,6 @@ input[type="text"] {
 }
 
 .buttonRow {
-  margin-top: $field-padding;
   text-align: center;
 
   // CONTENT SEARCH FORM
@@ -166,6 +205,8 @@ input[type="text"] {
 // WORKFLOW TASK SEARCH FORM
 
 .filter-tasks-frm {
+  margin: 56px 20px 0;
+
   .who-user {
     label {
       margin-right: $field-padding / 2;

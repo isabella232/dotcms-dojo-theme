@@ -39,10 +39,10 @@ gulp.task('dotcms', function() {
   gulp.src('scss/dotcms.scss')
     .pipe(compass({
       config_file: './config.rb',
-      css: '/Volumes/Macinstosh\ HD/Users/fmontes/dev/dotcms/core/dotCMS/html/css/dijit-dotcms/',
+      css: '/Volumes/Macinstosh\ HD/Users/fmontes/dev/dotcms/core/dotCMS/html/css/',
       sass: 'scss',
-      //sourcemap: true,
-      //environment: 'production'
+      sourcemap: true,
+      environment: 'production'
     }))
 });
 
