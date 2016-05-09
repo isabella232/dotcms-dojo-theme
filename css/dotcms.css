@@ -6345,15 +6345,15 @@ body {
   background-color: #ECEDEE;
   color: #45545B;
   border-right: solid 1px #CACED0;
-  padding: 0 5px;
+  padding: 0 10px;
   position: relative;
   top: 0;
 }
 .dotcms .dijitTab.dijitClosable {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .dotcms .dijitTabPaneWrapper .dijitContentPane {
-  padding: 5px;
+  padding: 10px;
 }
 .dotcms .dijitTabChecked, .dotcms .dijitTabChecked.dijitTabCheckedHover {
   background-color: #fff;
@@ -6527,7 +6527,7 @@ body {
 }
 .dotcms .dijitTabContainerNested .dijitTabContainerTop-container {
   border: none;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 .dotcms .dijitTooltipContainer {
   background: #fff;

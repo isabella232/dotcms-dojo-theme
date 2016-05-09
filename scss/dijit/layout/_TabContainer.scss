@@ -6,17 +6,17 @@
     background-color: $tab-normal-bgcolor;
     color: $tab-normal-textcolor;
     border-right: $field-normal-border;
-    padding: 0 $field-padding;
+    padding: 0 $tab-padding;
     position: relative;
     top: 0;
 
     &.dijitClosable {
-      padding-right: $field-padding * 2;
+      padding-right: $tab-padding * 2;
     }
 
     &PaneWrapper {
       .dijitContentPane {
-        padding: $field-padding;
+        padding: $tab-padding;
       }
     }
 
@@ -225,7 +225,7 @@
 
       .dijitTabContainerTop-container {
         border: none;
-        padding: 0 $field-padding
+        padding: 0 $tab-padding
       }
     }
   }

@@ -493,6 +493,7 @@ $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
 // Tabs
 $tab-border: solid $field-border-size $gray-ligther;
 $tab-height: $field-height;
+$tab-padding: $field-padding * 2;
 
 $tab-normal-bgcolor: $field-normal-bgcolor;
 $tab-normal-textcolor: $field-normal-textcolor;
