@@ -2675,11 +2675,6 @@ table.sTypeTable.sTypeItem {
 }
 
 /* permission hacks */
-.dotcms .dijitAccordionTitle {
-  line-height: 0;
-  font-size: 0px;
-}
-
 .permissionTableTitle td {
   text-align: center;
   width: 12%;
@@ -3127,114 +3122,252 @@ div#_dotHelpMenu {
   padding-left: 15px;
 }
 
-#menu {
-  width: 100%;
+/*Tags fields*/
+.tagsOptions {
+  background: white;
+  border: 1px solid #b3b3b3;
+  min-width: 175px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 7px;
+}
+
+.tagsOptions .personaIcon,
+.tagsOptions .tagIcon {
+  margin-right: 5px;
+  opacity: .7;
+}
+
+.tagsOptions:before {
+  background-color: #ffffff;
+  border-left: solid 1px #b3b3b3;
+  border-top: solid 1px #b3b3b3;
+  content: "";
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  top: -6px;
+  transform: rotate(45deg);
+  width: 10px;
+}
+
+.dijitTextBoxFocused + .tagsOptions {
+  border-color: #406b9b;
+}
+
+.tagsOptions h3 {
+  padding: 5px 10px;
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.tagsOptions a {
+  cursor: pointer;
+  display: block;
+  padding: 5px 10px;
+  border-bottom: 1px solid #b3b3b3;
+  text-decoration: none;
   white-space: nowrap;
 }
-#menu ul {
+
+.tagsOptions .suggestedTagFocus {
+  box-shadow: none;
+  outline: 0;
+  background-color: #E0E9F6;
+}
+
+.dijitTextBoxFocused + .tagsOptions a,
+.dijitTextBoxFocused + .tagsOptions h3 {
+  border-color: #406b9b;
+}
+
+.dijitTextBoxFocused + .tagsOptions:before {
+  border-color: #406b9b;
+}
+
+.tagsOptions a:last-child {
+  border-bottom: none;
+}
+
+.tagLink {
+  border: solid 1px #ddd;
+  background: #f2f2f2;
+  border-radius: 7px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 5px 2px 0px;
+  padding: 3px 25px 4px 5px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.tagLink.persona {
+  padding: 3px 25px 4px;
+}
+
+.tagLink.persona:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url("/html/images/icons/dotcms-sprite.png") no-repeat no-repeat -1px -460px;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+
+.tagLink:after {
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  color: gray;
+  content: "\2715";
+  font-size: 10px;
+  font-weight: bold;
+  height: 22px;
+  line-height: 21px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 20px;
+}
+
+.tagLink:hover {
+  border: #2C548D 1px solid;
+}
+
+.fieldValue {
+  float: none;
+}
+
+.tagsWrapper {
+  width: auto;
+  box-sizing: border-box;
+  padding-right: 20px;
+  position: relative;
+}
+.tagsWrapper .dijitTextBox {
+  background: none;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0;
+  position: relative;
+  padding: 2px 2px 0;
+}
+
+.dotcms .tagsWrapper .dijitInputField {
+  height: auto;
+  cursor: text;
+  display: inline-block;
+  vertical-align: middle;
+  position: static;
+}
+.dotcms .tagsWrapper .dijitInputField .dijitInputInner {
+  float: none;
+  padding: 0;
+  line-height: 28px;
+  height: 28px;
+  border: none;
+  width: auto !important;
+}
+
+.navbar ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
-#menu ul li {
+.navbar li {
   list-style: none;
+  position: relative;
 }
-#menu ul li a {
+.navbar li a {
   display: block;
   text-decoration: none;
   float: none;
 }
-#menu ul.horizontal li.level1 {
-  float: left;
-  padding: 0;
-}
-#menu ul.horizontal li.level1 a {
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") repeat right -140px;
-}
-#menu ul.horizontal li.level1 a:hover {
-  background-position: right -190px;
-}
-#menu ul.horizontal li.level1 a:hover .navMenu-title {
-  color: #cc0000;
-}
-#menu ul.horizontal li.level1 .tabLeft {
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat 0 -240px;
-  padding: 8px 10px 5px;
-}
-#menu ul.horizontal li.Active a {
-  background-position: left -190px;
-}
-#menu ul.horizontal li.Active a .navMenu-title {
-  color: #cc0000;
-}
-#menu ul.horizontal > li.level1 a {
-  width: auto;
-}
-#menu ul.dropdown {
+.navbar .dropdown {
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-top: 0;
+  left: -1px;
+  min-width: 200px;
   position: absolute;
-  top: 0;
-  left: 0;
+  opacity: 0;
+  transition: opacity 200ms;
+  top: 44px;
   visibility: hidden;
   z-index: 999;
-  background: #fff;
-  border-bottom: 1px solid #d1d1d1;
-  border-left: 1px solid #d1d1d1;
-  border-right: 1px solid #d1d1d1;
-  text-decoration: none;
-  min-width: 220px;
 }
-#menu ul.dropdown li.level2 {
-  background-image: none;
+.navbar .dropdown li.level2 {
   padding: 0;
-  overflow: hidden;
 }
-#menu ul.dropdown li.level2 a {
-  color: #5f5f5f;
-  margin: 0;
+.navbar .dropdown li.level2 a {
   background: #fff;
-  background-image: none;
+  color: #5f5f5f;
   display: block;
-  vertical-align: middle;
+  font-size: 85%;
+  margin: 0;
   padding: 3px 10px;
+  vertical-align: middle;
 }
-#menu ul.dropdown li.level2 a:hover {
-  background: #f2f2f2;
+.navbar .dropdown li.level2 a:hover {
+  background: #F2F2F2;
 }
-#menu ul.dropdown li.level2 a span {
+.navbar .dropdown li.level2 a span {
   display: inline-block;
   float: left;
-  width: 18px;
-  height: 18px;
   margin: 0 5px 2px;
 }
-
-li.level1 .navMenu-title {
-  margin: 0;
+.navbar .horizontal li.level1 {
+  background-color: #F2F2F2;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: solid 1px #DADADA;
+  border-right: 0;
+  box-shadow: inset 0 1px 1px 0 #FFF;
+  float: left;
   padding: 0;
-  overflow: hidden;
-  color: #404040;
-  font-weight: bold;
+  width: auto;
 }
-li.level1 .navMenu-subtitle {
+.navbar .horizontal li.level1:hover {
+  background-color: #fff;
+}
+.navbar .horizontal li.level1:hover > .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar .horizontal li.level1:hover .navMenu-title {
+  color: #c00;
+}
+.navbar .horizontal li.level1:last-child {
+  border-right: solid 1px #DADADA;
+}
+.navbar .horizontal li.level1 .tabLeft {
+  padding: 8px 10px 5px;
+}
+.navbar .horizontal li.level1.active {
+  background-color: #fff;
+}
+.navbar .horizontal li.level1.active .navMenu-title {
+  color: #c00;
+}
+.navbar .navMenu-title {
+  color: #404040;
+  font-size: 93%;
+  font-weight: 700;
+  line-height: 14px;
   margin: 0;
-  padding: 0;
   overflow: hidden;
+  padding: 0;
+}
+.navbar .navMenu-subtitle {
   color: #5f5f5f;
   font-size: 77%;
-}
-li.level1 .navMenu-arrow {
-  display: none;
-  background: url("http://localhost:8080/html/images/skin/skin-sprite.png") no-repeat -250px -300px;
-  width: 13px;
-  height: 13px;
-  margin: 4px auto 2px auto;
-  font-size: 77%;
-}
-li.smallify .navMenu-subtitle {
-  display: none;
-}
-li.smallify .navMenu-arrow {
-  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 /* CRUMBTRAIL STYLES 2.0 */
@@ -4332,17 +4465,17 @@ dt {
 }
 
 dd {
-  margin: 0 0 10px 30%;
+  margin: 0 0 5px 30%;
   line-height: 29px;
   min-height: 29px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 #advancedSearch dd {
-  margin: 0 0 10px 30%;
+  margin: 0 0 5px 30%;
 }
 dd .inputCaption,
 dd .buttonCaption {
-  padding-left: 10px !important;
+  padding-left: 5px !important;
 }
 dd .dijitCheckBox,
 dd .dijitRadio {
@@ -4366,7 +4499,7 @@ input[type="text"] {
   border-radius: 2px;
   background-color: #fff;
   border: solid 1px #CACED0;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 input[type="text"].dijitReset {
   background: none;
@@ -4375,22 +4508,22 @@ input[type="text"].dijitReset {
 }
 
 .buttonRow {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
 }
 #advancedSearch + .buttonRow {
-  padding: 0 10px 10px;
+  padding: 0 5px 5px;
 }
 
 .fieldWrapper {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
   position: relative;
 }
 
 .fieldName {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 2.5px;
 }
 
 .fieldValue {
@@ -4406,7 +4539,7 @@ input[type="text"].dijitReset {
 
 .toggleEditorField,
 .langVariablesField {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .glossaryTermPopup {
@@ -4414,7 +4547,7 @@ input[type="text"].dijitReset {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding: 2.5px 5px;
   border: solid 1px #F3762A;
   position: absolute;
 }
@@ -4428,7 +4561,7 @@ input[type="text"].dijitReset {
 }
 
 .WYSIWYGTools {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .WYSIWYGTools .glossaryTermPopup {
   left: 150px;
@@ -4436,17 +4569,17 @@ input[type="text"].dijitReset {
 }
 
 .filter-tasks-frm .who-user label {
-  margin-right: 5px;
+  margin-right: 2.5px;
 }
 
 /* PORTLET STYLES 2.0 */
 .portlet-wrapper {
   background: #fff;
-  margin: 0 10px;
+  margin: 0 5px;
   position: relative;
 }
 .portlet-toolbar {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .portlet-toolbar a {
   text-decoration: none;
@@ -4455,7 +4588,7 @@ input[type="text"].dijitReset {
   margin: 35px 0 0 0;
   overflow-x: auto;
   overflow-y: auto;
-  padding: 0 10px 10px;
+  padding: 0 5px 5px;
 }
 
 .dotcms .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
@@ -4463,7 +4596,7 @@ input[type="text"].dijitReset {
 }
 
 .contentIdentifier {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
 #tablemessage {
@@ -4530,7 +4663,7 @@ input[type="text"].dijitReset {
 }
 
 #addFileAssetDialog .dijitComboBox {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* The main calendar widget.  DIV containing a table. */
@@ -4831,7 +4964,7 @@ html {
 .dijitIcon {
   width: 16px;
   height: 16px;
-  margin-right: 5px;
+  margin-right: 2.5px;
 }
 .dijitIconTask:before {
   content: "";
@@ -4968,7 +5101,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: #45545B;
-  padding: 5px 10px;
+  padding: 2.5px 5px;
 }
 .dotcms .dijitValidationContainer {
   background-color: #D0021B;
@@ -5003,7 +5136,8 @@ body {
 .dotcms .dijitTextBox {
   background-color: #fff;
   border: solid 1px #CACED0;
-  padding: 0 10px;
+  padding: 0 5px;
+  width: 100%;
 }
 .dotcms .dijitTextBox .dijitArrowButton {
   height: 27px;
@@ -5125,7 +5259,7 @@ body {
   border: solid 1px #D0021B;
 }
 .dotcms .dijitTextBoxError .dijitValidationContainer {
-  margin-right: -10px;
+  margin-right: -5px;
 }
 .dotcms .dijitTextBoxError .dijitArrowButton {
   border-left: solid 1px #D0021B;
@@ -5144,7 +5278,7 @@ body {
   background-color: #fff;
   border: solid 1px #CACED0;
   color: #45545B;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .dotcms .dijitTextAreaHover {
   background-color: #fff;
@@ -5167,7 +5301,7 @@ body {
 .dotcms .dijitSpinner {
   background-color: #fff;
   border: solid 1px #CACED0;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 5px;
 }
 .dotcms .dijitSpinner .dijitSpinnerButtonContainer {
   width: 29px;
@@ -5288,7 +5422,7 @@ body {
 .dotcms .dijitToggleButton .dijitButtonNode,
 .dotcms .dijitComboButton .dijitButtonNode {
   border: none;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .dotcms .dijitButton,
 .dotcms .dijitComboBox,
@@ -5299,7 +5433,7 @@ body {
 }
 .dotcms .dijitButton,
 .dotcms .dijitToggleButton {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .dotcms .dijitButton .dijitButtonText,
 .dotcms .dijitToggleButton .dijitButtonText {
@@ -5336,7 +5470,7 @@ body {
 }
 .dotcms .dijitDropDownButton .dijitButtonNode {
   border: none;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .dotcms .dijitDropDownButton .dijitArrowButtonInner {
   width: 29px;
@@ -5615,7 +5749,7 @@ body {
   color: #45545B;
 }
 .dotcms .dijitSelect .dijitButtonContents {
-  padding: 0 10px;
+  padding: 0 5px;
   border: none;
 }
 .dotcms .dijitSelect .dijitArrowButton {
@@ -5710,7 +5844,7 @@ body {
 .dotcms .dijitComboBox {
   background-color: #fff;
   border: solid 1px #CACED0;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 5px;
 }
 .dotcms .dijitComboBox .dijitArrowButton {
   height: 27px;
@@ -6017,7 +6151,7 @@ body {
   border: none;
 }
 .dotcms .dijitAccordionContainer .dijitAccordionContainer-child {
-  padding: 10px;
+  padding: 5px;
 }
 .dotcms .dijitAccordionInnerContainerSelected .dijitAccordionTitleHover {
   background-color: #CACED0;
@@ -6032,7 +6166,7 @@ body {
   border-bottom: none;
   height: 29px;
   line-height: 29px;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .dotcms .dijitAccordionTitle:last-child {
   border-bottom: solid 1px #CACED0;
@@ -6069,7 +6203,7 @@ body {
   transition: border, 0.1s;
   border: solid 1px #CACED0;
   border-top: none;
-  padding: 1px 10px 0;
+  padding: 1px 5px 0;
 }
 .dotcms .dijitTitlePaneTitle {
   -moz-transition: background-color, color, 0.1s;
@@ -6109,7 +6243,7 @@ body {
   color: #45545B;
 }
 .dotcms .dijitTitlePaneTitleFocus {
-  padding: 0 10px 0 0;
+  padding: 0 5px 0 0;
 }
 .dotcms .dijitDialog {
   -moz-border-radius: 2px;
@@ -6151,7 +6285,7 @@ body {
   transform: rotate(-45deg);
 }
 .dotcms .dijitDialogPaneActionBar, .dotcms .dijitDialogPaneContent {
-  padding: 10px;
+  padding: 5px;
 }
 .dotcms .dijitDialogPaneActionBar {
   padding-top: 0;
@@ -6162,7 +6296,7 @@ body {
   font-weight: bold;
   height: 29px;
   line-height: 29px;
-  padding: 0 10px;
+  padding: 0 5px;
   position: relative;
 }
 .dotcms .dijitSplitter {
@@ -6211,15 +6345,15 @@ body {
   background-color: #ECEDEE;
   color: #45545B;
   border-right: solid 1px #CACED0;
-  padding: 0 10px;
+  padding: 0 5px;
   position: relative;
   top: 0;
 }
 .dotcms .dijitTab.dijitClosable {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .dotcms .dijitTabPaneWrapper .dijitContentPane {
-  padding: 10px;
+  padding: 5px;
 }
 .dotcms .dijitTabChecked, .dotcms .dijitTabChecked.dijitTabCheckedHover {
   background-color: #fff;
@@ -6393,7 +6527,7 @@ body {
 }
 .dotcms .dijitTabContainerNested .dijitTabContainerTop-container {
   border: none;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .dotcms .dijitTooltipContainer {
   background: #fff;
@@ -6402,7 +6536,7 @@ body {
   font-size: inherit;
 }
 .dotcms .dijitTooltipFocusNode {
-  padding: 10px;
+  padding: 5px;
 }
 .dotcms .dijitA11ySideArrow {
   display: none;
@@ -6562,11 +6696,11 @@ body {
   color: #fff;
 }
 .dotcms .dijitMenu .dijitMenuItem .dijitMenuItemIconCell {
-  padding-left: 10px;
+  padding-left: 5px;
   width: 16px;
 }
 .dotcms .dijitMenuArrowCell .dijitIcon {
-  margin-right: 10px;
+  margin-right: 5px;
   text-align: right;
   vertical-align: baseline;
 }
