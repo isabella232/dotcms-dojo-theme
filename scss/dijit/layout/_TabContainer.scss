@@ -2,7 +2,7 @@
 
   &Tab {
     height: $tab-height;
-    line-height: $tab-height;
+    line-height: $tab-height + 1;
     background-color: $tab-normal-bgcolor;
     color: $tab-normal-textcolor;
     border-right: $field-normal-border;
