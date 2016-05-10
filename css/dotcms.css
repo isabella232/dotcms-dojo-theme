@@ -4501,9 +4501,6 @@ dd {
   min-height: 29px;
   padding-left: 5px;
 }
-#advancedSearch dd {
-  margin: 0 0 5px 30%;
-}
 dd .inputCaption,
 dd .buttonCaption {
   padding-left: 5px !important;
@@ -4540,9 +4537,6 @@ input[type="text"].dijitReset {
 
 .buttonRow {
   text-align: center;
-}
-#advancedSearch + .buttonRow {
-  padding: 0 5px 5px;
 }
 
 .fieldWrapper {
@@ -4609,7 +4603,6 @@ input[type="text"].dijitReset {
 .portlet-wrapper {
   background: #fff;
   margin: 0 5px;
-  position: relative;
 }
 .portlet-toolbar {
   margin: 5px 0;
