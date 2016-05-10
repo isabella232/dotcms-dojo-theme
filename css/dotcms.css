@@ -3245,7 +3245,6 @@ div#_dotHelpMenu {
 .tagsWrapper {
   width: auto;
   box-sizing: border-box;
-  padding-right: 20px;
   position: relative;
 }
 .tagsWrapper .dijitTextBox {
@@ -4442,35 +4441,66 @@ div#_dotHelpMenu {
 - Extract from: base.css
 - Handle vertical and horizontal forms
 */
-.form-horizontal, .form-inline {
+.hint-text {
+  font-size: 11px;
+  color: #999;
+  display: block;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.multiselect {
+  width: 100%;
+  height: 70px;
+}
+
+.form-horizontal .dijitTextBox {
+  width: 100%;
+}
+.form-horizontal dl {
+  display: flex;
+  margin: 0 0 10px;
+}
+.form-horizontal dl:last-child {
+  margin-bottom: 0;
+}
+.form-horizontal dl dt, .form-horizontal dl dd {
+  margin: 0;
+  padding: 0;
+}
+.form-horizontal dl dt {
+  flex: 2;
+  white-space: nowrap;
+  text-align: right;
+  margin-right: 10px;
+  line-height: 29px;
+}
+.form-horizontal dl dd {
+  flex: 4;
+}
+
+.form-inline {
   display: table;
 }
-.form-horizontal dl, .form-inline dl {
+.form-inline dl {
   display: table-row;
 }
-.form-horizontal dt, .form-horizontal dd, .form-inline dt, .form-inline dd {
+.form-inline dt, .form-inline dd {
   display: table-cell;
   min-height: auto;
   line-height: normal;
   height: auto;
   float: none;
 }
-.form-horizontal label, .form-inline label {
+.form-inline label {
   white-space: nowrap;
 }
-.form-horizontal dt, .form-inline dt {
+.form-inline dt {
   width: 1%;
 }
-.form-horizontal dd, .form-inline dd {
+.form-inline dd {
   padding: 0 0 10px 10px;
   width: 99%;
-}
-
-.form-horizontal {
-  width: 100%;
-}
-.form-horizontal .dijitTextBox {
-  width: 100%;
 }
 
 dl#indexed dd, dl#listed dd, dl#required dd, dl#unique dd, dl#userSearchable dd {
@@ -4593,10 +4623,23 @@ input[type="text"].dijitReset {
 }
 
 .filter-tasks-frm {
-  margin: 56px 20px 0;
+  margin: 56px 20px 0 0;
 }
 .filter-tasks-frm .who-user label {
   margin-right: 2.5px;
+}
+
+.content-search {
+  margin-right: 20px;
+}
+.content-search .button-advanced {
+  display: block;
+  background: #f1f1f1;
+  border-top: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 /* PORTLET STYLES 2.0 */
@@ -5730,7 +5773,7 @@ body {
 }
 .dotcms .dijitCheckBoxChecked {
   border: solid 1px #45545B;
-  background: #fff url("/images/ico-checkbox.svg") 2px 3px no-repeat;
+  background: #fff url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMTFweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxMSA5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4gICAgICAgIDx0aXRsZT5QYXRoIDkzMjwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJXZWxjb21lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4gICAgICAgIDxnIGlkPSJFbGVtZW50cy0vLUNoZWNrLWFuZC1yYWRpby1idXR0b25zLS0tMiIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2Ny4wMDAwMDAsIC0zNDEuMDAwMDAwKSIgc3Ryb2tlPSIjNDU1NDVCIiBzdHJva2Utd2lkdGg9IjIiPiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yNjgsMzQ0LjkwOTUzNCBMMjcxLjA2NjA1NiwzNDggTDI3NywzNDIiIGlkPSJQYXRoLTkzMiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+") 2px 3px no-repeat;
 }
 .dotcms .dijitCheckBoxDisabled {
   border: solid 1px #CACED0;
