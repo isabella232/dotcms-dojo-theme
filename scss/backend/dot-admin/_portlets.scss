@@ -18,7 +18,19 @@
     margin: 35px 0 0 0;
     overflow-x: auto;
     overflow-y: auto;
-    padding: 0 $field-padding $field-padding;
+    padding: 0 0 $field-padding 20px;
+  }
+}
+
+.content-search-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  .pagination-results {
+      align-self: center;
+      flex: 1
   }
 }
 

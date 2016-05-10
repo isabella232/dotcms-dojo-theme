@@ -41,8 +41,8 @@ gulp.task('dotcms', function() {
       config_file: './config.rb',
       css: '/Volumes/Macinstosh\ HD/Users/fmontes/dev/dotcms/core/dotCMS/html/css/',
       sass: 'scss',
-      sourcemap: true,
-      environment: 'production'
+      sourcemap: false,
+      environment: 'development'
     }))
 });
 
