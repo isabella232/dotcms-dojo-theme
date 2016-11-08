@@ -1,7 +1,7 @@
 {
-  "name": "dotcms-patternlib",
+  "name": "dotcms-dojo-theme",
   "version": "1.0.0",
-  "description": "DotCMS UI elements and components for the admin",
+  "description": "DotCMS UI Dojo Widgets for the admin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
