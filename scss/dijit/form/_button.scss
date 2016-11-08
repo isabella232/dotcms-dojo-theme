@@ -3,8 +3,18 @@
 .dijitComboButton {
   .dijitButtonNode {
     border: none;
+  }
+}
+
+.dijitButton,
+.dijitToggleButton {
+  .dijitButtonNode {
     padding-left: $button-padding;
   }
+}
+
+.dijitComboButton .dijitStretch {
+  padding-left: $button-padding;
 }
 
 .dijitButton,
@@ -30,9 +40,7 @@
 
 .dijit {
   &Button {
-    background-color: $button-normal-bgcolor;
-    border: $button-normal-border;
-    color: $button-normal-textcolor;
+    @include btn(1, $button-normal-bgcolor, $button-normal-border, $button-normal-textcolor);
 
     // TODO: we have to remove this in the HTML
     .dijitIcon {
@@ -40,28 +48,20 @@
     }
 
     &Hover {
-      background-color: $button-hover-bgcolor;
-      border: $button-hover-border;
-      color: $button-hover-textcolor;
+      @include btn(2, $button-hover-bgcolor, $button-hover-border, $button-hover-textcolor);
     }
 
     &Focused {
-      background-color: $button-active-bgcolor;
-      border: $button-active-border;
-      color: $button-active-textcolor
+      @include btn(1, $button-active-bgcolor, $button-active-border, $button-active-textcolor);
     }
 
     &Disabled {
-      background-color: $button-disabled-bgcolor;
-      border: $button-disabled-border;
-      color: $button-disabled-textcolor
+      @include btn(none, $button-disabled-bgcolor, $button-disabled-border, $button-disabled-textcolor);
     }
   }
 
   &DropDownButton {
-    background-color: $dropdownbutton-normal-bgcolor;
-    border: $dropdownbutton-normal-border;
-    color: $dropdownbutton-normal-textcolor;
+    @include btn(1, $dropdownbutton-normal-bgcolor, $dropdownbutton-normal-border, $dropdownbutton-normal-textcolor);
 
     .dijitButtonNode {
       border: none;
@@ -86,9 +86,7 @@
     }
 
     &Hover {
-      background-color: $dropdownbutton-hover-bgcolor;
-      border: $dropdownbutton-hover-border;
-      color: $dropdownbutton-hover-textcolor;
+      @include btn(2, $dropdownbutton-hover-bgcolor, $dropdownbutton-hover-border, $dropdownbutton-hover-textcolor);
 
       .dijitArrowButtonInner {
         @if $dropdownbutton-hover-arrow-bgcolor != 'transparent' {
@@ -106,9 +104,7 @@
     }
 
     &Active {
-      background-color: $dropdownbutton-active-bgcolor;
-      border: $dropdownbutton-active-border;
-      color: $dropdownbutton-active-textcolor;
+      @include btn(1, $dropdownbutton-active-bgcolor, $dropdownbutton-active-border, $dropdownbutton-active-textcolor);
 
       .dijitArrowButtonInner {
         @if $dropdownbutton-active-arrow-bgcolor != 'transparent' {
@@ -126,15 +122,11 @@
     }
 
     &Focused {
-      background-color: $dropdownbutton-focused-bgcolor;
-      border: $dropdownbutton-focused-border;
-      color: $dropdownbutton-focused-textcolor;
+      @include btn(1, $dropdownbutton-focused-bgcolor, $dropdownbutton-focused-border, $dropdownbutton-focused-textcolor);
     }
 
     &Disabled {
-      background-color: $dropdownbutton-disabled-bgcolor;
-      border: $dropdownbutton-disabled-border;
-      color: $dropdownbutton-disabled-textcolor;
+      @include btn(none, $dropdownbutton-disabled-bgcolor, $dropdownbutton-disabled-border, $dropdownbutton-disabled-textcolor);
 
       .dijitArrowButtonInner {
         @if $dropdownbutton-disabled-arrow-bgcolor != 'transparent' {
@@ -153,9 +145,7 @@
   }
 
   &ComboButton {
-    background-color: $combobutton-normal-bgcolor;
-    border: $combobutton-normal-border;
-    color: $combobutton-normal-textcolor;
+    @include btn(1, $combobutton-normal-bgcolor, $combobutton-normal-border, $combobutton-normal-textcolor);
 
     .dijitArrowButtonInner {
       border-left: $combobutton-normal-arrow-border;
@@ -176,9 +166,7 @@
     }
 
     &Hover {
-      background-color: $combobutton-hover-bgcolor;
-      border: $combobutton-hover-border;
-      color: $combobutton-hover-textcolor;
+      @include btn(2, $combobutton-hover-bgcolor, $combobutton-hover-border, $combobutton-hover-textcolor);
 
       .dijitArrowButtonInner {
         border-left: $combobutton-hover-arrow-border;
@@ -198,9 +186,7 @@
     }
 
     &Active {
-      background-color: $combobutton-active-bgcolor;
-      border: $combobutton-active-border;
-      color: $combobutton-active-textcolor;
+      @include btn(1, $combobutton-active-bgcolor, $combobutton-active-border, $combobutton-active-textcolor);
 
       .dijitArrowButtonInner {
         border-left: $combobutton-active-arrow-border;
@@ -221,9 +207,7 @@
 
     &Focused,
     &HoverFocused {
-      background-color: $combobutton-focused-bgcolor;
-      border: $combobutton-focused-border;
-      color: $combobutton-focused-textcolor;
+      @include btn(1, $combobutton-focused-bgcolor, $combobutton-focused-border, $combobutton-focused-textcolor);
 
       .dijitArrowButtonInner {
         border-left: $combobutton-focused-arrow-border;
@@ -243,9 +227,7 @@
     }
 
     &Disabled {
-      background-color: $combobutton-disabled-bgcolor;
-      border: $combobutton-disabled-border;
-      color: $combobutton-disabled-textcolor;
+      @include btn(none, $combobutton-disabled-bgcolor, $combobutton-disabled-border, $combobutton-disabled-textcolor);
 
       .dijitArrowButtonInner {
         border-left: $combobutton-disabled-arrow-border;
@@ -266,25 +248,20 @@
   }
 
   &ToggleButton {
-    background-color: $togglebutton-normal-bgcolor;
-    border: $togglebutton-normal-border;
-    color: $togglebutton-normal-textcolor;
+    @include btn(1, $togglebutton-normal-bgcolor, $togglebutton-normal-border, $togglebutton-normal-textcolor);
 
     .dijitIcon {
       visibility: hidden;
     }
 
-    &Hover {
-      background-color: $togglebutton-hover-bgcolor;
-      border: $togglebutton-hover-border;
-      color: $togglebutton-hover-textcolor;
-    }
-
     &Focused,
     &Checked {
-      background-color: $togglebutton-active-bgcolor;
-      border: $togglebutton-active-border;
-      color: $togglebutton-active-textcolor
+      @include btn(1, $togglebutton-active-bgcolor, $togglebutton-active-border, $togglebutton-active-textcolor);
+    }
+
+    &Hover,
+    &HoverFocused {
+      @include btn(2, $togglebutton-hover-bgcolor, $togglebutton-hover-border, $togglebutton-hover-textcolor);
     }
 
     &Checked {
@@ -294,9 +271,7 @@
     }
 
     &Disabled {
-      background-color: $togglebutton-disabled-bgcolor;
-      border: $togglebutton-disabled-border;
-      color: $togglebutton-disabled-textcolor;
+      @include btn(none, $togglebutton-disabled-bgcolor, $togglebutton-disabled-border, $togglebutton-disabled-textcolor);
     }
   }
 }

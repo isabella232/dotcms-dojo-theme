@@ -1,3 +1,7 @@
+// This set of variables helps to maintain consistency in specials DotCMS backend styles
+// We are taking just advantage of the dijit theme variables
+@import "../dijit/variables";
+
 @import "variables";
 @import "reset-fonts-grids";
 @import "base";
