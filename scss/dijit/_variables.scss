@@ -509,16 +509,16 @@ $inlineeditbox-hover-bgcolor: 			$textbox-focused-bgcolor !default;
 
 // Tabs
 $tab-height: 		$field-height !default;
-$tab-label-height:  37px !default;
+$tab-label-height:  28px !default;
 $tab-padding: 		$field-padding * 2 !default;
 
 $tab-border-style: solid !default;
-$tab-border-width: 5px 1px 0 0 !default;
-$tab-border-color: $blue $gray-ligthest transparent transparent !default;
+$tab-border-width: 0 1px 0 0 !default;
+$tab-border-color: $gray-ligthest !default;
 
-$tab-checked-border-style: solid !default;
-$tab-checked-border-width: 5px 1px 0 0 !default;
-$tab-checked-border-color: $blue $gray-ligthest transparent transparent !default;
+$tab-checked-border-style: $tab-border-style !default;
+$tab-checked-border-width: $tab-border-width !default;
+$tab-checked-border-color: $tab-border-color !default;
 
 $tab-container-border-style: solid !default;
 $tab-container-border-width: 1px !default;
