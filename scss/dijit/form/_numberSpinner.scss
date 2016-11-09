@@ -4,6 +4,7 @@
   padding: 0 0 0 $field-padding;
 
   .dijitSpinnerButtonContainer {
+    border-left: $spinner-normal-border;
     width: $field-height;
 
     .dijitDownArrowButton {
@@ -32,6 +33,8 @@
     border: $spinner-hover-border;
 
     .dijitSpinnerButtonContainer {
+      border-left: $spinner-hover-border;
+
       .dijitDownArrowButton {
         border-top: $spinner-hover-border !important; // Overwrite dijit important
       }
@@ -61,6 +64,8 @@
     border: $spinner-focused-border;
 
     .dijitSpinnerButtonContainer {
+      border-left: $spinner-focused-border;
+
       .dijitDownArrowButton {
         border-top: $spinner-focused-border !important; // Overwrite dijit important
       }
@@ -90,6 +95,8 @@
     border: $spinner-disabled-border;
 
     .dijitSpinnerButtonContainer {
+      border-left: $spinner-disabled-border;
+
       .dijitDownArrowButton {
         border-top: $spinner-disabled-border !important; // Overwrite dijit important
       }
