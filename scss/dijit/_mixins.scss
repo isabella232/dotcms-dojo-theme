@@ -66,12 +66,12 @@
   }
 }
 
-@mixin btn ($shadow_level, $bg: $button-normal-bgcolor, $border: $button-normal-border, $color: $button-normal-textcolor) {
+@mixin btn ($shadow: none, $bg: $button-normal-bgcolor, $border: $button-normal-border, $color: $button-normal-textcolor) {
   background-color: $bg;
   border: $border;
   color: $color;
 
-  @if ($shadow_level) {
-    @include box_shadow($shadow_level);
+  @if ($shadow != "none") {
+    box-shadow: $shadow;
   }
 }

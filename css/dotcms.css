@@ -5561,7 +5561,7 @@ table.dijitComboButton {
   background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
-  box-shadow: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .dijitDropDownButton {
   background-color: #fff;
@@ -5616,7 +5616,6 @@ table.dijitComboButton {
   background-color: #fff;
   border: solid 1px transparent;
   color: #161616;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .dijitDropDownButtonActive .dijitArrowButtonInner {
   background-color: transparent;
@@ -5644,7 +5643,7 @@ table.dijitComboButton {
   background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
-  box-shadow: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .dijitDropDownButtonDisabled .dijitArrowButtonInner {
   background-color: transparent;
@@ -5759,7 +5758,7 @@ table.dijitComboButton {
   background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
-  box-shadow: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .dijitComboButtonDisabled .dijitArrowButtonInner {
   border-left: solid 1px transparent;
@@ -5787,26 +5786,26 @@ table.dijitComboButton {
 .dijitToggleButton .dijitIcon {
   visibility: hidden;
 }
+.dijitToggleButtonChecked .dijitIcon {
+  visibility: visible;
+}
 .dijitToggleButtonFocused, .dijitToggleButtonChecked {
   background-color: #fff;
   border: solid 1px transparent;
   color: #161616;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.dijitToggleButtonHover, .dijitToggleButtonHoverFocused {
+.dijitToggleButtonHover, .dijitToggleButtonHoverFocused, .dijitToggleButtonCheckedHover {
   background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #161616;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.dijitToggleButtonChecked .dijitIcon {
-  visibility: visible;
-}
 .dijitToggleButtonDisabled {
   background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
-  box-shadow: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .dijitCheckBox {
