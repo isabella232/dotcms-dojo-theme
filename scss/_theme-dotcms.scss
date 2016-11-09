@@ -90,7 +90,7 @@ $button-active-bgcolor: $field-active-bgcolor;
 $button-active-textcolor: $field-active-textcolor;
 $button-active-border: $button-border;
 
-$button-disabled-bgcolor: $field-disabled-bgcolor;
+$button-disabled-bgcolor: $gray-ligthest;
 $button-disabled-textcolor: $field-disabled-textcolor;
 $button-disabled-border: $button-border;
 
@@ -507,13 +507,25 @@ $inlineeditbox-hover-border-color: $textbox-focused-border;
 $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
 
 // Tabs
-$tab-border: solid $field-border-size $gray-ligther;
-$tab-height: $field-height;
+$tab-height: 42px;
+$tab-label-height: 37px;
 $tab-padding: $field-padding * 2;
 
-$tab-normal-bgcolor: $field-normal-bgcolor;
+$tab-border-style: solid;
+$tab-border-width: 5px 1px 0 0;
+$tab-border-color: $gray-ligthest $gray-ligthest transparent transparent;
+
+$tab-checked-border-style: solid;
+$tab-checked-border-width: 5px 1px 0 0;
+$tab-checked-border-color: $blue $gray-ligthest transparent transparent;
+
+$tab-container-border-style: solid;
+$tab-container-border-width: 0 1px 1px;
+$tab-container-border-color: $gray-ligthest;
+
+$tab-normal-bgcolor: $white;
 $tab-normal-textcolor: $field-normal-textcolor;
-$tab-hover-bgcolor: $gray-ligther;
+$tab-hover-bgcolor: $white;
 $tab-hover-textcolor: $field-hover-textcolor;
 $tab-disabled-bgcolor: $field-disabled-bgcolor;
 $tab-disabled-textcolor: $field-disabled-textcolor;

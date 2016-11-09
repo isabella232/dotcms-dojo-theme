@@ -5558,7 +5558,7 @@ table.dijitComboButton {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .dijitButtonDisabled {
-  background-color: #fff;
+  background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
   box-shadow: none;
@@ -5641,7 +5641,7 @@ table.dijitComboButton {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .dijitDropDownButtonDisabled {
-  background-color: #fff;
+  background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
   box-shadow: none;
@@ -5756,7 +5756,7 @@ table.dijitComboButton {
   width: 0;
 }
 .dijitComboButtonDisabled {
-  background-color: #fff;
+  background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
   box-shadow: none;
@@ -5803,7 +5803,7 @@ table.dijitComboButton {
   visibility: visible;
 }
 .dijitToggleButtonDisabled {
-  background-color: #fff;
+  background-color: #ECEDEE;
   border: solid 1px transparent;
   color: #C5C5C5;
   box-shadow: none;
@@ -6462,13 +6462,19 @@ table.dijitComboButton {
 }
 
 .dijitTab {
-  height: 36px;
-  line-height: 37px;
-  background-color: #ECEDEE;
+  height: 42px;
+  background-color: #fff;
   color: #161616;
-  border-right: solid 1px #C5C5C5;
   padding: 0 18px;
   position: relative;
+  border-width: 5px 1px 0 0;
+  border-style: solid;
+  border-color: #ECEDEE #ECEDEE transparent transparent;
+}
+.dijitTab .tabLabel {
+  line-height: 37px;
+}
+.dijitTabContainerTop-tabs .dijitTab {
   top: 0;
 }
 .dijitTab.dijitClosable {
@@ -6479,11 +6485,10 @@ table.dijitComboButton {
 }
 .dijitTabChecked, .dijitTabChecked.dijitTabCheckedHover {
   background-color: #fff;
-  height: 37px;
-  line-height: 37px;
-}
-.dijitTab:last-child {
-  border-right: solid 1px #C5C5C5;
+  border-width: 5px 1px 0 0;
+  border-style: solid;
+  border-color: #1DAED6 #ECEDEE transparent transparent;
+  height: 43px;
 }
 .dijitTabCloseIcon {
   width: 13px;
@@ -6518,7 +6523,7 @@ table.dijitComboButton {
   transform: rotate(-45deg);
 }
 .dijitTabHover {
-  background-color: #C5C5C5;
+  background-color: #fff;
   color: #161616;
 }
 .dijitTabDisabled {
@@ -6526,8 +6531,8 @@ table.dijitComboButton {
   color: #C5C5C5;
 }
 .dijitTab.tabStripButton {
-  height: 36px !important;
-  width: 36px;
+  height: 42px !important;
+  width: 42px;
   background-color: #fff;
 }
 .dijitTab.tabStripButton .dijitTabStripSlideLeftIcon:before {
@@ -6570,7 +6575,7 @@ table.dijitComboButton {
   width: 0;
 }
 .dijitTab.tabStripButtonHover {
-  background-color: #C5C5C5;
+  background-color: #fff;
 }
 .dijitTab.tabStripButtonHover .dijitTabStripSlideLeftIcon:before {
   border-right-color: #161616;
@@ -6607,7 +6612,9 @@ table.dijitComboButton {
   border-top-color: #C5C5C5;
 }
 .dijitTabContainerBottom-container, .dijitTabContainerTop-container, .dijitTabContainerLeft-container, .dijitTabContainerRight-container {
-  border: solid 1px #C5C5C5;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #ECEDEE;
 }
 .dijitTabContainerTop-container {
   border-top: none;
@@ -6616,15 +6623,17 @@ table.dijitComboButton {
   border-bottom: none;
 }
 .dijitTabContainerTop-tabs, .dijitTabContainerBottom-tabs {
-  height: 38px;
+  height: 44px;
   border: none;
 }
 .dijitTabListContainer-top, .dijitTabListContainer-bottom {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  border: solid 1px #C5C5C5;
-  height: 36px !important;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #ECEDEE;
+  height: 42px !important;
   overflow: visible;
 }
 .dijitTabListContainer-bottom .dijitTabListWrapper {
@@ -6632,20 +6641,15 @@ table.dijitComboButton {
 }
 .dijitTabListContainer-bottom .dijitTabChecked {
   top: -1px;
-  line-height: 38px;
-  height: 38px;
+  height: 44px;
 }
 .dijitTabContainerNested .dijitTab {
   background: none;
   border: none;
 }
 .dijitTabContainerNested .dijitTab.dijitTabChecked {
-  height: 38px;
-  line-height: 38px;
+  height: 44px;
   border-bottom: solid 1px #5B5B5B;
-}
-.dijitTabContainerNested .dijitTabContainerTop-tabs {
-  border-bottom: solid 1px #C5C5C5;
 }
 .dijitTabContainerNested .dijitTabContainerTop-container {
   border: none;
