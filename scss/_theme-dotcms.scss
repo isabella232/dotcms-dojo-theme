@@ -250,8 +250,8 @@ $textarea-hover-bgcolor: $white;
 $textarea-hover-border: $field-hover-border;
 $textarea-hover-textcolor: $field-hover-textcolor;
 
-$textarea-focused-border: solid $field-border-size $blue;
 $textarea-focused-bgcolor: $white;
+$textarea-focused-border: $field-focused-border;
 $textarea-focused-textcolor: $field-focused-textcolor;
 
 $textarea-disabled-border: $field-disabled-border;
