@@ -438,6 +438,8 @@ $slider-remaining-disabled-border-color: 	$gray-ligthest !default;
 $slider-remaining-disabled-color: 			$white !default;
 
 // Menus
+$menu-shadow: none !default;
+$menu-radius: $border-radius !default;
 $menu-bgcolor: $white !default;
 $menu-border: solid $field-border-size $gray-ligther !default;
 $menu-shadow: none !default;
@@ -560,6 +562,7 @@ $dialog-padding: 						20px !default;
 $dialog-normal-bgcolor: 				$white !default;
 $dialog-normal-border: 					solid 1px $gray-ligth !default;
 $dialog-normal-title-bgcolor: 			$gray-ligth !default;
+$dialog-normal-title-height: 			$field-height !default;
 $dialog-normal-title-textcolor: 		$gray-dark !default;
 $dialog-closeicon-bgcolor: 				$gray-dark !default;
 $dialog-closeicon-color: 				$white !default;

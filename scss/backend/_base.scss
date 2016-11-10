@@ -33,9 +33,6 @@
 
 body {
   outline: none !important;
-  font: 13px/1.22 Verdana, Geneva, Arial, sans-serif;
-  *font-size: small;
-  *font: x-small;
   color: #555;
   line-height: 138.5%;
   background-color: #f3f3f3;
@@ -116,11 +113,6 @@ ul {
   li {
     list-style: none outside;
   }
-}
-
-table {
-  font-size: inherit;
-  font-family: Verdana, Geneva, Arial, sans-serif;
 }
 
 .inputCaption {

@@ -580,11 +580,14 @@ $accordion-title-hover-bgcolor: $gray-ligther;
 $accordion-title-selected-bgcolor: $gray-ligther;
 
 // Dialog Box
-$dialog-padding: 20px;
+$menu-shadow: $md-shadow-2;
+$menu-radius: 0px;
+$dialog-padding: $basic-padding ($basic-padding * 2) ($basic-padding * 2);
 $dialog-normal-bgcolor: $white;
-$dialog-normal-border: solid 1px $gray;
-$dialog-normal-title-bgcolor: $gray;
+$dialog-normal-border: none;
+$dialog-normal-title-bgcolor: transparent;
 $dialog-normal-title-textcolor: $gray-dark;
+$dialog-normal-title-height: 50px;
 $dialog-closeicon-bgcolor: $gray-dark;
 $dialog-closeicon-color: $white;
 
