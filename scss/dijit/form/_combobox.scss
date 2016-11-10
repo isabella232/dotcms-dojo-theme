@@ -42,7 +42,6 @@
   &Focused {
     border: $combobox-focused-border;
     background-color: $combobox-focused-bgcolor;
-    @include box-shadow(0px 0px 8px 0px rgba($blue, .6));
 
     .dijitArrowButton {
       background-color: $white;
@@ -61,10 +60,6 @@
         @include create-arrow($combobox-arrow-size, $combobox-focusedarrow-arrow-color);
       }
     }
-  }
-
-  &OpenedFocused {
-    @include box-shadow(none);
   }
 
   &Disabled {

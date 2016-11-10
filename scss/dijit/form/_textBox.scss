@@ -50,7 +50,6 @@
   &Focused {
     border: $textbox-focused-border;
     background-color: $textbox-focused-bgcolor;
-    @include box-shadow(0px 0px 8px 0px rgba($blue, .6));
 
     .dijitInputInner {
       color: $textbox-focused-textcolor;
@@ -73,10 +72,6 @@
         @include create-arrow($textbox-arrow-size, $textbox-focusedarrow-arrow-color);
       }
     }
-  }
-
-  &OpenedFocused {
-    @include box-shadow(none);
   }
 
   &Disabled {
