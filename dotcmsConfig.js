@@ -1,0 +1,1 @@
+module.exports = '/Users/fmontes/dev/dotcms/';

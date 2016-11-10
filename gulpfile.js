@@ -2,8 +2,7 @@ var gulp = require('gulp');
 var compass = require('gulp-compass');
 var connect = require('gulp-connect');
 var cors = require('cors');
-
-var dotcmsBaseUrl = '/Users/fmontes/dev/dotcms/';
+var dotcmsBaseUrl = require('./dotcmsConfig');
 
 var dotcms = {
     core : {
