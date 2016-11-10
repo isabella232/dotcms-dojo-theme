@@ -462,13 +462,14 @@ $slider-remaining-disabled-color: $white;
 
 // Menus
 $menu-bgcolor: $white;
-$menu-border: solid $field-border-size $gray-ligther;
+$menu-border: none;
+$menu-shadow: $md-shadow-1;
 $menu-item-bgcolor: $menu-bgcolor;
 $menu-item-separator: none;
 $menu-item-hover-bgcolor: $gray-ligthest;
 $menu-item-hover-textcolor: $gray-dark;
-$menu-item-selected-bgcolor: $gray;
-$menu-item-selected-textcolor: $white;
+$menu-item-selected-bgcolor: $menu-item-hover-bgcolor;
+$menu-item-selected-textcolor: $menu-item-hover-textcolor;
 
 //TimePicker menu
 $timepicker-bgcolor: $white;
