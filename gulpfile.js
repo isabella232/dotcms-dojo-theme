@@ -32,7 +32,8 @@ gulp.task('compass', function () {
             config_file: './config.rb',
             css: 'css',
             sass: 'scss',
-            sourcemap: true
+            sourcemap: true,
+            style: 'expanded'
         }))
         .on('error', function (err) {})
         .pipe(connect.reload());
@@ -55,24 +56,17 @@ gulp.task('deploy', function () {
             css: 'css',
             sass: 'scss',
             sourcemap: false,
-            environment: 'production'
+            style: 'compressed'
         }))
         .pipe(gulp.dest(dotcms.core.base + dotcms.core.css));
 });
 
 gulp.task('watch-dotcms', function () {
     gulp.watch('scss/**/*.scss', function () {
-        gulp.src('scss/dotcms.scss')
-            .pipe(compass({
-                config_file: './config.rb',
-                css: 'css',
-                sass: 'scss',
-                sourcemap: false,
-                environment: 'development'
-            }))
-            .on('error', function (err) {})
-            .pipe(connect.reload())
-            .pipe(gulp.dest(dotcms.tomcat.base + dotcms.tomcat.css));
+        gulp.start('compass', function () {
+            gulp.src('css/dotcms.css')
+                .pipe(gulp.dest(dotcms.tomcat.base + dotcms.tomcat.css));
+        });
     });
 });
 
