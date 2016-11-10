@@ -1,7 +1,10 @@
 .dijitTitlePane {
-  @include border-radius($border-radius);
+  border-radius: $panel-border-radius;
+  box-shadow: $panel-normal-shadow;
 
   &Hover {
+    box-shadow: $panel-hover-shadow;
+
     .dijitTitlePaneContentOuter {
       border: $panel-hover-border;
       border-top: none;

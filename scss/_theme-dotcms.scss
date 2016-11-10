@@ -506,19 +506,21 @@ $calendar-dropdown-arrow-border: solid 1px $white;
 $calendar-dropdown-arrow-size: 5px;
 
 // Content Panel
-$panel-border-size: $field-border-size;
+$panel-border-radius: 1px;
 $panel-title-height: $field-height;
 
-$panel-normal-border: solid 1px $gray-ligther;
-$panel-normal-title-bgcolor: $gray-ligthest;
-$panel-normal-title-textcolor: $gray-dark;
+$panel-normal-border: none;
+$panel-normal-shadow: $md-shadow-1;
+$panel-normal-title-bgcolor: transparent;
+$panel-normal-title-textcolor: $text-color;
 
-$panel-hover-border: solid 1px $gray-dark;
-$panel-hover-title-bgcolor: $gray-ligther;
-$panel-hover-title-textcolor: $gray-dark;
+$panel-hover-border: none;
+$panel-hover-shadow: $md-shadow-2;
+$panel-hover-title-bgcolor: transparent;
+$panel-hover-title-textcolor: $text-color;
 
-$panel-open-title-bgcolor: $gray-ligther;
-$panel-open-title-textcolor: $gray-dark;
+$panel-open-title-bgcolor: transparent;
+$panel-open-title-textcolor: $text-color;
 
 // Progress Bar
 $progressbar-border-size: $field-border-size;

@@ -484,14 +484,16 @@ $calendar-dropdown-arrow-border: 					solid 1px $white !default;
 $calendar-dropdown-arrow-size: 						5px !default;
 
 // Content Panel
-$panel-border-size: 					$field-border-size !default;
+$panel-border-radius: 					$border-radius !default;
 $panel-title-height: 					$field-height !default;
 
 $panel-normal-border: 					solid 1px $gray-ligther !default;
+$panel-normal-shadow:                   none !default;
 $panel-normal-title-bgcolor: 			$gray-ligthest !default;
 $panel-normal-title-textcolor: 			$gray-dark !default;
 
 $panel-hover-border: 					solid 1px $gray-dark !default;
+$panel-hover-shadow:                    none !default;
 $panel-hover-title-bgcolor: 			$gray-ligther !default;
 $panel-hover-title-textcolor: 			$gray-dark !default;
 
