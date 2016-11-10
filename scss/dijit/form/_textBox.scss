@@ -8,7 +8,7 @@
   //}
 
   .dijitArrowButton {
-    height: $field-height - 2;
+    height: $field-height - ($field-border-size * 2);
     width: $field-height;
     background-color: $textbox-normal-arrow-bgcolor;
     border-left: $textbox-normal-arrow-border;

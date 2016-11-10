@@ -7,11 +7,11 @@
 
   &Checked {
     border: $check-checked-border;
-    background: $check-checked-bgcolor url($check-checked-icon) 2px 3px no-repeat;
+    background: $check-checked-bgcolor url($check-checked-icon) center center no-repeat;
   }
 
   &Disabled {
     border: $check-disabled-border;
-    background: $check-disabled-bgcolor url($check-disabled-icon) 2px 3px no-repeat;
+    background: $check-disabled-bgcolor url($check-disabled-icon) center center no-repeat;
   }
 }

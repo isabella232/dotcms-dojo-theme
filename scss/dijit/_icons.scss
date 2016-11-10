@@ -5,6 +5,7 @@
     width: $icon-size;
     height: $icon-size;
     margin-right: $field-padding / 2;
+    line-height: $icon-size;
 
     &Task {
       &:before {

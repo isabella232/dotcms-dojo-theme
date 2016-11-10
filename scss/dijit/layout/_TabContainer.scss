@@ -2,13 +2,22 @@
 
   &Tab {
     height: $tab-height;
-    line-height: $tab-height + 1;
     background-color: $tab-normal-bgcolor;
     color: $tab-normal-textcolor;
-    border-right: $field-normal-border;
     padding: 0 $tab-padding;
     position: relative;
-    top: 0;
+
+    border-width: $tab-border-width;
+    border-style: $tab-border-style;
+    border-color: $tab-border-color;
+
+    .tabLabel {
+      line-height: $tab-label-height;
+    }
+
+    .dijitTabContainerTop-tabs & {
+      top: 0;
+    }
 
     &.dijitClosable {
       padding-right: $tab-padding * 2;
@@ -23,12 +32,10 @@
     &Checked,
     &Checked.dijitTabCheckedHover {
       background-color: $tab-active-bgcolor;
+      border-width: $tab-checked-border-width;
+      border-style: $tab-checked-border-style;
+      border-color: $tab-checked-border-color;
       height: $tab-height + $field-border-size;
-      line-height: $tab-height + $field-border-size;
-    }
-
-    &:last-child {
-      border-right: $field-normal-border;
     }
 
     &CloseIcon {
@@ -170,7 +177,9 @@
     &ContainerTop-container,
     &ContainerLeft-container,
     &ContainerRight-container {
-      border: $tab-border;
+      border-width: $tab-container-border-width;
+      border-style: $tab-container-border-style;
+      border-color: $tab-container-border-color;
     }
 
     &ContainerTop-container {
@@ -190,7 +199,9 @@
     &ListContainer-top,
     &ListContainer-bottom {
       @include box-sizing("content-box");
-      border: $field-normal-border;
+      border-width: $tab-container-border-width;
+      border-style: $tab-container-border-style;
+      border-color: $tab-container-border-color;
       height: $tab-height !important;
       overflow: visible;
     }
@@ -202,7 +213,6 @@
 
       .dijitTabChecked {
         top: -1px;
-        line-height: $tab-height + ($field-border-size * 2);
         height: $tab-height + ($field-border-size * 2);
       }
     }
@@ -214,13 +224,12 @@
 
         &.dijitTabChecked {
           height: $tab-height + ($field-border-size * 2);
-          line-height: $tab-height + ($field-border-size * 2);
           border-bottom: $tab-nested-active-border;
         }
       }
 
       .dijitTabContainerTop-tabs {
-        border-bottom: $tab-border;
+        //border-bottom: $tab-border;
       }
 
       .dijitTabContainerTop-container {

@@ -28,6 +28,10 @@
     background-color: $radio-disabled-bgcolor;
     border: $radio-disabled-border;
     position: relative;
+
+    &:before {
+      background-color: $radio-checked-disabled-color;
+    }
   }
 }
 

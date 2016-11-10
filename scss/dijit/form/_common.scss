@@ -97,7 +97,7 @@ table.dijitComboButton {
   background-color: $error;
   height: $field-height - (2 * $field-border-size);
   position: relative;
-  width: 10px;
+  width: 11px;
 
   // TODO: make available option to add image icon
   &:before {
@@ -105,9 +105,9 @@ table.dijitComboButton {
     background-color: $white;
     content: "";
     height: 13px;
-    left: 50%;
+    left: 5px;
     position: absolute;
-    top: 5px;
+    top: 8px;
     width: 2px;
   }
 
@@ -117,7 +117,7 @@ table.dijitComboButton {
     height: 2px;
     left: 50%;
     position: absolute;
-    top: 19px;
+    top: 23px;
     width: 2px;
   }
 

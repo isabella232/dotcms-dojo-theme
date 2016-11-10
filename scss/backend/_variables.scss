@@ -1,5 +1,3 @@
-@import "../dijit/theme-dotcms";
-
 $dotcms-host: "";
 @if compass-env() == 'development' {
   $dotcms-host: "http://localhost:8080";
