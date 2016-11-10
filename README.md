@@ -6,6 +6,8 @@ Custom Dojo Theme built with SCSS.
 $ npm install
 ```
 
+Then rename the file ```dotcmsConfig-example.js``` to ```dotcmsConfig.js``` and edit the path to match your DotCMS local path.
+
 ### DotCMS project structure
 This project assume you have your DotCMS folder structure as the following:
 
