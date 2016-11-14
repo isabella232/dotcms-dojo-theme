@@ -56,10 +56,6 @@
   background-color: $timepicker-bgcolor;
   margin-top: 1px;
 
-  &Popup {
-    border: $timepicker-border !important;
-  }
-
   &Item {
     line-height: $field-height;
     height: $field-height;

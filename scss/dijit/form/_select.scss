@@ -40,7 +40,7 @@
     }
   }
 
-  &Active {
+  &Active, &Opened {
     background-color: $select-active-bgcolor;
     border: $select-active-border;
     color: $select-active-textcolor;
@@ -54,20 +54,6 @@
 
       &:before {
         @include create-arrow($select-arrow-size, $select-active-arrow-color);
-      }
-    }
-  }
-
-  &Opened {
-    background-color: $white;
-    border: solid 1px $blue;
-    color: $blue;
-
-    .dijitArrowButton {
-      border-left: solid 1px $blue;
-
-      &:before {
-        border-top-color: $blue;
       }
     }
   }

@@ -473,13 +473,13 @@ $menu-item-selected-textcolor: $menu-item-hover-textcolor;
 
 //TimePicker menu
 $timepicker-bgcolor: $white;
-$timepicker-marker-bgcolor: $gray-ligther;
+$timepicker-marker-bgcolor: $gray-ligthest;
 $timepicker-border: solid $field-border-size $gray-ligther;
 $timepicker-item-bgcolor: $menu-bgcolor;
 $timepicker-item-separator: none;
 $timepicker-item-hover-bgcolor: $gray-ligthest;
 $timepicker-item-hover-textcolor: $gray-dark;
-$timepicker-item-selected-bgcolor: $orange;
+$timepicker-item-selected-bgcolor: $brand-secondary;
 $timepicker-item-selected-textcolor: $white;
 
 // Calendar
@@ -597,3 +597,7 @@ $dialog-closeicon-color: $white;
 $tooltip-normal-bgcolor: $white;
 $tooltip-normal-border: solid 1px $gray;
 $tooltop-normal-padding: $basic-padding;
+
+// Popup
+$popup-shadow: $md-shadow-1;
+$popup-border: none;

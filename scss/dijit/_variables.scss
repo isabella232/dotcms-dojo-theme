@@ -573,3 +573,7 @@ $dialog-closeicon-color: 				$white !default;
 $tooltip-normal-bgcolor: 				$white !default;
 $tooltip-normal-border: 				solid 1px $gray-ligth !default;
 $tooltop-normal-padding: 				$basic-padding !default;
+
+// Popup
+$popup-shadow: none !default;
+$popup-border: solid $field-border-size $gray-ligther !default;

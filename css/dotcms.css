@@ -5900,16 +5900,16 @@ table.dijitComboButton {
   height: 0;
   width: 0;
 }
-.dijitSelectActive {
+.dijitSelectActive, .dijitSelectOpened {
   background-color: #fff;
   border: solid 1px #CB3927;
   color: #161616;
 }
-.dijitSelectActive .dijitArrowButton {
+.dijitSelectActive .dijitArrowButton, .dijitSelectOpened .dijitArrowButton {
   border-left: solid 1px #CB3927;
   background-color: #fff;
 }
-.dijitSelectActive .dijitArrowButton:before {
+.dijitSelectActive .dijitArrowButton:before, .dijitSelectOpened .dijitArrowButton:before {
   left: 50%;
   margin-left: -5px;
   margin-top: -2.5px;
@@ -5921,17 +5921,6 @@ table.dijitComboButton {
   content: "";
   height: 0;
   width: 0;
-}
-.dijitSelectOpened {
-  background-color: #fff;
-  border: solid 1px #1DAED6;
-  color: #1DAED6;
-}
-.dijitSelectOpened .dijitArrowButton {
-  border-left: solid 1px #1DAED6;
-}
-.dijitSelectOpened .dijitArrowButton:before {
-  border-top-color: #1DAED6;
 }
 .dijitSelectDisabled {
   background-color: #fff;
@@ -6652,6 +6641,14 @@ table.dijitComboButton {
   padding: 9px;
 }
 
+.dijitPopup {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.dijitTimePickerPopup {
+  border: none;
+}
+
 html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
@@ -6860,9 +6857,6 @@ html {
   background-color: #fff;
   margin-top: 1px;
 }
-.dijitTimePickerPopup {
-  border: solid 1px #C5C5C5 !important;
-}
 .dijitTimePickerItem {
   line-height: 36px;
   height: 36px;
@@ -6874,7 +6868,7 @@ html {
   color: #5B5B5B;
 }
 .dijitTimePickerItemSelected .dijitTimePickerItemInner {
-  background-color: #F3762A;
+  background-color: #CB3927;
   color: #fff;
 }
 .dijitTimePickerItemInner {
@@ -6882,7 +6876,7 @@ html {
 }
 .dijitTimePickerMarker {
   font-weight: bold;
-  background-color: #C5C5C5;
+  background-color: #ECEDEE;
 }
 
 .dijitProgressBar {
