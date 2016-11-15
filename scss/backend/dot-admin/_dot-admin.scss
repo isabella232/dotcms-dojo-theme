@@ -263,39 +263,39 @@
 }
 
 /* TABLE STYLES 2.0 */
+$table-border: 1px solid $gray-ligthest;
 
 .listingTable {
-  width: 100%;
-  border: 1px solid #d0d0d0;
+  border-bottom: $table-border;
   border-collapse: collapse;
   margin: 0 auto;
-  font-size: 11px;
+  width: 100%;
+
+  tr.selected {
+    background-color: #E0E9F6;
+  }
+
+  th, td {
+    padding: $basic-padding;
+    border-bottom: $table-border;
+  }
+
+  th {
+    font-weight: bold;
+    background: #ececec;
+  }
+
+  td {
+    a {
+      text-decoration: none;
+    }
+
+    table tr {
+      border: none;
+    }
+  }
 }
-.listingTable tr {}
-.listingTable tr.selected {
-  background-color: #E0E9F6;
-}
-.listingTable th,
-.listingTable td {
-  padding: 5px 8px;
-  border: 1px solid #d0d0d0;
-  border-top: none;
-}
-.listingTable th {
-  font-weight: bold;
-  background: #ececec;
-}
-.listingTable td a {
-  text-decoration: none;
-}
-.listingTable td table tr {
-  border: none;
-}
-.listingTable td button,
-.listingTable table.dijitSelect,
-.listingTable td .dijitTextBox {
-  font-size: 12px;
-}
+
 /* CONTENT TYPE TABLE */
 
 .sTypeTable {
@@ -803,9 +803,6 @@ table.workflowInfo td {
 .suggestedTagsWrapper a:hover {
   background: #568FBE;
   color: #fff;
-}
-.tagsWrapper {
-  width: 600px;
 }
 .fieldAlert {
   color: #cc0000;
@@ -2175,40 +2172,5 @@ div#_dotHelpMenu {
 }
 
 .tagsWrapper {
-	width: auto;
-	box-sizing: border-box;
 	position: relative;
-
-    .dijitTextBox {
-    	background: none;
-    	box-sizing: border-box;
-    	width: 80%;
-    	margin: 0;
-    	position: relative;
-    	padding: 2px 2px 0;
-    }
-}
-
-.dotcms .tagsWrapper {
-
-    .dijitTextBox {
-
-    }
-
-    .dijitInputField {
-    	height: auto;
-    	cursor: text;
-    	display: inline-block;
-    	vertical-align: middle;
-    	position: static;
-
-        .dijitInputInner {
-        	float: none;
-        	padding: 0;
-        	line-height: 28px;
-        	height: 28px;
-        	border: none;
-        	width: auto !important;
-        }
-    }
 }

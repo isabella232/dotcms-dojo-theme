@@ -1,34 +1,7 @@
 @import "variables";
 
-#doc {
-  min-width: 970px;
-}
-#doc1 {
-  min-width: 970px;
-}
-#doc2 {
-  min-width: 970px;
-}
-#doc3 {
-  min-width: 970px;
-}
-#doc4 {
-  min-width: 970px;
-}
-#hd {
-  margin-top: 45px;
-}
-#bd {
-  background: #fff;
-  border: 1px solid #c9c9c9;
-  border-top: 0;
-  padding: 10px 0;
-  @include box-shadow(0 -1px 6px rgba(0, 0, 0, 0.2));
-}
-#ft {
-  padding: 0;
-  margin: 0;
-  height: 0;
+html, body {
+  height: 100%;
 }
 
 body {

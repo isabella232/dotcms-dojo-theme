@@ -1,8 +1,8 @@
 /* CRUMBTRAIL STYLES 2.0 */
 
 .subNavCrumbTrail {
+  display: none !important; // TODO: do it in the html
   height: 27px;
-  margin: -10px -5px 10px;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
   background: url($skin-sprite) repeat-x 0 -329px;

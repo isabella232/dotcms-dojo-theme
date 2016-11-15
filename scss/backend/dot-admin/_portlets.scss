@@ -1,8 +1,7 @@
 /* PORTLET STYLES 2.0 */
 .portlet {
   &-wrapper {
-    background: #fff;
-    margin: 0 $field-padding;
+    height: 100%;
   }
 
   &-toolbar {
@@ -15,10 +14,9 @@
 
   // STYLE FOR EACH PORTLET
   &-content-search {
-    margin: 35px 0 0 0;
+    margin: 0 !important; // TODO: remove inline styling
     overflow-x: auto;
     overflow-y: auto;
-    padding: 0 0 $field-padding 20px;
   }
 }
 
@@ -36,8 +34,14 @@
 
 // Some dotcms portlets have dijitContentPane nested
 // TODO: have to fix the html
-.dotcms .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
-  padding: 0;
+.dotcms {
+  .dijitContentPane {
+    padding: $basic-padding * 2;
+  }
+
+  .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
+    padding: 0;
+  }
 }
 
 .contentIdentifier {
@@ -67,11 +71,7 @@
   top: 3px;
   right: 15px;
 }
-.shadowBox {
-  border: 1px solid #ccc;
-  -moz-box-shadow: 0px 0px 5px #ccc;
-  -webkit-box-shadow: 0px 0px 5px #ccc;
-}
+
 .shadowBoxLine {
   margin-bottom: 15px;
   padding: 45px 5px 20px 5px;
@@ -82,10 +82,9 @@
 }
 .headerBox {
   padding: 0;
-  background: transparent url($skin-sprite) repeat-x 0 -558px;
 }
 .lineRight {
-  border-right: 1px solid #ccc;
+  border-right: 1px solid $gray-ligthest;
 }
 .lineCenter {
   background: url($yui-background-line) repeat-y center top;
