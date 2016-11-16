@@ -37,7 +37,7 @@ $ gulp
 #### DotCMS developer mode
  
 ```shell
-$ gulp dev
+$ gulp --dotcms
 ```
 
 #### READ THIS
