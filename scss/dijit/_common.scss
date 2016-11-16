@@ -4,10 +4,6 @@ html, body {
   color: $text-color;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *, *:before, *:after {
   outline: none; // not 100% sure about this, google it
   box-sizing: border-box;

@@ -10,14 +10,8 @@
 //@import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
 @import "backend/common";
 
-
-// DIJIT WIDGETS
-@import "dijit/mixins";
-@import "dijit/common";
-@import "dijit/icons";
-
 // MATERIAL DESIGN FOR DOJO THEME
-@import "theme-dotcms";
+@import "dijit-theme-dotcms";
 
 // DOJO THEME
 @import "dijit/theme";
