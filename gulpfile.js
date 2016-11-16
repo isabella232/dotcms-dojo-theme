@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var compass = require('gulp-compass');
 var connect = require('gulp-connect');
 var cors = require('cors');
+var argv = require('yargs').argv;
 var dotcmsBaseUrl = require('./dotcmsConfig');
 
 var dotcms = {
@@ -14,6 +15,9 @@ var dotcms = {
         css: 'webapps/ROOT/html/css/dijit-dotcms'
     }
 };
+
+var coreCssPath = dotcms.core.base + dotcms.core.css;
+var tomcatCss = dotcms.tomcat.base + dotcms.tomcat.css;
 
 gulp.task('webserver', function () {
     connect.server({
@@ -35,6 +39,12 @@ gulp.task('compass', function () {
             style: 'expanded'
         }))
         .on('error', function (err) {})
+        .on('end', function() {
+            if (argv.dotcms) {
+                gulp.src('css/dotcms.css')
+                    .pipe(gulp.dest(coreCssPath));
+            }
+        })
         .pipe(connect.reload());
 });
 
@@ -57,18 +67,7 @@ gulp.task('deploy', function () {
             sourcemap: false,
             style: 'compressed'
         }))
-        .pipe(gulp.dest(dotcms.core.base + dotcms.core.css));
+        .pipe(gulp.dest(coreCssPath));
 });
-
-gulp.task('watch-dotcms', function () {
-    gulp.watch('scss/**/*.scss', function () {
-        gulp.start('compass', function () {
-            gulp.src('css/dotcms.css')
-                .pipe(gulp.dest(dotcms.tomcat.base + dotcms.tomcat.css));
-        });
-    });
-});
-
-gulp.task('dev', ['compass', 'webserver', 'watch-dotcms']);
 
 gulp.task('default', ['compass', 'webserver', 'watch']);

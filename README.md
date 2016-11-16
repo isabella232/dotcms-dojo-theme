@@ -40,8 +40,16 @@ $ gulp
 $ gulp dev
 ```
 
+#### READ THIS
+In order to use this task and to speed the development procces, you need to create a symbolic link to point your ```tomcat8/webapps/ROOT/html``` to  ```core/dotCMS/src/main/webapp/html```
+
+Example:
+ ```
+ln -s ~/dev/dotcms/core/dotCMS/src/main/webapp/html ~/dev/dotcms/tomcat8/webapps/ROOT/html
+```
+
 1. Compile all your ```.scss``` files
-    - And copy the result ```dotcms.css``` file to the proper location inside ```/tomcat8``` folder. 
+    - And copy the result ```dotcms.css``` file to the proper location inside ```/core``` folder. 
 2. Start a web server in [http://localhost:9000](http://localhost:9000)
 3. Watch for changes in ```.scss``` and ```.html``` files to recompile when necessary.
     - After compile it will copy the ```dotcms.css```.
