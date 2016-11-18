@@ -263,7 +263,7 @@
 }
 
 /* TABLE STYLES 2.0 */
-$table-border: 1px solid $gray-ligthest;
+$table-border: 1px solid $gray-ligther;
 
 .listingTable {
   border-bottom: $table-border;
@@ -271,18 +271,32 @@ $table-border: 1px solid $gray-ligthest;
   margin: 0 auto;
   width: 100%;
 
-  tr.selected {
-    background-color: #E0E9F6;
+  tr {
+    .selected {
+      background-color: #E0E9F6;
+    }
   }
 
   th, td {
     padding: $basic-padding;
     border-bottom: $table-border;
+
+    &:first-child {
+      padding-left: $basic-padding * 3;
+    }
+
+    &:last-child {
+      padding-right: $basic-padding * 3;
+    }
   }
 
   th {
     font-weight: bold;
-    background: #ececec;
+    background-color: $gray-ligthest;
+
+    &:last-child {
+      text-align: right;
+    }
   }
 
   td {
@@ -290,8 +304,16 @@ $table-border: 1px solid $gray-ligthest;
       text-decoration: none;
     }
 
-    table tr {
-      border: none;
+    table {
+      td {
+        &:first-child, &:last-child {
+          padding: 0;
+        }
+      }
+
+      tr {
+        border: none;
+      }
     }
   }
 }

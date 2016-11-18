@@ -1,42 +1,65 @@
+@import "./portlets/content-search";
+@import "./portlets/legacy";
+
 /* PORTLET STYLES 2.0 */
+$panel-padding: $basic-padding * 2;
+
 .portlet {
+  &-main {
+    padding: $panel-padding 0;
+  }
+
+  &-sidebar {
+    padding: $panel-padding $panel-padding 0;
+  }
+
+  &-sidebar-wrapper {
+    background-color: $gray-ligthest;
+    border-right: solid 1px $gray-ligther;
+  }
+
   &-wrapper {
     height: 100%;
   }
 
+  &-pagination, &-toolbar, &-toolbar__actions, &-toolbar__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-pagination {
+    margin: $panel-padding;
+  }
+
+  &-pagination__results {
+    flex: 1;
+    align-self: center;
+  }
+
   &-toolbar {
-    margin: $basic-padding 0;
+    margin: 0 $panel-padding $panel-padding;
 
     a {
       text-decoration: none;
     }
   }
 
-  // STYLE FOR EACH PORTLET
-  &-content-search {
-    margin: 0 !important; // TODO: remove inline styling
-    overflow-x: auto;
-    overflow-y: auto;
+  &-toolbar__actions {
+    .export-button {
+      margin-right: $panel-padding;
+    }
   }
-}
 
-.content-search-pagination {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+  &-toolbar__info {
+    flex: 1;
+    align-self: center;
 
-  .pagination-results {
-      align-self: center;
-      flex: 1
-  }
-}
-
-// Some dotcms portlets have dijitContentPane nested
-// TODO: have to fix the html
-.dotcms {
-  .dijitContentPane {
-    padding: $basic-padding * 2;
+    .contentlet-results {
+      color: $gray;
+      margin-right: $panel-padding;
+      flex: 1;
+      text-align: right;
+    }
   }
 
   .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
@@ -44,54 +67,6 @@
   }
 }
 
-.contentIdentifier {
-  margin: 0 0 $basic-padding;
-}
-
 #tablemessage {
-  font-size: 80%;
   color: #cc0000;
-}
-.portlet-body {
-  padding: 5px 15px 15px 15px;
-}
-.formRow {
-  text-align: center;
-  padding: 10px 8px;
-}
-.buttonRightInBox {
-  text-align: right;
-  margin: 4px 10px 2px 0;
-  font-weight: normal;
-}
-.buttonRightInBoxTab {
-  position: absolute;
-  text-align: right;
-  z-index: 5;
-  top: 3px;
-  right: 15px;
-}
-
-.shadowBoxLine {
-  margin-bottom: 15px;
-  padding: 45px 5px 20px 5px;
-  border: 1px solid #ccc;
-  -moz-box-shadow: 0px 0px 5px #ccc;
-  -webkit-box-shadow: 0px 0px 5px #ccc;
-  background: transparent url($portal-tab) repeat-x 0 0;
-}
-.headerBox {
-  padding: 0;
-}
-.lineRight {
-  border-right: 1px solid $gray-ligthest;
-}
-.lineCenter {
-  background: url($yui-background-line) repeat-y center top;
-}
-.roundBox {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #d0d0d0;
-  padding: 5px;
 }

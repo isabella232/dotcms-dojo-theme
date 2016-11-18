@@ -22,7 +22,7 @@ var tomcatCss = dotcms.tomcat.base + dotcms.tomcat.css;
 gulp.task('webserver', function () {
     connect.server({
         livereload: true,
-        port: 9000,
+        port: 7000,
         middleware: function () {
             return [cors()];
         }

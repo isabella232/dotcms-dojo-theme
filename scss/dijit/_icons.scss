@@ -1,11 +1,23 @@
+#font-icon-base {
+  font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+}
+
+#dijit-icon {
+  @extend #font-icon-base;
+  width: $icon-size;
+  height: $icon-size;
+  margin-right: $field-padding / 2;
+  line-height: $icon-size;
+}
+
 .dijit {
 
   &Icon {
-    @extend #font-icon-base;
-    width: $icon-size;
-    height: $icon-size;
-    margin-right: $field-padding / 2;
-    line-height: $icon-size;
+    @extend #dijit-icon;
 
     &Task {
       &:before {

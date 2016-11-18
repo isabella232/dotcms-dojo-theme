@@ -13,7 +13,6 @@
 .apple,
 .appMonitor,
 .archive,
-.archived,
 .arrowLeft,
 .arrowRight,
 .assignWorkflow,
@@ -73,7 +72,6 @@
 .gearMinus,
 .gearPencil,
 .gearPlus,
-.greyDot,
 .help,
 .hide,
 .hint,
@@ -89,8 +87,6 @@
 .link,
 .linkAdd,
 .listView,
-.live,
-.lock,
 .login,
 .loginAs,
 .mailList,
@@ -178,12 +174,13 @@
 
 // Paring class name with font-awesome icon
 $icons: (
+  action: $fa-var-ellipsis-v,
   add: $fa-var-square,
   android: $fa-var-square,
   apple: $fa-var-square,
   appMonitor: $fa-var-square,
   archive: $fa-var-shield,
-  archived: $fa-var-arrow-circle-down,
+  archived: $fa-var-circle,
   arrowLeft: $fa-var-chevron-left,
   arrowRight: $fa-var-chevron-right,
   assignWorkflow: $fa-var-square,
@@ -243,7 +240,7 @@ $icons: (
   gearMinus: $fa-var-square,
   gearPencil: $fa-var-square,
   gearPlus: $fa-var-square,
-  greyDot: $fa-var-square,
+  greyDot: $fa-var-circle,
   help: $fa-var-life-saver,
   hide: $fa-var-square,
   hint: $fa-var-square,
@@ -259,7 +256,7 @@ $icons: (
   //link: $fa-var-link,
   linkAdd: $fa-var-square,
   listView: $fa-var-square,
-  live: $fa-var-dot-circle-o,
+  live: $fa-var-check-circle,
   lock: $fa-var-lock,
   login: $fa-var-users,
   loginAs: $fa-var-square,
@@ -328,6 +325,7 @@ $icons: (
 @each $class, $icon in $icons {
   .#{$class} {
     &Icon {
+      @extend #dijit-icon;
       &:before {
         content: $icon;
       }
@@ -339,6 +337,25 @@ $icons: (
   @include inline-block();
   height: 1px;
   width: 12px;
+}
+
+// CONTENT LISTING ICONS
+
+.liveIcon {
+  color: $green;
+}
+
+.lockIcon {
+  color: $orange;
+}
+
+.greyDotIcon {
+  opacity: 1 !important;
+  color: $gray-ligther;
+}
+
+.archivedIcon {
+  color: $red;
 }
 
 // FILE TYPE ICONS
