@@ -1,0 +1,90 @@
+@import "tags";
+@import "legacy";
+
+/*
+------------ FORMS ------------
+- Extract from: base.css
+- Handle vertical and horizontal forms
+*/
+
+.hint-text {
+  font-size: 11px;
+  color: #999;
+  display: block;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+dl {
+  //margin: 0;
+
+  // Just for the Add/Edit Field form
+  // TODO: add a class to style this
+  &#indexed,
+  &#listed,
+  &#required,
+  &#unique,
+  &#userSearchable {
+    dd {
+      min-height: auto;
+      line-height: normal;
+
+      .dijitCheckBox {
+        margin: 0;
+      }
+    }
+  }
+
+
+  &.vertical {
+    dd, dt {
+      clear: none;
+      float: none;
+      margin: 0;
+      padding: 0;
+      text-align: inherit;
+      width: auto;
+    }
+
+    dt {
+      margin-bottom: $basic-padding / 2;
+    }
+
+    dd {
+      margin-bottom: $basic-padding * 2;
+    }
+  }
+}
+
+dd,
+dt {
+
+  &.wide {
+    clear: both;
+    width: auto;
+  }
+}
+
+dt {
+  clear: left;
+  float: left;
+  padding: 6px 0px 7px;
+  text-align: right;
+  width: 30%;
+}
+
+dd {
+  margin: 0 0 $field-padding * 2 30%;
+  min-height: $field-height;
+  padding-left: $field-padding;
+
+  .inputCaption,
+  .buttonCaption {
+    padding-left: $field-padding !important;
+  }
+
+  .dijitCheckBox,
+  .dijitRadio {
+    margin: 6px 0;
+  }
+}
