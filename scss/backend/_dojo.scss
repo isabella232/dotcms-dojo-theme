@@ -4,3 +4,14 @@
 .dijitSelect {
   width: 100%;
 }
+
+// MultiSelect widget in Dojo 1.8.3 doesn't have any special class or behaviour, we just style it as usual
+select[multiple] {
+  border: $field-normal-border;
+  min-height: 80px;
+  width: 100%;
+
+  &:hover {
+    border: $field-hover-border;
+  }
+}
