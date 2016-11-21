@@ -35,7 +35,6 @@ dl {
     }
   }
 
-
   &.vertical {
     dd, dt {
       clear: none;
@@ -52,6 +51,30 @@ dl {
 
     dd {
       margin-bottom: $basic-padding * 2;
+    }
+  }
+
+  &.radio-check-one-line {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: $basic-padding * 2;
+
+    dt, dd {
+      float: none;
+      margin: 0;
+      min-height: 0;
+      padding: 0;
+      text-align: left;
+      width: auto;
+    }
+
+    dd {
+      .radio, .checkbox {
+        display: inline-block;
+        margin: 0;
+      }
     }
   }
 }
@@ -83,8 +106,13 @@ dd {
     padding-left: $field-padding !important;
   }
 
-  .dijitCheckBox,
-  .dijitRadio {
-    margin: 6px 0;
+  .radio, .checkbox {
+    margin: $basic-padding 0;
+    display: flex;
+    align-items: center;
+
+    & > .dijit {
+      margin-right: $basic-padding / 2;
+    }
   }
 }
