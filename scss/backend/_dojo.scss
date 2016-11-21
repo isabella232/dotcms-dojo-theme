@@ -15,3 +15,40 @@ select[multiple] {
     border: $field-hover-border;
   }
 }
+
+// CUSTOM BUTTONS FOR DOTCMS UI
+.dijit {
+  &DropDownActionButton {
+    border: none;
+    border-radius: $field-height / 2;
+    width: $field-height;
+
+    .actionIcon {
+      line-height: $field-height;
+      margin: 0;
+    }
+
+    .dijitButtonNode {
+      height: $field-height;
+      width: $field-height;
+    }
+
+    .dijitArrowButtonInner {
+      display: none;
+    }
+
+    .dijitButtonNode {
+      padding: 0;
+    }
+  }
+
+  &ButtonFlat {
+    background-color: transparent;
+    box-shadow: none;
+    color: $brand-primary;
+
+    &.dijitButtonHover {
+      background-color: $gray-ligther;
+    }
+  }
+}

@@ -6,15 +6,15 @@
 @import "font-awesome-4.4.0/variables";
 @import "font-awesome-4.4.0/path";
 
-// BACKEND
-//@import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
-@import "backend/common";
-
 // MATERIAL DESIGN FOR DOJO THEME
 @import "dijit-theme-dotcms";
 
 // DOJO THEME
 @import "dijit/theme";
+
+// BACKEND
+//@import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
+@import "backend/common";
 
 body {
   margin: 0;
