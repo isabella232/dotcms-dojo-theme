@@ -5,6 +5,10 @@
 $panel-padding: $basic-padding * 2;
 
 .portlet {
+  .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
+    padding: 0;
+  }
+
   &-main {
     padding: $panel-padding 0;
   }
@@ -44,26 +48,12 @@ $panel-padding: $basic-padding * 2;
     }
   }
 
-  &-toolbar__actions {
-    .export-button {
-      margin-right: $panel-padding;
-    }
-  }
-
   &-toolbar__info {
+    display: flex;
+    justify-content: space-between;
     flex: 1;
-    align-self: center;
-
-    .contentlet-results {
-      color: $gray;
-      margin-right: $panel-padding;
-      flex: 1;
-      text-align: right;
-    }
-  }
-
-  .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
-    padding: 0;
+    margin: 0 18px;
+    align-items: center;
   }
 }
 
