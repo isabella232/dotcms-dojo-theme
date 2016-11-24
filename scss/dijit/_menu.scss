@@ -35,6 +35,17 @@
     }
   }
 
+  &SeparatorBottom {
+    height: auto;
+    margin-bottom: 1px;
+  }
+
+  &SeparatorTop {
+    height: auto;
+    margin-top: 1px;
+    border-bottom: 1px solid $gray-ligther;
+  }
+
 }
 
 .dijitComboBoxMenuPopup {
