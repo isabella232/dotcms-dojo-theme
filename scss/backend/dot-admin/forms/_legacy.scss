@@ -6,30 +6,6 @@
   text-align: center;
 }
 
-// Vertical forms
-
-.fieldWrapper {
-  margin-bottom: $field-padding * 2;
-  padding: 0;
-  position: relative;
-}
-
-.fieldName {
-  font-weight: bold;
-  margin-bottom: $field-padding / 2;
-}
-
-.fieldValue {
-  float: left;
-}
-
-.fieldValueText {
-  color: #999;
-  border: 1px solid #ddd;
-  padding: 3px 8px;
-  width: 400px;
-}
-
 
 .toggleEditorField,
 .langVariablesField {

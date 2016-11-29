@@ -86,13 +86,6 @@ table.dijitComboButton {
   line-height: $field-height - ($field-border-size * 2);
 }
 
-.dijitTextArea {
-  font-family: $body-text;
-  font-size: $body-size;
-  color: $text-color;
-  padding: $field-padding / 2 $field-padding;
-}
-
 .dijitValidationContainer {
   background-color: $error;
   height: $field-height - (2 * $field-border-size);

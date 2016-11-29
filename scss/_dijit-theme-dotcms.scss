@@ -26,8 +26,11 @@ $md-shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 $md-shadow-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 
 // TYPOGRAPHY
-$body-size: 13px;
-$body-text: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-size-medium: 13px;
+$font-size-small: 12px;
+
+$body-size: $font-size-medium;
+$body-text: Roboto, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $text-color: $black;
 
 // Basic stuffs
@@ -547,7 +550,7 @@ $tab-checked-border-width: 5px 1px 0 0;
 $tab-checked-border-color: $blue $gray-ligther transparent transparent;
 
 $tab-container-border-style: solid;
-$tab-container-border-width: 0 1px 1px;
+$tab-container-border-width: 0 0 1px;
 $tab-container-border-color: $gray-ligther;
 
 $tab-normal-bgcolor: $white;

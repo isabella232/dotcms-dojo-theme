@@ -6,6 +6,17 @@
 - Extract from: base.css
 - Handle vertical and horizontal forms
 */
+#label {
+  color: $gray-dark;
+  display: block;
+  font-size: $font-size-small;
+  margin-bottom: $basic-padding / 2;
+}
+
+.required2 {
+  color: $brand-secondary;
+  font-weight: bold;
+}
 
 .hint-text {
   font-size: 11px;
@@ -46,11 +57,8 @@ dl {
     }
 
     dt {
-      margin-bottom: $basic-padding / 2;
-
       label {
-        font-size: 12px;
-        color: $gray-dark;
+        @extend #label;
       }
     }
 
@@ -120,4 +128,12 @@ dd {
       margin-right: $basic-padding / 2;
     }
   }
+}
+
+.fieldWrapper {
+  margin-bottom: $basic-padding * 2;
+}
+
+.fieldName {
+  @extend #label;
 }

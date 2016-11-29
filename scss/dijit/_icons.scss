@@ -8,10 +8,11 @@
 
 #dijit-icon {
   @extend #font-icon-base;
-  width: $icon-size;
+  display: inline-block;
   height: $icon-size;
-  margin-right: $field-padding / 2;
   line-height: $icon-size;
+  text-align: center;
+  width: $icon-size;
 }
 
 .dijit {

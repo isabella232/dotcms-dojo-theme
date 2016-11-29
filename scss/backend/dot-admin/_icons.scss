@@ -34,7 +34,6 @@
 .chevronExpand,
 .close,
 .color,
-.content,
 .copy,
 .cut,
 .delete,
@@ -68,7 +67,6 @@
 .folderSelected,
 .form,
 .formNew,
-.gear,
 .gearMinus,
 .gearPencil,
 .gearPlus,
@@ -99,7 +97,6 @@
 .newTask,
 .newWorkflow,
 .next,
-.page,
 .pageProp,
 .paste,
 .plus,
@@ -137,7 +134,6 @@
 .toggleClose,
 .toggleOpen,
 .trash,
-.ukn,
 .unarchive,
 .unlock,
 .unpublish,
@@ -201,7 +197,7 @@ $icons: (
   chevronExpand: $fa-var-chevron-down,
   close: $fa-var-times,
   color: $fa-var-square,
-  content: $fa-var-square,
+  content: $fa-var-newspaper-o,
   copy: $fa-var-copy,
   cut: $fa-var-scissors,
   delete: $fa-var-trash-o,
@@ -235,7 +231,7 @@ $icons: (
   folderSelected: $fa-var-folder-open,
   form: $fa-var-square,
   formNew: $fa-var-square,
-  gear: $fa-var-square,
+  gear: $fa-var-gear,
   gearMinus: $fa-var-square,
   gearPencil: $fa-var-square,
   gearPlus: $fa-var-square,
@@ -269,7 +265,7 @@ $icons: (
   newTask: $fa-var-square,
   newWorkflow: $fa-var-square,
   next: $fa-var-arrow-circle-right,
-  //page: $fa-var-file-o,
+  page: $fa-var-columns,
   pageProp: $fa-var-square,
   paste: $fa-var-square,
   persona: $fa-var-user,
@@ -309,17 +305,70 @@ $icons: (
   toggleClose: $fa-var-minus-square-o,
   toggleOpen: $fa-var-plus-square-o,
   trash: $fa-var-square,
-  //ukn: $fa-var-square,
+  ukn: $fa-var-file-o,
   unarchive: $fa-var-square,
   unlock: $fa-var-unlock,
   unpublish: $fa-var-square,
   upload: $fa-var-upload,
   user: $fa-var-square,
+  vtl: $fa-var-file-code-o,
   windows: $fa-var-square,
   workflow: $fa-var-square,
   working: $fa-var-circle-thin,
   workStream: $fa-var-square,
-  wysiwyg: $fa-var-square
+  wysiwyg: $fa-var-square,
+
+  // Video files
+  asf: $fa-var-file-video-o,
+  avi: $fa-var-file-video-o,
+  mov: $fa-var-file-video-o,
+  mp4: $fa-var-file-video-o,
+  mpg: $fa-var-file-video-o,
+  ogg: $fa-var-file-video-o,
+  ogv: $fa-var-file-video-o,
+  rm: $fa-var-file-video-o,
+  vob: $fa-var-file-video-o,
+
+  // Data Files
+  csv: $fa-var-file-excel-o,
+  numbers: $fa-var-file-excel-o,
+  wks: $fa-var-file-excel-o,
+  xls: $fa-var-file-excel-o,
+  xlsx: $fa-var-file-excel-o,
+
+  // Image Files
+  bmp: $fa-var-file-image-o,
+  image: $fa-var-file-image-o,
+  jpeg: $fa-var-file-image-o,
+  jpg: $fa-var-file-image-o,
+  pct: $fa-var-file-image-o,
+  png: $fa-var-file-image-o,
+  gif: $fa-var-file-image-o,
+  svg: $fa-var-file-image-o,
+
+  // PDF Files
+  pdf: $fa-var-file-pdf-o,
+
+  // Powerpoint Files
+  keynote: $fa-var-file-powerpoint-o,
+  ppt: $fa-var-file-powerpoint-o,
+  pptx: $fa-var-file-powerpoint-o,
+
+  // Word
+  doc: $fa-var-file-word-o,
+  docx: $fa-var-file-word-o,
+
+  // Audio
+  aac: $fa-var-file-audio-o,
+  aif: $fa-var-file-audio-o,
+  iff: $fa-var-file-audio-o,
+  m3u: $fa-var-file-audio-o,
+  mid: $fa-var-file-audio-o,
+  mp3: $fa-var-file-audio-o,
+  mpa: $fa-var-file-audio-o,
+  ra: $fa-var-file-audio-o,
+  wav: $fa-var-file-audio-o,
+  wma: $fa-var-file-audio-o,
 );
 
 @each $class, $icon in $icons {
@@ -361,4 +410,4 @@ $icons: (
 // FILE TYPE ICONS
 // font-awesome don't have icons for all the file types
 // that dotCMS support, so for now we are stuck with .png
-@import "file-type-icons";
+//@import "file-type-icons";
