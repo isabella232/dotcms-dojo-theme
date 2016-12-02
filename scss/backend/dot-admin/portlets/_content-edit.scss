@@ -43,7 +43,7 @@ $sidebar-width: 220px;
         color: $text-color;
       }
 
-      &:last-child {
+      &:last-of-type {
         border-bottom: none;
       }
     }

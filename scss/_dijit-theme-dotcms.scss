@@ -1,7 +1,7 @@
 // COLORS
 $black: #161616;
 $blue-ligth: #77CEE6;
-$blue: #1DAED6;
+$blue: #0E80CB;
 $gray-dark: #5B5B5B;
 $gray: #8A8A8A;
 $gray-ligth: #C5C5C5;
@@ -26,6 +26,7 @@ $md-shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 $md-shadow-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 
 // TYPOGRAPHY
+$font-size-x-large: 24px;
 $font-size-medium: 13px;
 $font-size-small: 12px;
 
@@ -252,7 +253,7 @@ $textbox-hoverarrow-arrow-bgcolor: $field-hoverarrow-arrow-bgcolor;
 $textbox-focused-border: $field-focused-border;
 $textbox-focused-bgcolor: $white;
 $textbox-focused-textcolor: $field-focused-textcolor;
-$textbox-focused-arrow-color: $blue;
+$textbox-focused-arrow-color: $field-hoverarrow-arrow-color;
 $textbox-focused-arrow-border: $textbox-focused-border;
 $textbox-focused-arrow-bgcolor: $white;
 // Hover the field and hover the arrow
@@ -586,7 +587,7 @@ $accordion-title-selected-bgcolor: $gray-ligther;
 // Dialog Box
 $menu-shadow: $md-shadow-2;
 $menu-radius: 0px;
-$dialog-padding: $basic-padding ($basic-padding * 2) ($basic-padding * 2);
+$dialog-padding: 0;
 $dialog-normal-bgcolor: $white;
 $dialog-normal-border: none;
 $dialog-normal-title-bgcolor: transparent;

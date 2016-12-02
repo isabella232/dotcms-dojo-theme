@@ -236,31 +236,6 @@
 #hostSelectDialog {
   width: 300px;
 }
-/* EDITCONTENTLET CATEGORY STYLES 2.0 */
-
-.catPreview {
-  height: 24px;
-  margin: -9px -10px 10px -10px;
-  overflow: hidden;
-  background-color: white;
-}
-.catPreview li {
-  font-size: 85%;
-  margin: 0;
-  list-style: none;
-  float: left;
-  padding: 3px 3px 3px 3px;
-  line-height: 16px;
-  margin: 1px;
-  background-color: #EDEDED;
-  border: 1px groove
-}
-.catPreview a {
-  text-decoration: none;
-}
-.catPreview a:hover {
-  color: #cc0000;
-}
 
 /* TABLE STYLES 2.0 */
 $table-border: 1px solid $gray-ligther;
@@ -499,13 +474,6 @@ tr.active {
 .fieldReadOnly {
   border-color: #eeeeee;
   background: blue;
-}
-.lineDividerTitle {
-  background: #ECECEC;
-  font-weight: bold;
-  border: 1px solid #D0D0D0;
-  padding: 5px 10px;
-  margin: 30px 20px 20px 0;
 }
 
 .requiredBox {
@@ -1414,22 +1382,7 @@ table.sTypeTable.sTypeItem {
   clear: both;
   visibility: hidden;
 }
-.sideMenuWrapper {
-  margin: 3px 0 0 10px;
-}
-/* File uploader dijit classes */
 
-.fileAjaxUploader div {
-  float: left;
-}
-.fileAjaxUploaderStatusMsg {
-  padding-top: 3px;
-  padding-left: 3px;
-}
-.fileAjaxUploaderFileName {
-  padding-right: 6px;
-  padding-top: 3px;
-}
 /* Dashboard classes */
 
 .siteOverview {
@@ -1525,9 +1478,6 @@ table.dojoxLegendNode td {
   height: 40px;
   border: 0px solid red;
   overflow: hidden;
-}
-#contentActionsCp {
-  height: 300px;
 }
 .lockedWarningDiv {
   position: absolute;

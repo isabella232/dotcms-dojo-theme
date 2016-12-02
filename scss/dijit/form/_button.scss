@@ -1,5 +1,3 @@
-// TODO: fix when no shadow it's provide.
-
 .dijitButton,
 .dijitToggleButton,
 .dijitComboButton {
@@ -41,12 +39,20 @@
 }
 
 .dijit {
+  &upArrowButton {
+
+  }
+
   &Button {
     @include btn($button-normal-shadow, $button-normal-bgcolor, $button-normal-border, $button-normal-textcolor);
 
     // TODO: we have to remove this in the HTML
     .dijitIcon {
       display: none;
+    }
+
+    &Node {
+      border: none;
     }
 
     &Hover {

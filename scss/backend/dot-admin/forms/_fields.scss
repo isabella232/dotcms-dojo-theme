@@ -1,0 +1,292 @@
+/*
+
+Styles for commons fields along the backend
+
+*/
+
+// COMMONS ELEMENTS:
+
+.glossaryTermPopup {
+  background-color: $gray-ligthest;
+  @include border-radius($border-radius);
+  padding: ($field-padding / 2) $field-padding;
+  border: solid 1px $gray-ligther;
+  position: absolute;
+}
+
+//BINARY FILE
+
+.fileAjaxUploader {
+  display: flex;
+  flex-direction: column;
+  margin-top: $basic-padding * 2;
+  width: 336px;
+
+  &Actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  &FileName,
+  &Form,
+  &Status {
+    margin-bottom: $basic-padding * 2;
+  }
+
+  &FileName {
+    text-align: center;
+  }
+
+  &Status {
+    display: flex;
+  }
+
+  &StatusMsg {
+    align-self: center;
+    margin-left: $basic-padding * 2;
+  }
+
+  .dijitProgressBar {
+    width: 100%;
+  }
+}
+
+
+// CATEGORY
+
+.catPreview {
+  background-color: $white;
+  border: solid 1px $gray-ligth;
+  border-radius: $border-radius;
+  min-height: 41px;
+  margin-top: $basic-padding;
+  padding: 3px 5px;
+
+  li {
+    background-color: $gray-ligther;
+    border-radius: 7px;
+    border: solid 1px $gray-ligth;
+    display: inline-block;
+    font-size: $font-size-small;
+    margin: 2px 5px 2px 0px;
+    padding: 3px 25px 4px 5px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #cc0000;
+    }
+  }
+}
+
+// FILES
+
+.fileSelectorControls {
+  @extend #inline-form;
+
+  .dijitTextBox {
+    width: 300px;
+  }
+}
+
+
+// LINE DIVIDER
+
+.lineDividerTitle {
+  color: $gray;
+  font-size: $font-size-x-large;
+  border-bottom: 1px solid $gray-ligther;
+  padding-bottom: $basic-padding * 2;
+  margin: $basic-padding * 6 0 $basic-padding * 3;
+}
+
+
+// TEXTAREA
+
+#text-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $basic-padding;
+
+  .checkbox, .radio {
+    margin: 0;
+  }
+}
+
+.textarea-toolbar {
+  @extend #text-toolbar;
+  width: 450px;
+}
+
+.langVariablesField {
+  position: relative;
+
+  .glossaryTermPopup {
+    right: 0;
+    top: 36px
+  }
+}
+
+// WYSIWYG Tools
+
+.wysiwyg-tools {
+  @extend #text-toolbar;
+
+  .dijitSelect {
+    width: auto;
+  }
+}
+
+.wysiwyg-wrapper {
+  width: 800px;
+}
+
+// KEY/VALUE
+$key-val-width: 500px;
+
+.key-value-form {
+  display: flex;
+  margin-bottom: $basic-padding * 2;
+  width: $key-val-width;
+
+  .dijit {
+    margin-right: $basic-padding;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.key-value-items {
+  width: $key-val-width;
+
+  .listingTable {
+    th, td {
+      &:first-child {
+        padding-left: $basic-padding;
+      }
+    }
+  }
+}
+
+
+// TAGS
+
+.tagsOptions {
+  background: $white;
+  border: $field-normal-border;
+  min-width: 175px;
+  padding-top: 7px;
+  position: absolute;
+  z-index: 1;
+
+  &:before {
+    background-color: $white;
+    border-left: $field-normal-border;
+    border-top: $field-normal-border;
+    content: "";
+    height: 10px;
+    left: 5px;
+    position: absolute;
+    top: -6px;
+    transform: rotate(45deg);
+    width: 10px;
+  }
+
+  .personaIcon, .tagIcon {
+    margin-right: 5px;
+    opacity: .7;
+  }
+
+  h3 {
+    background-color: $gray-ligth;
+    border-bottom: $field-normal-border;
+    margin-bottom: 0;
+    padding: 5px 10px;
+  }
+
+  a {
+    border-bottom: $field-normal-border;
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $gray-ligther;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .suggestedTagFocus {
+    background-color: $gray-ligther;
+    box-shadow: none;
+    outline: 0;
+  }
+
+}
+
+.tagLink {
+  background: $gray-ligthest;
+  border-radius: 7px;
+  border: $field-normal-border;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 5px 2px 0px;
+  padding: 3px 25px 4px 5px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &.persona {
+    padding: 3px 25px 4px;
+
+    &:before {
+      @extend #dijit-icon;
+      content: $fa-var-user;
+      display: block;
+      left: 8px;
+      position: absolute;
+      top: 2px;
+    }
+  }
+
+  &:after {
+    color: $gray;
+    content: "\2715";
+    font-size: 10px;
+    line-height: 21px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 20px;
+  }
+
+  &:hover {
+    border: #2C548D 1px solid;
+  }
+}
+
+.tagsWrapper {
+  position: relative;
+
+  .dijitTextBox {
+    height: auto; // This fields grows while we add tags, we can't have a fix height.
+    padding: 3px 5px;
+  }
+
+  .dijitInputContainer {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

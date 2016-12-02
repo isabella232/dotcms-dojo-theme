@@ -4,6 +4,7 @@
 @import "icons";
 @import "forms/base";
 @import "portlets";
+@import "image-tools"; // TODO: need to remove image_tools.css from html.
 
 #addFileAssetDialog {
   .dijitComboBox {
@@ -13,4 +14,28 @@
 
 #search_form, #borderContainer {
   height: 100%;
+}
+
+.related-content-dialog {
+  height: 400px;
+  width: 900px;
+
+  .dijitDialogTitleBar {
+    height: 0;
+    z-index: 1;
+  }
+
+  .portlet-sidebar-wrapper {
+    width: 200px;
+    padding-bottom: $basic-padding * 4;
+  }
+}
+
+.related-content-form,
+.related-content-container {
+  height: 100%;
+}
+
+.related-content-form {
+  width: 900px;
 }

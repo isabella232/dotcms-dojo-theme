@@ -6,39 +6,6 @@
   text-align: center;
 }
 
-
-.toggleEditorField,
-.langVariablesField {
-  margin-top: $field-padding;
-}
-
-.glossaryTermPopup {
-  background-color: rgba($orange, 0.2);
-  @include border-radius($border-radius);
-  padding: ($field-padding / 2) $field-padding;
-  border: solid 1px $orange;
-  position: absolute;
-}
-
-.langVariablesField {
-  position: relative;
-
-  .glossaryTermPopup {
-
-    right: 0;
-    top: 0;
-  }
-}
-
-.WYSIWYGTools {
-  margin-top: $field-padding;
-
-  .glossaryTermPopup {
-    left: 150px;
-    top: 35px;
-  }
-}
-
 // WORKFLOW TASK SEARCH FORM
 
 .filter-tasks-frm {

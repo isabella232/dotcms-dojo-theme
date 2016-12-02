@@ -16,9 +16,9 @@
 }
 
 .dijit {
-
   &Icon {
     @extend #dijit-icon;
+    margin-right: $basic-padding / 2;
 
     &Task {
       &:before {
@@ -83,9 +83,7 @@
     }
   }
 
-  .dijitNoIcon {
-    width: auto;
-    height: auto;
-    margin-right: 0;
+  &NoIcon {
+    display: none !important;
   }
 }

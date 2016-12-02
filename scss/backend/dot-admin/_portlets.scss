@@ -44,6 +44,10 @@ $panel-padding: $basic-padding * 2;
   &-toolbar {
     margin: 0 $panel-padding $panel-padding;
 
+    & > * {
+      align-self: center;
+    }
+
     a {
       text-decoration: none;
     }

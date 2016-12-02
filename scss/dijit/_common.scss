@@ -21,3 +21,22 @@ html, body {
     }
   }
 }
+
+// Arrows
+
+.dijitDownArrowButton,
+.dijitUpArrowButton {
+  position: relative;
+}
+
+.dijitUpArrowButton {
+  .dijitArrowButtonInner:before {
+    @include create-arrow($combobox-arrow-size, $combobox-normal-arrow-color, "up");
+  }
+}
+
+.dijitDownArrowButton {
+  .dijitArrowButtonInner:before {
+    @include create-arrow($combobox-arrow-size, $combobox-normal-arrow-color, "bottom");
+  }
+}

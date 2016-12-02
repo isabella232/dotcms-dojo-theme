@@ -8,11 +8,6 @@
     width: $field-height;
     background-color: $combobox-normal-arrow-bgcolor;
     border-left: $combobox-normal-arrow-border;
-
-    &:before {
-      // TODO: add option so user can add image icon
-      @include create-arrow($combobox-arrow-size, $combobox-normal-arrow-color);
-    }
   }
 
   &Hover {
@@ -46,10 +41,6 @@
     .dijitArrowButton {
       background-color: $white;
       border-left: $combobox-focused-arrow-border;
-
-      &:before {
-        @include create-arrow($combobox-arrow-size, $combobox-focused-arrow-color);
-      }
     }
 
     .dijitDownArrowButtonHover {
@@ -69,10 +60,6 @@
     .dijitArrowButton {
       background-color: $combobox-disabled-bgcolor;
       border-left: $combobox-disabled-arrow-border;
-
-      &:before {
-        @include create-arrow($combobox-arrow-size, $combobox-disabled-arrow-color);
-      }
     }
 
     .dijitPlaceHolder {
