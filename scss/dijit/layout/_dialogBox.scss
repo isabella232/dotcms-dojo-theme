@@ -46,6 +46,9 @@
 
   &TitleBar {
     background-color: $dialog-normal-title-bgcolor;
+    border-color: $dialog-normal-title-border-color;
+    border-style: $dialog-normal-title-border-style;
+    border-width: $dialog-normal-title-border-width;
     color: $dialog-normal-title-textcolor;
     font-weight: bold;
     height: $dialog-normal-title-height;

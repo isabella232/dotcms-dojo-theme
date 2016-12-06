@@ -55,6 +55,15 @@ select[multiple] {
       background-color: $gray-ligther;
     }
   }
+
+  &ButtonDanger {
+    background-color: $brand-secondary;
+    color: $white;
+
+    &.dijitButtonHover {
+      background-color: darken($brand-secondary, 10%);
+    }
+  }
 }
 
 .dotCMSHostFileFilteringSelect {

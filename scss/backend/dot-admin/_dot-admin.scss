@@ -246,6 +246,10 @@ $table-border: 1px solid $gray-ligther;
   margin: 0 auto;
   width: 100%;
 
+  .listingTable__actions {
+    @extend #cell-actions;
+  }
+
   tr {
     .selected {
       background-color: #E0E9F6;
@@ -268,17 +272,9 @@ $table-border: 1px solid $gray-ligther;
   th {
     font-weight: bold;
     background-color: $gray-ligthest;
-
-    &:last-child {
-      text-align: right;
-    }
   }
 
   td {
-    a {
-      text-decoration: none;
-    }
-
     table {
       td {
         &:first-child, &:last-child {
@@ -377,75 +373,11 @@ tr.active {
   background: #ffffcc;
   cursor: pointer;
 }
-.callOutBox {
-  margin: 20px 0;
-  background-color: #CDEAFD;
-  padding: 10px;
-  text-align: center;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #d0d0d0;
-}
-.callOutBox2 {
-  background-color: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #d0d0d0;
-}
-.hintBox {
-  width: 250px;
-  position: absolute;
-  left: auto;
-  margin-left: 320px;
-  text-align: left;
-  font-style: italic;
-}
 /* Use with .callOutBox2 */
 
 #loadingPermissionsAccordion {
   margin: 50px auto;
   width: 100px;
-}
-#fieldsTable {
-  font-size: 88%;
-  border-top: 1px solid #d0d0d0;
-  border-right: 1px solid #d0d0d0;
-  border-bottom: 1px solid #d0d0d0;
-  width: 100%;
-}
-#fieldsTableHeader {
-  width: 100%;
-  background: #ececec;
-  border-bottom: 1px solid #d0d0d0;
-}
-.item_header_cell {
-  text-align: left;
-  float: left;
-  height: 25px;
-  padding-top: 5px;
-  padding-left: 10px;
-  font-weight: bold;
-  border-left: 1px solid #d0d0d0;
-}
-#item_list {
-  width: 100%;
-}
-.item_row {
-  cursor: move;
-  border-bottom: 1px solid #d0d0d0;
-}
-.item_cell {
-  text-align: left;
-  float: left;
-  height: 25px;
-  line-height: 20px;
-  padding-top: 5px;
-  padding-left: 10px;
-  border-left: 1px solid #d0d0d0;
-  width: 100px;
-  overflow: hidden;
 }
 .excelDownload {
   text-align: right;

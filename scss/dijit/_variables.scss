@@ -525,6 +525,10 @@ $tab-checked-border-style: $tab-border-style !default;
 $tab-checked-border-width: $tab-border-width !default;
 $tab-checked-border-color: $tab-border-color !default;
 
+$tab-list-container-border-style: solid !default;
+$tab-list-container-border-width: 1px !default;
+$tab-list-container-border-color: $gray-ligthest !default;
+
 $tab-container-border-style: solid !default;
 $tab-container-border-width: 1px !default;
 $tab-container-border-color: $gray-ligthest !default;
@@ -560,14 +564,17 @@ $accordion-title-hover-bgcolor:			$gray-ligther !default;
 $accordion-title-selected-bgcolor: 		$gray-ligther !default;
 
 // Dialog Box
-$dialog-padding: 						20px !default;
-$dialog-normal-bgcolor: 				$white !default;
-$dialog-normal-border: 					solid 1px $gray-ligth !default;
-$dialog-normal-title-bgcolor: 			$gray-ligth !default;
-$dialog-normal-title-height: 			$field-height !default;
-$dialog-normal-title-textcolor: 		$gray-dark !default;
 $dialog-closeicon-bgcolor: 				$gray-dark !default;
 $dialog-closeicon-color: 				$white !default;
+$dialog-normal-bgcolor: 				$white !default;
+$dialog-normal-border:                  solid 1px $gray-ligth !default;
+$dialog-normal-title-bgcolor: 			$gray-ligth !default;
+$dialog-normal-title-border-color:      transparent !default;
+$dialog-normal-title-border-style:      solid !default;
+$dialog-normal-title-border-width:      0 !default;
+$dialog-normal-title-height: 			$field-height !default;
+$dialog-normal-title-textcolor: 		$gray-dark !default;
+$dialog-padding:						20px !default;
 
 // ToolTip
 $tooltip-normal-bgcolor: 				$white !default;

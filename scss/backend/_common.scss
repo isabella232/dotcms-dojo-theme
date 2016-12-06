@@ -8,3 +8,15 @@
 @import "dojo";
 @import "dot-admin/common";
 @import "calendar-blue";
+
+#cell-actions {
+  text-align: center;
+  width: 65px;
+  white-space: nowrap;
+
+  a {
+    display: inline-block;
+    margin: 0 $basic-padding / 2;
+    text-decoration: none;
+  }
+}

@@ -199,9 +199,9 @@
     &ListContainer-top,
     &ListContainer-bottom {
       @include box-sizing("content-box");
-      border-width: $tab-container-border-width;
-      border-style: $tab-container-border-style;
-      border-color: $tab-container-border-color;
+      border-width: $tab-list-container-border-width;
+      border-style: $tab-list-container-border-style;
+      border-color: $tab-list-container-border-color;
       height: $tab-height !important;
       overflow: visible;
     }

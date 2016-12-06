@@ -15,9 +15,18 @@
 }
 
 #checkbox-radio {
-  margin: $basic-padding 0;
-  display: flex;
   align-items: center;
+  display: flex;
+  margin: $basic-padding 0;
+  white-space: nowrap;
+
+  //&:first-child {
+  //  margin-top: 0;
+  //}
+  //
+  //&:last-child {
+  //  margin-bottom: 0;
+  //}
 
   & > .dijit {
     margin-right: $basic-padding / 2;
@@ -32,6 +41,11 @@
     margin-right: $basic-padding;
     white-space: nowrap;
   }
+
+  .radio, .checkbox {
+    @extend #checkbox-radio;
+  }
+
 
   .dijit {
     margin-right: $basic-padding;
@@ -55,6 +69,7 @@
   margin-top: 5px;
 }
 
+// VERTICAL OLD WAY FORMS
 dl {
   //margin: 0;
 
@@ -123,7 +138,6 @@ dl {
 
 dd,
 dt {
-
   &.wide {
     clear: both;
     width: auto;
@@ -153,6 +167,64 @@ dd {
   }
 }
 
+// HORIZONTAL NEW FORMS
+#form-horizontal-flexbox {
+  dl {
+    display: flex;
+    margin-bottom: $basic-padding;
+    min-height: $field-height;
+  }
+
+  dd, dt {
+    clear: none;
+    float: none;
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+    text-align: inherit;
+    width: auto;
+  }
+
+  dd {
+    align-self: center;
+  }
+
+  dt {
+    padding: $basic-padding $basic-padding * 2 0;
+    text-align: right;
+    width: 150px;
+  }
+}
+
+#form-horizontal-table {
+  display: table;
+
+  & > div {
+    display: table-row-group;
+  }
+
+  dl {
+    display: table-row;
+  }
+
+  dd, dt {
+    display: table-cell;
+  }
+
+  dt {
+    white-space: nowrap;
+    width: 1%;
+  }
+
+  dd {
+    width: 99%;
+  }
+}
+
+.form-horizontal {
+  @extend #form-horizontal-flexbox;
+}
+
 // INLINE FORM
 
 .inline-form {
@@ -174,5 +246,15 @@ dd {
     .radio, .checkbox {
       @extend #checkbox-radio;
     }
+  }
+}
+
+// BUTTON ROWS
+
+.buttonRow {
+  text-align: center;
+
+  .dijitButton {
+    margin: 0 $basic-padding / 2;
   }
 }
