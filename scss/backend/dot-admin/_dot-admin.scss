@@ -507,15 +507,6 @@ tr.active {
   z-index: 11;
   line-height: 18px;
 }
-.nameHeader {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  padding: 3px 10px 3px 10px;
-  vertical-align: middle;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
 .warningHeader {
   background-color: #f0f0f0;
   color: yellow;
@@ -525,12 +516,6 @@ tr.active {
   vertical-align: middle;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-}
-.nameText {
-  font-weight: bold;
-  padding: 3px 0 5px 0;
-  width: 200px;
-  overflow: hidden;
 }
 .warningText {
   font-weight: bold;

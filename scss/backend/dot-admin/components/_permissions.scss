@@ -1,0 +1,91 @@
+.permission__host-selector {
+  justify-content: flex-end;
+}
+
+#rolePermissionsAccordion .dijitAccordionContainer-child {
+  overflow-y: hidden !important;
+}
+
+.permissionLabelTable, .permissionTable {
+  width: 100%;
+}
+
+.permissionTableWrapper {
+  padding: 0 0 0 3px;
+}
+
+.permissionLabelsWrapper {
+  padding: 15px 15px 10px 9px;
+}
+
+.permissionTable,
+.permissionTableTitle {
+  td {
+    padding: 4px 0;
+    width: 12%;
+    text-align: center;
+
+    &.permissionType {
+      width: 28%;
+      text-align: right;
+      padding: 3px 35px 3px 0;
+    }
+  }
+}
+
+.permissionTableTitle {
+  width: 100%;
+  margin: 0;
+
+  td {
+    &.folderName {
+      vertical-align: middle;
+      width: 28%;
+      text-align: left;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.hostSelectorButton {
+  margin: 0;
+}
+
+.hostFolderAccordionPermissionsTitle {
+  vertical-align: middle;
+  img {
+    vertical-align: middle;
+  }
+}
+
+.permissionsActions {
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  padding: 5px 8px;
+  width: 550px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  a {
+    margin-right: 20px;
+  }
+}
+
+#loadingPermissionsAccordion {
+  padding-top: 25px;
+  text-align: center;
+}
+
+#permissionsTab {
+  margin-bottom: 5px;
+}
+
+#rolePermissionsMsg {
+  color: #E84048;
+  text-align: center;
+}

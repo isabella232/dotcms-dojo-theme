@@ -1,6 +1,6 @@
 .dijitAccordion {
   &Container {
-    border: none;
+    border: $accordion-title-border;
 
     .dijitAccordionContainer-child {
       padding: $basic-padding;
@@ -19,7 +19,8 @@
   &Title {
     @include transition(background-color, color, border, $field-animation-speed);
     background-color: $accordion-title-normal-bgcolor;
-    border: $accordion-title-border;
+    border-bottom: $accordion-title-border;
+    border-top: $accordion-title-border;
     border-bottom: none;
     height: $accordion-title-heigth;
     line-height: $accordion-title-heigth;
@@ -40,8 +41,8 @@
   }
 
   &ChildWrapper {
-    border-left: $accordion-title-border;
-    border-right: $accordion-title-border;
+    //border-left: $accordion-title-border;
+    //border-right: $accordion-title-border;
   }
 
 }

@@ -1,7 +1,9 @@
-@import "./portlets/content-search";
-@import "./portlets/content-edit";
-@import "./portlets/content-type";
-@import "./portlets/legacy";
+@import "content-search";
+@import "content-edit";
+@import "content-type";
+@import "view-users";
+@import "view-roles";
+@import "legacy";
 
 /* PORTLET STYLES 2.0 */
 $panel-padding: $basic-padding * 2;

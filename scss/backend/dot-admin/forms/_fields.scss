@@ -108,7 +108,7 @@ Styles for commons fields along the backend
 
 // TEXTAREA
 
-#text-toolbar {
+#editor-toolbar {
   display: flex;
   justify-content: space-between;
   margin-top: $basic-padding;
@@ -118,9 +118,9 @@ Styles for commons fields along the backend
   }
 }
 
-.textarea-toolbar {
-  @extend #text-toolbar;
-  width: 450px;
+.editor-toolbar {
+  @extend #editor-toolbar;
+  width: 600px;
 }
 
 .langVariablesField {
@@ -135,7 +135,7 @@ Styles for commons fields along the backend
 // WYSIWYG Tools
 
 .wysiwyg-tools {
-  @extend #text-toolbar;
+  @extend #editor-toolbar;
 
   .dijitSelect {
     width: auto;

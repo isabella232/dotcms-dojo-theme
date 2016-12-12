@@ -3,10 +3,10 @@
 @import "crumbtrail";
 @import "icons";
 @import "forms/base";
-@import "portlets";
-@import "image-tools"; // TODO: need to remove image_tools.css from html.
+@import "portlets/common";
+@import "components/common";
 
-$dialog-width: 900px;
+@import "image-tools"; // TODO: need to remove image_tools.css from html.
 
 #addFileAssetDialog {
   .dijitComboBox {
@@ -16,111 +16,4 @@ $dialog-width: 900px;
 
 #search_form, #borderContainer {
   height: 100%;
-}
-
-.file-selector-tree,
-.related-content-dialog {
-
-  .dijitDialogPaneContent {
-    padding: 0;
-  }
-
-  .portlet-sidebar-wrapper {
-    width: 200px;
-  }
-}
-
-.file-selector-tree {
-  .selectableFile {
-    display: flex;
-
-    img {
-      margin-right: $basic-padding / 2;
-    }
-  }
-
-  .portlet-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
-    padding: 0;
-  }
-}
-
-.file-selector-tree__container {
-  width: $dialog-width;
-  height: 500px;
-}
-
-.file-selector-tree__loading,
-.file-selector-tree__no-results,
-.file-selector-tree__select-folder {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  text-align: center;
-}
-
-.file-selector-tree__main {
-  display: flex;
-}
-
-.file-selector-tree__sidebar {
-  padding: $basic-padding * 2;
-
-  .dijitTreeContainer {
-    float: none;
-  }
-
-  .dijitTreeNode {
-    padding: $basic-padding / 2 0;
-  }
-}
-
-.file-selector-tree__table {
-  display: flex;
-  flex: 1;
-}
-
-.file-selector-tree__toolbar {
-  background-color: $gray-ligther;
-  margin: 0;
-  padding: $basic-padding * 2;
-}
-
-.file-selector-tree__views-menu {
-  display: flex;
-
-  span {
-    margin-right: $basic-padding / 2;
-    font-weight: bold;
-  }
-
-  img {
-    cursor: pointer;
-    margin: 0 $basic-padding / 2;
-  }
-}
-
-.related-content-dialog {
-  width: $dialog-width;
-  height: 550px;
-
-  .dijitDialogTitleBar {
-    height: 0;
-    z-index: 1;
-  }
-
-}
-
-.related-content-container,
-.related-content-form {
-  height: 100%;
-}
-
-.related-content-form {
-  width: $dialog-width;
 }

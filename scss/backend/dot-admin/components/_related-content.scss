@@ -1,0 +1,26 @@
+.related-content-dialog {
+  width: 900px;
+  height: 550px;
+
+  .dijitDialogPaneContent {
+    padding: 0;
+  }
+
+  .portlet-sidebar-wrapper {
+    width: 200px;
+  }
+
+  .dijitDialogTitleBar {
+    height: 0;
+    z-index: 1;
+  }
+}
+
+.related-content-container,
+.related-content-form {
+  height: 100%;
+}
+
+.related-content-form {
+  width: 900px;
+}

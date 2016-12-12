@@ -18,17 +18,21 @@
 @import "form/timePicker.scss";
 
 // LAYOUT
-@import "layout/AccordionContainer";
-@import "layout/BorderContainer";
+@import "layout/accordionContainer";
+@import "layout/borderContainer";
 @import "layout/ContentPane";
 @import "layout/dialogBox";
-@import "layout/SplitContainer";
-@import "layout/TabContainer";
+@import "layout/popup";
+@import "layout/splitContainer";
+@import "layout/tabContainer";
 @import "layout/toolTip";
-@import "layout/Popup";
+@import "layout/tree";
 
 @import "common";
 @import "calendar";
 @import "menu";
 @import "progressBar";
 @import "inlineEditBox";
+
+// DOJOX
+@import "dojox/datagrid";

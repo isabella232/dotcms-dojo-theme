@@ -20,30 +20,23 @@
   margin: $basic-padding 0;
   white-space: nowrap;
 
-  //&:first-child {
-  //  margin-top: 0;
-  //}
-  //
-  //&:last-child {
-  //  margin-bottom: 0;
-  //}
-
   & > .dijit {
     margin-right: $basic-padding / 2;
   }
+}
+
+.radio, .checkbox {
+  @extend #checkbox-radio;
 }
 
 #inline-form {
   align-items: center;
   display: flex;
 
-  & > label {
+  & > label,
+  & > div {
     margin-right: $basic-padding;
     white-space: nowrap;
-  }
-
-  .radio, .checkbox {
-    @extend #checkbox-radio;
   }
 
 
@@ -53,6 +46,12 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.listingTable {
+  .radio, .checkbox {
+    margin: 0;
   }
 }
 
@@ -161,10 +160,6 @@ dd {
   .buttonCaption {
     padding-left: $field-padding !important;
   }
-
-  .radio, .checkbox {
-    @extend #checkbox-radio;
-  }
 }
 
 // HORIZONTAL NEW FORMS
@@ -240,12 +235,6 @@ dd {
 
   &Name {
     @extend #label;
-  }
-
-  &Value {
-    .radio, .checkbox {
-      @extend #checkbox-radio;
-    }
   }
 }
 

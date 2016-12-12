@@ -1,0 +1,54 @@
+.view-roles,
+.view-roles .portlet-sidebar {
+  height: 100%;
+}
+
+.view-roles {
+  .dijitTabPaneWrapper .dijitContentPane {
+    box-sizing: content-box;
+  }
+
+  .portlet-main {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.view-roles__filter {
+  margin-bottom: $basic-padding * 2;
+}
+
+.view-roles__heading {
+  background-color: $gray-ligthest;
+  border-radius: $border-radius;
+  border: solid 1px $gray-ligther;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $basic-padding * 4;
+  min-height: 50px;
+  padding: $basic-padding;
+}
+
+.view-roles__tree {
+  height: 100%;
+}
+
+.view-roles__tabs,
+.view-roles__tabs-container {
+  height: 100%;
+}
+
+.view-roles__user-filter {
+  margin-bottom: $basic-padding * 2;
+  width: 300px;
+}
+
+.view-roles__user-grid {
+  margin-bottom: $basic-padding;
+}
+
+.nameText {
+  align-self: center;
+  font-size: $font-size-large;
+  font-weight: normal;
+}
