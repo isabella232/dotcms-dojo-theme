@@ -140,7 +140,6 @@
 .user,
 .windows,
 .workflow,
-.working,
 .workStream,
 .wysiwyg {
   &Icon {
@@ -313,7 +312,7 @@ $icons: (
   vtl: $fa-var-file-code-o,
   windows: $fa-var-square,
   workflow: $fa-var-square,
-  working: $fa-var-circle-thin,
+  working: $fa-var-circle,
   workStream: $fa-var-square,
   wysiwyg: $fa-var-square,
 
@@ -388,6 +387,10 @@ $icons: (
 }
 
 // CONTENT LISTING ICONS
+
+.workingIcon {
+  color: $orange;
+}
 
 .liveIcon {
   color: $green;

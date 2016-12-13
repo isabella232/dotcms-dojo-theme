@@ -39,6 +39,14 @@
     white-space: nowrap;
   }
 
+  & > .checkbox,
+  & > .radio {
+    margin-right: $basic-padding * 2;
+
+    label {
+      line-height: 1;
+    }
+  }
 
   .dijit {
     margin-right: $basic-padding;
@@ -46,6 +54,11 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .dijitRadio,
+  .dijitCheckBox {
+    margin-right: $basic-padding / 2;
   }
 }
 
@@ -185,9 +198,16 @@ dd {
   }
 
   dt {
+    line-height: 1;
     padding: $basic-padding $basic-padding * 2 0;
     text-align: right;
     width: 150px;
+
+    &.checkbox,
+    &.radio {
+      justify-content: flex-end;
+      padding-top: 0;
+    }
   }
 }
 
@@ -243,7 +263,8 @@ dd {
 .buttonRow {
   text-align: center;
 
-  .dijitButton {
+  .dijitButton,
+  .fakeDojoButton {
     margin: 0 $basic-padding / 2;
   }
 }

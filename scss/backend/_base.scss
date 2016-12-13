@@ -7,7 +7,6 @@ html, body {
 body {
   outline: none !important;
   color: #555;
-  line-height: 138.5%;
   background-color: #f3f3f3;
 }
 
@@ -52,9 +51,10 @@ fieldset {
 }
 
 a {
-  color: #2c548d;
+  color: $brand-primary;
 
   &:hover {
+    text-decoration: none;
   }
 }
 

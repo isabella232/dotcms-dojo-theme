@@ -1,11 +1,11 @@
 $sidebar-width: 220px;
 
-.content-edit-main {
+.content-edit__main {
   margin: $basic-padding * 2 $sidebar-width 0 0;
   width: auto;
 }
 
-.content-edit-sidebar {
+.content-edit__sidebar {
   background-color: $gray-ligthest;
   border-left: solid 1px $gray-ligther;
   height: 100%;

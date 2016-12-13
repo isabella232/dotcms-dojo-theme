@@ -21,6 +21,36 @@ select[multiple] {
 }
 
 // CUSTOM BUTTONS FOR DOTCMS UI
+.fakeDojoButton {
+  @include btn($button-normal-shadow, $button-normal-bgcolor, $button-normal-border, $button-normal-textcolor);
+  @include transition(all $field-animation-speed);
+  border-radius: $field-border-radius;
+  display: inline-block;
+  height: $field-height;
+  line-height: $field-height;
+  padding: 0 $basic-padding * 2;
+  text-decoration: none;
+
+  &:hover {
+    @include btn($button-hover-shadow, $button-hover-bgcolor, $button-hover-border, $button-hover-textcolor);
+  }
+
+  img {
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+}
+
+.fakeDojoButtonDanger {
+  background-color: $brand-secondary;
+  color: $white;
+
+  &:hover {
+    background-color: darken($brand-secondary, 10%);
+    color: $white;
+  }
+}
+
 .dijit {
   &DropDownActionButton {
     border: none;
@@ -62,6 +92,15 @@ select[multiple] {
 
     &.dijitButtonHover {
       background-color: darken($brand-secondary, 10%);
+    }
+  }
+
+  &ButtonAction {
+    background-color: $brand-primary;
+    color: $white;
+
+    &.dijitButtonHover {
+      background-color: darken($brand-primary, 10%);
     }
   }
 }
