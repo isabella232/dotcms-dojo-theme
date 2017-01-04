@@ -5749,6 +5749,10 @@ Styles for commons fields along the backend
   top: 36px;
 }
 
+textarea {
+  min-height: 100px !important;
+}
+
 .wysiwyg-tools .dijitSelect {
   width: auto;
 }
@@ -6663,6 +6667,12 @@ a.category_higlighted, a.tag_higlighted {
 .view-workflow .dijitDropDownActionButton,
 .view-workflow .view-workflow__add-comment {
   float: right;
+}
+
+.view-categories .dijitDropDownActionButton {
+  position: absolute;
+  right: 30px;
+  z-index: 1;
 }
 
 .contentIdentifier {

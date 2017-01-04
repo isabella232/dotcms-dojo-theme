@@ -132,6 +132,10 @@ Styles for commons fields along the backend
   }
 }
 
+textarea {
+  min-height: 100px !important;
+}
+
 // WYSIWYG Tools
 
 .wysiwyg-tools {
