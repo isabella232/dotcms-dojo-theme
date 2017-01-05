@@ -68,3 +68,14 @@ $sidebar-width: 220px;
     }
   }
 }
+
+.content-edit_dialog-error{
+    background: #ffffff;
+    padding: 0px;
+    border: 0px;
+
+    .dijitDialogTitleBar {
+      height: 0;
+      z-index: 1;
+    }
+}
