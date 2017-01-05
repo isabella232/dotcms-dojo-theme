@@ -69,10 +69,11 @@ $sidebar-width: 220px;
   }
 }
 
-.content-edit_dialog-error{
+.content-edit__dialog-error{
     background: #ffffff;
     padding: 0px;
     border: 0px;
+    width: 300px;
 
     .dijitDialogTitleBar {
       height: 0;
