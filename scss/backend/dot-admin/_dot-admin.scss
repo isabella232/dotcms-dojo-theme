@@ -243,7 +243,7 @@ $table-border: 1px solid $gray-ligther;
 .listingTable {
   border-bottom: $table-border;
   border-collapse: collapse;
-  margin: 0 auto;
+  margin: 0 auto $basic-padding * 2 auto;
   width: 100%;
 
   .listingTable__actions {
@@ -257,7 +257,7 @@ $table-border: 1px solid $gray-ligther;
   }
 
   th, td {
-    padding: $basic-padding;
+    padding: 10px $basic-padding;
     border-bottom: $table-border;
 
     &:first-child {

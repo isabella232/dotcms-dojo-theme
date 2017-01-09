@@ -20,7 +20,7 @@
     }
 
     &.dijitClosable {
-      padding-right: $tab-padding * 2;
+      padding-right: $tab-padding + $basic-padding;
     }
 
     &PaneWrapper {
