@@ -2,3 +2,16 @@
 .view-workflow .view-workflow__add-comment  {
     float: right;
 }
+
+.portlet-sidebar .portlet-sidebar__input-spacer {
+    height: 6px;
+}
+
+.portlet-sidebar .dijitCheckBox {
+    position: relative;
+    bottom: 2px;
+}
+
+.dijitContentPane .buttonRow {
+    margin-bottom: 15px;
+}
