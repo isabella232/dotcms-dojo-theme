@@ -474,6 +474,9 @@ $menu-item-hover-bgcolor: $gray-ligthest;
 $menu-item-hover-textcolor: $gray-dark;
 $menu-item-selected-bgcolor: $menu-item-hover-bgcolor;
 $menu-item-selected-textcolor: $menu-item-hover-textcolor;
+$menu-item-height: $field-height;
+$menu-item-line-height: $field-height - 10;
+$menu-item-color: $gray-dark;
 
 //TimePicker menu
 $timepicker-bgcolor: $white;

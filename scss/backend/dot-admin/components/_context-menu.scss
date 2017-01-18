@@ -1,0 +1,15 @@
+.site-browser__context-menues .site-browser__context-menu {
+    box-shadow: $menu-shadow;
+
+    a {
+        font-size: $font-size-medium;
+        height: $menu-item-height;
+        line-height: $menu-item-line-height;
+        padding: 4px 26px;
+        color: $gray-dark;
+
+        &:hover {
+            background-color: $menu-item-hover-bgcolor;
+        }
+    }
+}
