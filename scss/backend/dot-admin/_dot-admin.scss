@@ -713,16 +713,15 @@ tr.pop_divider {
   display: inline-block;
   vertical-align: top;
 }
-#menu ul.dropdown li.dotCMS_containers a span,
-.container {
+
+#menu ul.dropdown li.dotCMS_containers a span {
   background: url($dotcms-sprite) no-repeat -1px -1220px;
   width: 18px;
   height: 18px;
   display: inline-block;
   vertical-align: top;
 }
-#menu ul.dropdown li.dotCMS_templates a span,
-.templateIcon {
+#menu ul.dropdown li.dotCMS_templates a span {
   background: url($dotcms-sprite) no-repeat -21px -1220px;
   width: 18px;
   height: 18px;
@@ -1149,20 +1148,6 @@ table.sTypeTable.sTypeItem {
   position: absolute;
   visibility: hidden;
   background: url($overlay);
-}
-/* permission hacks */
-
-.permissionTableTitle td {
-  text-align: center;
-  width: 12%;
-  font-size: 11px;
-  line-height: 22px;
-}
-.permissionTable th.permissionTitle {
-  padding: 0 0 0 10px;
-  font-weight: bold;
-  line-height: 22px;
-  font-size: 11px;
 }
 /* Host folders selector */
 

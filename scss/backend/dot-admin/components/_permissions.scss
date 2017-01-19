@@ -6,49 +6,6 @@
   overflow-y: hidden !important;
 }
 
-.permissionLabelTable, .permissionTable {
-  width: 100%;
-}
-
-.permissionTableWrapper {
-  padding: 0 0 0 3px;
-}
-
-.permissionLabelsWrapper {
-  padding: 15px 15px 10px 9px;
-}
-
-.permissionTable,
-.permissionTableTitle {
-  td {
-    padding: 4px 0;
-    width: 12%;
-    text-align: center;
-
-    &.permissionType {
-      width: 28%;
-      text-align: right;
-      padding: 3px 35px 3px 0;
-    }
-  }
-}
-
-.permissionTableTitle {
-  width: 100%;
-  margin: 0;
-
-  td {
-    &.folderName {
-      vertical-align: middle;
-      width: 28%;
-      text-align: left;
-
-      img {
-        vertical-align: middle;
-      }
-    }
-  }
-}
 
 .hostSelectorButton {
   margin: 0;
@@ -81,11 +38,88 @@
   text-align: center;
 }
 
-#permissionsTab {
-  margin-bottom: 5px;
-}
-
 #rolePermissionsMsg {
   color: #E84048;
   text-align: center;
+}
+
+
+
+.permissions__bar-user-role {
+  background-color: $gray-ligthest;
+  border-radius: $border-radius;
+  border: solid 1px $gray-ligther;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $basic-padding * 2;
+  padding: $basic-padding;
+
+  .femaleIcon,
+  .userIcon {
+    margin-right: $basic-padding;
+  }
+
+  .inline-form {
+    margin-right: $basic-padding * 4;
+  }
+}
+
+.permissions__bar-user-role-actions,
+.permissions__bar-user-role-main {
+  align-items: center;
+  display: flex;
+}
+
+.permissions__button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: $basic-padding * 2;
+
+  .checkbox {
+    margin-left: $basic-padding * 2;
+  }
+}
+
+
+.permissionWrapper {
+  background: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+
+  .dijitAccordionTitle {
+    padding: 0;
+  }
+}
+
+.permissionTable,
+.accordionEntry {
+  width: 100%;
+
+  td, th {
+    width: 10%;
+    text-align: center;
+  }
+
+  th {
+    font-weight: bold;
+
+    &.permissionType {
+      width: 40%;
+      font-weight: normal;
+      padding-left: $basic-padding;
+      text-align: left;
+    }
+
+    &.permissionTitle {
+      font-weight: bold;
+    }
+  }
+}
+
+#assetPermissionsMessageWrapper {
+  padding-top: 15px;
+  color: red;
+  text-align: center;
+  font-weight: bolder;
 }

@@ -50,8 +50,6 @@
 .encrypt,
 .exclamation,
 .exclamation-red,
-.female,
-.file,
 .fileMulti,
 .fileNew,
 .fix,
@@ -81,7 +79,6 @@
 .info,
 .key,
 .keyvalue,
-.link,
 .linkAdd,
 .listView,
 .login,
@@ -137,7 +134,6 @@
 .unlock,
 .unpublish,
 .upload,
-.user,
 .windows,
 .workflow,
 .workStream,
@@ -147,6 +143,7 @@
     display: none;
   }
 }
+
 
 // SHOW ICONS
 .arrowLeft,
@@ -167,6 +164,8 @@
 
 // Paring class name with font-awesome icon
 $icons: (
+  ukn: $fa-var-file-o, // this should be first to allow overwrite
+
   action: $fa-var-ellipsis-v,
   add: $fa-var-square,
   android: $fa-var-square,
@@ -213,8 +212,8 @@ $icons: (
   encrypt: $fa-var-square,
   exclamation-red: $fa-var-square,
   exclamation: $fa-var-square,
-  female: $fa-var-square,
-  file: $fa-var-square,
+  female: $fa-var-female,
+  file: $fa-var-file-o,
   fileMulti: $fa-var-square,
   fileNew: $fa-var-square,
   fix: $fa-var-square,
@@ -246,7 +245,7 @@ $icons: (
   info: $fa-var-info-circle,
   key: $fa-var-key,
   keyvalue: $fa-var-square,
-  //link: $fa-var-link,
+  link: $fa-var-link,
   linkAdd: $fa-var-square,
   listView: $fa-var-square,
   live: $fa-var-check-circle,
@@ -263,7 +262,7 @@ $icons: (
   newTask: $fa-var-square,
   newWorkflow: $fa-var-square,
   next: $fa-var-arrow-circle-right,
-  page: $fa-var-columns,
+  page: $fa-var-file-text-o,
   pageProp: $fa-var-square,
   paste: $fa-var-square,
   persona: $fa-var-user,
@@ -303,12 +302,11 @@ $icons: (
   toggleClose: $fa-var-minus-square-o,
   toggleOpen: $fa-var-plus-square-o,
   trash: $fa-var-square,
-  ukn: $fa-var-file-o,
   unarchive: $fa-var-square,
   unlock: $fa-var-unlock,
   unpublish: $fa-var-square,
   upload: $fa-var-upload,
-  user: $fa-var-square,
+  user: $fa-var-user,
   vtl: $fa-var-file-code-o,
   windows: $fa-var-square,
   workflow: $fa-var-square,
