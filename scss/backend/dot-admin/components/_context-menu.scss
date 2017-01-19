@@ -1,0 +1,31 @@
+.context-menu {
+    box-shadow: $menu-shadow;
+    position: absolute;
+    background: $white;
+    border: 1px solid $gray-ligther;
+    min-width: 190px;
+
+    .pop_divider{
+        border-bottom:1px dotted silver;
+        background-color: $white;
+    }
+
+    a {
+        display: block;
+        font-size: $font-size-medium;
+        height: $menu-item-height;
+        line-height: $menu-item-height;
+        padding: 0px $basic-padding*3;
+        color: $gray-dark;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $menu-item-hover-bgcolor;
+        }
+
+        span {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+}
