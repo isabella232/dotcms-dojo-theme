@@ -5,12 +5,17 @@
     border: 1px solid $gray-ligther;
     min-width: 190px;
 
+    .pop_divider{
+        border-bottom:1px dotted silver;
+        background-color: $white;
+    }
+
     a {
         display: block;
         font-size: $font-size-medium;
         height: $menu-item-height;
         line-height: $menu-item-height;
-        padding: 0px 26px;
+        padding: 0px $basic-padding*3;
         color: $gray-dark;
         text-decoration: none;
 
