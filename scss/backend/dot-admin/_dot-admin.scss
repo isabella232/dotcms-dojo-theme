@@ -941,24 +941,6 @@ tr.pop_divider {
 }
 /* ====================== BROWSER, HMTL, LINKS, FILES, TEMPLATES, CONTAINERS  (all POP UPs) ================= */
 
-div.contextPopupMenuBox,
-.contextMenuBox {
-  z-index: 10000;
-  width: 190px;
-  display: block;
-  border-top: 1px solid #437AAD;
-  border-bottom: 1px solid #437AAD;
-  padding: 0px 0px 0px 0px;
-}
-div.contextPopupMenuBox a {
-  line-height: 18px;
-  padding: 3px 0;
-  height: 21px;
-  vertical-align: middle;
-}
-div.contextPopupMenuBox span {
-  margin: 0 8px 0 8px;
-}
 table.sTypeTable {}
 table.sTypeTd {
   vertical-align: top;
