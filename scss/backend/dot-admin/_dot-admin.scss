@@ -246,6 +246,10 @@ $table-border: 1px solid $gray-ligther;
   margin: 0 auto $basic-padding * 2 auto;
   width: 100%;
 
+  tr:nth-child(odd) {
+    background-color: $gray-ligthest;
+  }
+
   .listingTable__actions {
     @extend #cell-actions;
   }
