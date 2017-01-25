@@ -2,6 +2,7 @@
 @import "content-edit";
 @import "content-search";
 @import "content-type";
+@import "cms-config";
 @import "view-roles";
 @import "view-users";
 @import "view-workflow";
@@ -13,12 +14,12 @@
 $panel-padding: $basic-padding * 2;
 
 .portlet {
-  .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
-    padding: 0;
-  }
-
   &-main {
     padding: $panel-padding 0;
+
+    .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
+      padding: 0;
+    }
   }
 
   &-sidebar {

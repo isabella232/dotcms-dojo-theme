@@ -136,11 +136,11 @@ acronym {
 }
 
 hr {
-  background-color: #ccc;
+  background-color: $gray-ligther;
   height: 1px;
-  color: #ccc;
+  color: $gray-ligther;
   border: 0;
-  margin: 10px 0;
+  margin: $basic-padding * 3 0;
 }
 
 .formRow {

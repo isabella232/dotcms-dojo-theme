@@ -113,23 +113,6 @@
   }
 }
 
-.view-users__section-break {
-  background-color: $gray-ligthest;
-  border: solid 1px $gray-ligther;
-  padding: $basic-padding;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: $basic-padding * 2;
-
-  .radio, .checkbox {
-    margin: 0;
-  }
-}
-
-.view-users__section-content {
-  margin-bottom: $basic-padding * 2;
-}
-
 .view-users__section-content-cols {
   display: flex;
   justify-content: space-around;

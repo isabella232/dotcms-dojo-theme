@@ -199,7 +199,8 @@ dd {
 
   dt {
     line-height: 1;
-    padding: $basic-padding $basic-padding * 2 0;
+    // 9px to align correctly vertically
+    padding: 9px $basic-padding * 2 0;
     text-align: right;
     width: 150px;
 
@@ -266,5 +267,20 @@ dd {
   .dijitButton,
   .fakeDojoButton {
     margin: 0 $basic-padding / 2;
+  }
+}
+
+// WHO CAN USE COMPONENT
+
+.who-can-use {
+  border: solid 1px $gray-ligth;
+  height: 90px;
+  margin-top: $basic-padding;
+  padding: $basic-padding;
+}
+
+.who-can-use__list {
+  td {
+    padding: $basic-padding / 2;
   }
 }

@@ -6,6 +6,7 @@
 .view-roles {
   .dijitTabPaneWrapper .dijitContentPane {
     box-sizing: content-box;
+    overflow: auto;
   }
 
   .portlet-main {
@@ -45,6 +46,25 @@
 
 .view-roles__user-grid {
   margin-bottom: $basic-padding;
+}
+
+.view-roles__portlets-list {
+  margin: 0;
+  max-height: 200px;
+  overflow: auto;
+
+  ul {
+    margin: 0;
+  }
+}
+
+.view-roles__portlets-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: $basic-padding 0;
+  border-bottom: solid 1px $gray-ligther;
+  align-items: center;
+  padding-right: 2px;
 }
 
 .nameText {
