@@ -3,6 +3,12 @@
   border: $combobox-normal-border;
   padding: 0 0 0 $field-padding;
 
+  input {
+    height: auto;
+    line-height: $field-height - ($field-border-size * 2);
+    padding: 0
+  }
+
   .dijitArrowButton {
     height: $field-height - ($field-border-size * 2);
     width: $field-height;

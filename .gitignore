@@ -5,3 +5,4 @@ node_modules/
 *.map
 .idea
 dotcmsConfig.js
+css/dotcms.css
