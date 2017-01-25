@@ -5971,6 +5971,8 @@ dd .buttonCaption {
 
 .buttonRow {
   text-align: center;
+  margin-bottom: 8px;
+  padding-top: 8px;
 }
 .buttonRow .dijitButton,
 .buttonRow .fakeDojoButton {
