@@ -70,7 +70,7 @@ $sidebar-width: 220px;
 }
 
 .content-edit__dialog-error{
-    background: #ffffff;
+    background:$white;
     padding: 0px;
     border: 0px;
     width: 300px;
@@ -79,4 +79,17 @@ $sidebar-width: 220px;
       height: 0;
       z-index: 1;
     }
+}
+
+.content-edit__history-version .dijitContentPane {
+  padding: 0px;
+
+  .contentIdentifier {
+    font-weight: bold;
+  }
+}
+
+.content-edit__divider {
+  background-color: $gray-ligther;
+  margin: 20px 0;
 }
