@@ -70,10 +70,6 @@
 .help,
 .hide,
 .hint,
-.host,
-.hostArchived,
-.hostDefault,
-.hostStopped,
 .hourGlass,
 .imageNew,
 .info,
@@ -235,9 +231,9 @@ $icons: (
   hide: $fa-var-square,
   hint: $fa-var-square,
   host: $fa-var-globe,
-  hostArchived: $fa-var-square,
-  hostDefault: $fa-var-square,
-  hostStopped: $fa-var-square,
+  hostArchived: $fa-var-globe,
+  hostDefault: $fa-var-globe,
+  hostStopped: $fa-var-globe,
   hourGlass: $fa-var-square,
   imageNew: $fa-var-square,
   info: $fa-var-info-circle,
@@ -405,6 +401,20 @@ $icons: (
 
 .archivedIcon {
   color: $red;
+}
+
+// SITE ICONS
+
+.hostArchivedIcon {
+  color: $red;
+}
+
+.hostDefaultIcon {
+  color: $brand-primary;
+}
+
+.hostStoppedIcon {
+  color: $gray-ligth;
 }
 
 // FILE TYPE ICONS

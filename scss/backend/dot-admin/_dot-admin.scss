@@ -246,7 +246,15 @@ $table-border: 1px solid $gray-ligther;
   margin: 0 auto $basic-padding * 2 auto;
   width: 100%;
 
-  tr:nth-child(odd) {
+  // Some listing tables have inner tabled to inline some elements
+  table,
+  table tr,
+  table tr:hover,
+  table td {
+    background: none !important;
+  }
+
+  tr:nth-child(even) {
     background-color: $gray-ligthest;
   }
 
@@ -255,8 +263,14 @@ $table-border: 1px solid $gray-ligther;
   }
 
   tr {
+    transition: background-color $field-animation-speed;
+
     .selected {
       background-color: #E0E9F6;
+    }
+
+    &:hover {
+      background-color: rgba($blue, 0.05);
     }
   }
 
