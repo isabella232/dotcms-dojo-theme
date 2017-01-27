@@ -6367,6 +6367,10 @@ a.category_higlighted, a.tag_higlighted {
   padding: 0px;
 }
 
+.portlet-sidebar {
+  width: 220px;
+}
+
 .advanced-search-button {
   display: block;
   background: #ECEDEE;
