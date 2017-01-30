@@ -263,6 +263,7 @@ dd {
 
 .buttonRow {
   text-align: center;
+  margin: $basic-padding 0;
 
   .dijitButton,
   .fakeDojoButton {
