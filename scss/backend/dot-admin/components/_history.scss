@@ -5,6 +5,10 @@
 
     .history__divider {
         background-color: $gray-ligther;
-        margin: 20px 0;
+        margin: $basic-padding*3 0;
+    }
+
+    .history__status {
+        overflow: hidden;
     }
 }
