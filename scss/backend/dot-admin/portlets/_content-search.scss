@@ -23,3 +23,24 @@
 .edit-contentlet-portlet {
   height: 100%;
 }
+
+.content-search__show-query-dialog {
+  .dijitDialogTitleBar {
+    height: 0px;
+    z-index: 1;
+  }
+}
+
+.content-search__key-fields {
+  margin-top: $basic-padding;
+}
+
+.content-search__import-content-form {
+  margin-top: $basic-padding*3;
+}
+
+.content-search__assign-workflow-form {
+  .dijitTextArea {
+    max-height: 100px;
+  }
+}
