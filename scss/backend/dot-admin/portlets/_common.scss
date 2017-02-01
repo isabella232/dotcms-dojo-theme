@@ -3,6 +3,7 @@
 @import "content-search";
 @import "content-type";
 @import "cms-config";
+@import "job-scheduler";
 @import "view-roles";
 @import "view-users";
 @import "view-workflow";
@@ -117,9 +118,17 @@ $panel-padding: $basic-padding * 2;
 }
 
 .callOutBox2 {
-  background-color: #f0f0f0;
+  background-color: $gray-ligther;
   border-radius: $border-radius;
-  border: 1px solid #d0d0d0;
+  border: 1px solid $gray-ligth;
   padding: $basic-padding;
   text-align: center;
+
+  h3 {
+    margin-bottom: $basic-padding * 2;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
