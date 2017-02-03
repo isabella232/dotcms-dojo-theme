@@ -3,7 +3,7 @@
   border: $textarea-normal-border;
   color: $textarea-normal-textcolor;
   font-family: $body-text;
-  padding: 0 $field-padding;
+  padding: $field-padding;
 
   &Hover {
     background-color: $textarea-hover-bgcolor;
