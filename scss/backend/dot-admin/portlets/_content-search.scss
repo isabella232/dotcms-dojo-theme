@@ -32,7 +32,7 @@
 }
 
 .content-search__key-fields {
-  margin-top: $basic-padding;
+  margin-top: $basic-padding/2;
 }
 
 .content-search__import-content-form {
@@ -42,5 +42,11 @@
 .content-search__assign-workflow-form {
   .dijitTextArea {
     max-height: 100px;
+  }
+}
+
+.content-search__results-list {
+  .dijitCheckBox {
+    margin-right: $basic-padding / 2;
   }
 }
