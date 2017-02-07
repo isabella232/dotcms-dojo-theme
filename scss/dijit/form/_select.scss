@@ -22,6 +22,12 @@
     }
   }
 
+  .dijitArrowButtonInner {
+    width: $select-arrow-container-size;
+  }
+
+
+
   &Hover {
     background-color: $select-hover-bgcolor;
     border: $select-hover-border;

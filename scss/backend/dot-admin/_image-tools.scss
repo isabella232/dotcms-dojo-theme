@@ -2,7 +2,7 @@
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 26px;
+  top: 49px;
   bottom: 0px;
 }
 
@@ -192,34 +192,41 @@
   width: 200px;
 }
 
+
+
 .thumbnailDiv {
-  cursor: pointer;
-  padding: $basic-padding * 2;
   border: solid 2px $gray-ligther;
-  min-width: 120px;
+  box-sizing: content-box;
+  cursor: pointer;
   min-height: 120px;
+  min-width: 120px;
+  padding: $basic-padding * 2;
+  position: relative;
 
   &Hover {
     border: solid 2px $gray-ligth;
+    box-sizing: content-box;
+    padding: $basic-padding * 2;
+    position: relative;
+
+    .editImageText {
+      opacity: 1;
+    }
   }
 }
 
-
-
 .editImageText {
-  cursor: pointer;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  opacity: .50;
   background: white;
-  border: 1px solid gray;
-  padding: 3px;
-  width: 80px;
-  height: 50px;
-  text-align: center;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
+  border-radius: $border-radius;
+  border: $field-border-size solid $gray;
+  bottom: $basic-padding;
+  cursor: pointer;
+  opacity: .50;
+  padding: 0 $basic-padding;
+  height: $field-height;
+  line-height: $field-height - ($field-border-size * 2);
+  position: absolute;
+  right: $basic-padding;
 }
 
 /*********

@@ -27,6 +27,12 @@
   &TreeRow {
     display: flex;
     padding: 2px 0;
+
+    .dijitTreeIcon, .dijitTreeExpando {
+      display: inline-block;
+      vertical-align: sub;
+      margin-right: $basic-padding / 2;
+    }
   }
 
   &TreeContent {
@@ -75,12 +81,6 @@
   &TreeIcon {
     width: 16px;
     height: 16px;
-  }
-
-  &TreeContent {
-    .dijitTreeIcon {
-      margin: 0;
-    }
   }
 
   &FolderOpened {

@@ -240,27 +240,11 @@
 /* TABLE STYLES 2.0 */
 $table-border: 1px solid $gray-ligther;
 
-.listingTable {
+#listing-table {
   border-bottom: $table-border;
   border-collapse: collapse;
   margin: 0 auto $basic-padding * 2 auto;
   width: 100%;
-
-  // Some listing tables have inner tabled to inline some elements
-  table,
-  table tr,
-  table tr:hover,
-  table td {
-    background: none !important;
-  }
-
-  tr:nth-child(even) {
-    background-color: $gray-ligthest;
-  }
-
-  .listingTable__actions {
-    @extend #cell-actions;
-  }
 
   tr {
     transition: background-color $field-animation-speed;
@@ -271,6 +255,10 @@ $table-border: 1px solid $gray-ligther;
 
     &:hover {
       background-color: rgba($blue, 0.05);
+    }
+
+    &:nth-child(even) {
+      background-color: $gray-ligthest;
     }
   }
 
@@ -291,6 +279,22 @@ $table-border: 1px solid $gray-ligther;
   th {
     font-weight: bold;
     background-color: $gray-ligthest;
+  }
+}
+
+.listingTable {
+  @extend #listing-table;
+
+  // Some listing tables have inner tabled to inline some elements
+  table,
+  table tr,
+  table tr:hover,
+  table td {
+    background: none !important;
+  }
+
+  .listingTable__actions {
+    @extend #cell-actions;
   }
 
   td {

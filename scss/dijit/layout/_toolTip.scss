@@ -1,9 +1,12 @@
 .dijitTooltip {
+  max-width: 300px;
+
   &Container {
     background: $tooltip-normal-bgcolor;
     border: $tooltip-normal-border;
     color: inherit;
     font-size: inherit;
+    padding: $basic-padding * 2;
   }
 
   &FocusNode {

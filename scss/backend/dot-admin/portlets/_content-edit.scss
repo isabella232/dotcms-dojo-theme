@@ -31,21 +31,27 @@ $sidebar-width: 220px;
     background-color: $white;
     border-radius: $border-radius;
     border: solid 1px $gray-ligth;
+  }
 
-    a {
-      display: block;
-      padding: $basic-padding;
-      border-bottom: solid 1px $gray-ligth;
-      cursor: pointer;
+  a {
+    display: block;
+    padding: $basic-padding;
+    border-bottom: solid 1px $gray-ligth;
+    cursor: pointer;
+    transition: background-color $field-animation-speed;
 
-      &:hover {
-        background-color: $gray-ligther;
-        color: $text-color;
-      }
+    [class$="Icon"],
+    [class*="Icon"] {
+      display: none;
+    }
 
-      &:last-of-type {
-        border-bottom: none;
-      }
+    &:hover {
+      background-color: $gray-ligther;
+      color: $text-color;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
     }
   }
 }

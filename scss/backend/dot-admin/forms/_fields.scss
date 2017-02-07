@@ -7,8 +7,8 @@ Styles for commons fields along the backend
 // COMMONS ELEMENTS:
 
 .glossaryTermPopup {
-  background-color: $gray-ligthest;
   @include border-radius($border-radius);
+  background-color: $gray-ligthest;
   padding: ($field-padding / 2) $field-padding;
   border: solid 1px $gray-ligther;
   position: absolute;
@@ -17,37 +17,33 @@ Styles for commons fields along the backend
 //BINARY FILE
 
 .fileAjaxUploader {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  margin-top: $basic-padding * 2;
-  width: 336px;
+  margin: $basic-padding 0;
 
   &Actions {
     display: flex;
-    justify-content: center;
-  }
 
-  &FileName,
-  &Form,
-  &Status {
-    margin-bottom: $basic-padding * 2;
+    & div:first-child {
+      margin-right: $basic-padding;
+    }
   }
 
   &FileName {
-    text-align: center;
+    margin-right: $basic-padding * 2;
   }
 
   &Status {
     display: flex;
+    align-items: center;
   }
 
   &StatusMsg {
-    align-self: center;
-    margin-left: $basic-padding * 2;
+    margin-left: $basic-padding;
   }
 
   .dijitProgressBar {
-    width: 100%;
+    width: 150px;
   }
 }
 
@@ -288,5 +284,14 @@ $key-val-width: 500px;
   .dijitInputContainer {
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+.field__editable-content {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: $basic-padding * 2;
   }
 }

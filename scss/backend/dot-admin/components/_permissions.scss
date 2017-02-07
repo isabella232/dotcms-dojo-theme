@@ -2,8 +2,15 @@
   justify-content: flex-end;
 }
 
-#rolePermissionsAccordion .dijitAccordionContainer-child {
-  overflow-y: hidden !important;
+.permission__list {
+  .dijitAccordionTitle {
+    height: auto;
+    padding: 0;
+  }
+
+  .dijitAccordionContainer-child {
+    overflow-y: hidden !important;
+  }
 }
 
 
@@ -13,6 +20,7 @@
 
 .hostFolderAccordionPermissionsTitle {
   vertical-align: middle;
+
   img {
     vertical-align: middle;
   }
@@ -43,8 +51,6 @@
   text-align: center;
 }
 
-
-
 .permissions__bar-user-role {
   background-color: $gray-ligthest;
   border-radius: $border-radius;
@@ -54,8 +60,8 @@
   margin-bottom: $basic-padding * 2;
   padding: $basic-padding;
 
-  .femaleIcon,
-  .userIcon {
+  [class$="Icon"],
+  [class*="Icon"] {
     margin-right: $basic-padding;
   }
 
@@ -80,7 +86,6 @@
   }
 }
 
-
 .permissionWrapper {
   background: none;
   padding: 0;
@@ -92,6 +97,29 @@
   }
 }
 
+.permissionTable {
+  .permissionType {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+.permissionTableTitle {
+  .folderName {
+    padding-left: $basic-padding;
+    text-align: left;
+    vertical-align: middle;
+    width: 20%;
+
+    img {
+      display: inline-block;
+      margin-right: $basic-padding / 2;
+      vertical-align: sub;
+    }
+  }
+}
+
+.permissionTableTitle,
 .permissionTable,
 .accordionEntry {
   width: 100%;
@@ -99,6 +127,10 @@
   td, th {
     width: 10%;
     text-align: center;
+  }
+
+  td {
+    padding: $basic-padding / 2;
   }
 
   th {
