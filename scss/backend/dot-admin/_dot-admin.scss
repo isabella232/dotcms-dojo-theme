@@ -294,6 +294,11 @@ $table-border: 1px solid $gray-ligther;
   }
 
   td {
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+
     table {
       td {
         &:first-child, &:last-child {
