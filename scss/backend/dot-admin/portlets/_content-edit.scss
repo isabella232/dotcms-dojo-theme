@@ -75,16 +75,30 @@ $sidebar-width: 220px;
   }
 }
 
-.content-edit__dialog-error{
-    background:$white;
-    padding: 0px;
-    border: 0px;
-    width: 300px;
 
-    .dijitDialogTitleBar {
-      height: 0;
-      z-index: 1;
+.content-edit__dialog-error{
+  background:$white;
+  padding: 0px;
+  border: 0px;
+  width: 300px;
+
+  p {
+    text-align: center;
+  }
+
+  ul {
+    margin: 0 0 $basic-padding * 2;
+
+    li {
+      list-style-position: outside;
+      list-style-type: decimal;
+      margin: 0 0 $basic-padding $basic-padding * 2;
     }
+  }
+}
+
+.content-edit__dialog-error-actions {
+  text-align: center;
 }
 
 .content-edit__history-version .dijitContentPane {
