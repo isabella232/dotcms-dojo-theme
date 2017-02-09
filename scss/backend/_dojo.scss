@@ -3,6 +3,7 @@
 .dijitTextBox,
 .dijitSelect {
   width: 100%;
+  max-width: $content-edit-field-max-width;
 }
 
 .dijitComboBox {

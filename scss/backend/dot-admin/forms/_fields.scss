@@ -116,7 +116,8 @@ Styles for commons fields along the backend
 
 .editor-toolbar {
   @extend #editor-toolbar;
-  width: 600px;
+  max-width: $content-edit-field-max-width;
+  width: 100%;
 }
 
 .langVariablesField {
@@ -139,7 +140,8 @@ Styles for commons fields along the backend
 }
 
 .wysiwyg-wrapper {
-  width: 800px;
+  width: 100%;
+  max-width: $content-edit-field-max-width;
 }
 
 // KEY/VALUE

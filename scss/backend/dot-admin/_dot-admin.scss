@@ -253,11 +253,11 @@ $table-border: 1px solid $gray-ligther;
       background-color: #E0E9F6;
     }
 
-    &:hover {
+    &:not(.trIdxActive, .trIdxNothing):hover {
       background-color: rgba($blue, 0.05);
     }
 
-    &:nth-child(even) {
+    &:not(.trIdxActive, .trIdxNothing):nth-child(even) {
       background-color: $gray-ligthest;
     }
   }
