@@ -45,8 +45,13 @@
   }
 }
 
-.content-search__results-list {
+.content-search__result-item {
+  padding-left: 20px;
+  position: relative;
+
   .dijitCheckBox {
-    margin-right: $basic-padding / 2;
+    position: absolute;
+    left: 0;
+    top: 3px;
   }
 }

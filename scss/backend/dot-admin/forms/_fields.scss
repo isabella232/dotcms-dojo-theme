@@ -52,27 +52,28 @@ Styles for commons fields along the backend
 
 .catPreview {
   background-color: $white;
-  border: solid 1px $gray-ligth;
   border-radius: $border-radius;
-  min-height: 41px;
+  border: solid 1px $gray-ligth;
   margin-top: $basic-padding;
-  padding: 3px 5px;
+  max-width: $content-edit-field-max-width;
+  min-height: 38px;
+  padding: $basic-padding / 2;
 
   li {
-    background-color: $gray-ligther;
-    border-radius: 7px;
-    border: solid 1px $gray-ligth;
+    background: $gray-ligthest;
+    border-radius: $border-radius;
+    border: $field-normal-border;
     display: inline-block;
-    font-size: $font-size-small;
+    font-size: 12px;
     margin: 2px 5px 2px 0px;
-    padding: 3px 25px 4px 5px;
+    padding: ($basic-padding / 2) $basic-padding ($basic-padding / 2) ($basic-padding / 2);
     position: relative;
     text-decoration: none;
-    vertical-align: middle;
   }
 
   a {
-    text-decoration: none;
+    display: inline-block;
+    vertical-align: sub;
 
     &:hover {
       color: #cc0000;
@@ -235,7 +236,7 @@ $key-val-width: 500px;
 
 .tagLink {
   background: $gray-ligthest;
-  border-radius: 7px;
+  border-radius: $border-radius;
   border: $field-normal-border;
   display: inline-block;
   font-size: 12px;

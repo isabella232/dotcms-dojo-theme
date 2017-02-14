@@ -256,6 +256,10 @@ dd {
 
   &Name {
     @extend #label;
+
+    .hintIcon {
+      color: $text-color;
+    }
   }
 }
 

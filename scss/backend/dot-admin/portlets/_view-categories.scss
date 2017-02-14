@@ -4,4 +4,12 @@
         right: 30px;
         z-index: 1;
     }
+
+    .subNavCrumbTrail {
+        display: block;
+        
+        #selectHostDiv {
+            display: none;
+        }
+    }
 }

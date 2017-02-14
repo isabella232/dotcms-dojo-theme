@@ -26,3 +26,11 @@
   background: none;
   height: 18px;
 }
+
+.input-text-naked {
+  border: none;
+  color: $text-color;
+  font-family: $body-text;
+  font-size: $body-size;
+  line-height: $field-height;
+}

@@ -37,6 +37,7 @@ $panel-padding: $basic-padding * 2;
 
   &-wrapper {
     height: 100%;
+    overflow: auto;
   }
 
   &-pagination, &-toolbar, &-toolbar__actions, &-toolbar__info {
@@ -72,7 +73,7 @@ $panel-padding: $basic-padding * 2;
 
   &-toolbar__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1;
     margin: 0 18px;
     align-items: center;
