@@ -72,3 +72,62 @@
   font-size: $font-size-large;
   font-weight: normal;
 }
+
+.view-roles {
+  .view-roles__user-grid, .view-roles__cms-tabs {
+
+    .dojoxGridHeader {
+      background-color: $gray-ligthest;
+      font-family: $body-text;
+      border-bottom: 1px solid lighten($gray-ligth, 15%);
+
+      .dojoxGridArrowButtonChar {
+        float: left;
+      }
+      
+      .dojoxGridCell { 
+        border: 0px solid;
+        background: none;
+        padding: $basic-padding $basic-padding / 2;
+        font-weight: bold;
+      }
+    }
+
+    .dojoxGridRowSelected {
+      background-color: transparent;
+    }
+
+    .dojoxGridRow table .dojoxGridCell {
+      font-family: $body-text;
+      border: 0px;
+      padding: $basic-padding $basic-padding / 2;
+    }
+
+    .dojoxGrid {
+      background-color: transparent;
+    }
+
+    .dojoxGridRowOver {
+      border: 0px;
+      background-color: transparent;
+    }
+
+    .dojoxGridCellOver {
+      border: 0px;
+    }
+
+    .dojoxGridRowOdd {
+      background-color: $gray-ligther;
+    }
+
+    .dojoxGridRow {
+      // &:nth-child(even){
+      //   background-color: $gray-ligthest;
+      // }
+
+      border-bottom: 1px solid lighten($gray-ligth, 15%);
+    }
+  }
+
+
+}
