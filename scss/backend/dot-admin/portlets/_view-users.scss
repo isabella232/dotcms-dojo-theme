@@ -100,7 +100,7 @@
 .view-users__roles-container-item {
   border-radius: $border-radius;
   border: solid 1px $gray-ligth;
-  height: 150px;
+  height: 300px;
   overflow: auto;
 
   select[multiple] {
@@ -128,44 +128,18 @@
 }
 .view-users {
   .view-users__users-list {
-    font-family: $body-text;
-
-    &.dojoxGrid {
-      background-color: transparent;
-    }
-
     .dojoxGridRow {
       &:nth-child(even){
         background-color: $gray-ligther;
       }
-
-      border: 0px;
-      background-color: $white;
     }
-
-    .dojoxGridRow table .dojoxGridCell {
-      border: 0px;
-      padding: $basic-padding $basic-padding / 2;
-    }
-
     .dojoxGridHeader {
       background-color: $gray-ligther;
-      
-      .dojoxGridCell { 
-        border: 0px solid;
-        background: none;
-        padding: $basic-padding $basic-padding / 2;
-        text-align: center;
-        font-weight: bold;
-      }
     }
-
-    .dojoxGridRowOver {
-      border: 0px;
-    }
-
-    .dojoxGridCellOver {
-      border: 0px;
+    .dojoxGridRow, .dojoxGridHeader {
+        .dojoxGridRowTable .dojoxGridCell {
+            padding: $basic-padding;
+        }
     }
   }
 }
