@@ -100,7 +100,8 @@
 .view-users__roles-container-item {
   border-radius: $border-radius;
   border: solid 1px $gray-ligth;
-  height: 150px;
+  height: 300px;
+  overflow: auto;
 
   select[multiple] {
     border: none;
@@ -124,4 +125,21 @@
   font-weight: normal;
   margin-bottom: $basic-padding * 3;
   padding-bottom: $basic-padding;
+}
+.view-users {
+  .view-users__users-list {
+    .dojoxGridRow {
+      &:nth-child(even){
+        background-color: $gray-ligther;
+      }
+    }
+    .dojoxGridHeader {
+      background-color: $gray-ligther;
+    }
+    .dojoxGridRow, .dojoxGridHeader {
+        .dojoxGridRowTable .dojoxGridCell {
+            padding: $basic-padding;
+        }
+    }
+  }
 }
