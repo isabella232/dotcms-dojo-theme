@@ -31,7 +31,6 @@
     .dijitTreeIcon, .dijitTreeExpando {
       display: inline-block;
       vertical-align: sub;
-      margin-right: $basic-padding / 2;
     }
   }
 
@@ -44,6 +43,14 @@
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
+  }
+
+  &TreeExpando {
+    background-position: 3px 1px;
+  }
+
+  &TreeExpandoLeaf {
+    background-position: 0 -2px;;
   }
 
   &TreeLabel {

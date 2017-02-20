@@ -49,8 +49,10 @@
 }
 
 .view-roles__portlets-list {
-  margin: 0;
-  max-height: 200px;
+  border: solid 1px $gray-ligther;
+  border-radius: $border-radius;
+  margin: 0 0 $basic-padding;
+  height: 175px;
   overflow: auto;
 
   ul {
@@ -61,10 +63,9 @@
 .view-roles__portlets-list-item {
   display: flex;
   justify-content: space-between;
-  padding: $basic-padding 0;
+  padding: $basic-padding;
   border-bottom: solid 1px $gray-ligther;
   align-items: center;
-  padding-right: 2px;
 }
 
 .nameText {

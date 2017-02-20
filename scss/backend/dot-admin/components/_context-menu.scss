@@ -26,6 +26,11 @@
         background-color: $menu-item-hover-bgcolor;
     }
 
+    [class$="Icon"],
+    [class*="Icon"] {
+        display: none;
+    }
+
     .arrowRightIcon {
         font-size: $font-size-small;
         margin-top: -($font-size-small / 2);

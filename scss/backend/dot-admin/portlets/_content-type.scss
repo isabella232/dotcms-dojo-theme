@@ -1,6 +1,6 @@
 .content-type {
   &__cell-actions {
-    @extend #cell-actions
+    @extend #cell-actions;
   }
 
   &__edit-field-form {
@@ -8,24 +8,23 @@
   }
 
   &__fields-list {
-    display: table;
     width: 100%;
   }
 
   &__fields-list-body {
-    display: table-row-group;
   }
 
   &__fields-list-cell {
-    border-bottom: 1px solid $gray-ligther;
-    display: table-cell;
+    flex: 1;
     padding: $basic-padding;
     white-space: nowrap;
   }
 
   &__fields-list-header,
   &__fields-list-row {
-    display: table-row;
+    border-bottom: 1px solid $gray-ligther;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__fields-list-header {
