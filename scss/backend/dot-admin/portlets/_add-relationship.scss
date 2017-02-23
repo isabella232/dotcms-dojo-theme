@@ -1,0 +1,21 @@
+.add-relationship {
+    .add-relationship__form {
+        dt {
+            width: 200px;
+        }
+
+        .dijitComboBox {
+            width: 200px;
+        }
+
+        .dijitTextBox {
+            width: 200px;
+        }
+    }
+
+    .required:before {
+        color: $red;
+        content: "* ";
+    }
+}
+

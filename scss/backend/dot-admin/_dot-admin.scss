@@ -304,12 +304,6 @@ $table-border: 1px solid $gray-ligther;
     }
 
     table {
-      td {
-        &:first-child, &:last-child {
-          padding: 0;
-        }
-      }
-
       tr {
         border: none;
       }
