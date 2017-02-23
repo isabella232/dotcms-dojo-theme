@@ -133,7 +133,7 @@ $sidebar-width: 220px;
   padding: 0px;
 }
 
-.relationships-list .portlet-toolbar .required:before {
+.relationships-list .portlet-toolbar__actions-primary .required:before {
     color: $red;
     content: "* ";
 }

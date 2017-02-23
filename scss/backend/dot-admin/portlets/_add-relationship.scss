@@ -1,17 +1,17 @@
+$input-width: 200px;
+
 .add-relationship {
-    .add-relationship__form {
         dt {
-            width: 200px;
+            width: $input-width;
         }
 
         .dijitComboBox {
-            width: 200px;
+            width: $input-width;
         }
 
         .dijitTextBox {
-            width: 200px;
+            width: $input-width;
         }
-    }
 
     .required:before {
         color: $red;
