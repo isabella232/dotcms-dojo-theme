@@ -546,12 +546,12 @@ $tab-label-height: 37px;
 $tab-padding: $field-padding * 3;
 
 $tab-border-style: solid;
-$tab-border-width: 5px 1px 0 0;
-$tab-border-color: $gray-ligther $gray-ligther transparent transparent;
+$tab-border-width: 5px 1px 0 1px;
+$tab-border-color: $gray-ligther;
 
 $tab-checked-border-style: solid;
-$tab-checked-border-width: 5px 1px 0 0;
-$tab-checked-border-color: $blue $gray-ligther transparent transparent;
+$tab-checked-border-width: 5px 1px 0 1px;
+$tab-checked-border-color: $blue $gray-ligther transparent $gray-ligther;
 
 $tab-list-container-border-style: solid;
 $tab-list-container-border-width: 0 0 1px;

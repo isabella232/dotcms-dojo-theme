@@ -3,29 +3,29 @@ $sidebar-width: 220px;
 #aceTextArea {
   position: relative;
 }
-.aceClass {
-  border: 1px solid $gray-ligth;
-  height: 400px;
-  text-overflow: clip;
-  white-space: nowrap;
-  width: 100%;
-}
+
 .aceText {
   border: 1px solid $gray-ligth;
   max-height: 600px;
   max-width: $content-edit-field-max-width;
+  width: 100%;
   min-height: 105px;
   text-overflow: clip;
   white-space: nowrap;
   width: 100%;
+  font-family: Monaco,Menlo,sans-serif;
+  font-size: 12px;
 }
 .widgetAceText {
   border:1px solid $gray-ligth;
-  max-height: 400px;
-  min-height: 362px;
+  max-height: 600px;
+  min-height:300px;
+  max-width: 900px;
+  width: 100%;
   text-overflow: clip;
   white-space: nowrap;
-  width:682px;
+  font-family: Monaco,Menlo,sans-serif;
+  font-size: 12px;
 }
 
 .content-edit__main {
