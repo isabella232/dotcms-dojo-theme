@@ -243,6 +243,7 @@ $table-border: 1px solid $gray-ligther;
 #listing-table {
   border-bottom: $table-border;
   border-collapse: collapse;
+  font-size: $body-size;
   margin: 0 auto $basic-padding * 2 auto;
   width: 100%;
 
@@ -1139,17 +1140,10 @@ table.sTypeTable.sTypeItem {
   border: 1px solid #ADADAD;
   padding: 7px;
 }
-.dotcms .dijitHostClosed {
-  -moz-background-clip: border;
-  -moz-background-inline-policy: continuous;
-  -moz-background-origin: padding;
+.dijitHostClosed,
+.dijitHostOpened {
   background: transparent url($globe-green) no-repeat scroll 0 0;
-}
-.dotcms .dijitHostOpened {
-  -moz-background-clip: border;
-  -moz-background-inline-policy: continuous;
-  -moz-background-origin: padding;
-  background: transparent url($globe-green) no-repeat scroll 0 0;
+  margin: 3px 3px 0 3px;
 }
 /* Role selector */
 

@@ -36,7 +36,8 @@ gulp.task('compass', function () {
             css: 'css',
             sass: 'scss',
             sourcemap: true,
-            style: 'expanded'
+            style: 'expanded',
+            environment: argv.dotcms ? 'production' : 'development'
         }))
         .on('error', function (err) {})
         .on('end', function() {

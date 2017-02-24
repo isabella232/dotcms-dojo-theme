@@ -90,6 +90,11 @@
     height: 16px;
   }
 
+  &FolderOpened,
+  &FolderClosed {
+    margin: 3px 3px 0 3px;
+  }
+
   &FolderOpened {
     background: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/folderOpened.gif") no-repeat;
   }
