@@ -1,20 +1,8 @@
 .dijitButton,
-.dijitToggleButton,
-.dijitComboButton {
-  .dijitButtonNode {
-    border: none;
-  }
-}
-
-.dijitButton,
 .dijitToggleButton {
   .dijitButtonNode {
-    padding-left: $button-padding;
+    padding: 0 $button-padding;
   }
-}
-
-.dijitComboButton .dijitStretch {
-  padding-left: $button-padding;
 }
 
 .dijitButton,
@@ -23,11 +11,6 @@
 .dijitDropDownButton,
 .dijitToggleButton {
   margin: 0;
-}
-
-.dijitButton,
-.dijitToggleButton {
-  padding-right: $button-padding;
 }
 
 .dijitButton,
@@ -63,7 +46,6 @@
     @include btn($dropdownbutton-normal-shadow, $dropdownbutton-normal-bgcolor, $dropdownbutton-normal-border, $dropdownbutton-normal-textcolor);
 
     .dijitButtonNode {
-      border: none;
       padding-left: $button-padding;
     }
 
@@ -161,6 +143,14 @@
         } @else {
           @include create-arrow($combobutton-arrow-size, $combobutton-normal-arrow-color);
         }
+      }
+    }
+
+    .dijitButtonNode {
+      padding-left: $button-padding;
+
+      &.dijitDownArrowButton {
+        padding-left: 0;
       }
     }
 
