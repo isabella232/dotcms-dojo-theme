@@ -6,16 +6,20 @@ $sidebar-width: 220px;
 
 .aceText {
   border: 1px solid $gray-ligth;
-  max-height: 600px;
   max-width: $content-edit-field-max-width;
   width: 100%;
-  min-height: 105px;
+  height: 100%;
+  min-height: 200px;
   text-overflow: clip;
   white-space: nowrap;
-  width: 100%;
   font-family: Monaco,Menlo,sans-serif;
   font-size: 12px;
 }
+
+.aceTextTemplate, .aceTall {
+  height:600px;
+}
+
 .widgetAceText {
   border:1px solid $gray-ligth;
   max-height: 600px;
