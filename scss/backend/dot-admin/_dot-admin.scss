@@ -247,6 +247,10 @@ $table-border: 1px solid $gray-ligther;
   margin: 0 auto $basic-padding * 2 auto;
   width: 100%;
 
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   tr {
     transition: background-color $field-animation-speed;
 

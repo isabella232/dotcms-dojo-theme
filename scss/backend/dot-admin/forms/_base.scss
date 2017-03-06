@@ -39,6 +39,11 @@
     white-space: nowrap;
   }
 
+  & > label {
+    line-height: $field-height;
+    align-self: baseline;
+  }
+
   & > .checkbox,
   & > .radio {
     margin-right: $basic-padding * 2;
@@ -282,7 +287,8 @@ dd {
   height: 90px;
   margin-top: $basic-padding;
   padding: $basic-padding;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .who-can-use__list {
