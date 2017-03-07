@@ -53,19 +53,25 @@ select[multiple] {
 }
 
 .dijit {
+  $action-button-size: $field-height + $basic-padding;
+
   &DropDownActionButton {
+    background-color: $brand-primary;
     border: none;
-    border-radius: $field-height / 2;
-    width: $field-height;
+    border-radius: $action-button-size / 2;
+    height: $action-button-size;
+    width: $action-button-size;
 
     .actionIcon {
-      line-height: $field-height;
+      color: $white;
+      line-height: $action-button-size;
       margin: 0;
+      font-size: 16px;
     }
 
     .dijitButtonNode {
-      height: $field-height;
-      width: $field-height;
+      height: $action-button-size;
+      width: $action-button-size;
     }
 
     .dijitArrowButtonInner {
@@ -74,6 +80,22 @@ select[multiple] {
 
     .dijitButtonNode {
       padding: 0;
+    }
+
+    &.dijitDropDownButtonHover {
+      background-color: $white;
+
+      .actionIcon {
+        color: $black;
+      }
+    }
+
+    &.dijitDropDownButtonDisabled {
+      background-color: $gray-ligther;
+
+      .actionIcon {
+        color: $gray;
+      }
     }
   }
 

@@ -58,19 +58,19 @@ $field-normal-arrow-color: $gray;
 
 $field-hover-bgcolor: $gray-ligthest;
 $field-hover-textcolor: $text-color;
-$field-hover-border: solid $field-border-size $brand-secondary;
-$field-hover-arrow-color: $brand-secondary;
-$field-hoverarrow-arrow-color: $brand-secondary;
+$field-hover-border: solid $field-border-size $brand-primary;
+$field-hover-arrow-color: $brand-primary;
+$field-hoverarrow-arrow-color: $brand-primary;
 $field-hoverarrow-arrow-border: solid $field-border-size $gray-dark;
-$field-hoverarrow-arrow-bgcolor: rgba($brand-secondary, 0.2);
+$field-hoverarrow-arrow-bgcolor: rgba($brand-primary, 0.2);
 
 $field-active-bgcolor: $white;
 $field-active-textcolor: $text-color;
 $field-active-border: $field-hover-border;
-$field-active-arrow-color: $brand-secondary;
+$field-active-arrow-color: $brand-primary;
 $field-activearrow-arrow-color: $white;
-$field-activearrow-arrow-border: solid $field-border-size $brand-secondary;
-$field-activearrow-arrow-bgcolor: $brand-secondary;
+$field-activearrow-arrow-border: solid $field-border-size $brand-primary;
+$field-activearrow-arrow-bgcolor: $brand-primary;
 
 $field-disabled-bgcolor: $white;
 $field-disabled-textcolor: $gray-ligth;
@@ -80,9 +80,9 @@ $field-disabled-arrow-color: $gray-ligth;
 $field-focused-bgcolor: $gray-ligther;
 $field-focused-textcolor: $text-color;
 $field-focused-border: $field-hover-border;
-$field-focused-arrow-color: $brand-secondary;
-$field-focusedarrow-arrow-color: $brand-secondary;
-$field-focusedarrow-arrow-border: solid $field-border-size $brand-secondary;
+$field-focused-arrow-color: $brand-primary;
+$field-focusedarrow-arrow-color: $brand-primary;
+$field-focusedarrow-arrow-border: solid $field-border-size $brand-primary;
 $field-focusedarrow-arrow-bgcolor: $field-hoverarrow-arrow-bgcolor;
 
 $field-error-border: solid 1px $error;
