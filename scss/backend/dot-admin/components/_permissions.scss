@@ -81,6 +81,15 @@
   justify-content: center;
   margin-top: $basic-padding * 2;
 
+  .applyChangesButton {
+    margin-right: 20px;
+  }
+
+  .reset-permissions {
+    vertical-align: middle;
+    line-height: 30px;
+  }
+
   .checkbox {
     margin-left: $basic-padding * 2;
   }
