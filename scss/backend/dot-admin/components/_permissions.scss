@@ -82,12 +82,12 @@
   margin-top: $basic-padding * 2;
 
   .applyChangesButton {
-    margin-right: 20px;
+    margin-right: $basic-padding * 3;
   }
 
   .reset-permissions {
     vertical-align: middle;
-    line-height: 30px;
+    line-height: $basic-padding * 4;
   }
 
   .checkbox {
