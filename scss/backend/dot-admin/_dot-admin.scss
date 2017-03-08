@@ -98,7 +98,7 @@
   top: 34px;
   width: 225px;
   font-size: 85%;
-  border: 1px solid #d0d0d0;
+  border: 1px solid $gray-ligther;
   border-top: 0;
   background: #fff;
   z-index: 9998;
@@ -124,8 +124,8 @@
 .account-flyout .login-out {
   background: #eee;
   margin: 15px 0 0 0;
-  border-top: 1px solid #d0d0d0;
-  border-bottom: 1px solid #d0d0d0;
+  border-top: 1px solid $gray-ligther;
+  border-bottom: 1px solid $gray-ligther;
 }
 .account-flyout .login-out table {
   width: 100%;
@@ -325,9 +325,8 @@ $table-border: 1px solid $gray-ligther;
 /* CONTENT TYPE TABLE */
 
 .sTypeTable {
-  border: 1px solid #D0D0D0;
+  border: 1px solid $gray-ligther;
   border-collapse: collapse;
-  font-size: 11px;
   margin: 0 auto;
 }
 .sTypeTd {
@@ -335,27 +334,26 @@ $table-border: 1px solid $gray-ligther;
   min-width: 225px;
   white-space: nowrap;
   padding: 0;
-  border: 1px solid #D0D0D0;
-  padding-bottom: 20px;
+  border: 1px solid $gray-ligther;
 }
 .sTypeHeader {
   font-weight: bold;
   padding: 3px 10px;
   background: $gray-ligthest;
-  border-bottom: 1px solid #D0D0D0;
+  border-bottom: 1px solid $gray-ligther;
+  border-top: 1px solid $gray-ligther;
+
+  &:first-child {
+    border-top: 0;
+  }
 }
-.sTypeItem {}
 .sTypeItem a {
   display: block;
-  padding: $basic-padding/2 10px;
+  padding: $basic-padding / 2 10px;
   text-decoration: none;
 }
 .sTypeItem a:hover {
-  background: #E2EBFE;
-}
-#sTypeFile {
-  margin-top: 20px;
-  border-top: 1px solid #D0D0D0;
+  background: rgba($brand-primary, 0.1);
 }
 /* RELATIONSHIP TABLE */
 
@@ -365,7 +363,7 @@ $table-border: 1px solid $gray-ligther;
   border: 0px;
 }
 .myVarTable {
-  border: 1px solid #d0d0d0;
+  border: 1px solid $gray-ligther;
   border-collapse: collapse;
   width: 100%;
 }
@@ -937,16 +935,10 @@ table.sTypeTable {}
 table.sTypeTd {
   vertical-align: top;
 }
-.sTypeHeader {
-  font-weight: bold;
-  white-space: nowrap;
-  min-width: 175;
-  border-bottom: 1px solid silver;
-}
 table.sTypeTable.sTypeItem {
   text-transform: uppercase;
   white-space: nowrap;
-  min-width: 175;
+  min-width: 175px;
 }
 /* use in hmtl, templates, etc NOT in Browser Tree pop-ups*/
 
