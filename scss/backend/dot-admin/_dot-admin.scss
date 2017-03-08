@@ -316,6 +316,12 @@ $table-border: 1px solid $gray-ligther;
   }
 }
 
+.browserTableStatus {
+  td {
+    border: 0px;
+  }
+}
+
 /* CONTENT TYPE TABLE */
 
 .sTypeTable {
