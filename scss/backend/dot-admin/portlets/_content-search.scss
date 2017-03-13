@@ -54,3 +54,11 @@
     left: 0;
   }
 }
+
+.content-search__action-item {
+
+  @media (min-width:835px) { //1025 - 179px tha is the width of the side nav of the angular chrome
+    display: none;
+  }
+}
+
