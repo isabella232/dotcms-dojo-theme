@@ -26,6 +26,7 @@
     &PaneWrapper {
       .dijitContentPane {
         padding: $tab-padding;
+        overflow: visible;
       }
     }
 

@@ -104,6 +104,10 @@
   .dijitAccordionTitle {
     padding: 0;
   }
+
+  .dijitContentPane {
+    padding: $basic-padding * 3 0;
+  }
 }
 
 .permissionTable {

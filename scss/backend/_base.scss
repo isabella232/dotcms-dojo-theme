@@ -58,6 +58,15 @@ a {
   }
 }
 
+.link {
+  color: $brand-primary !important;
+  text-decoration: underline !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
 em {
   font-style: italic;
 }
