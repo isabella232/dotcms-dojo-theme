@@ -107,6 +107,7 @@
 
   .dijitContentPane {
     padding: $basic-padding * 3 0;
+    box-sizing: content-box;
   }
 }
 
@@ -167,8 +168,4 @@
   color: red;
   text-align: center;
   font-weight: bolder;
-}
-
-.dijitTabPaneWrapper .dijitContentPane {
-  height: auto !important;
 }
