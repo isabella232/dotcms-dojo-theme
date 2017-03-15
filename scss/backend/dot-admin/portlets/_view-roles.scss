@@ -73,3 +73,11 @@
   font-size: $font-size-large;
   font-weight: normal;
 }
+
+.view-roles__cms-tabs {
+  .dojoxGridMasterView .dojoxGridRowTable{
+    td {
+      cursor: pointer;
+    }
+  }
+}
