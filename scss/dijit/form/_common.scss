@@ -30,6 +30,12 @@
   position: relative;
 }
 
+// IE fix
+.dijitSelect .dijitArrowButtonContainer {
+  padding-top: 14px;
+}
+
+
 .dijitPlaceHolder {
   color: $field-placeholder-color;
   font-style: normal;
