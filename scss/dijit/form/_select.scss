@@ -17,8 +17,12 @@
       background-color: $select-normal-arrow-bgcolor;
     }
 
-    &:before {
+    & > .dijitArrowButtonInner {
       @include create-arrow($select-arrow-size, $select-normal-arrow-color);
+      float: none;
+      height: 0 !important;
+      margin: 0;
+      position: static;
     }
   }
 

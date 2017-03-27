@@ -68,8 +68,3 @@
     display: none;
   }
 }
-
-// IE fixes
-.dijitSelect .dijitArrowButtonContainer {
-  padding-top: ($field-height/2)-2;
-}
