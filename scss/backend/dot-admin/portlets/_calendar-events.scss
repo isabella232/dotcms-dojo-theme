@@ -8,11 +8,11 @@
 
   .portlet-toolbar__actions-primary,
   .portlet-toolbar__actions-secondary {
-    flex: 1;
+    flex: 0 1 auto;
   }
 
   .portlet-toolbar__info {
-    flex: 2;
+    flex: 1 0 auto;
     font-size: $font-size-large;
     justify-content: center;
   }
