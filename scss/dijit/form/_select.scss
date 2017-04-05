@@ -44,8 +44,12 @@
         background-color: $select-hover-arrow-bgcolor;
       }
 
-      &:before {
+      & > .dijitArrowButtonInner {
         @include create-arrow($select-arrow-size, $select-hover-arrow-color);
+        float: none;
+        height: 0 !important;
+        margin: 0;
+        position: static;
       }
     }
   }
@@ -62,8 +66,12 @@
         background-color: $select-active-arrow-bgcolor;
       }
 
-      &:before {
+      & > .dijitArrowButtonInner {
         @include create-arrow($select-arrow-size, $select-active-arrow-color);
+        float: none;
+        height: 0 !important;
+        margin: 0;
+        position: static;
       }
     }
   }
