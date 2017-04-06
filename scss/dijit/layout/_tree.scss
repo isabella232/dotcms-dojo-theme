@@ -4,13 +4,13 @@
   }
 
   &TreeNode {
-    background-image: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/i.gif");
+    background-image: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/i.gif");
     background-repeat: repeat-y;
     zoom: 1;
   }
 
   &TreeIsLast {
-    background: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/i_half.gif") no-repeat;
+    background: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/i_half.gif") no-repeat;
   }
 
   &TreeIsRoot {
@@ -70,19 +70,19 @@
   }
 
   &TreeExpandoOpened {
-    background-image: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/treeExpand_minus.gif");
+    background-image: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/treeExpand_minus.gif");
   }
 
   &TreeExpandoClosed {
-    background-image: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/treeExpand_plus.gif");
+    background-image: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/treeExpand_plus.gif");
   }
 
   &TreeExpandoLeaf {
-    background-image: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/treeExpand_leaf.gif");
+    background-image: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/treeExpand_leaf.gif");
   }
 
   &TreeExpandoLoading {
-    background-image: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/treeExpand_loading.gif");
+    background-image: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/treeExpand_loading.gif");
   }
 
   &TreeIcon {
@@ -96,15 +96,15 @@
   }
 
   &FolderOpened {
-    background: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/folderOpened.gif") no-repeat;
+    background: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/folderOpened.gif") no-repeat;
   }
 
   &FolderClosed {
-    background: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/folderClosed.gif") no-repeat;
+    background: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/folderClosed.gif") no-repeat;
   }
 
   &Leaf {
-    background: url("/html/js/dojo/release/dojo/dijit/themes/dmundra/images/leaf.gif") no-repeat;
+    background: url("/html/js/dojo/custom-build/dijit/themes/dmundra/images/leaf.gif") no-repeat;
   }
 
   &TreeNode {
