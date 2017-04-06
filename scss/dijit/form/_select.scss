@@ -1,14 +1,14 @@
+#select-arrow {
+  float: none;
+  height: 0 !important;
+  margin: 0;
+  position: static;
+}
+
 .dijitSelect {
   background-color: $select-normal-bgcolor;
   border: $select-normal-border;
   color: $select-normal-textcolor;
-
-  #select-arrow {
-    float: none;
-    height: 0 !important;
-    margin: 0;
-    position: static;
-  }
 
   .dijitButtonContents {
     padding: 0 $select-padding;
