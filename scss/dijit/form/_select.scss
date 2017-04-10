@@ -1,3 +1,10 @@
+#select-arrow {
+  float: none;
+  height: 0 !important;
+  margin: 0;
+  position: static;
+}
+
 .dijitSelect {
   background-color: $select-normal-bgcolor;
   border: $select-normal-border;
@@ -19,10 +26,7 @@
 
     & > .dijitArrowButtonInner {
       @include create-arrow($select-arrow-size, $select-normal-arrow-color);
-      float: none;
-      height: 0 !important;
-      margin: 0;
-      position: static;
+      @extend #select-arrow;
     }
   }
 
@@ -44,8 +48,9 @@
         background-color: $select-hover-arrow-bgcolor;
       }
 
-      &:before {
+      & > .dijitArrowButtonInner {
         @include create-arrow($select-arrow-size, $select-hover-arrow-color);
+        @extend #select-arrow;
       }
     }
   }
@@ -62,8 +67,9 @@
         background-color: $select-active-arrow-bgcolor;
       }
 
-      &:before {
+      & > .dijitArrowButtonInner {
         @include create-arrow($select-arrow-size, $select-active-arrow-color);
+        @extend #select-arrow;
       }
     }
   }
@@ -88,5 +94,9 @@
         border-top-color: $select-disabled-arrow-color;
       }
     }
+  }
+
+  &.dijitSelectFixedWidth .dijitButtonContents {
+      width: auto;
   }
 }
