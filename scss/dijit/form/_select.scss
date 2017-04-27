@@ -13,6 +13,10 @@
   .dijitButtonContents {
     padding: 0 $select-padding;
     border: none;
+
+    &.dijitSelectFixedWidth & {
+      width: auto;
+    }
   }
 
   .dijitArrowButton {
