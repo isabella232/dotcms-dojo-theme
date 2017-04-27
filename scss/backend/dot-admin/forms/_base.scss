@@ -53,6 +53,10 @@
     }
   }
 
+  & > .checkbox {
+    flex: none;
+  }
+
   .dijit {
     margin-right: $basic-padding;
 
