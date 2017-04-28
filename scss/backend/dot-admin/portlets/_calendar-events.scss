@@ -243,8 +243,8 @@
 .closeFilter {
   display: block;
   background: transparent url(/html/js/dojo/custom-build/dijit/themes/dmundra/images/tabClose.png) no-repeat scroll center center;
-  height: 16px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   cursor: pointer;
   float: right;
 }
@@ -262,6 +262,8 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border: 1px solid $gray-ligther;
+
+
 }
 
 #categoriesFilterBox, #tagsFilterBox {
