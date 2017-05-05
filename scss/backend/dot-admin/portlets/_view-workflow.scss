@@ -17,8 +17,101 @@
 }
 
 .view-actions__who-can-use {
+    width: 80%;
+
     .who-can-use__list {
         min-width:230px;
     }
-    
+}
+
+.portlet-wrapper .view-actions {
+    height: 800px;
+    padding-left: $basic-padding*3;
+
+    .view-actions__back-btn {
+        height: 16px;
+        position: absolute;
+        padding: 0px;
+        left: -12px;
+        top: 10px;
+
+        .dijitButtonNode {
+            padding: 0 8px;
+        }
+
+        i {
+            transform: rotate(-90deg);
+        }
+    }
+
+    .container-fluid, .container-fluid > .row:last-child, > form {
+        height: 100%;
+    }
+
+    .view-actions__permissions {
+        border-left: 1px solid $gray-ligther;
+        height: 100%;
+        position: relative;
+        padding-left: $basic-padding*3;
+    }
+
+    .view-actions__sub-actions {
+        border-left: 1px solid $gray-ligther;
+        height: 100%;
+
+        .listingTable tr:first-child td {
+            border-top: 1px solid $gray-ligther;
+        }
+
+        .listingTable {
+            width: 100%;
+            margin: $basic-padding*4 0;
+        }
+    }
+
+    .view-actions__permissions h3, .view-actions__sub-actions h3 {
+        background-color: $gray-ligther;
+        line-height: $basic-padding*5;
+        padding-left: $basic-padding*2;
+        margin-bottom: $basic-padding*4;
+    }
+
+    .view-actions__permissions .row, .view-actions__sub-actions .row {
+        margin-bottom: $basic-padding;
+    }
+
+    .view-actions__workflow-actions {
+        border-left: 1px solid $gray-ligther;
+        height: 100%;
+
+        .view-actions__edit-actions {
+            background-color: #fff;
+            border-radius: 2px;
+            border: solid 1px #C5C5C5;
+
+            a {
+                display: block;
+                line-height: $basic-padding*4;
+                padding-left: $basic-padding*2;
+                border-bottom: 1px solid #C5C5C5;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .view-actions__arrow-right {
+        position: absolute;
+        font-size: $basic-padding*2;
+        left: -7px;
+        top: 10px;
+        background: $white;
+        color: $gray-ligth;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .view-actions__sub-actions .dijitComboBox {
+        width: 80%;
+        margin-bottom: $basic-padding*2 
+    }
 }
