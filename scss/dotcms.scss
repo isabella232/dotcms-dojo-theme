@@ -13,6 +13,11 @@
 // DOJO THEME
 @import "dijit/theme";
 
+// Bootstrap
+@import "bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/variables";
+@import "bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins";
+@import "bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/grid";
+
 // BACKEND
 //@import "backend/legacy"; // THINGS WE ARE GOING TO GET RID OFF
 @import "backend/common";
