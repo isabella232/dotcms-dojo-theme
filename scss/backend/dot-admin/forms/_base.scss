@@ -29,6 +29,17 @@
   @extend #checkbox-radio;
 }
 
+.required{
+  &:before {
+    @extend #dijit-icon;
+    content: $fa-var-asterisk;
+    color: $error;
+    font-size: 9px;
+    position: relative;
+    top: -2px; 
+  }
+}
+
 #inline-form {
   display: flex;
   align-items: center;
