@@ -28,6 +28,10 @@
         padding: $tab-padding;
         overflow: visible;
       }
+
+      #rulez.dijitContentPane{
+        padding: 0px;
+      }
     }
 
     &Checked,
