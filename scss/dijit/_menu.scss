@@ -51,7 +51,8 @@
 .dijitComboBoxMenuPopup {
   .dijitMenuItem {
     line-height: $field-height;
-    padding: 0 10px;
+    margin-bottom: 1px;
+    padding: 0 $basic-padding;
   }
 
   .dijitComboBoxMenu {

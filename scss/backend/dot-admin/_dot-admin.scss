@@ -314,6 +314,11 @@ $table-border: 1px solid $gray-ligther;
       }
     }
   }
+
+  &.relateContent td a {
+    color: $brand-primary;
+    text-decoration: underline;
+  }
 }
 
 .browserTableStatus {
