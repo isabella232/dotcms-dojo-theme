@@ -62,7 +62,7 @@ select[multiple] {
     height: $action-button-size;
     width: $action-button-size;
 
-    .actionIcon {
+    .actionIcon, .fa-plus {
       color: $white;
       line-height: $action-button-size;
       margin: 0;
@@ -85,7 +85,7 @@ select[multiple] {
     &.dijitDropDownButtonHover {
       background-color: $white;
 
-      .actionIcon {
+      .actionIcon, .fa-plus {
         color: $black;
       }
     }
@@ -93,7 +93,7 @@ select[multiple] {
     &.dijitDropDownButtonDisabled {
       background-color: $gray-ligther;
 
-      .actionIcon {
+      .actionIcon, .fa-plus {
         color: $gray;
       }
     }

@@ -30,6 +30,17 @@
   height: 500px;
 }
 
+.file-selector-tree__pagination {
+  &.portlet-pagination{
+    background: #FFFFFF;
+    padding: $basic-padding * 2;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0;
+  }
+}
+
 .file-selector-tree__loading,
 .file-selector-tree__no-results,
 .file-selector-tree__select-folder {

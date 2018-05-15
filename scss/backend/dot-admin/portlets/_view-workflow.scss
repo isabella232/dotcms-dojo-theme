@@ -25,11 +25,10 @@
 }
 
 .view-actions {
-    height: 800px;
     padding-left: $basic-padding * 3;
 
     .container-fluid, .container-fluid > .row:last-child, > form, .view-actions__permissions, .view-actions__sub-actions {
-        height: 100%;
+        height: 90vh;
     }
 }
 
