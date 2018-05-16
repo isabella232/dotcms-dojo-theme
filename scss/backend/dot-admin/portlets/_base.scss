@@ -4,7 +4,7 @@ $panel-padding: $basic-padding * 2;
 
 .portlet {
   &-main {
-    padding: $panel-padding 0;
+    padding: $basic-padding *3 0;
 
     .dijitTabPaneWrapper .dijitContentPane .dijitContentPane {
       padding: 0;
@@ -12,7 +12,7 @@ $panel-padding: $basic-padding * 2;
   }
 
   &-sidebar {
-    padding: $panel-padding $panel-padding 0;
+    padding: 37px $panel-padding 0 $panel-padding;
   }
 
   &-sidebar-wrapper {
