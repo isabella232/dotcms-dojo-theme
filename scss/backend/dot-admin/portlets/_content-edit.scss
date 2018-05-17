@@ -33,7 +33,7 @@ $sidebar-width: 220px;
 }
 
 .content-edit__main {
-  margin: $basic-padding * 2 $sidebar-width 0 0;
+  margin: $basic-padding * 2 ($sidebar-width - 17) 0 0;
   position: relative;
   width: auto;
   z-index: 1;
