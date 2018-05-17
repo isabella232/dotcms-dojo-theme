@@ -200,7 +200,7 @@
     &ListContainer-top,
     &ListContainer-bottom {
       @include box-sizing("content-box");
-      box-shadow: -2px 2px 2px #c5c5c5;
+      box-shadow: -2px 2px 2px $gray-ligth;
       height: $tab-height !important;
       overflow: visible;
     }
