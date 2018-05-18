@@ -83,11 +83,8 @@ select[multiple] {
     }
 
     &.dijitDropDownButtonHover {
-      background-color: $white;
+      background-color: $blue-dark;
 
-      .actionIcon, .fa-plus {
-        color: $black;
-      }
     }
 
     &.dijitDropDownButtonDisabled {
