@@ -12,7 +12,7 @@ $panel-padding: $basic-padding * 2;
   }
 
   &-sidebar {
-    padding: 37px $panel-padding 0 $panel-padding;
+    padding: $basic-padding *3 $panel-padding 0 $panel-padding;
   }
 
   &-sidebar-wrapper {
