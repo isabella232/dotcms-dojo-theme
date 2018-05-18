@@ -541,17 +541,17 @@ $inlineeditbox-hover-border-color: $textbox-focused-border;
 $inlineeditbox-hover-bgcolor: $textbox-focused-bgcolor;
 
 // Tabs
-$tab-height: 40px;
+$tab-height: 42px;
 $tab-label-height: 37px;
-$tab-padding: 10px $field-padding * 2;
+$tab-padding: $field-padding * 3;
 
 $tab-border-style: solid;
 $tab-border-width: 5px 1px 0 1px;
 $tab-border-color: $gray-ligther;
 
 $tab-checked-border-style: solid;
-$tab-checked-border-width: 0 0 3px;
-$tab-checked-border-color: $blue;
+$tab-checked-border-width: 5px 1px 0 1px;
+$tab-checked-border-color: $blue $gray-ligther transparent $gray-ligther;
 
 $tab-list-container-border-style: solid;
 $tab-list-container-border-width: 0 0 1px;

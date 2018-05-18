@@ -3,10 +3,13 @@
   &Tab {
     height: $tab-height;
     background-color: $tab-normal-bgcolor;
-    color: $gray-dark;
+    color: $tab-normal-textcolor;
     padding: 0 $tab-padding;
     position: relative;
-    text-transform: uppercase;
+
+    border-width: $tab-border-width;
+    border-style: $tab-border-style;
+    border-color: $tab-border-color;
 
     .tabLabel {
       line-height: $tab-label-height;
@@ -33,8 +36,7 @@
       border-width: $tab-checked-border-width;
       border-style: $tab-checked-border-style;
       border-color: $tab-checked-border-color;
-      color: $blue;
-      height: $tab-height;
+      height: $tab-height + $field-border-size;
     }
 
     &CloseIcon {
@@ -70,9 +72,7 @@
 
     &Hover {
       background-color: $tab-hover-bgcolor;
-      border-width: $tab-checked-border-width;
-      border-style: $tab-checked-border-style;
-      border-color: $tab-checked-border-color;
+      color: $tab-hover-textcolor;
     }
 
     &Disabled {
