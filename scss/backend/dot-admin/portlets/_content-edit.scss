@@ -39,6 +39,12 @@ $sidebar-width: 220px;
   z-index: 1;
 }
 
+.content-edit__form {
+    width: 100%;
+    max-width: $content-edit-field-max-width;
+    margin: 0 auto;
+}
+
 .content-edit__sidebar {
   background-color: $gray-ligthest;
   border-left: solid 1px $gray-ligther;

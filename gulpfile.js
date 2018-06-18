@@ -66,7 +66,7 @@ gulp.task('deploy', function () {
             css: 'css',
             sass: 'scss',
             sourcemap: false,
-            style: 'compressed'
+            style: 'expanded'
         }))
         .pipe(gulp.dest(coreCssPath));
 });
