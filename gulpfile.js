@@ -41,7 +41,9 @@ gulp.task('watch', function() {
 
 gulp.task('deploy', function() {
     gulp.src('scss/dotcms.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }).on('error', sass.logError))
         .pipe(gulp.dest(coreCssPath));
 });
 
