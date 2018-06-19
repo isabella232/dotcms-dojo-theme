@@ -25,6 +25,10 @@
   &Button {
     @include btn($button-normal-shadow, $button-normal-bgcolor, $button-normal-border, $button-normal-textcolor);
 
+    &Text {
+      text-transform: uppercase
+    }
+
     &Node {
       border: none;
     }

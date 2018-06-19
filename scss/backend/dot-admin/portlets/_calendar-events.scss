@@ -201,10 +201,16 @@
 
 .eventDetail {
   width: 500px;
+
   .closeButton {
     float: right;
     margin-bottom: -10px;
   }
+
+  .fakeDojoButton {
+    margin: 0 $basic-padding / 2;
+  }
+
   img {
     border: 0;
   }

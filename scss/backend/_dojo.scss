@@ -31,6 +31,7 @@ select[multiple] {
   line-height: $field-height;
   padding: 0 $basic-padding * 2;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     @include btn($button-hover-shadow, $button-hover-bgcolor, $button-hover-border, $button-hover-textcolor);

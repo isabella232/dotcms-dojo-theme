@@ -67,10 +67,12 @@ $sidebar-width: 220px;
 }
 
 .content-edit-actions {
-  & > div {
-    background-color: $white;
-    border-radius: $border-radius;
-    border: solid 1px $gray-ligth;
+  border: solid 1px $gray-ligth;
+  background-color: $white;
+  border-radius: $border-radius;
+
+  .content-edit-actions {
+    border: none;
   }
 
   a {

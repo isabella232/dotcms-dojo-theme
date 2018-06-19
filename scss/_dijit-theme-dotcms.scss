@@ -48,9 +48,9 @@ $field-animation-speed: .1s;
 $field-border-color: $gray-ligther;
 $field-border-radius: $border-radius;
 $field-border-size: 1px;
-$field-height: 32px;
+$field-height: 36px;
 $field-padding: $basic-padding;
-$field-placeholder-color: $gray-ligther;
+$field-placeholder-color: $gray-ligth;
 
 $field-normal-bgcolor: $gray-ligther;
 $field-normal-textcolor: $text-color;
@@ -92,20 +92,20 @@ $field-error-border: solid 1px $error;
 $button-border: solid 1px transparent;
 
 $button-padding: $field-padding * 2;
-$button-normal-bgcolor: $white;
-$button-normal-textcolor: $field-normal-textcolor;
+$button-normal-bgcolor: $color-main;
+$button-normal-textcolor: $white;
 $button-normal-border: $button-border;
-$button-normal-shadow: $md-shadow-1;
+$button-normal-shadow: 0;
 
-$button-hover-bgcolor: $field-hover-bgcolor;
-$button-hover-textcolor: $field-hover-textcolor;
+$button-hover-bgcolor: $color-main_mod;
+$button-hover-textcolor: $white;
 $button-hover-border: $button-border;
-$button-hover-shadow: $md-shadow-2;
+$button-hover-shadow: 0;
 
-$button-active-bgcolor: $field-active-bgcolor;
-$button-active-textcolor: $field-active-textcolor;
+$button-active-bgcolor: $color-main_mod;
+$button-active-textcolor: $white;
 $button-active-border: $button-border;
-$button-active-shadow: $button-normal-shadow;
+$button-active-shadow: 0;
 
 $button-disabled-bgcolor: $gray-ligther;
 $button-disabled-textcolor: $field-disabled-textcolor;
@@ -113,8 +113,8 @@ $button-disabled-border: $button-border;
 $button-disabled-shadow: $button-normal-shadow;
 
 // Only for Drodown and ComboButton
-$button-focused-bgcolor: $field-active-bgcolor;
-$button-focused-textcolor: $field-active-textcolor;
+$button-focused-bgcolor: $color-main_mod;
+$button-focused-textcolor: $white;
 $button-focused-border: $button-border;
 
 // DropDownButton
@@ -127,7 +127,7 @@ $dropdownbutton-normal-border: $button-normal-border;
 $dropdownbutton-normal-shadow: $button-normal-shadow;
 $dropdownbutton-normal-arrow-bgcolor: transparent;
 $dropdownbutton-normal-arrow-url: false;
-$dropdownbutton-normal-arrow-color: $field-normal-arrow-color;
+$dropdownbutton-normal-arrow-color: $white;
 
 $dropdownbutton-hover-bgcolor: $button-hover-bgcolor;
 $dropdownbutton-hover-textcolor: $button-hover-textcolor;
@@ -142,7 +142,7 @@ $dropdownbutton-active-textcolor: $button-active-textcolor;
 $dropdownbutton-active-border: $button-active-border;
 $dropdownbutton-active-arrow-bgcolor: transparent;
 $dropdownbutton-active-arrow-url: false;
-$dropdownbutton-active-arrow-color: $gray-dark;
+$dropdownbutton-active-arrow-color: $white;
 
 $dropdownbutton-focused-bgcolor: $button-focused-bgcolor;
 $dropdownbutton-focused-textcolor: $button-focused-textcolor;
@@ -171,7 +171,7 @@ $combobutton-normal-border: $button-normal-border;
 $combobutton-normal-shadow: $button-normal-shadow;
 $combobutton-normal-arrow-bgcolor: transparent;
 $combobutton-normal-arrow-url: false;
-$combobutton-normal-arrow-color: $field-normal-arrow-color;
+$combobutton-normal-arrow-color: $white;
 $combobutton-normal-arrow-border: $combobutton-normal-border;
 
 $combobutton-hover-bgcolor: $button-hover-bgcolor;
@@ -189,7 +189,7 @@ $combobutton-active-border: $button-active-border;
 $combobutton-active-shadow: $button-normal-shadow;
 $combobutton-active-arrow-bgcolor: transparent;
 $combobutton-active-arrow-url: false;
-$combobutton-active-arrow-color: $field-active-arrow-color;
+$combobutton-active-arrow-color: $white;
 $combobutton-active-arrow-border: $combobutton-active-border;
 
 $combobutton-focused-bgcolor: $button-focused-bgcolor;
@@ -198,7 +198,7 @@ $combobutton-focused-border: $button-focused-border;
 $combobutton-focused-shadow: $button-normal-shadow;
 $combobutton-focused-arrow-bgcolor: transparent;
 $combobutton-focused-arrow-url: false;
-$combobutton-focused-arrow-color: $gray-dark;
+$combobutton-focused-arrow-color: $white;
 $combobutton-focused-arrow-border: $combobutton-focused-border;
 
 $combobutton-disabled-bgcolor: $button-disabled-bgcolor;
@@ -270,7 +270,7 @@ $textbox-activearrow-arrow-bgcolor: $field-activearrow-arrow-bgcolor;
 $textbox-disabled-border: $field-disabled-border;
 $textbox-disabled-bgcolor: $field-disabled-bgcolor;
 $textbox-disabled-textcolor: $field-disabled-textcolor;
-$textbox-disabled-arrow-color: $gray-ligther;
+$textbox-disabled-arrow-color: $gray-ligth;
 $textbox-disabled-arrow-border: $textbox-disabled-border;
 
 // TextArea
@@ -368,7 +368,7 @@ $combobox-arrow-size: 5px;
 
 $combobox-normal-border: $field-normal-border;
 $combobox-normal-bgcolor: $white;
-$combobox-normal-arrow-color: $field-normal-arrow-color;
+$combobox-normal-arrow-color: $white;
 $combobox-normal-arrow-border: $combobox-normal-border;
 $combobox-normal-arrow-bgcolor: $white;
 
@@ -398,9 +398,8 @@ $combobox-activearrow-arrow-border: $field-activearrow-arrow-border;
 $combobox-activearrow-arrow-bgcolor: $field-activearrow-arrow-bgcolor;
 
 $combobox-disabled-border: $field-disabled-border;
-$combobox-disabled-bgcolor: $white;
-$combobox-disabled-textcolor: $gray-ligther;
-$combobox-disabled-textcolor: $gray-ligther;
+$combobox-disabled-bgcolor: $gray-ligthest;
+$combobox-disabled-textcolor: $gray-ligth;
 $combobox-disabled-arrow-color: $field-disabled-arrow-color;
 $combobox-disabled-arrow-border: $combobox-disabled-border;
 
@@ -547,11 +546,11 @@ $tab-label-height: 37px;
 $tab-padding: $field-padding * 3;
 
 $tab-border-style: solid;
-$tab-border-width: 5px 1px 0 1px;
+$tab-border-width: 5px 1px 0 0;
 $tab-border-color: $gray-ligther;
 
 $tab-checked-border-style: solid;
-$tab-checked-border-width: 5px 1px 0 1px;
+$tab-checked-border-width: 5px 1px 0 0;
 $tab-checked-border-color: $color-main $gray-ligther transparent $gray-ligther;
 
 $tab-list-container-border-style: solid;

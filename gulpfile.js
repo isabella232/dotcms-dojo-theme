@@ -4,6 +4,7 @@ var cors = require('cors');
 var dotcmsBaseUrl = require('./dotcmsConfig');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 var dotcms = {
     core: {
@@ -47,7 +48,9 @@ gulp.task('deploy', function() {
 gulp.task('sass', function() {
     return gulp
         .src('scss/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./css'))
         .pipe(connect.reload())
         .on('end', function() {
