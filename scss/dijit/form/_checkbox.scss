@@ -1,5 +1,5 @@
 .dijitCheckBox {
-  @include border-radius($check-radius);
+  border-radius: $check-radius;
   border: $check-normal-border;
   background-color: $check-normal-bgcolor;
   width: $check-size;

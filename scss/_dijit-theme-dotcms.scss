@@ -1,8 +1,5 @@
 // COLORS
 $black: #161616;
-$blue-ligth: #77CEE6;
-$blue: #0E80CB;
-$blue-dark: #0b629b;
 $gray-dark: #5B5B5B;
 $gray: #8A8A8A;
 $gray-ligth: #C5C5C5;
@@ -16,8 +13,11 @@ $error: #D0021B;
 $red: #CB3927;
 
 // BRAND COLORS
-$brand-primary: $blue;
-$brand-secondary: $red;
+$color-main: var(--color-main);
+$color-main_mod: var(--color-main_mod);
+$color-main_rgb: var(--color-main_rgb);
+$color-sec: var(--color-sec);
+$color-sec_rgb: var(--color-sec_rgb);
 
 // MATERIAL DESIGN SHADOWS
 $md-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -50,7 +50,7 @@ $field-border-radius: $border-radius;
 $field-border-size: 1px;
 $field-height: 32px;
 $field-padding: $basic-padding;
-$field-placeholder-color: rgba($gray-dark, .4);
+$field-placeholder-color: $gray-ligther;
 
 $field-normal-bgcolor: $gray-ligther;
 $field-normal-textcolor: $text-color;
@@ -59,19 +59,19 @@ $field-normal-arrow-color: $gray;
 
 $field-hover-bgcolor: $gray-ligthest;
 $field-hover-textcolor: $text-color;
-$field-hover-border: solid $field-border-size $brand-primary;
-$field-hover-arrow-color: $brand-primary;
-$field-hoverarrow-arrow-color: $brand-primary;
+$field-hover-border: solid $field-border-size $color-main;
+$field-hover-arrow-color: $color-main;
+$field-hoverarrow-arrow-color: $color-main;
 $field-hoverarrow-arrow-border: solid $field-border-size $gray-dark;
-$field-hoverarrow-arrow-bgcolor: rgba($brand-primary, 0.2);
+$field-hoverarrow-arrow-bgcolor: rgba(var(--color-main_rgb), 0.2);
 
 $field-active-bgcolor: $white;
 $field-active-textcolor: $text-color;
 $field-active-border: $field-hover-border;
-$field-active-arrow-color: $brand-primary;
+$field-active-arrow-color: $color-main;
 $field-activearrow-arrow-color: $white;
-$field-activearrow-arrow-border: solid $field-border-size $brand-primary;
-$field-activearrow-arrow-bgcolor: $brand-primary;
+$field-activearrow-arrow-border: solid $field-border-size $color-main;
+$field-activearrow-arrow-bgcolor: $color-main;
 
 $field-disabled-bgcolor: $white;
 $field-disabled-textcolor: $gray-ligth;
@@ -81,9 +81,9 @@ $field-disabled-arrow-color: $gray-ligth;
 $field-focused-bgcolor: $gray-ligther;
 $field-focused-textcolor: $text-color;
 $field-focused-border: $field-hover-border;
-$field-focused-arrow-color: $brand-primary;
-$field-focusedarrow-arrow-color: $brand-primary;
-$field-focusedarrow-arrow-border: solid $field-border-size $brand-primary;
+$field-focused-arrow-color: $color-main;
+$field-focusedarrow-arrow-color: $color-main;
+$field-focusedarrow-arrow-border: solid $field-border-size $color-main;
 $field-focusedarrow-arrow-bgcolor: $field-hoverarrow-arrow-bgcolor;
 
 $field-error-border: solid 1px $error;
@@ -411,7 +411,7 @@ $check-size: 14px;
 $check-normal-border: solid $check-border-width $text-color;
 $check-normal-bgcolor: $white;
 $check-checked-border: $check-normal-border;
-$check-checked-bgcolor: $brand-primary;
+$check-checked-bgcolor: $color-main;
 $check-checked-icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDEwIDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgICAgICA8dGl0bGU+U2hhcGU8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iY2hlY2tib3gtYWN0aXZlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC4wMDAwMDAsIC01LjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgcG9pbnRzPSI3LjMxMDcyMDMyIDExLjQyMjQ0NDkgNC45ODYxOTU2MyA5LjA5NzkyMDE5IDQuMTk0NjMwODcgOS44ODM5MTA1NSA3LjMxMDcyMDMyIDEzIDE0IDYuMzEwNzIwMzIgMTMuMjE0MDA5NiA1LjUyNDcyOTk2Ij48L3BvbHlnb24+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=";
 $check-disabled-border: solid $check-border-width transparent;
 $check-disabled-bgcolor: $gray-ligth;
@@ -423,7 +423,7 @@ $radio-radius: 2px;
 $radio-size: 14px;
 $radio-normal-border: solid $radio-border-width $text-color;
 $radio-normal-bgcolor: $white;
-$radio-checked-color: $brand-primary;
+$radio-checked-color: $color-main;
 $radio-checked-border: solid $radio-border-width $radio-checked-color;
 $radio-checked-bgcolor: $white;
 $radio-checked-disabled-color: $gray-ligth;
@@ -452,9 +452,9 @@ $slider-rule-mark-hover: solid 1px $gray-dark;
 $slider-rule-mark-disabled: solid 1px $gray-ligther;
 
 $slider-progress-normal-border-color: $gray-ligther;
-$slider-progress-normal-color: $blue;
+$slider-progress-normal-color: $color-main;
 $slider-progress-hover-border-color: $gray-dark;
-$slider-progress-hover-color: $blue;
+$slider-progress-hover-color: $color-main;
 $slider-progress-disabled-border-color: $gray-ligthest;
 $slider-progress-disabled-color: $gray-ligthest;
 
@@ -486,14 +486,14 @@ $timepicker-item-bgcolor: $menu-bgcolor;
 $timepicker-item-separator: none;
 $timepicker-item-hover-bgcolor: $gray-ligthest;
 $timepicker-item-hover-textcolor: $gray-dark;
-$timepicker-item-selected-bgcolor: $brand-secondary;
+$timepicker-item-selected-bgcolor: $red;
 $timepicker-item-selected-textcolor: $white;
 
 // Calendar
 $calendar-item-size: $field-height;
 $calendar-month-bgcolor: $gray-dark;
 $calendar-month-textcolor: $white;
-$calendar-weekday-label-bgcolor: $blue;
+$calendar-weekday-label-bgcolor: $color-main;
 $calendar-weekday-label-textcolor: $white;
 $calendar-date-bgcolor: $white;
 $calendar-date-textcolor: $gray-dark;
@@ -552,7 +552,7 @@ $tab-border-color: $gray-ligther;
 
 $tab-checked-border-style: solid;
 $tab-checked-border-width: 5px 1px 0 1px;
-$tab-checked-border-color: $blue $gray-ligther transparent $gray-ligther;
+$tab-checked-border-color: $color-main $gray-ligther transparent $gray-ligther;
 
 $tab-list-container-border-style: solid;
 $tab-list-container-border-width: 0 0 1px;

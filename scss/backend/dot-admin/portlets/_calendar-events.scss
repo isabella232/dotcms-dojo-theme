@@ -182,7 +182,7 @@
 }
 
 .navSelectedDay {
-  background-color: rgba($brand-primary, 0.2);
+  background-color: rgba($color-main_rgb, 0.2);
 }
 
 .previousPageLink {
@@ -315,7 +315,7 @@
 }
 
 #navMonthYearName {
-  background-color: $brand-primary;
+  background-color: $color-main;
   color: $white;
   cursor: pointer;
   text-align: center;

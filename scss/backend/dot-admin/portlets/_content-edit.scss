@@ -74,10 +74,13 @@ $sidebar-width: 220px;
   }
 
   a {
+    background:#fff;
+    border-collapse:collapse;
+    border-bottom: solid 1px #C5C5C5;
+    cursor: pointer;
     display: block;
     padding: $basic-padding;
-    border-bottom: solid 1px $gray-ligth;
-    cursor: pointer;
+    text-decoration:none;
     transition: background-color $field-animation-speed;
 
     [class$="Icon"],
@@ -91,8 +94,13 @@ $sidebar-width: 220px;
     }
 
     &:last-of-type {
+      margin-bottom: 0px;
       border-bottom: none;
     }
+  }
+
+  .content-edit-actions {
+      margin-bottom: 0;
   }
 }
 

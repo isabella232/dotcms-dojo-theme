@@ -1,12 +1,12 @@
-var gulp = require('gulp');
-var compass = require('gulp-compass');
+var argv = require('yargs').argv;
 var connect = require('gulp-connect');
 var cors = require('cors');
-var argv = require('yargs').argv;
 var dotcmsBaseUrl = require('./dotcmsConfig');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
 var dotcms = {
-    core : {
+    core: {
         base: dotcmsBaseUrl + 'core/',
         css: 'dotCMS/src/main/webapp/html/css/dijit-dotcms'
     },
@@ -19,56 +19,42 @@ var dotcms = {
 var coreCssPath = dotcms.core.base + dotcms.core.css;
 var tomcatCss = dotcms.tomcat.base + dotcms.tomcat.css;
 
-gulp.task('webserver', function () {
+gulp.task('webserver', function() {
     connect.server({
         livereload: true,
         port: 7000,
-        middleware: function () {
+        middleware: function() {
             return [cors()];
         }
     });
 });
 
-gulp.task('compass', function () {
-    gulp.src('scss/**/*.scss')
-        .pipe(compass({
-            config_file: './config.rb',
-            css: 'css',
-            sass: 'scss',
-            sourcemap: true,
-            style: 'expanded',
-            environment: argv.dotcms ? 'production' : 'development'
-        }))
-        .on('error', function (err) {})
-        .on('end', function() {
-            if (argv.dotcms) {
-                gulp.src('css/dotcms.css')
-                    .pipe(gulp.dest(coreCssPath));
-            }
-        })
-        .pipe(connect.reload());
+gulp.task('reload', function() {
+    gulp.src('*.html').pipe(connect.reload());
 });
 
-gulp.task('reload', function () {
-    gulp.src('*.html')
-        .pipe(connect.reload());
-});
-
-gulp.task('watch', function () {
-    gulp.watch('scss/**/*.scss', ['compass']);
+gulp.task('watch', function() {
+    gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch('*.html', ['reload']);
 });
 
-gulp.task('deploy', function () {
+gulp.task('deploy', function() {
     gulp.src('scss/dotcms.scss')
-        .pipe(compass({
-            config_file: './config.rb',
-            css: 'css',
-            sass: 'scss',
-            sourcemap: false,
-            style: 'expanded'
-        }))
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(coreCssPath));
 });
 
-gulp.task('default', ['compass', 'webserver', 'watch']);
+gulp.task('sass', function() {
+    return gulp
+        .src('scss/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'))
+        .pipe(connect.reload())
+        .on('end', function() {
+            if (argv.dotcms) {
+                gulp.src('css/dotcms.css').pipe(gulp.dest(coreCssPath));
+            }
+        });
+});
+
+gulp.task('default', ['sass', 'webserver', 'watch']);
