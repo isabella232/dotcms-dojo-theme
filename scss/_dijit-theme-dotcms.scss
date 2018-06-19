@@ -59,11 +59,11 @@ $field-normal-arrow-color: $gray;
 
 $field-hover-bgcolor: $gray-ligthest;
 $field-hover-textcolor: $text-color;
-$field-hover-border: solid $field-border-size $color-main;
+$field-hover-border: solid $field-border-size $color-sec;
 $field-hover-arrow-color: $color-main;
-$field-hoverarrow-arrow-color: $color-main;
+$field-hoverarrow-arrow-color: $color-sec;
 $field-hoverarrow-arrow-border: solid $field-border-size $gray-dark;
-$field-hoverarrow-arrow-bgcolor: rgba(var(--color-main_rgb), 0.2);
+$field-hoverarrow-arrow-bgcolor: rgba(var(--color-sec_rgb), 0.2);
 
 $field-active-bgcolor: $white;
 $field-active-textcolor: $text-color;
@@ -89,33 +89,32 @@ $field-focusedarrow-arrow-bgcolor: $field-hoverarrow-arrow-bgcolor;
 $field-error-border: solid 1px $error;
 
 // Button
-$button-border: solid 1px transparent;
 
 $button-padding: $field-padding * 2;
-$button-normal-bgcolor: $color-main;
-$button-normal-textcolor: $white;
-$button-normal-border: $button-border;
+$button-normal-bgcolor: $white;
+$button-normal-textcolor: $color-sec;
+$button-normal-border: solid 1px $color-sec;
 $button-normal-shadow: 0;
 
-$button-hover-bgcolor: $color-main_mod;
-$button-hover-textcolor: $white;
-$button-hover-border: $button-border;
+$button-hover-bgcolor: $white;
+$button-hover-textcolor: $color-main;
+$button-hover-border: solid 1px $color-main;
 $button-hover-shadow: 0;
 
-$button-active-bgcolor: $color-main_mod;
-$button-active-textcolor: $white;
-$button-active-border: $button-border;
+$button-active-bgcolor: $white;
+$button-active-textcolor: $color-main;
+$button-active-border: solid 1px $color-main;
 $button-active-shadow: 0;
 
 $button-disabled-bgcolor: $gray-ligther;
 $button-disabled-textcolor: $field-disabled-textcolor;
-$button-disabled-border: $button-border;
+$button-disabled-border: solid 1px $gray-ligther;
 $button-disabled-shadow: $button-normal-shadow;
 
 // Only for Drodown and ComboButton
-$button-focused-bgcolor: $color-main_mod;
-$button-focused-textcolor: $white;
-$button-focused-border: $button-border;
+$button-focused-bgcolor: $white;
+$button-focused-textcolor: $color-main;
+$button-focused-border: solid 1px $color-main;
 
 // DropDownButton
 $dropdownbutton-arrow-size: 5px;
@@ -127,7 +126,7 @@ $dropdownbutton-normal-border: $button-normal-border;
 $dropdownbutton-normal-shadow: $button-normal-shadow;
 $dropdownbutton-normal-arrow-bgcolor: transparent;
 $dropdownbutton-normal-arrow-url: false;
-$dropdownbutton-normal-arrow-color: $white;
+$dropdownbutton-normal-arrow-color: $color-sec;
 
 $dropdownbutton-hover-bgcolor: $button-hover-bgcolor;
 $dropdownbutton-hover-textcolor: $button-hover-textcolor;
@@ -171,7 +170,7 @@ $combobutton-normal-border: $button-normal-border;
 $combobutton-normal-shadow: $button-normal-shadow;
 $combobutton-normal-arrow-bgcolor: transparent;
 $combobutton-normal-arrow-url: false;
-$combobutton-normal-arrow-color: $white;
+$combobutton-normal-arrow-color: $color-sec;
 $combobutton-normal-arrow-border: $combobutton-normal-border;
 
 $combobutton-hover-bgcolor: $button-hover-bgcolor;
@@ -189,7 +188,7 @@ $combobutton-active-border: $button-active-border;
 $combobutton-active-shadow: $button-normal-shadow;
 $combobutton-active-arrow-bgcolor: transparent;
 $combobutton-active-arrow-url: false;
-$combobutton-active-arrow-color: $white;
+$combobutton-active-arrow-color: $color-main;
 $combobutton-active-arrow-border: $combobutton-active-border;
 
 $combobutton-focused-bgcolor: $button-focused-bgcolor;
@@ -198,7 +197,7 @@ $combobutton-focused-border: $button-focused-border;
 $combobutton-focused-shadow: $button-normal-shadow;
 $combobutton-focused-arrow-bgcolor: transparent;
 $combobutton-focused-arrow-url: false;
-$combobutton-focused-arrow-color: $white;
+$combobutton-focused-arrow-color: $color-main;
 $combobutton-focused-arrow-border: $combobutton-focused-border;
 
 $combobutton-disabled-bgcolor: $button-disabled-bgcolor;
@@ -409,7 +408,7 @@ $check-radius: 2px;
 $check-size: 14px;
 $check-normal-border: solid $check-border-width $text-color;
 $check-normal-bgcolor: $white;
-$check-checked-border: $check-normal-border;
+$check-checked-border: solid 1px $color-main;
 $check-checked-bgcolor: $color-main;
 $check-checked-icon: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDEwIDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgICAgICA8dGl0bGU+U2hhcGU8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iY2hlY2tib3gtYWN0aXZlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC4wMDAwMDAsIC01LjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiPiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgcG9pbnRzPSI3LjMxMDcyMDMyIDExLjQyMjQ0NDkgNC45ODYxOTU2MyA5LjA5NzkyMDE5IDQuMTk0NjMwODcgOS44ODM5MTA1NSA3LjMxMDcyMDMyIDEzIDE0IDYuMzEwNzIwMzIgMTMuMjE0MDA5NiA1LjUyNDcyOTk2Ij48L3BvbHlnb24+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=";
 $check-disabled-border: solid $check-border-width transparent;

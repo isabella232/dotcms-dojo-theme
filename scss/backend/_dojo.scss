@@ -97,6 +97,7 @@ select[multiple] {
   }
 
   &ButtonFlat {
+    border: 0;
     background-color: transparent;
     box-shadow: none;
     color: $color-main;
@@ -116,6 +117,7 @@ select[multiple] {
   }
 
   &ButtonAction {
+    border: solid 1px transparent;
     background-color: $color-main;
     color: $white;
 
