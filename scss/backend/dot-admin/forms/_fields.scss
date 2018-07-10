@@ -122,11 +122,10 @@ Styles for commons fields along the backend
 }
 
 .langVariablesField {
-  position: relative;
 
   .glossaryTermPopup {
-    right: 0;
-    top: 36px
+    right: -8px;
+    bottom: 36px;
   }
 }
 
