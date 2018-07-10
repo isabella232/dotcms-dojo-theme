@@ -17,7 +17,7 @@
   }
 
   &Title {
-    @include transition(background-color, color, border, $field-animation-speed);
+    transition: all $field-animation-speed;
     background-color: $accordion-title-normal-bgcolor;
     border-bottom: $accordion-title-border;
     border-top: $accordion-title-border;

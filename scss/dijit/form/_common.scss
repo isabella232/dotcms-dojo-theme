@@ -4,7 +4,7 @@
 .dijitSelect,
 .dijitTextBox,
 .dijitToggleButton {
-  @include border-radius($field-border-radius);
+  border-radius: $field-border-radius;
   font-size: $body-size;
   height: $field-height;
 }
@@ -17,7 +17,7 @@
 .dijitTextBox,
 .dijitToggleButton,
 .dijitDownArrowButton {
-  @include transition(all $field-animation-speed);
+  transition: all $field-animation-speed;
 }
 
 .dijitComboBox .dijitArrowButtonContainer,
@@ -44,7 +44,7 @@
 
   // TODO: make available option to add image icon
   &:before {
-    @include border-radius(2px);
+    border-radius: 2px;
     background-color: $white;
     content: "";
     height: 13px;

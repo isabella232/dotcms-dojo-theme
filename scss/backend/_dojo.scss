@@ -24,13 +24,14 @@ select[multiple] {
 // CUSTOM BUTTONS FOR DOTCMS UI
 .fakeDojoButton {
   @include btn($button-normal-shadow, $button-normal-bgcolor, $button-normal-border, $button-normal-textcolor);
-  @include transition(all $field-animation-speed);
+  transition: all $field-animation-speed;
   border-radius: $field-border-radius;
   display: inline-block;
   height: $field-height;
   line-height: $field-height;
   padding: 0 $basic-padding * 2;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     @include btn($button-hover-shadow, $button-hover-bgcolor, $button-hover-border, $button-hover-textcolor);
@@ -43,11 +44,11 @@ select[multiple] {
 }
 
 .fakeDojoButtonDanger {
-  background-color: $brand-secondary;
+  background-color: $red;
   color: $white;
 
   &:hover {
-    background-color: darken($brand-secondary, 10%);
+    background-color: darken($red, 10%);
     color: $white;
   }
 }
@@ -56,7 +57,7 @@ select[multiple] {
   $action-button-size: $field-height + $basic-padding;
 
   &DropDownActionButton {
-    background-color: $brand-primary;
+    background-color: $color-main;
     border: none;
     border-radius: $action-button-size / 2;
     height: $action-button-size;
@@ -83,8 +84,7 @@ select[multiple] {
     }
 
     &.dijitDropDownButtonHover {
-      background-color: $blue-dark;
-
+      background-color: $color-main_mod;
     }
 
     &.dijitDropDownButtonDisabled {
@@ -97,9 +97,10 @@ select[multiple] {
   }
 
   &ButtonFlat {
+    border: 0;
     background-color: transparent;
     box-shadow: none;
-    color: $brand-primary;
+    color: $color-main;
 
     &.dijitButtonHover {
       background-color: $gray-ligther;
@@ -107,20 +108,21 @@ select[multiple] {
   }
 
   &ButtonDanger {
-    background-color: $brand-secondary;
+    background-color: $red;
     color: $white;
 
     &.dijitButtonHover {
-      background-color: darken($brand-secondary, 10%);
+      background-color: darken($red, 10%);
     }
   }
 
   &ButtonAction {
-    background-color: $brand-primary;
+    border: solid 1px transparent;
+    background-color: $color-main;
     color: $white;
 
     &.dijitButtonHover {
-      background-color: darken($brand-primary, 10%);
+      background-color: $color-main_mod;
     }
   }
 }
@@ -129,4 +131,4 @@ select[multiple] {
   .dijitTextBox {
     width: auto;
   }
-}
+} 

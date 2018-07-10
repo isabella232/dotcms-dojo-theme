@@ -16,7 +16,7 @@
     }
 
     .dijitTabContainerTop-tabs & {
-      top: 0;
+      top: -1px;
     }
 
     &.dijitClosable {
@@ -62,11 +62,11 @@
       }
 
       &:before {
-        @include rotate(45deg);
+        transform: rotate(45deg);
       }
 
       &:after {
-        @include rotate(-45deg);
+        transform: rotate(-45deg);
       }
     }
 
@@ -199,7 +199,7 @@
 
     &ListContainer-top,
     &ListContainer-bottom {
-      @include box-sizing("content-box");
+      box-sizing: "content-box";
       border-width: $tab-list-container-border-width;
       border-style: $tab-list-container-border-style;
       border-color: $tab-list-container-border-color;

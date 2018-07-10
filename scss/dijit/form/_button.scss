@@ -25,6 +25,10 @@
   &Button {
     @include btn($button-normal-shadow, $button-normal-bgcolor, $button-normal-border, $button-normal-textcolor);
 
+    &Text {
+      text-transform: uppercase
+    }
+
     &Node {
       border: none;
     }
@@ -129,7 +133,6 @@
     @include btn($combobutton-normal-shadow, $combobutton-normal-bgcolor, $combobutton-normal-border, $combobutton-normal-textcolor);
 
     .dijitArrowButtonInner {
-      border-left: $combobutton-normal-arrow-border;
       width: $combobutton-arrow-container-size;
 
       @if $combobutton-normal-arrow-bgcolor != 'transparent' {
@@ -158,7 +161,6 @@
       @include btn($combobutton-hover-shadow, $combobutton-hover-bgcolor, $combobutton-hover-border, $combobutton-hover-textcolor);
 
       .dijitArrowButtonInner {
-        border-left: $combobutton-hover-arrow-border;
 
         @if $combobutton-hover-arrow-bgcolor != 'transparent' {
           background-color: $combobutton-hover-arrow-bgcolor;
@@ -178,7 +180,6 @@
       @include btn($combobutton-active-shadow, $combobutton-active-bgcolor, $combobutton-active-border, $combobutton-active-textcolor);
 
       .dijitArrowButtonInner {
-        border-left: $combobutton-active-arrow-border;
 
         @if $combobutton-active-arrow-bgcolor != 'transparent' {
           background-color: $combobutton-active-arrow-bgcolor;
@@ -199,7 +200,6 @@
       @include btn($combobutton-focused-shadow, $combobutton-focused-bgcolor, $combobutton-focused-border, $combobutton-focused-textcolor);
 
       .dijitArrowButtonInner {
-        border-left: $combobutton-focused-arrow-border;
 
         @if $combobutton-focused-arrow-bgcolor != 'transparent' {
           background-color: $combobutton-focused-arrow-bgcolor;

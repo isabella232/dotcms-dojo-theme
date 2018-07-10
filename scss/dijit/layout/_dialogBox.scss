@@ -27,11 +27,11 @@
     }
 
     &:before {
-      @include rotate(45deg);
+      transform: rotate(45deg);
     }
 
     &:after {
-      @include rotate(-45deg);
+      transform: rotate(-45deg);
     }
   }
 

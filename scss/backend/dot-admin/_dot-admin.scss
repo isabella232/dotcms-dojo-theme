@@ -258,13 +258,13 @@ $table-border: 1px solid $gray-ligther;
       background-color: #E0E9F6;
     }
 
-    &:not(.trIdxActive, .trIdxNothing):hover {
-      background-color: rgba($blue, 0.05);
-    }
+    // &:not(.trIdxActive, .trIdxNothing):hover {
+    //   background-color: rgba($color-main_mod, 0.05);
+    // }
 
-    &:not(.trIdxActive, .trIdxNothing):nth-child(even) {
-      background-color: $gray-ligthest;
-    }
+    // &:not(.trIdxActive, .trIdxNothing):nth-child(even) {
+    //   background-color: $gray-ligthest;
+    // }
   }
 
   th, td {
@@ -316,7 +316,7 @@ $table-border: 1px solid $gray-ligther;
   }
 
   &.relateContent td a {
-    color: $brand-primary;
+    color: $color-main;
     text-decoration: underline;
   }
 }
@@ -358,7 +358,7 @@ $table-border: 1px solid $gray-ligther;
   text-decoration: none;
 }
 .sTypeItem a:hover {
-  background: rgba($brand-primary, 0.1);
+//   background: rgba($color-main, 0.1);
 }
 /* RELATIONSHIP TABLE */
 
