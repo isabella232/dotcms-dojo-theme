@@ -12,11 +12,11 @@
 
   &Rule {
     &Label {
-      @include transition(color, $field-animation-speed);
+      transition: color $field-animation-speed;
       color: $slider-rule-label-normal-color;
     }
     &Mark {
-      @include transition(border-color, $field-animation-speed);
+      transition: border-color $field-animation-speed;
       border: $slider-rule-mark-normal;
     }
   }
@@ -56,7 +56,7 @@
     &IncrementIconH,
     &DecrementIconV,
     &IncrementIconV {
-      @include border-radius($field-border-radius);
+      border-radius: $field-border-radius;
       width: 20px;
       height: 16px;
       border: $button-normal-border;
@@ -108,8 +108,8 @@
     }
 
     &ImageHandle {
-      @include transition(transform, border-color, backgroun-color, $field-animation-speed);
-      @include border-radius($slider-handle-size / 2);
+      transition: all $field-animation-speed;
+      border-radius: $slider-handle-size / 2;
       background-color: $slider-handle-normal-bgcolor;
       border: $slider-handle-normal-border;
       height: $slider-handle-size;

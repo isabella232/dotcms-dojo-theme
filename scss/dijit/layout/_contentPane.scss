@@ -18,14 +18,14 @@
   }
 
   &ContentOuter {
-    @include transition(border, $field-animation-speed);
+    transition: border $field-animation-speed;
     border: $panel-normal-border;
     border-top: none;
     padding: 1px $basic-padding 0;
   }
 
   &Title {
-    @include transition(background-color, color, $field-animation-speed);
+    transition: all $field-animation-speed;
     border: $panel-normal-border;
     background-color: $panel-normal-title-bgcolor;
     color: $panel-normal-title-textcolor;
@@ -33,7 +33,7 @@
     &Closed {
       .dijitArrowNode {
         &:before {
-          @include transform(rotate(-90deg));
+          transform: rotate(-90deg);
         }
       }
     }

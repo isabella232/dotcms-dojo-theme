@@ -7,7 +7,7 @@ Styles for commons fields along the backend
 // COMMONS ELEMENTS:
 
 .glossaryTermPopup {
-  @include border-radius($border-radius);
+  border-radius: $border-radius;
   background-color: $gray-ligthest;
   padding: ($field-padding / 2) $field-padding;
   border: solid 1px $gray-ligther;
@@ -271,7 +271,7 @@ $key-val-width: 500px;
   }
 
   &:hover {
-    border: 1px solid $brand-primary;
+    border: 1px solid $color-main;
   }
 }
 

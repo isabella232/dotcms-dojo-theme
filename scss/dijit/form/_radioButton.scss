@@ -1,5 +1,5 @@
 .dijitRadio {
-  @include border-radius($radio-size / 2);
+  border-radius: $radio-size / 2;
   background-color: $radio-normal-bgcolor;
   border: $radio-normal-border;
   height: $radio-size;
@@ -11,7 +11,7 @@
 
     &:before {
       $size: $radio-size - 8;
-      @include border-radius($size / 2);
+      border-radius: $size / 2;
       background-color: $radio-checked-color;
       content: "";
       height: $size;

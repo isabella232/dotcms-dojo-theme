@@ -16,7 +16,7 @@ $dropdown-size: $field-height - 10;
 
   &DayLabelTemplate,
   &DateTemplate {
-    @include transition(background-color $field-animation-speed);
+    transition: background-color $field-animation-speed;
     background-color: $calendar-date-bgcolor;
     color: $calendar-date-textcolor;
     height: $calendar-item-size;
@@ -65,7 +65,7 @@ $dropdown-size: $field-height - 10;
     }
 
     .dijitDropDownButton {
-      @include border-radius(0);
+      border-radius: 0;
       background-color: transparent;
       height: $dropdown-size + ($field-border-size * 2);
       border: $calendar-dropdown-arrow-border;
@@ -127,7 +127,7 @@ $dropdown-size: $field-height - 10;
 
   &SelectedDate {
     .dijitCalendarDateLabel {
-      @include border-radius($field-border-radius);
+      border-radius: $field-border-radius;
       background-color: $calendar-date-seleted-bgcolor;
       color: $calendar-date-seleted-textcolor;
       display: block;

@@ -2,7 +2,7 @@
 // TODO: style the animation for dijitProgressBarIndeterminate
 
 .dijitProgressBar {
-  @include border-radius(2px);
+  border-radius: 2px;
   background-color: $progressbar-bgcolor;
   height: $progressbar-heigth;
 

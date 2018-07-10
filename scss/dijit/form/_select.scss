@@ -84,7 +84,7 @@
     color: $select-disabled-textcolor;
 
     .dijitButtonContents {
-      @include opacity(.5);
+      opacity: .5;
     }
 
     .dijitArrowButton {

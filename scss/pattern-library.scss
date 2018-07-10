@@ -1,4 +1,3 @@
-@import "compass";
 @import "dijit/variables";
 
 fieldset {
@@ -73,7 +72,7 @@ h2 {
 
 // #textboxTab {
 //   label {
-//     @include inline-block();
+//     display: inline-block;
 //     margin-right: 10px;
 //     text-align: right;
 //     width: 162px;
@@ -96,14 +95,14 @@ h2 {
 .section {
   &-buttons {
     label {
-      @include inline-block();
+      display: inline-block;
       width: 80px;
     }
   }
 
   &-radio-check {
     label {
-      @include inline-block();
+      display: inline-block;
       width: 145px;
     }
   }
