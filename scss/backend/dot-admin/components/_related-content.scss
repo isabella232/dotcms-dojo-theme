@@ -1,4 +1,10 @@
 .related-content-dialog {
+    background: url('/html/images/backgrounds/relate-content-dia.png') !important;
+    background-position: left;  
+    background-repeat: repeat-y;
+    height: 90%;
+    width: 90%;
+
   .dijitDialogPaneContent {
     padding: 0;
   }
@@ -14,6 +20,6 @@
 }
 
 .related-content-form {
-  width: 900px;
-  height: 500px;
+  width: 1000px;
+  height: 660px;
 }
