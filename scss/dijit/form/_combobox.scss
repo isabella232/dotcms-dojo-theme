@@ -51,11 +51,7 @@
 
     .dijitDownArrowButtonHover {
       background-color: $combobox-focusedarrow-arrow-bgcolor;
-      border-left: $combobox-focusedarrow-arrow-border;
-
-      &:before {
-        @include create-arrow($combobox-arrow-size, $combobox-focusedarrow-arrow-color);
-      }
+      border-left: $combobox-focused-arrow-border;
     }
   }
 
@@ -94,7 +90,7 @@
   }
 
   .dijitDownArrowButtonActive {
-    background-color: $spinner-activearrow-arrow-bgcolor;
+    background-color: $combobox-hoverarrow-arrow-color;
     border-left: $spinner-activearrow-arrow-border;
 
     &:before {
