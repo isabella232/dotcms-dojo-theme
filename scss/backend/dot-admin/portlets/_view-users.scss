@@ -4,7 +4,11 @@
   }
 
   .dijitTabPaneWrapper .dijitContentPane {
-    box-sizing: content-box;
+    box-sizing: content-box;   
+    
+    &#userPermissionsTab {
+      overflow: auto;
+    }
   }
 
   .portlet-main,
