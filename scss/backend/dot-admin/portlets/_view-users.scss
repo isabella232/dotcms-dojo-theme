@@ -1,142 +1,143 @@
 .view-users {
-  .dijitDropDownActionButton {
-    z-index: 2;
-  }
-
-  .dijitTabPaneWrapper .dijitContentPane {
-    box-sizing: content-box;   
-    
-    &#userPermissionsTab {
-      overflow: auto;
+    .dijitDropDownActionButton {
+        z-index: 2;
     }
-  }
 
-  .portlet-main,
-  .view-users__profile-tabs,
-  .view-users__profile-tabs-container {
-    height: 100%;
-    width: 100%;
-  }
+    .dijitTabPaneWrapper .dijitContentPane {
+        box-sizing: content-box;
+    }
+
+    .portlet-main,
+    .view-users__profile-tabs,
+    .view-users__profile-tabs-container {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.view-users__profile-tabs-container#userTabsContainer .dijitTabPaneWrapper {
+    overflow: auto;
 }
 
 .view-users__filter-form {
-  margin-bottom: $basic-padding * 2;
+    margin-bottom: $basic-padding * 2;
 }
 
 .view-users__loading {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: 1;
 }
 
 .view-user__form {
-  form {
-    width: 500px;
-  }
+    form {
+        width: 500px;
+    }
 
-  dd {
-    flex: 1;
-  }
+    dd {
+        flex: 1;
+    }
 }
 
 .view-user__add-contact {
-  margin-bottom: $basic-padding * 2;
-  text-align: right;
+    margin-bottom: $basic-padding * 2;
+    text-align: right;
 }
 
 .view-user__buttonRow {
-  padding-left: 146px;
-  margin-top: $basic-padding * 2;
-  text-align: left !important;
+    padding-left: 146px;
+    margin-top: $basic-padding * 2;
+    text-align: left !important;
 }
 
 .view-users__additional-info {
-  .dojoxGrid {
-    margin-bottom: $basic-padding * 2;
-  }
+    .dojoxGrid {
+        margin-bottom: $basic-padding * 2;
+    }
 
-  .dojoxGridRowTable td:last-child {
-    text-align: center;
-  }
+    .dojoxGridRowTable td:last-child {
+        text-align: center;
+    }
 
-  .view-user__form {
-    border-bottom: solid 1px $gray-ligther;
-    margin-bottom: $basic-padding * 3;
-    padding-bottom: $basic-padding * 3;
-  }
+    .view-user__form {
+        border-bottom: solid 1px $gray-ligther;
+        margin-bottom: $basic-padding * 3;
+        padding-bottom: $basic-padding * 3;
+    }
 }
 
 .view-users__roles-container {
-  display: flex;
-  margin-bottom: $basic-padding * 2;
+    display: flex;
+    margin-bottom: $basic-padding * 2;
 
-  h4 {
-    text-align: center;
-    margin-bottom: $basic-padding;
-  }
+    h4 {
+        text-align: center;
+        margin-bottom: $basic-padding;
+    }
 }
 
 .view-users__roles-actions {
-  padding: 52px $basic-padding * 2 0;
+    padding: 52px $basic-padding * 2 0;
 
-  .dijitButton {
-    display: block;
-    margin: $basic-padding 0;
-  }
+    .dijitButton {
+        display: block;
+        margin: $basic-padding 0;
+    }
 }
 
 .view-users__roles-to-grant,
 .view-users__roles-granted {
-  flex: 2;
+    flex: 2;
 }
 
 .view-users__roles-container-item {
-  border-radius: $border-radius;
-  border: solid 1px $gray-ligth;
-  height: 300px;
-  overflow: auto;
+    border-radius: $border-radius;
+    border: solid 1px $gray-ligth;
+    height: 300px;
+    overflow: auto;
 
-  select[multiple] {
-    border: none;
-  }
+    select[multiple] {
+        border: none;
+    }
 }
 
 .view-users__marketing {
-  .listingTable .checkbox {
-    justify-content: flex-end;
-  }
+    .listingTable .checkbox {
+        justify-content: flex-end;
+    }
 }
 
 .view-users__section-content-cols {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .fullUserName {
-  border-bottom: solid 1px $gray-ligther;
-  font-size: $font-size-large;
-  font-weight: normal;
-  margin-bottom: $basic-padding * 3;
-  padding-bottom: $basic-padding;
+    border-bottom: solid 1px $gray-ligther;
+    font-size: $font-size-large;
+    font-weight: normal;
+    margin-bottom: $basic-padding * 3;
+    padding-bottom: $basic-padding;
 }
 .view-users {
-  .view-users__users-list {
-    .dojoxGridRow {
-      &:nth-child(even){
-        background-color: $gray-ligther;
-      }
-    }
-    .dojoxGridHeader {
-      background-color: $gray-ligther;
-    }
-    .dojoxGridRow, .dojoxGridHeader {
-        .dojoxGridRowTable .dojoxGridCell {
-            padding: $basic-padding;
+    .view-users__users-list {
+        .dojoxGridRow {
+            &:nth-child(even) {
+                background-color: $gray-ligther;
+            }
+        }
+        .dojoxGridHeader {
+            background-color: $gray-ligther;
+        }
+        .dojoxGridRow,
+        .dojoxGridHeader {
+            .dojoxGridRowTable .dojoxGridCell {
+                padding: $basic-padding;
+            }
         }
     }
-  }
 }
