@@ -39,7 +39,10 @@ $sidebar-width: 220px;
   z-index: 1;
 }
 
-.content-edit__form {
+.content-edit__form,
+.content-edit__advaced-form {
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: $content-edit-field-max-width;
     margin: 0 auto;
