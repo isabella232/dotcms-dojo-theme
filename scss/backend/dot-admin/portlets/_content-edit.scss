@@ -41,8 +41,7 @@ $sidebar-width: 220px;
 
 .content-edit__form,
 .content-edit__advaced-form {
-    padding: 30px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
     width: 100%;
     max-width: $content-edit-field-max-width;
     margin: 0 auto;
