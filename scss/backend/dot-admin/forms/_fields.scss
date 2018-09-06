@@ -16,6 +16,10 @@ Styles for commons fields along the backend
 
 //BINARY FILE
 
+#fileAssetThumbnailSliderWrapper {
+    margin-bottom: $basic-padding;
+}
+
 .fileAjaxUploader {
     display: flex;
     align-items: center;
@@ -49,7 +53,6 @@ Styles for commons fields along the backend
     }
 
     &FileName {
-        margin-left: $basic-padding;
         margin-right: $basic-padding;
     }
 
