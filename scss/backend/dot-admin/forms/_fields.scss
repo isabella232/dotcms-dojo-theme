@@ -16,15 +16,19 @@ Styles for commons fields along the backend
 
 //BINARY FILE
 
+#fileAssetThumbnailSliderWrapper {
+    margin-bottom: $basic-padding;
+}
+
 .fileAjaxUploader {
     display: flex;
     align-items: center;
     border-radius: $border-radius;
-    border: solid 1px $gray-ligth;
     position: relative;
     height: 36px;
 
     .fileAjaxUploaderForm {
+        border: solid 1px $gray-ligth;
         width: 100%;
     }
 
@@ -40,23 +44,23 @@ Styles for commons fields along the backend
         }
     }
 
-    &Actions {
-        position: absolute;
-        right: 0;
+    &Actions div {
+        display: inline-block;
 
-        & div:first-child {
+        &:first-child {
             margin-right: $basic-padding;
         }
     }
 
     &FileName {
-        margin-left: $basic-padding;
+        margin-right: $basic-padding;
     }
 
     &Status {
-        margin-right: $basic-padding * 2;
-        display: flex;
         align-items: center;
+        display: flex;
+        position: absolute;
+        right: $basic-padding * 2;
     }
 
     &StatusMsg {
