@@ -2,7 +2,7 @@
 $black: #161616;
 $gray-dark: #5B5B5B;
 $gray: #8A8A8A;
-$gray-ligth: #C5C5C5;
+$gray-ligth: #b3b1b8;
 $gray-ligther: #ECEDEE;
 $gray-ligthest: #FAFAFA;
 $green-ligth: #E7E7E7;
@@ -91,24 +91,24 @@ $field-error-border: solid 1px $error;
 // Button
 
 $button-padding: $field-padding * 2;
-$button-normal-bgcolor: $white;
-$button-normal-textcolor: $color-sec;
-$button-normal-border: solid 1px $color-sec;
+$button-normal-bgcolor: $color-main;
+$button-normal-textcolor: $white;
+$button-normal-border: solid 1px transparent;
 $button-normal-shadow: 0;
 
-$button-hover-bgcolor: $white;
-$button-hover-textcolor: $color-main;
-$button-hover-border: solid 1px $color-main;
+$button-hover-bgcolor: $color-main_mod;
+$button-hover-textcolor: $white;
+$button-hover-border: $button-normal-border;
 $button-hover-shadow: 0;
 
-$button-active-bgcolor: $white;
-$button-active-textcolor: $color-main;
-$button-active-border: solid 1px $color-main;
+$button-active-bgcolor: $color-main_mod;
+$button-active-textcolor: $white;
+$button-active-border: $button-normal-border;
 $button-active-shadow: 0;
 
-$button-disabled-bgcolor: $gray-ligther;
+$button-disabled-bgcolor: #dedee1;
 $button-disabled-textcolor: $field-disabled-textcolor;
-$button-disabled-border: solid 1px $gray-ligther;
+$button-disabled-border: $button-normal-border;
 $button-disabled-shadow: $button-normal-shadow;
 
 // Only for Drodown and ComboButton
