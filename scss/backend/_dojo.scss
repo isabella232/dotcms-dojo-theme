@@ -99,13 +99,29 @@ select[multiple] {
     }
 
     &ButtonFlat {
-        border: 0;
-        background-color: transparent;
+        border: solid 1px $color-sec;
+        background-color: $white;
         box-shadow: none;
-        color: $color-main;
+        color: $color-sec;
 
-        &.dijitButtonHover {
-            background-color: $gray-ligther;
+        &.dijitButton {
+
+            &Hover {
+                color: $color-main;
+                border-color: $color-main;
+            }
+
+            &Focused {
+                background-color: rgba($color-main_rgb, 0.12);
+                color: $color-main;
+                border: $button-normal-border;
+            }
+
+            &Active {
+                background-color: rgba($color-main_rgb, 0.26);
+                color: $color-main;
+                border: $button-normal-border;
+            }
         }
     }
 
