@@ -122,7 +122,7 @@ $dropdownbutton-arrow-container-size: $field-height;
 
 $dropdownbutton-normal-bgcolor: $button-normal-bgcolor;
 $dropdownbutton-normal-textcolor: $button-normal-textcolor;
-$dropdownbutton-normal-border: $button-normal-border;
+$dropdownbutton-normal-border: $field-normal-border;
 $dropdownbutton-normal-shadow: $button-normal-shadow;
 $dropdownbutton-normal-arrow-bgcolor: transparent;
 $dropdownbutton-normal-arrow-url: false;
@@ -166,7 +166,7 @@ $combobutton-arrow-container-size: $field-height;
 
 $combobutton-normal-bgcolor: $button-normal-bgcolor;
 $combobutton-normal-textcolor: $button-normal-textcolor;
-$combobutton-normal-border: $button-normal-border;
+$combobutton-normal-border: $field-normal-border;
 $combobutton-normal-shadow: $button-normal-shadow;
 $combobutton-normal-arrow-bgcolor: transparent;
 $combobutton-normal-arrow-url: false;
@@ -212,7 +212,7 @@ $combobutton-disabled-arrow-border: $combobutton-disabled-border;
 //ToggleButton
 $togglebutton-normal-bgcolor: $button-normal-bgcolor;
 $togglebutton-normal-textcolor: $button-normal-textcolor;
-$togglebutton-normal-border: $button-normal-border;
+$togglebutton-normal-border: $field-normal-border;
 $togglebutton-normal-shadow: $button-normal-shadow;
 
 $togglebutton-hover-bgcolor: $button-hover-bgcolor;
