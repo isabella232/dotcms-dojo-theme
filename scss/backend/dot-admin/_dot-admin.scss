@@ -315,9 +315,20 @@ $table-border: 1px solid $gray-ligther;
     }
   }
 
-  &.relateContent td a {
-    color: $color-main;
-    text-decoration: underline;
+  &.relateContent td {
+
+    &.beta {
+        width: 8%;
+    }
+
+    &.title {
+        width: 25%;
+    }
+
+    a {
+        color: $color-main;
+        text-decoration: underline;
+      }
   }
 }
 
