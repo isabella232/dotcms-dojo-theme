@@ -122,16 +122,31 @@ select[multiple] {
                 color: $color-main;
                 border: $button-normal-border;
             }
+
+            &Disabled {
+                @include btn($button-disabled-shadow, $button-disabled-bgcolor, $button-disabled-border, $button-disabled-textcolor);
+            }
         }
     }
 
     &ButtonDanger {
-        border: 0;
-        background-color: $red;
-        color: $white;
+        border: 1px solid $red;
+        background-color: transparent;
+        color: $red;
 
-        &.dijitButtonHover {
-            background-color: darken($red, 10%);
+        &.dijitButton {
+
+            &Hover, &Focused {
+                background-color: $red;
+                border: 1px solid $red;
+                color: $white;
+            }
+
+            &Active {
+                border: $button-normal-border;
+                background-color: lighten($red, 15%);
+                color: $white;
+            }
         }
     }
 
