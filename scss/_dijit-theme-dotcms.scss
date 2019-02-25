@@ -111,6 +111,29 @@ $button-disabled-textcolor: $field-disabled-textcolor;
 $button-disabled-border: $button-normal-border;
 $button-disabled-shadow: $button-normal-shadow;
 
+// Button Secondary
+
+$button-secondary-bgcolor: $white;
+$button-secondary-textcolor: $color-sec;
+$button-secondary-border: solid 1px $color-sec;
+$button-secondary-shadow: none;
+
+$button-secondary-hover-bgcolor: $white;
+$button-secondary-hover-textcolor: $color-main;
+$button-secondary-hover-border: solid 1px $color-main;
+$button-secondary-hover-shadow: none;
+
+$button-secondary-focused-bgcolor: rgba($color-main_rgb, 0.12);
+$button-secondary-focused-textcolor: $color-main;
+$button-secondary-focused-border: $button-normal-border;
+$button-secondary-focused-shadow: none;
+
+$button-secondary-active-bgcolor: rgba($color-main_rgb, 0.26);
+$button-secondary-active-textcolor: $color-main;
+$button-secondary-active-border: $button-normal-border;
+$button-secondary-active-shadow: none;
+
+
 // Only for Drodown and ComboButton
 $button-focused-bgcolor: $white;
 $button-focused-textcolor: $color-main;
@@ -120,36 +143,36 @@ $button-focused-border: solid 1px $color-main;
 $dropdownbutton-arrow-size: 5px;
 $dropdownbutton-arrow-container-size: $field-height;
 
-$dropdownbutton-normal-bgcolor: $button-normal-bgcolor;
-$dropdownbutton-normal-textcolor: $button-normal-textcolor;
-$dropdownbutton-normal-border: $field-normal-border;
-$dropdownbutton-normal-shadow: $button-normal-shadow;
+$dropdownbutton-normal-bgcolor: $button-secondary-bgcolor;
+$dropdownbutton-normal-textcolor: $button-secondary-textcolor;
+$dropdownbutton-normal-border: $button-secondary-border;
+$dropdownbutton-normal-shadow: $button-secondary-shadow;
 $dropdownbutton-normal-arrow-bgcolor: transparent;
 $dropdownbutton-normal-arrow-url: false;
-$dropdownbutton-normal-arrow-color: $color-sec;
+$dropdownbutton-normal-arrow-color: $button-secondary-textcolor;
 
-$dropdownbutton-hover-bgcolor: $button-hover-bgcolor;
-$dropdownbutton-hover-textcolor: $button-hover-textcolor;
-$dropdownbutton-hover-border: $button-hover-border;
-$dropdownbutton-hover-shadow: $button-hover-shadow;
+$dropdownbutton-hover-bgcolor: $button-secondary-hover-bgcolor;
+$dropdownbutton-hover-textcolor: $button-secondary-hover-textcolor;
+$dropdownbutton-hover-border: $button-secondary-hover-border;
+$dropdownbutton-hover-shadow: $button-secondary-hover-shadow;
 $dropdownbutton-hover-arrow-bgcolor: transparent;
 $dropdownbutton-hover-arrow-url: false;
-$dropdownbutton-hover-arrow-color: $button-hover-textcolor;
+$dropdownbutton-hover-arrow-color: $button-secondary-hover-textcolor;
 
-$dropdownbutton-active-bgcolor: $button-active-bgcolor;
-$dropdownbutton-active-textcolor: $button-active-textcolor;
-$dropdownbutton-active-border: $button-active-border;
-$dropdownbutton-active-arrow-bgcolor: transparent;
+$dropdownbutton-active-bgcolor: $button-secondary-active-bgcolor;
+$dropdownbutton-active-textcolor: $button-secondary-active-textcolor;
+$dropdownbutton-active-border: $button-secondary-active-border;
+$dropdownbutton-active-arrow-bgcolor: $button-secondary-active-shadow;
 $dropdownbutton-active-arrow-url: false;
-$dropdownbutton-active-arrow-color: $white;
+$dropdownbutton-active-arrow-color: $button-secondary-active-textcolor;
 
-$dropdownbutton-focused-bgcolor: $button-focused-bgcolor;
-$dropdownbutton-focused-textcolor: $button-focused-textcolor;
-$dropdownbutton-focused-border: $button-focused-border;
-$dropdownbutton-focused-shadow: $button-normal-shadow;
+$dropdownbutton-focused-bgcolor: $button-secondary-focused-bgcolor;
+$dropdownbutton-focused-textcolor: $button-secondary-focused-textcolor;
+$dropdownbutton-focused-border: $button-secondary-focused-border;
+$dropdownbutton-focused-shadow: $button-secondary-focused-shadow;
 $dropdownbutton-focused-arrow-bgcolor: transparent;
 $dropdownbutton-focused-arrow-url: false;
-$dropdownbutton-focused-arrow-color: $gray-dark;
+$dropdownbutton-focused-arrow-color: $button-secondary-focused-textcolor;
 
 $dropdownbutton-disabled-bgcolor: $button-disabled-bgcolor;
 $dropdownbutton-disabled-textcolor: $button-disabled-textcolor;
@@ -164,40 +187,40 @@ $dropdownbutton-disabled-arrow-color: $field-disabled-arrow-color;
 $combobutton-arrow-size: 5px;
 $combobutton-arrow-container-size: $field-height;
 
-$combobutton-normal-bgcolor: $button-normal-bgcolor;
-$combobutton-normal-textcolor: $button-normal-textcolor;
-$combobutton-normal-border: $field-normal-border;
+$combobutton-normal-bgcolor: $button-secondary-bgcolor;
+$combobutton-normal-textcolor: $button-secondary-textcolor;
+$combobutton-normal-border: $button-secondary-border;
 $combobutton-normal-shadow: $button-normal-shadow;
 $combobutton-normal-arrow-bgcolor: transparent;
 $combobutton-normal-arrow-url: false;
-$combobutton-normal-arrow-color: $color-sec;
+$combobutton-normal-arrow-color: $button-secondary-textcolor;
 $combobutton-normal-arrow-border: $combobutton-normal-border;
 
-$combobutton-hover-bgcolor: $button-hover-bgcolor;
-$combobutton-hover-textcolor: $button-hover-textcolor;
-$combobutton-hover-border: $button-hover-border;
-$combobutton-hover-shadow: $button-hover-shadow;
+$combobutton-hover-bgcolor: $button-secondary-hover-bgcolor;
+$combobutton-hover-textcolor: $button-secondary-hover-textcolor;
+$combobutton-hover-border: $button-secondary-hover-border;
+$combobutton-hover-shadow: $button-secondary-hover-shadow;
 $combobutton-hover-arrow-bgcolor: transparent;
 $combobutton-hover-arrow-url: false;
-$combobutton-hover-arrow-color: $button-hover-textcolor;
+$combobutton-hover-arrow-color: $button-secondary-hover-textcolor;
 $combobutton-hover-arrow-border: $combobutton-hover-border;
 
-$combobutton-active-bgcolor: $button-active-bgcolor;
-$combobutton-active-textcolor: $button-active-textcolor;
-$combobutton-active-border: $button-active-border;
-$combobutton-active-shadow: $button-normal-shadow;
+$combobutton-active-bgcolor: $button-secondary-active-bgcolor !important;
+$combobutton-active-textcolor: $button-secondary-active-textcolor;
+$combobutton-active-border: $button-secondary-active-border;
+$combobutton-active-shadow: $button-secondary-active-shadow;
 $combobutton-active-arrow-bgcolor: transparent;
 $combobutton-active-arrow-url: false;
-$combobutton-active-arrow-color: $color-main;
+$combobutton-active-arrow-color: $button-secondary-active-textcolor;
 $combobutton-active-arrow-border: $combobutton-active-border;
 
-$combobutton-focused-bgcolor: $button-focused-bgcolor;
-$combobutton-focused-textcolor: $button-focused-textcolor;
-$combobutton-focused-border: $button-focused-border;
-$combobutton-focused-shadow: $button-normal-shadow;
+$combobutton-focused-bgcolor: $button-secondary-focused-bgcolor !important;
+$combobutton-focused-textcolor: $button-secondary-focused-textcolor;
+$combobutton-focused-border: $button-secondary-focused-border;
+$combobutton-focused-shadow: $button-secondary-focused-shadow;
 $combobutton-focused-arrow-bgcolor: transparent;
 $combobutton-focused-arrow-url: false;
-$combobutton-focused-arrow-color: $color-main;
+$combobutton-focused-arrow-color: $button-secondary-focused-textcolor;
 $combobutton-focused-arrow-border: $combobutton-focused-border;
 
 $combobutton-disabled-bgcolor: $button-disabled-bgcolor;
