@@ -59,8 +59,8 @@
       border-radius: $field-border-radius;
       width: 20px;
       height: 16px;
-      border: $button-secondary-border;
-      background-color: $button-secondary-bgcolor;
+      border: $button-normal-border;
+      background-color: $button-normal-bgcolor;
       position: relative;
 
       .dijitSliderButtonInner {
@@ -70,7 +70,7 @@
 
     &DecrementButtonHover,
     &IncrementButtonHover {
-      border: $button-secondary-hover-border;
+      border: $button-hover-border;
     }
 
     &IncrementIconV {
@@ -91,8 +91,8 @@
 
     &DecrementButtonActive,
     &IncrementButtonActive {
-      background-color: $button-secondary-active-bgcolor;
-      border: $button-secondary-active-border;
+      background-color: $button-active-bgcolor;
+      border: $button-active-border;
     }
 
     &IncrementButtonActive {

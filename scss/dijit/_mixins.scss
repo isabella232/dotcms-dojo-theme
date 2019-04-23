@@ -45,8 +45,6 @@
   background-color: $bg;
   border: $border;
   color: $color;
-  font-size: $font-size-small;
-  font-weight: 500;
 
   @if ($shadow != "none") {
     box-shadow: $shadow;
