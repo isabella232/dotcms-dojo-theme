@@ -12,6 +12,11 @@
 
   &Disabled {
     border: $check-disabled-border;
+    background: $check-disabled-bgcolor;
+  }
+
+  &CheckedDisabled {
+    border: $check-disabled-border;
     background: $check-disabled-bgcolor url($check-disabled-icon) center center no-repeat;
   }
 }

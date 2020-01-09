@@ -117,11 +117,10 @@
 }
 
 .fullUserName {
-    border-bottom: solid 1px $gray-ligther;
     font-size: $font-size-large;
-    font-weight: normal;
-    margin-bottom: $basic-padding * 3;
-    padding-bottom: $basic-padding;
+    font-weight: bold;
+    margin-bottom: $basic-padding;
+    padding-bottom: 0;
 }
 .view-users {
     .view-users__users-list {
