@@ -25,7 +25,6 @@
   }
 
   &TreeRow {
-    display: flex;
     padding: 2px 0;
 
     .dijitTreeIcon, .dijitTreeExpando {
@@ -63,10 +62,6 @@
 
   &TreeNodeSelected &TreeLabel {
     background: #e2ebfe;
-  }
-
-  &TreeNodeHover {
-    background-color: rgba($black, 0.025);
   }
 
   &TreeExpandoOpened {
