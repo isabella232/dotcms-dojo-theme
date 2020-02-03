@@ -23,3 +23,21 @@
     margin: 0 -#{$basic-padding};
     padding: 0 #{$basic-padding}
 }
+
+.api-link {
+    align-items: center;
+    border-radius: 2px;
+    border: solid 1px var(--color-sec);
+    color: var(--color-sec);
+    display: inline-flex;
+    line-height: 1em;
+    padding: 2px 6px 2px 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 150ms ease,color 150ms ease;
+
+    &:hover {
+        background-color: var(--color-sec);
+        color:#fff;
+    }
+}
