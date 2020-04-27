@@ -60,6 +60,10 @@
     outline: 1px invert dotted;
   }
 
+  &TreeRowSelected {
+      font-weight: bold;
+  }
+
   &TreeNodeSelected &TreeLabel {
     background: #e2ebfe;
   }
