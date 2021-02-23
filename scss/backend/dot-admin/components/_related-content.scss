@@ -2,13 +2,13 @@
     height: 90%;
     width: 90%;
 
-  .dijitDialogPaneContent {
-    padding: 0;
-  }
+    .dijitDialogPaneContent {
+        padding: 0;
+    }
 
-  .portlet-sidebar-wrapper {
-    width: 200px;
-  }
+    .portlet-sidebar-wrapper {
+        width: 200px;
+    }
 }
 
 .related-content-container {
@@ -21,7 +21,13 @@
     width: 100%;
 
     .portlet-toolbar {
-        margin-top: $basic-padding * 3;
+        background-color: white;
+        border-bottom: 1px solid $gray-ligther;
+        margin: 0;
+        padding: $basic-padding * 3 $basic-padding * 2  $basic-padding * 2;
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
 
     .portlet-main-wrapper {
