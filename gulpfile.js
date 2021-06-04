@@ -12,7 +12,7 @@ var dotcms = {
         css: 'dotCMS/src/main/webapp/html/css/dijit-dotcms'
     },
     tomcat: {
-        base: dotcmsBaseUrl + 'tomcat8/',
+        base: dotcmsBaseUrl + 'tomcat9/',
         css: 'webapps/ROOT/html/css/dijit-dotcms'
     }
 };
