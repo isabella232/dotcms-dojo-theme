@@ -51,13 +51,12 @@
     }
 
     .portlet-main {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
+        display: block;
         height: 84vh !important;
         justify-content: space-between;
         padding: 0;
         overflow-y: scroll;
+        width: 100%;
     }
 }
 
