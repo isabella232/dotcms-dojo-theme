@@ -33,10 +33,16 @@ $sidebar-width: 300px;
 }
 
 .content-edit__main {
-  margin: $basic-padding * 2 $sidebar-width 0 0;
+  height: 100%;
+  margin: 0px $sidebar-width 0 0;
   position: relative;
+  padding-top: $basic-padding * 2;
   width: auto;
   z-index: 1;
+}
+
+#fm {
+  height: 100%;
 }
 
 .content-edit__form,
