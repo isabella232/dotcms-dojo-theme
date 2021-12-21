@@ -87,13 +87,6 @@
     text-align: center;
 }
 
-.file-selector-tree__main {
-    display: flex;
-    height: 84vh !important;
-    width: calc(100% - 200px) !important;
-    overflow: inherit;
-}
-
 .file-selector-tree__sidebar {
     padding: $basic-padding * 2 0 $basic-padding * 2 $basic-padding * 2;
 
