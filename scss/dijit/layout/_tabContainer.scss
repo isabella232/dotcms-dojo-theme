@@ -184,8 +184,10 @@
     }
 
     &ContainerTop-container {
+      /* 42px is the height of the dijitTabListContainer */
+      height: calc(100% - 42px);
       border-top: none;
-      overflow: visible;
+      overflow: auto;
     }
 
     &ContainerBottom-container {
